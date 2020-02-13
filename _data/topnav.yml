@@ -5,6 +5,8 @@ topnav:
   items:
 ##    - title: GitHub
  ##     external_url: https://github.com/tomjoht/documentation-theme-jekyll
+    - title: Download
+      url: /download
     - title: News
       url: /news
 
@@ -15,18 +17,20 @@ topnav_dropdowns:
     - title: Getting Started
       folderitems:
         - title: What is Anchor?
-          external_url: https://talk.jekyllrb.com
+          url: /what_is.html
         - title: Installation
-          external_url: http://jekyllrb.com/docs/home/
+          url: /installation
         - title: Usage
-          external_url: http://stackoverflow.com/questions/tagged/jekyll
+          url: /usage
         - title: Advanced Usage
-          external_url: http://idratherbewriting.com/category-jekyll/
+          url: /advanced_usage
     - title: Developer
       folderitems:
-        - title: Getting Started
+        - title: Developer Guide
           url: /mydoc_introduction.html
-        - title: Advanced Usage
+        - title: Architecture
           url: /p1_landing_page.html
-        - title: Developer
+        - title: Javadocs
           url: /p2_landing_page.html
+        - title: GitHub
+          external_url: https://github.com/anchoranalysis
