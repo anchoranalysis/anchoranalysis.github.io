@@ -1,0 +1,57 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Developer Guide
+  version:
+  folders:
+  - title: Introduction
+    output: web, pdf
+    folderitems:
+
+    - title: Getting started
+      url: /developer_guide_intro_getting_started.html
+      output: web, pdf
+      type: homepage
+
+    - title: Page 2
+      url: /developer_guide_intro_getting_started2.html
+      output: web, pdf
+
+  - title: Architecture
+    output: web, pdf
+
+    folderitems:
+    - title: Pages
+      url: /mydoc_pages.html
+      output: web, pdf
+
+    - title: Posts
+      url: /mydoc_posts.html
+      output: web, pdf
+
+    - title: Lists
+      url: /mydoc_lists.html
+      output: web, pdf
+
+    - title: Conditional logic
+      url: /mydoc_conditional_logic.html
+      output: web, pdf
+
+    - title: Content reuse
+      url: /mydoc_content_reuse.html
+      output: web, pdf
+
+    - title: Collections
+      url: /mydoc_collections.html
+      output: web, pdf
+
+    - title: WebStorm editor tips
+      url: /mydoc_webstorm_text_editor.html
+      output: web, pdf
+
+    - title: Atom editor tips
+      url: /mydoc_atom_text_editor.html
+      output: web, pdf
+
+  -

@@ -27,10 +27,8 @@ topnav_dropdowns:
     - title: Developer
       folderitems:
         - title: Developer Guide
-          url: /mydoc_introduction.html
-        - title: Architecture
-          url: /p1_landing_page.html
+          url: /developer_guide_intro_getting_started.html
         - title: Javadocs
-          url: /p2_landing_page.html
+          url: /javadocs_landing_page.html
         - title: GitHub
           external_url: https://github.com/anchoranalysis
