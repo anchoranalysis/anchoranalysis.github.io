@@ -21,6 +21,10 @@ entries:
     - title: Building Anchor
       url: /developer_guide_intro_building_anchor.html
       output: web, pdf
+      
+    - title: Anchor Beans
+      url: /developer_guide_intro_anchor_beans.html
+      output: web, pdf      
 
   - title: Architecture
     output: web, pdf
