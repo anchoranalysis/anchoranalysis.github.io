@@ -1,5 +1,7 @@
 ---
 title: Developer Guide Introduction - Getting Started
+tags: [getting_started]
+keywords: systems, nexus, jenkins, sonarqube, aws, github
 sidebar: developer_guide_sidebar
 permalink: developer_guide_intro_getting_started.html
 folder: developer_guide
@@ -8,13 +10,13 @@ folder: developer_guide
 ## Key systems
 
 * [GitHub](https://github.com/anchoranalysis) - hosts all source code, the website, and **released** JARs and distributions.
-* *Amazon AWS* - provides a build server ```build.anchoranalysis.org``` (on demand - suspended when not in use)
+* *Amazon AWS* - provides a build server ```build.anchoranalysis.org``` (on demand - suspended when not in use).
 
 Services running on the build-server include:
 
-* *Nexus* - repository server, to publish and retrieve **snapshot** JARs during building 
-* *Jenkins* - continuous integration server - running tests and other tasks when we commit changed source code, such as generting javadocs
-* *SonarQube* - static code analyzer to find possible bad coding practice in the Java source
+* *Nexus* - repository server, to publish and retrieve **snapshot** JARs during building.
+* *Jenkins* - continuous integration server - running tests and other tasks when we commit changed source code, such as generting javadocs.
+* *SonarQube* - static code analyzer to find possible poor coding practices in the Java source.
 
 ## Key documents
 

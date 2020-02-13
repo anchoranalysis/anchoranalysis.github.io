@@ -14,8 +14,8 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: Page 2
-      url: /developer_guide_intro_getting_started2.html
+    - title: Building Anchor
+      url: /developer_guide_intro_building_anchor.html
       output: web, pdf
 
   - title: Architecture
