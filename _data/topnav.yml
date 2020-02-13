@@ -3,8 +3,8 @@
 topnav:
 - title: Topnav
   items:
-    - title: GitHub
-      external_url: https://github.com/tomjoht/documentation-theme-jekyll
+##    - title: GitHub
+ ##     external_url: https://github.com/tomjoht/documentation-theme-jekyll
     - title: News
       url: /news
 
@@ -12,21 +12,21 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Jekyll Help
+    - title: Getting Started
       folderitems:
-        - title: Jekyll Talk
+        - title: What is Anchor?
           external_url: https://talk.jekyllrb.com
-        - title: Jekyll documentation
+        - title: Installation
           external_url: http://jekyllrb.com/docs/home/
-        - title: Jekyll on Stack Overflow
+        - title: Usage
           external_url: http://stackoverflow.com/questions/tagged/jekyll
-        - title: Jekyll on my blog
+        - title: Advanced Usage
           external_url: http://idratherbewriting.com/category-jekyll/
-    - title: Products
+    - title: Developer
       folderitems:
-        - title: Jekyll Documentation Theme
+        - title: Getting Started
           url: /mydoc_introduction.html
-        - title: Product 1
+        - title: Advanced Usage
           url: /p1_landing_page.html
-        - title: Product 2
+        - title: Developer
           url: /p2_landing_page.html
