@@ -5,6 +5,7 @@ allowed-tags:
   - build
   - maven
   - getting_started
+  - architecture
   - content_types
   - navigation
   - formatting
