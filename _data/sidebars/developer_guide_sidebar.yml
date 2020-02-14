@@ -34,5 +34,9 @@ entries:
       url: /developer_guide_architecture_overview.html
       output: web, pdf
 
+    - title: Modules
+      url: /developer_guide_architecture_modules.html
+      output: web, pdf
+
 
   -
