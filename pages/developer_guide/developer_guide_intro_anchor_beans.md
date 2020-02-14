@@ -38,8 +38,8 @@ BeanXML is a basic XML standard for defining AnchorBeans, which just uses the [A
 
 Two types of properties can be specified in a bean:
 
-1. Non-nested property - Simple primitives (String, integer, double, boolean, etc.) can be defined as an XML element's attribute.
-2. Nested properties - defined as an element inside the definition of the containing element.
+1. **Non-nested property** - simple primitives (String, integer, double, boolean, etc.) can be defined as an XML element's attribute.
+2. **Nested property** - defined as an element inside the definition of the containing element.
 
 It follows that any bean in 2. must also be an AnchorBean. A tree forms of nested-beans who exist as properties of each other.
 
