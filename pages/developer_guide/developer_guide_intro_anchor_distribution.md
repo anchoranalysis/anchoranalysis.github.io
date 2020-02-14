@@ -1,5 +1,5 @@
 ---
-title: "Anchor distribution"
+title: "Introduction - Anchor distribution"
 tags: [build, maven, getting_started]
 keywords: distribution, maven, jars, release, build
 sidebar: developer_guide_sidebar

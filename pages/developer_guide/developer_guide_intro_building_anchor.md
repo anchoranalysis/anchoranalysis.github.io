@@ -1,5 +1,5 @@
 ---
-title: "Building Anchor"
+title: "Introduction - Building Anchor"
 tags: [build, maven, getting_started]
 keywords: maven, settings, repository, build, release
 sidebar: developer_guide_sidebar
