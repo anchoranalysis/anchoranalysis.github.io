@@ -93,13 +93,18 @@ The specific factory is specified as an attribute *config-factory* on the BeanXM
 
 ```xml
 <!-- Replaces the 'calculateLevel' bean nested-property on a thresholder -->
-<bean config-class="org.anchoranalysis.image.bean.threshold.ThresholderGlobal" key="calculateLevel" config-factory="replaceProperty">
-	
-	<item config-class="org.anchoranalysis.image.bean.threshold.ThresholderGlobal">
-		<calculateLevel config-class="org.anchoranalysis.image.bean.threshold.calculatelevel.Otsu"/>
-	</item>
-	
-	<replacement level="20" config-class="org.anchoranalysis.image.bean.threshold.calculatelevel.Constant"/>
+<bean
+    config-class="org.anchoranalysis.image.bean.threshold.ThresholderGlobal"
+    key="calculateLevel" config-factory="replaceProperty">
+
+    <item
+        config-class="org.anchoranalysis.image.bean.threshold.ThresholderGlobal">
+        <calculateLevel
+            config-class="org.anchoranalysis.image.bean.threshold.calculatelevel.Otsu" />
+    </item>
+
+    <replacement level="20"
+        config-class="org.anchoranalysis.image.bean.threshold.calculatelevel.Constant" />
 </bean>
 ```
 

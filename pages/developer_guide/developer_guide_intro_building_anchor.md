@@ -42,53 +42,57 @@ It is found at:
 Currently, this repository requires credentials to access, either to download-from (*read*) or to deploy-to (*write*). After Anchor is publicly released, public read-only access will be provided. Please contact Owen Feehan to obtain access to the repository.
 The repository also provides a web application at the same URL that provides for certain functions (search, upload).
 
-The credentials (username/password) should be specified in your private maven settings, e.g. in *operating system home directory*/.m2/settings.xml
+The credentials (username/password) should be specified in your private maven settings, e.g. in `$HOME/.m2/settings.xml` where `$HOME` is the user's *home directory*`.
+
+{% include note.html content="On Windows, a user's home directory is typically found at `C:\Users\owen\` (replace the username)." %}
 
 ```xml
-<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
-  <servers>
-    <server>
-		<id>anchor</id>
-		<username>yourusername</username>
-		<password>yourpassword</password>
-	</server>
-    <server>
-		<id>anchor-releases</id>
-		<username>yourusername</username>
-		<password>yourpassword</password>
-	</server>
-       <server>
-		<id>anchor-snapshots</id>
-		<username>yourusername</username>
-		<password>yourpassword</password>
-	</server>
-	<server>
-		<id>anchor-thirdparty</id>
-		<username>yourusername</username>
-		<password>yourpassword</password>
-	</server>
-  </servers>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+    <servers>
+        <server>
+            <id>anchor</id>
+            <username>yourusername</username>
+            <password>yourpassword</password>
+        </server>
+        <server>
+            <id>anchor-releases</id>
+            <username>yourusername</username>
+            <password>yourpassword</password>
+        </server>
+        <server>
+            <id>anchor-snapshots</id>
+            <username>yourusername</username>
+            <password>yourpassword</password>
+        </server>
+        <server>
+            <id>anchor-thirdparty</id>
+            <username>yourusername</username>
+            <password>yourpassword</password>
+        </server>
+    </servers>
 
-  <profiles>
-	    <profile>
-	      <id>anchorTestConfig</id>
-	      <properties>
-		     <anchor.home.test>C:\Users\SOMEUSER\Apps\anchor\</anchor.home.test>
-		     <anchor.home.deploy>C:\Users\SOMEUSER\Apps\anchor\</anchor.home.deploy>
-		     <maven.test.skip>true</maven.test.skip>
-		     <maven.javadoc.skip>true</maven.javadoc.skip>
-	      </properties>
-	    </profile>
-   </profiles>
- 
-  <activeProfiles>
-	<activeProfile>anchorTestConfig</activeProfile>
-  </activeProfiles>
+    <profiles>
+        <profile>
+            <id>anchorTestConfig</id>
+            <properties>
+                <anchor.home.test>C:\Users\SOMEUSER\Apps\anchor\</anchor.home.test>
+                <anchor.home.deploy>C:\Users\SOMEUSER\Apps\anchor\</anchor.home.deploy>
+                <maven.test.skip>true</maven.test.skip>
+                <maven.javadoc.skip>true</maven.javadoc.skip>
+            </properties>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>anchorTestConfig</activeProfile>
+    </activeProfiles>
 
 </settings>
 ```
 
-Replace *yourusername* and *yourpassword* appropriately, andupdate the ```anchor.home.test``` and anchor.```home.deploy``` variable to match the path where anchor is stored).
+Replace *yourusername* and *yourpassword* appropriately, and update the `anchor.home.test` and `anchor.home.deploy` variable to match the path where Anchor will be deployed to.
 
 
 ## Example commands
