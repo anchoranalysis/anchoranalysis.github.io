@@ -6,7 +6,7 @@ topnav:
 ##    - title: GitHub
  ##     external_url: https://github.com/tomjoht/documentation-theme-jekyll
     - title: Download
-      url: /download
+      url: /download.html
     - title: News
       url: /news
 
