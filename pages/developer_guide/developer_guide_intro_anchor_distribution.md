@@ -13,10 +13,10 @@ An *Anchor distribution* is a folder which contains all the jars and configurati
 
 | Folder | Description |
 |--------|-------------|
-| bin/ | anchor-launcher.jar and anchor-browser.jar and associated helper-applications |
-| lib/ | other anchor jars and third-party dependencies  |
-| config/ | default configuration files in [BeanXML](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Anchor%20Beans) for the anchor application |
-| configGUI/ | default configuration files in [BeanXML](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Anchor%20Beans) for the anchorGUI application |
+| `bin/` | anchor-launcher.jar and anchor-browser.jar and associated helper-applications |
+| `lib/` | other anchor jars and third-party dependencies  |
+| `config/` | default configuration files in [BeanXML](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Anchor%20Beans) for the anchor application |
+| `configGUI/` | default configuration files in [BeanXML](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Anchor%20Beans) for the anchorGUI application |
 
 {% include note.html content="Add the *bin/* directory to the `PATH` system environment variable for easy command-line usage." %}
 
