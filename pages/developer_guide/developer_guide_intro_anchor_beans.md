@@ -45,20 +45,63 @@ It follows that any bean in 2. must also be an AnchorBean. A tree forms of neste
 
 When certain operations are executed (duplication, configuration-checks etc.), they occur not only on the bean itself, but **recursively** on all its child properties i.e. duplicate() is a deep-copy not a shallow-copy
 
-## Special beans
+### Special beans
 We additionally add some special beans via custom-factories that make our life easier e.g.
 
 | Factory Name | Registered *config-factory* | Purpose
 |--------------|-----------------|--------
-| ListBeanFactory | list | for creating a List of items (itself not a bean!)
-| StringSetFactory | stringSet | for creating sets of strings (itself not a bean!)
-| IncludeBeanFactory | include | defines a bean in an external file
+| `ListBeanFactory` | list | for creating a List of items (itself not a bean!)
+| `StringSetFactory` | stringSet | for creating sets of strings (itself not a bean!)
+| `IncludeBeanFactory` | include | defines a bean in an external file
+| `ReplacePropertyBeanFactory` | replaceProperty | defines a bean in an external file
 
-![listsSets.png](https://bitbucket.org/repo/KrRXkad/images/821325361-listsSets.png)
+The specific factory is specified as an attribute *config-factory* on the BeanXML declaration.
 
-![includeReplace.png](https://bitbucket.org/repo/KrRXkad/images/2133611823-includeReplace.png)
+#### Lists of beans
 
-The specific factory is specified as an attribute *config-factory* on a xml element in the declaration.
+```xml
+<list config-class="java.util.List" config-factory="list">
+	<item config-class="org.anchoranalysis.bean.shared.regex.RegExSimple" matchString="*_red.tif$"/>
+	<item config-class="org.anchoranalysis.bean.shared.regex.RegExSimple" matchString="*_blue.tif$"/>
+</list>
+```
+
+#### String sets
+
+```xml
+<datasets config-class="org.anchoranalysis.bean.StringSet" config-factory="stringSet">
+	<item>jan30</item>
+	<item>feb05</item>
+	<item>feb16</item>
+</datasets>
+```
+
+#### Include (another BeanXML file)
+
+```xml
+<input filePath="inputManager.xml" config-class="org.anchoranalysis.io.bean.input.InputManager" config-factory="include"/>
+```
+
+#### Replace (a property with an alternative value)
+
+```xml
+<!-- Changes the end attribute (non-nested-property) -->
+<bean config-class="org.anchoranalysis.bean.shared.SequenceInteger" key="end" replacement="10" config-factory="replaceProperty">
+	<item config-class="org.anchoranalysis.bean.shared.SequenceInteger" start="1" end="5"/>
+</bean>
+```
+
+```xml
+<!-- Replaces the 'calculateLevel' bean nested-property on a thresholder -->
+<bean config-class="org.anchoranalysis.image.bean.threshold.ThresholderGlobal" key="calculateLevel" config-factory="replaceProperty">
+	
+	<item config-class="org.anchoranalysis.image.bean.threshold.ThresholderGlobal">
+		<calculateLevel config-class="org.anchoranalysis.image.bean.threshold.calculatelevel.Otsu"/>
+	</item>
+	
+	<replacement level="20" config-class="org.anchoranalysis.image.bean.threshold.calculatelevel.Constant"/>
+</bean>
+```
 
 ### Important prior step before usage
 
@@ -69,5 +112,14 @@ Code must always first call [RegisterBeanFactories](https://github.com/anchorana
 Certain types of beans require initialization-parameters before they can be used. These beans should derive from [InitializableBean](https://github.com/anchoranalysis/anchor/blob/master/anchor-bean/src/main/java/org/anchoranalysis/bean/init/InitializableBean.java), which provides helpful methods for recursively initializating a bean and all its nested children.
 
 The type of parameter is application-dependent, and typically another abstract-base-class will subclass *InitializableBean* and specify both the parameter-type and some further interfaces.
+
+### Package namespaces in JARs
+
+By convention, Anchor beans are always stored within a package `bean` in the root namespace of the JAR e.g.
+
+- org.anchoranalysis.image.**bean**.threshold.ThresholderGlobal
+- org.anchoranalysis.**bean**.StringSet
+- org.anchoranalysis.image.**bean**.unitvalue.distance.UnitValueDistanceVoxels
+
 
 {% include links.html %}
