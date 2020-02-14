@@ -1,5 +1,5 @@
 ---
-title: "Developer Guide - Architecture: Overview"
+title: "Architecture - Overview"
 tags: [getting_started, architecture]
 keywords: architecture, packages
 sidebar: developer_guide_sidebar

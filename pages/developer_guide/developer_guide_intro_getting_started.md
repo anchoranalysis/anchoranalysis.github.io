@@ -1,5 +1,5 @@
 ---
-title: "Developer Guide - Introduction: Getting Started"
+title: "Developer Guide - Getting started"
 tags: [getting_started]
 keywords: systems, nexus, jenkins, sonarqube, aws, github
 sidebar: developer_guide_sidebar
@@ -20,10 +20,10 @@ Services running on the build-server include:
 
 ## Key documents
 
-* [Building Anchor](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Building%20Anchor) - how to compile source-code into a working Anchor Distribution
-* [Architecture of Anchor](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Architecture%20of%20Anchor) - how the different repositories and JARs relate to each other
-* [Anchor Distribution](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Anchor%20Distribution) - the set of files a user receives to run Anchor
-* [Anchor Beans](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Anchor%20Beans) - what anchor-beans are and how to encode them in XML.
+* [Building Anchor](/developer_guide_intro_building_anchor.html) - how to compile source-code into a working Anchor Distribution
+* [Anchor Distribution](/developer_guide_intro_anchor_distribution.html) - the set of files a user receives to run Anchor
+* [Anchor Beans](/developer_guide_intro_anchor_beans.html) - what anchor-beans are and how to encode them in XML.
+* [Architecture Overview](/developer_guide_architecture_overview.html) - how the different repositories and JARs relate to each other.
 
 ## Coding documents
 

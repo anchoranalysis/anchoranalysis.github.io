@@ -1,5 +1,5 @@
 ---
-title: "Developer Guide - Introduction: Anchor Distribution"
+title: "Anchor distribution"
 tags: [build, maven, getting_started]
 keywords: distribution, maven, jars, release, build
 sidebar: developer_guide_sidebar
@@ -7,7 +7,7 @@ permalink: developer_guide_intro_anchor_distribution.html
 folder: developer_guide
 ---
 
-## What is an Anchor Distribution?
+## What is an Anchor distribution?
 
 An *Anchor distribution* is a folder which contains all the jars and configuration-files to run Anchor. It has the following structure:
 
@@ -20,7 +20,7 @@ An *Anchor distribution* is a folder which contains all the jars and configurati
 
 {% include note.html content="Add the *bin/* directory to the `PATH` system environment variable for easy command-line usage." %}
 
-## Launcher Aplications
+## Launcher applications
 
 Launcher applications (`anchor`, `anchor.exe`, `anchorGUI`, `anchorGUI.exe` etc.) run the relevant jar with a specific memory profile, also ensuring `lib/` and `plugins/`are added to the classpath.
 

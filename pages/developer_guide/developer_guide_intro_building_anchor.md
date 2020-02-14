@@ -1,5 +1,5 @@
 ---
-title: "Developer Guide - Introduction: Building Anchor"
+title: "Building anchor"
 tags: [build, maven, getting_started]
 keywords: maven, settings, repository, build, release
 sidebar: developer_guide_sidebar
@@ -7,26 +7,26 @@ permalink: developer_guide_intro_building_anchor.html
 folder: developer_guide
 ---
 
-# Building Anchor
+## Maven
 
 Anchor uses [Apache Maven](https://maven.apache.org/) as a build tool. As a prior step, Maven should be installed locally, and its binary directory should be placed in the system PATH variable.
 
 {% include note.html content="Anchor currently uses **Maven Version 3.3.9**." %}
 
-## Very quick Maven tutorial
-
 Tutorials on Maven are widely available. Here follows a very brief introduction.
 
-Maven combines a build-tool (similar to Ant) with repositories for storing versioned binary-artifacts that are created during the building process, together with dependencies.
+Maven combines a build-tool (similar to Ant) with repositories for storing versioned binary-artifacts (e.g. JARs) that are created during the building process, together with dependencies.
+
+There exists a private local maven repository (`$HOME/.m2/` sub-directory in your home-directory) where artifacts may be stored. This is typically combined with public maven repositories that provide third-party dependencies, and in our case, an organisational maven repository, called the *Anchor Maven Repository*. User-specific settings for the build can be set in `$HOME/.m2/settings.xml`.
 
 {% include note.html content="A file `pom.xml` specifies build-related settings." %}
+
+### Multi-module projects
 
 Anchor uses a **multi-module** setup, where there is a hierarchy of `pom.xml` files, from the top-level directory to each nested module. The module-specific `pom.xml` inherits certain settings from the `pom.xml` in its parent-folders.
 Each module pom.xml outlines an artifiactID and version, that determines how it is stored in the repository server.
 
 Actually Anchor uses *several* multi-module projects, each in its own repository. And the pom.xml in [anchor-pom repository](https://bitbucket.org/anchorimageanalysis/anchor-pom/src/master/) provides a top-level base POM from which all other projects inherit. This is a convenient location for global settings for the build process.
-
-There exists a private local maven repository (`$HOME/.m2/` sub-directory in your home-directory) where artifacts may be stored. This is typically combined with public maven repositories that provide third-party dependencies, and in our case, an organisational maven repository, called the *Anchor Maven Repository*. User-specific settings for the build can be set in `$HOME/.m2/settings.xml`.
 
 ## Anchor repository server
 
@@ -111,7 +111,7 @@ These commands can be executed in the top-level directory (and thus applied to a
 
 ## Assembly
 
-The *anchor-assembly* is a special module that doesn't generate a .jar artifact, but rather assembles the output of other modules (artifacts) into an [Anchor distribution](ARCHITECTURE.md).
+The *anchor-assembly* is a special module that doesn't generate a .jar artifact, but rather assembles the output of other modules (artifacts) into an [Anchor distribution](developer_guide_intro_anchor_distribution.html).
 
 It produces its output (after *mvn deploy*) in a sub-directory:
 > anchor-assembly/target/anchor-assembly-*version*-dist/

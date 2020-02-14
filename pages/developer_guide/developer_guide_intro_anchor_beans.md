@@ -1,5 +1,5 @@
 ---
-title: "Developer Guide - Introduction: Anchor Beans"
+title: "Anchor beans"
 tags:
 keywords: beans
 sidebar: developer_guide_sidebar
@@ -45,7 +45,7 @@ It follows that any bean in 2. must also be an AnchorBean. A tree forms of neste
 
 When certain operations are executed (duplication, configuration-checks etc.), they occur not only on the bean itself, but **recursively** on all its child properties i.e. duplicate() is a deep-copy not a shallow-copy
 
-## Special Beans
+## Special beans
 We additionally add some special beans via custom-factories that make our life easier e.g.
 
 | Factory Name | Registered *config-factory* | Purpose
