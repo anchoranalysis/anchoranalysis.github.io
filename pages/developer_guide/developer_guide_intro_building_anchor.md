@@ -11,7 +11,7 @@ folder: developer_guide
 
 Anchor uses [Apache Maven](https://maven.apache.org/) as a build tool. As a prior step, Maven should be installed locally, and its binary directory should be placed in the system PATH variable.
 
-Anchor currently uses **Maven Version 3.3.9**.
+{% include note.html content="Anchor currently uses **Maven Version 3.3.9**." %}
 
 ## Very quick Maven tutorial
 
@@ -19,18 +19,20 @@ Tutorials on Maven are widely available. Here follows a very brief introduction.
 
 Maven combines a build-tool (similar to Ant) with repositories for storing versioned binary-artifacts that are created during the building process, together with dependencies.
 
-A file *pom.xml* specifies build-related settings. In our case, we use a **multi-module** setup, where there is a hierarchy of *pom.xml* files, beginning in the top-level source directory, and then existing for each module. The module-specific *pom.xml* inherits certain settings from the *pom.xml* in its parent-folders.
+{% include note.html content="A file `pom.xml` specifies build-related settings." %}
+
+Anchor uses a **multi-module** setup, where there is a hierarchy of `pom.xml` files, from the top-level directory to each nested module. The module-specific `pom.xml` inherits certain settings from the `pom.xml` in its parent-folders.
 Each module pom.xml outlines an artifiactID and version, that determines how it is stored in the repository server.
 
-Actually we use several multi-module projects, with each repository having its own. And the pom.xml in [anchor-pom repository](https://bitbucket.org/anchorimageanalysis/anchor-pom/src/master/) provides a top-level base POM from which all other projects inherit (providing useful global variables for Maven).
+Actually Anchor uses *several* multi-module projects, each in its own repository. And the pom.xml in [anchor-pom repository](https://bitbucket.org/anchorimageanalysis/anchor-pom/src/master/) provides a top-level base POM from which all other projects inherit. This is a convenient location for global settings for the build process.
 
-For other user-specific variables and files, there exists a private local maven repository (*.m2* sub-directory in your home-directory) where artifacts may be stored. This is typically combined with public maven repositories that provide third-party dependencies, and in our case, an organisational maven repository, called the *Anchor Maven Repository*.
+There exists a private local maven repository (`$HOME/.m2/` sub-directory in your home-directory) where artifacts may be stored. This is typically combined with public maven repositories that provide third-party dependencies, and in our case, an organisational maven repository, called the *Anchor Maven Repository*. User-specific settings for the build can be set in `$HOME/.m2/settings.xml`.
 
 ## Anchor repository server
 
 This is an organisational repository, specific to Anchor, that provides three functions:
 
- * It stores versioned-jars of Anchor
+ * It stores versioned-jars of Anchor.
  * It provides several third-party dependencies that don't have corresponding public repositories.
  * It mirrors and caches public repositories for quicker downloads of dependencies.
 
@@ -38,19 +40,19 @@ It is found at:
 > http://maven.anchoranalysis.org:8081/nexus/
 
 Currently, this repository requires credentials to access, either to download-from (*read*) or to deploy-to (*write*). After Anchor is publicly released, public read-only access will be provided. Please contact Owen Feehan to obtain access to the repository.
+The repository also provides a web application at the same URL that provides for certain functions (search, upload).
 
 The credentials (username/password) should be specified in your private maven settings, e.g. in *operating system home directory*/.m2/settings.xml
 
 ```xml
-<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
   <servers>
-       <server>
+    <server>
 		<id>anchor</id>
 		<username>yourusername</username>
 		<password>yourpassword</password>
 	</server>
-       <server>
+    <server>
 		<id>anchor-releases</id>
 		<username>yourusername</username>
 		<password>yourpassword</password>
@@ -67,7 +69,6 @@ The credentials (username/password) should be specified in your private maven se
 	</server>
   </servers>
 
-
   <profiles>
 	    <profile>
 	      <id>anchorTestConfig</id>
@@ -81,15 +82,13 @@ The credentials (username/password) should be specified in your private maven se
    </profiles>
  
   <activeProfiles>
-<activeProfile>anchorTestConfig</activeProfile>
+	<activeProfile>anchorTestConfig</activeProfile>
   </activeProfiles>
 
 </settings>
 ```
 
-Replace *yourusername* and *yourpassword* appropriately, and create a sensible path on your file-system for storing anchor (and update the ```anchor.home.test``` and anchor.```home.deploy``` variable to match it).
-
-The repository also provides a web application at the same URL that provides for certain functions (search, upload).
+Replace *yourusername* and *yourpassword* appropriately, andupdate the ```anchor.home.test``` and anchor.```home.deploy``` variable to match the path where anchor is stored).
 
 
 ## Example commands
@@ -123,20 +122,20 @@ And as a further step, it copies this output into the path defined by ```anchor.
 
 ## Complete build of Anchor
 
-To completely build Anchor from scratch. Assume first:
+To completely build Anchor from scratch. Pre-conditions:
 
 * You've learnt Maven basics.
 * You've configured the ```$HOME/.m2/settings.xml``` file.
-* You've cloned all the Anchor Java repositories from bitbucket.
+* You've cloned all necessary Anchor Java repositories from [GitHub](https://github.com/anchoranalysis/) (see below).
 
 Then execute the command ```mvn deploy``` in the parent directory of each repository **IN THIS ORDER**.
 
-1. anchor-pom
-2. anchor
-3. anchor-plugins
-4. anchor-plugins-gpl
-5. anchor-gui
-6. anchor-assembly
+1. `anchor-pom/`
+2. `anchor/`
+3. `anchor-plugins/`
+4. `anchor-plugins-gpl/`
+5. `anchor-gui/`
+6. `anchor-assembly/`
 
 The order is important to match the dependency structure between repositories, as viewable [here](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Architecture%20of%20Anchor).
 

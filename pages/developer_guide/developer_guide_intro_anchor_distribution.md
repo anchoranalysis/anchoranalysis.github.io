@@ -18,12 +18,12 @@ An *Anchor distribution* is a folder which contains all the jars and configurati
 | config/ | default configuration files in [BeanXML](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Anchor%20Beans) for the anchor application |
 | configGUI/ | default configuration files in [BeanXML](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Anchor%20Beans) for the anchorGUI application |
 
-**N.B. The *bin/* directory should usually be added to the system PATH variable** for easy command-line usage.
+{% include note.html content="Add the *bin/* directory to the `PATH` system environment variable for easy command-line usage." %}
 
-## Helper applications
+## Launcher Aplications
 
-Helper-applications (*anchor*, *anchor.exe*, *anchorGUI*, *anchorGUI.exe* etc.) start the relevant jar with a specific memory profile, and making sure *lib/* and *plugins/* folder are also added to the classpath.
+Launcher applications (`anchor`, `anchor.exe`, `anchorGUI`, `anchorGUI.exe` etc.) run the relevant jar with a specific memory profile, also ensuring `lib/` and `plugins/`are added to the classpath.
 
-The UNIX helper applications (*anchor* and *anchorGUI*) are BASH scripts that can be easily edited.
+The UNIX launcher applications (`anchor` and `anchorGUI`) are BASH scripts that can be easily edited.
 
-The Windows helper applications (*anchor.exe* and *anchorGUI.exe*) use [Launch4J](http://launch4j.sourceforge.net/) to launch Java directly from windows. These are created during the Maven build process.
+The Windows launcher applications (`anchor.exe` and `anchorGUI.exe`) use [Launch4J](http://launch4j.sourceforge.net/) to launch Java directly from windows. These are created during the Maven build process.
