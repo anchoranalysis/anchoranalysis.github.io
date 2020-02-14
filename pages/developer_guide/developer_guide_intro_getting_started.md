@@ -20,8 +20,8 @@ Services running on the build-server include:
 
 ## Key documents
 
-* [Building Anchor](/developer_guide_intro_building_anchor.html) - how to compile source-code into a working Anchor Distribution
-* [Anchor Distribution](/developer_guide_intro_anchor_distribution.html) - the set of files a user receives to run Anchor
+* [Building Anchor](/developer_guide_intro_building_anchor.html) - how to compile source-code into a working Anchor Distribution.
+* [Anchor Distribution](/developer_guide_intro_anchor_distribution.html) - the set of files a user receives to run Anchor.
 * [Anchor Beans](/developer_guide_intro_anchor_beans.html) - what anchor-beans are and how to encode them in XML.
 * [Architecture Overview](/developer_guide_architecture_overview.html) - how the different repositories and JARs relate to each other.
 

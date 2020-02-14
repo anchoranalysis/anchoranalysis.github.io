@@ -37,4 +37,4 @@ An effort is ongoing to create documentation and address technical debt in advan
 
 ## Author
 
-[Owen Feehan](http://www.owenfeehan.com) - developed since 2010 across employment in [ETH Zurich](https://ethz.ch/en.html), the [University of Zurich](https://www.uzh.ch/en.html) and [Hoffmann-La Roche](https://www.roche.com/). Licensed open-source.
+[Owen Feehan](http://www.owenfeehan.com) - developed since 2010 across employment in [ETH Zurich](https://ethz.ch/en.html), the [University of Zurich](https://www.uzh.ch/en.html) and [Hoffmann-La Roche](https://www.roche.com/). Licensed [open source](/download.html#licensing).
