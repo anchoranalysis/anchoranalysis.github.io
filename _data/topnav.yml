@@ -16,19 +16,17 @@ topnav_dropdowns:
   folders:
     - title: Getting Started
       folderitems:
-        - title: What is Anchor?
-          url: /what_is.html
+#        - title: What is Anchor?
+#          url: /what_is.html
         - title: Installation
-          url: /installation
-        - title: Usage
-          url: /usage
-        - title: Advanced Usage
-          url: /advanced_usage
+          url: /installation.html
+        - title: User Guide
+          url: /user_guide_intro_getting_started.html
     - title: Developer
       folderitems:
         - title: Developer Guide
           url: /developer_guide_intro_getting_started.html
-        - title: Javadocs
-          url: /javadocs_landing_page.html
+        #- title: Javadocs
+        #  url: /javadocs_landing_page.html
         - title: GitHub
           external_url: https://github.com/anchoranalysis
