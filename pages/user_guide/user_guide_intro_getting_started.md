@@ -68,7 +68,7 @@ Some example commands:
 Alternatively, an entire experiment (including all three parts) can be defined in BeanXML, and simply called from
 the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
-{% include note.html content="To see the BeanXML, look at `config/defaultExperiment.xml` or `config/tasks` (for the default tasks). Under the hood, an experiment has more than three elements and parameterization aplenty, all initially hidden by defaults." %}
+{% include note.html content="To see BeanXML, look in the Anchor Distribution for `config/defaultExperiment.xml` or `config/tasks/`. Under the hood, an experiment has more than three elements and parameterization aplenty, all initially hidden by defaults." %}
 
 
 
