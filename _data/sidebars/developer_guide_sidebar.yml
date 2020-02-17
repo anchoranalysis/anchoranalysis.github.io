@@ -24,7 +24,7 @@ entries:
       
     - title: Anchor beans
       url: /developer_guide_anchor_beans.html
-      output: web, pdf      
+      output: web, pdf
 
   - title: Architecture
     output: web, pdf
@@ -38,5 +38,7 @@ entries:
       url: /developer_guide_architecture_modules.html
       output: web, pdf
 
-
+    - title: Error handling
+      url: /developer_guide_architecture_error_handling.html
+      output: web, pdf
   -

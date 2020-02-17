@@ -27,7 +27,7 @@ Services running on the build-server include:
 
 ## Coding documents
 
-* [Error Handling](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Error%20Handling) - how to code to generate user-friendly error messages
+* [Error Handling](/developer_guide_architecture_error_handling.html) - how to code to generate user-friendly error messages
 
 ## Other documents
 
