@@ -3,7 +3,7 @@ title: "Introduction - Anchor distribution"
 tags: [build, maven, getting_started]
 keywords: distribution, maven, jars, release, build
 sidebar: developer_guide_sidebar
-permalink: developer_guide_intro_anchor_distribution.html
+permalink: developer_guide_anchor_distribution.html
 folder: developer_guide
 ---
 

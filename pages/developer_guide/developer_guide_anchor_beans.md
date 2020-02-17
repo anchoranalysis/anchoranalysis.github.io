@@ -3,7 +3,7 @@ title: "Introduction - Anchor beans"
 tags:
 keywords: beans
 sidebar: developer_guide_sidebar
-permalink: developer_guide_intro_anchor_beans.html
+permalink: developer_guide_anchor_beans.html
 folder: developer_guide
 ---
 

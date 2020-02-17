@@ -3,7 +3,7 @@ title: "Introduction - Building Anchor"
 tags: [build, maven, getting_started]
 keywords: maven, settings, repository, build, release
 sidebar: developer_guide_sidebar
-permalink: developer_guide_intro_building_anchor.html
+permalink: developer_guide_building_anchor.html
 folder: developer_guide
 ---
 
@@ -115,7 +115,7 @@ These commands can be executed in the top-level directory (and thus applied to a
 
 ## Assembly
 
-The *anchor-assembly* is a special module that doesn't generate a .jar artifact, but rather assembles the output of other modules (artifacts) into an [Anchor distribution](developer_guide_intro_anchor_distribution.html).
+The *anchor-assembly* is a special module that doesn't generate a .jar artifact, but rather assembles the output of other modules (artifacts) into an [Anchor distribution](developer_guide_anchor_distribution.html).
 
 It produces its output (after *mvn deploy*) in a sub-directory:
 > anchor-assembly/target/anchor-assembly-*version*-dist/

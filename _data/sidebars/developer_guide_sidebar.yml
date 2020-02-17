@@ -15,15 +15,15 @@ entries:
       type: homepage
 
     - title: Anchor distribution
-      url: /developer_guide_intro_anchor_distribution.html
+      url: /developer_guide_anchor_distribution.html
       output: web, pdf
 
     - title: Building Anchor
-      url: /developer_guide_intro_building_anchor.html
+      url: /developer_guide_building_anchor.html
       output: web, pdf
       
     - title: Anchor beans
-      url: /developer_guide_intro_anchor_beans.html
+      url: /developer_guide_anchor_beans.html
       output: web, pdf      
 
   - title: Architecture
