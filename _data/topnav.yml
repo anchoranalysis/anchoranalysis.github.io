@@ -3,8 +3,8 @@
 topnav:
 - title: Topnav
   items:
-##    - title: GitHub
- ##     external_url: https://github.com/tomjoht/documentation-theme-jekyll
+    - title: GitHub
+      external_url: https://github.com/anchoranalysis
     - title: Download
       url: /download.html
     - title: News
@@ -21,11 +21,11 @@ topnav_dropdowns:
         - title: Installation
           url: /installation.html
         - title: User Guide
-          url: /user_guide_intro_getting_started.html
+          url: /user_guide.html
     - title: Developer
       folderitems:
         - title: Developer Guide
-          url: /developer_guide_intro_getting_started.html
+          url: /developer_guide.html
         #- title: Javadocs
         #  url: /javadocs_landing_page.html
         - title: GitHub

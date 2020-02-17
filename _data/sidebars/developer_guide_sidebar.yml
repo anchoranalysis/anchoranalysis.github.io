@@ -10,7 +10,7 @@ entries:
     folderitems:
 
     - title: Getting started
-      url: /developer_guide_intro_getting_started.html
+      url: /developer_guide.html
       output: web, pdf
       type: homepage
 

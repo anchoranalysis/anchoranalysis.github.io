@@ -1,9 +1,9 @@
 ---
-title: "User Guide - Getting started"
+title: "User Guide - Essentials"
 tags: [getting_started]
 keywords:
 sidebar: user_guide_sidebar
-permalink: user_guide_intro_getting_started.html
+permalink: user_guide.html
 folder: user_guide
 ---
 

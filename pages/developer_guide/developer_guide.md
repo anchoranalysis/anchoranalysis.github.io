@@ -3,7 +3,7 @@ title: "Developer Guide - Getting started"
 tags: [getting_started]
 keywords: systems, nexus, jenkins, sonarqube, aws, github
 sidebar: developer_guide_sidebar
-permalink: developer_guide_intro_getting_started.html
+permalink: developer_guide.html
 folder: developer_guide
 ---
 
