@@ -13,4 +13,7 @@ entries:
       url: /user_guide.html
       output: web, pdf
       type: homepage
+    - title: BeanXML
+      url: /user_guide_bean_xml.html
+      output: web, pdf
   -
