@@ -127,7 +127,7 @@ Experiment TestDefaultCommandLineExperiment_1.0 completed (2s)
 
 Note the complex output with execution details printed on incremental lines as the three inputs are executed.
 - Each time a job (for an input) starts or ends, an event line is printed, and with an updated overall status.
-- On the right-side, the name of the input is indicated, and the execution-time (for END events).
+- On the right-side, the name of the input is indicated (as well as the job execution-time for `END` events).
 
 Files are created
 
