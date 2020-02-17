@@ -28,8 +28,8 @@ To run an experiment, these three elements must be defined, though often by defa
 Anchor offers first sensible defaults, allowing for greater definition later.
 
 The default-experiment occurs when you type `anchor` without arguments, and:
-1. reads image files (**inputs**) from the current working directory
-2. prints some summary information (a **task**)
+1. reads image files (**inputs**) from the current working directory.
+2. prints some summary information (a **task**).
 3. produces no **outputs**.
 
 ```
