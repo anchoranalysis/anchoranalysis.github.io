@@ -23,7 +23,7 @@ Inputs are usually images (or images plus extras). Outputs can be images, text-f
 
 To run an experiment, these three elements must be defined, though often by defaults.
 
-### Defining the three elements
+### Defining experiments
 
 Anchor offers first sensible defaults, allowing for greater definition later.
 
@@ -61,14 +61,13 @@ Some example commands:
 - `anchor -t summarizeImages`
 - `anchor -i sunday-hike.xml -t generate_thumbnail.xml -o ../thumbnails/`
 
-#### Defining all elements together in BeanXML
+#### Defining in BeanXML
 
-Alternatively, an entire experiment (including all three parts) can be defined in BeanXML, and simply called from
-the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
+Not just element-wise (with `-i`, `-t`, `-o` etc.), but an entire experiment can be defined in BeanXML, and simply called from the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
-{% include note.html content="To see BeanXML, look in the Anchor Distribution for `config/defaultExperiment.xml` or `config/tasks/`." %}
+{% include note.html content="To see BeanXML look in the Anchor Distribution for `config/defaultExperiment.xml` or `config/tasks/`." %}
 
-In full reality, an experiment has more than three elements, as well as wide parameterization possibilities, all initially hidden by defaults. BeanXML provides fuller control.
+In full reality, an experiment has more than three elements, as well as wide parameterization possibilities, all initially hidden by defaults. BeanXML provides more fined-grained definition.
 
 
 ### Outputs and logs are structured
