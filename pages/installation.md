@@ -1,7 +1,7 @@
 ---
 title: "Installation"
 keywords: install download anchor image analysis microscopy
-tags:
+tags: [getting_started]
 sidebar:
 permalink: installation.html
 hide_sidebar: true

@@ -1,6 +1,6 @@
 ---
 title: "Architecture - Overview"
-tags: [getting_started, architecture]
+tags: [architecture]
 keywords: architecture, packages
 sidebar: developer_guide_sidebar
 permalink: developer_guide_architecture_overview.html
