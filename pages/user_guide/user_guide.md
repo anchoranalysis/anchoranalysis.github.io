@@ -11,13 +11,13 @@ folder: user_guide
 
 ### Experiments are inputs, task, outputs
 
-An experiment is *roughly-speaking* the application of a task on inputs to produce outputs.
+An experiment is *roughly-speaking* the execution of a **task** on **inputs** to produce **outputs**.
 
 ```
 outputs = task(inputs)
 ```
 
-Inputs are usually images (or images plus extras). Outputs can be images, text-files, CSVs, XML or any other type.
+Inputs are usually images (or images plus extras). Outputs can be images, text-files, CSVs, XML or any other file-type.
 
 {% include warning.html content="Some tasks produce no outputs, simply writing text to the console." %}
 
@@ -54,7 +54,7 @@ Each element **(inputs, task, outputs)** can be further defined using a command-
  glob like `*.jpg` | defines **files for inputs** (only valid with `-i`) |
  other string | defines a **directory-location** for inputs/outputs, or the **task-name** for tasks |
 
-Tasks range from simple operations to complex pipelines of image processing operations (defined in BeanXML). A range of default tasks accompany Anchor, that can be identified by a string e.g. `list`, `summarizeImages`, `histogram`.
+Tasks range from simple operations to complex pipelines of image processing operations (defined in BeanXML). A range of default tasks accompany Anchor that can be identified by a string e.g. `list`, `summarizeImages`, `histogram`.
 
 Some example commands:
 - `anchor -i '..\*.png' -t grayscale -o c:\Temp\GrayscaleAlbum\`
@@ -63,11 +63,11 @@ Some example commands:
 
 #### Defining in BeanXML
 
-Not just element-wise (with `-i`, `-t`, `-o` etc.), but an entire experiment can be defined in BeanXML, and simply called from the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
+Instead of element-wise definition on the command line (with `-i`, `-t`, `-o` etc.), an entire experiment can be defined in BeanXML, and simply called from the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
 {% include note.html content="To see BeanXML look in the Anchor Distribution for `config/defaultExperiment.xml` or `config/tasks/`." %}
 
-In full reality, an experiment has more than three elements, as well as wide parameterization possibilities, all initially hidden by defaults. BeanXML provides more fined-grained definition.
+In full reality, an experiment has more than three elements, as well as wide parameterization possibilities, all initially hidden by defaults. BeanXML provides more finely-grained definition.
 
 
 ### Outputs and logs are structured
