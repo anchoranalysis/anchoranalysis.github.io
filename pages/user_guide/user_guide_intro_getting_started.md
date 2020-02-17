@@ -19,7 +19,7 @@ outputs = task(inputs)
 
 Inputs are usually images (or images plus other files). Outputs can be images, text-files, CSVs, XML or any other type.
 
-Some tasks produce no outputs, simply writing text to the console/log.
+Some tasks produce no outputs, simply writing text to the console (log).
 
 To run an experiment, these three elements must be defined, though often by defaults.
 
