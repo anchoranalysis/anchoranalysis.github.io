@@ -68,7 +68,7 @@ the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
 {% include note.html content="To see BeanXML, look in the Anchor Distribution for `config/defaultExperiment.xml` or `config/tasks/`." %}
 
-Under the hood, an experiment has more than three elements and parameterization aplenty, all initially hidden by defaults.
+In full reality, an experiment has more than three elements, as well as wide parameterization possibilities, all initially hidden by defaults. BeanXML provides fuller control.
 
 
 ### Outputs and logs are structured
