@@ -15,6 +15,7 @@ Please download the [latest version](http://www.github.org/blahblah) from GitHub
 
 {% include warning.html content="Anchor is currently only available pre-alpha, due to ongoing [project status](/index.html#projectStatus)." %}
 
+After downloading, please follow the [installation](installation.html) steps.
 
 ## Licensing {#licensing}
 
