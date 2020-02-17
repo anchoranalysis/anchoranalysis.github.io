@@ -66,8 +66,9 @@ Some example commands:
 Alternatively, an entire experiment (including all three parts) can be defined in BeanXML, and simply called from
 the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
-{% include note.html content="To see BeanXML, look in the Anchor Distribution for `config/defaultExperiment.xml` or `config/tasks/`. Under the hood, an experiment has more than three elements and parameterization aplenty, all initially hidden by defaults." %}
+{% include note.html content="To see BeanXML, look in the Anchor Distribution for `config/defaultExperiment.xml` or `config/tasks/`." %}
 
+Under the hood, an experiment has more than three elements and parameterization aplenty, all initially hidden by defaults.
 
 
 ### Outputs and logs are structured
@@ -80,7 +81,7 @@ Outputs are produced in **a particular location. INSERT more here**.
 
 #### Parallelization
 
-Inputs are processed in parallel if possible. Some tasks can be executed each input entirely independently, and so fully in parallel across all available cores; others involve shared memory and a mixture of parallel and sequential steps.
+Inputs are processed in parallel if possible. Some tasks can be executed each input entirely independently, and so fully in parallel across cores (processors); others involve shared memory and a mixture of parallel and sequential steps.
 
 {% include note.html content="For quick tasks that produce no outputs (i.e. log text only), the execution details are suppressed from the console. For more complicated-tasks, execution details are incrementally printed to the console. Observe if any errors occur!" %}
 
