@@ -39,11 +39,11 @@ For Anchor:
 
 Please use the standard ways to set environment variables, e.g. for [Windows](https://www.computerhope.com/issues/ch000549.htm), and for Linux and macOS, lines can be added at the end of `$HOME/.bash_profile` ala:
 
-~~~~
+```shell
 export JAVA_HOME=/SOME_PATH_TO_JDK
 export PATH=/SOME_PATH_TO_JDK/bin:/SOME_PATH_TO_ANCHOR/bin/:$PATH
 export ANCHOR_HOME=/SOME_PATH_TO_ANCHOR/
-~~~~
+```
 
 ### 4. Installation complete - test the command!
 
