@@ -9,13 +9,13 @@ toc: false
 disable_editme: true
 ---
 
-## Quick Installation Steps
+## Quick Instructions
 
-{% include note.html content="[download](download.html), unzip, and add the `bin/` directory to `$PATH`" %}
+[Download](download.html), unzip, and add the `bin/` directory to `$PATH`
 
 {% include important.html content="Ensure you have a [JRE](https://www.java.com/download) and `$JAVA_HOME` properly configured." %}
 
-## Detailed Installation Steps
+## Detailed Instructions
 
 ### 1. Download and unpack
 
