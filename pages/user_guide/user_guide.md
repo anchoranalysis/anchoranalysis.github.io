@@ -112,17 +112,15 @@ Then let's generate histograms (produces output **with** execution-details):
 ```
 PS D:\Users\owen\Pictures\SomeAlbum> anchor -t histogram                                                                Experiment TestDefaultCommandLineExperiment_1.0 started writing to C:\Users\owen\anchor\TestDefaultCommandLineExperiment_1.0
 Using 7 processors from: 8
+Job    3:       START   [  0 compl,   3 exec,   0 rem of   3]           mar
 Job    1:       START   [  0 compl,   3 exec,   0 rem of   3]           feb
 Job    2:       START   [  0 compl,   3 exec,   0 rem of   3]           jan
-Job    3:       START   [  0 compl,   3 exec,   0 rem of   3]           mar
-Job    3:       END     [  2 compl,   1 exec,   0 rem of   3]   (2s)    mar
-Job    1:       END     [  2 compl,   1 exec,   0 rem of   3]   (2s)    feb
-Job    2:       END     [  3 compl,   0 exec,   0 rem of   3]   (2s)    jan
-Writing histogram for all/chnl-0 into C:\Users\owen\anchor\TestDefaultCommandLineExperiment_1.0\all
-Writing histogram for all/chnl-1 into C:\Users\owen\anchor\TestDefaultCommandLineExperiment_1.0\all
-Writing histogram for all/chnl-2 into C:\Users\owen\anchor\TestDefaultCommandLineExperiment_1.0\all
-All 3 jobs completed successfully. The average execution time was 2.239 ms.
-Experiment TestDefaultCommandLineExperiment_1.0 completed (2s)
+Job    2:       END     [  1 compl,   2 exec,   0 rem of   3]   (1s)    jan
+Job    3:       END     [  2 compl,   1 exec,   0 rem of   3]   (1s)    mar
+Job    1:       END     [  3 compl,   0 exec,   0 rem of   3]   (1s)    feb
+Writing 3 grouped histograms into C:\Users\owen\anchor\TestDefaultCommandLineExperiment_1.0\grouped
+All 3 jobs completed successfully. The average execution time was 1.698 ms.
+Experiment TestDefaultCommandLineExperiment_1.0 completed (1s)
 ```
 
 Note the complex output with execution details printed on incremental lines as the three inputs are executed.
