@@ -9,7 +9,13 @@ toc: false
 disable_editme: true
 ---
 
-## Installation Steps
+## Quick Installation Steps
+
+{% include note.html content="[download](download.html), unzip, and add the `bin/` directory to `$PATH`" %}
+
+{% include important.html content="Ensure you have a [JRE](https://www.java.com/download) and `$JAVA_HOME` properly configured." %}
+
+## Detailed Installation Steps
 
 ### 1. Download and unpack
 
@@ -28,8 +34,7 @@ For the JRE (often already performed):
 2. Ensure the directory for the `java` application exists in the `PATH` variable.
 
 For Anchor:
-3. Add the `bin/` subdirectory of the anchor-distribution to `PATH`.
-4. Set up `ANCHOR_HOME` to point to the root-directory of the anchor-distribution. 
+3. Add the `bin/` subdirectory of the anchor-distribution to `PATH`. 
 
 
 Please use the standard ways to set environment variables, e.g. for [Windows](https://www.computerhope.com/issues/ch000549.htm), and for Linux and macOS, lines can be added at the end of `$HOME/.bash_profile` ala:
