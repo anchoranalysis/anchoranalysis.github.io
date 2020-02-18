@@ -11,11 +11,9 @@ disable_editme: true
 
 Anchor can be downloaded as a distribution (zip or tar.gz). This must be unpacked into a directory, followed by setting some environment variables.
 
-Please download the [latest version](http://www.github.org/blahblah) from GitHub and then follow the Installation guide.
+Please download the [latest version](http://www.github.org/blahblah) from GitHub and then follow the [Installation Guide](installation.html).
 
 {% include warning.html content="Anchor is currently only available pre-alpha, due to ongoing [project status](/index.html#projectStatus)." %}
-
-After downloading, please follow the [installation](installation.html) steps.
 
 ## Licensing {#licensing}
 
