@@ -7,7 +7,7 @@ permalink: developer_guide_architecture_overview.html
 folder: developer_guide
 ---
 
-## Repositories
+## Repositories {#repositories}
 
 The Anchor platform is spread across many library components (Maven *modules*), each packaged into a jar. Bundles of jars are packaged into different repositories:
 

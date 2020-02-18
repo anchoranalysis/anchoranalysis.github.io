@@ -141,6 +141,6 @@ Then execute the command ```mvn deploy``` in the parent directory of each reposi
 5. `anchor-gui/`
 6. `anchor-assembly/`
 
-The order is important to match the dependency structure between repositories, as viewable [here](/developer_guide_architecture_overview.html).
+The order is important to match the[ dependency structure between repositories](/developer_guide_architecture_overview.html#repositories).
 
 The final command will copy a distribution into ```anchor.home.deploy```.
