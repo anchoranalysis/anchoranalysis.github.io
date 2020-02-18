@@ -55,4 +55,6 @@ Open a shell (e.g. Command Prompt or PowerShell in Windows) in a directory with 
 anchor
 ```
 
-Follow the [User Guide](user_guide.html) to learn more.
+{% include tip.html content="Follow the [User Guide](user_guide.html) to learn more." %}
+
+
