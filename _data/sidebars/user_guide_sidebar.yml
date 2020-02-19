@@ -13,6 +13,9 @@ entries:
       url: /user_guide.html
       output: web, pdf
       type: homepage
+    - title: Supported Image Formats
+      url: /user_guide_supported_formats.html
+      output: web, pdf      
     - title: BeanXML
       url: /user_guide_bean_xml.html
       output: web, pdf
