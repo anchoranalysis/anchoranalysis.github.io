@@ -71,7 +71,7 @@ Some example commands:
 
 Instead of element-wise definition on the command line (with `-i`, `-t`, `-o` etc.), an entire experiment can be defined in BeanXML, and simply called from the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
-{% include note.html content="To see BeanXML look in the Anchor Distribution for `config/defaultExperiment.xml` or `config/tasks/`" %}
+{% include tip.html content="To see BeanXML look in the Anchor Distribution for `config/defaultExperiment.xml` or `config/tasks/`" %}
 
 In full reality, an experiment has more than three elements, as well as wide parameterization possibilities, all initially hidden by defaults. BeanXML provides more finely-grained definition.
 
