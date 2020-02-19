@@ -20,11 +20,13 @@ topnav_dropdowns:
 #          url: /what_is.html
         - title: Installation
           url: /installation.html
-        - title: User Guide
+        - title: User guide
           url: /user_guide.html
+        - title: Supported formats
+          url: /user_guide_supported_formats.html
     - title: Developer
       folderitems:
-        - title: Developer Guide
+        - title: Developer guide
           url: /developer_guide.html
         #- title: Javadocs
         #  url: /javadocs_landing_page.html

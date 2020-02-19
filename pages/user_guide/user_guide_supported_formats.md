@@ -1,6 +1,6 @@
 ---
 title: "User Guide - Supported image formats"
-tags:
+tags: [getting_started]
 keywords: formats
 sidebar: user_guide_sidebar
 permalink: user_guide_supported_formats.html
@@ -40,9 +40,11 @@ And when encoded onto a filesystem:
 Anchor supports much of this diversity:
 
 * 2D/3D rectangular images with arbitrary number of channels and pixel-size, and 8-bit/16-bit color depths (some limited support for other depths). This is sufficient to include conventional photography, and many forms of biomedical, geospatial or scientific images.
-* It also has limited support for time-series and other indexed forms of images.
-* Certain limited forms of metadata (pixel size, channel names) are supported, but other metadata is not considered.
-* It offers other Anchor-specific structures for object-segmentations (pixel subregions, encoded into [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format)) and  geometric shapes (useful for annotations and certain kinds of processing).
+* Time-series and other indexed forms of images (in a limited way).
+* Certain forms of metadata (pixel size, channel names) but not others.
+* Anchor-specific data structures for object-segmentations (pixel subregions, encoded into [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format)) and  geometric shapes (useful for shape annotations and certain kinds of processing).
+
+{% include note.html content="Remember, in all cases, anchor supports **sets** of these image-types, rather than processing only single images." %}
 
 ### Image file formats
 
@@ -50,7 +52,7 @@ The drivers for reading images in Anchor are termed *readers* and all inherit fr
 
 #### Default Reader - Bioformats
 
-The default reader, [org.anchoranalysis.plugin.io.bean.rasterreader.BioformatsReader](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/rasterreader/BioformatsReader.java) for reading images employs [Bioformats](https://www.openmicroscopy.org/bio-formats/) a popular open source library for reading microscopy and digital pathology images - as well as conventional photographs.
+The default reader, [org.anchoranalysis.plugin.io.bean.rasterreader.BioformatsReader](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/rasterreader/BioformatsReader.java), employs [Bioformats](https://www.openmicroscopy.org/bio-formats/) a popular open source library for reading microscopy and digital pathology images - as well as conventional photographs.
 
 Please see the full list of Bioformat's [150 supported formats](https://docs.openmicroscopy.org/bio-formats/6.3.1/supported-formats.html) - with varying degrees of  support.
 
@@ -58,7 +60,7 @@ Please see the full list of Bioformat's [150 supported formats](https://docs.ope
 
 #### Multi-file driver
 
-Another driver, the [org.anchoranalysis.plugin.io.bean.rasterreader.MultiFileReader](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/rasterreader/MultiFileReader.java) virtually combines different files into a single image (as varying channels, or varying z-stacks in a 3D image, or varying timepoints in a time-series). A regular-expression is used for matching file-paths.
+Another driver, the [org.anchoranalysis.plugin.io.bean.rasterreader.MultiFileReader](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/rasterreader/MultiFileReader.java) virtually combines different files into a single image (as varying channels, or varying z-stacks in a 3D image, or varying timepoints in a time-series). A regular-expression is used to match file-paths.
 
 
 #### Helper *utility* drivers
@@ -77,5 +79,12 @@ Other drivers  in `org.anchoranalysis.plugin.io.bean.rasterreader` provide usefu
 #### Custom drivers
 
 Drivers for a wider range of formats are architecturally easily possible, but not currently implemented in the standard Anchor distribution.
+
+### Changing the default driver
+
+The default `RasterReader` is set in a configuration-file:
+
+* `$ANCHOR_HOME/config/defaultBeans.xml` in the main Anchor distribution, and
+* `$USER_HOME/.anchor/defaultBeans.xml` optionally, taking precedence.
 
 {% include links.html %}

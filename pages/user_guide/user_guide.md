@@ -25,9 +25,11 @@ To run an experiment, these three elements must be defined, though often by defa
 
 ### Defining experiments
 
+#### The default experiment
+
 Anchor offers first sensible defaults, allowing for greater definition later.
 
-The default-experiment occurs when you type `anchor` without arguments, and:
+The [default-experiment](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/defaultExperiment.xml) occurs when you type `anchor` without arguments, and:
 1. reads image files (**inputs**) from the current working directory.
 2. prints some summary information (a **task**).
 3. produces no **outputs**.
@@ -44,7 +46,9 @@ Found 3 inputs.
 ${0} = "mar" (1) | "jan" (1) | "feb" (1)
 ```
 
-Each element **(inputs, task, outputs)** can be further defined using a command-line argument `-i` or `-t` or `-o` as follows:
+#### Overriding elements from the command-line
+
+Each element **(inputs, task, outputs)** can be overridden using a command-line argument `-i` or `-t` or `-o` as follows:
 
 
 |argument|effect|
@@ -53,6 +57,8 @@ Each element **(inputs, task, outputs)** can be further defined using a command-
  path to XML file | the element is **defined in BeanXML** at this location |
  glob like `*.jpg` | defines **files for inputs** (only valid with `-i`) |
  other string | defines a **directory-location** for inputs/outputs, or the **task-name** for tasks |
+
+#### Examples of tasks and commands
 
 Tasks range from simple operations to complex pipelines of image processing operations (defined in BeanXML). A range of default tasks accompany Anchor that can be identified by a string e.g. `list`, `summarizeImages`, `histogram`.
 
@@ -126,6 +132,8 @@ Experiment TestDefaultCommandLineExperiment_1.0 completed (1s)
 Note the complex output with execution details printed on incremental lines as the three inputs are executed.
 - Each time a job (for an input) starts or ends, an event line is printed, and with an updated overall status.
 - On the right-side, the name of the input is indicated (as well as the job execution-time for `END` events).
+- The log output for specific tasks is not printed to the console, but rather stored in the output directory in `sdsdsd.txt`.
+- The output directory `sdsdsds.fgf` is printed to the console at the start of the experiment.
 
 Files are created
 
