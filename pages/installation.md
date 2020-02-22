@@ -31,7 +31,7 @@ JRE version 8 or above is required. This is often already present. If not, Oracl
 
 For the JRE (often already performed):
 1. Ensure `JAVA_HOME` points to the location of the JRE.
-2. Ensure the directory for the `java` application exists in the `PATH` variable.
+2. Ensure the directory for the `java` application (`$JAVA_HOME/bin`) exists in the `PATH` variable.
 
 For Anchor:
 3. Add the `bin/` subdirectory of the anchor-distribution to `PATH`. 
