@@ -41,4 +41,11 @@ entries:
     - title: Error handling
       url: /developer_guide_architecture_error_handling.html
       output: web, pdf
-  -
+      
+  - title: Development Environment
+    output: web, pdf
+    
+    folderitems:
+    - title: SonarQube
+      url: /developer_guide_environment_sonarqube.html
+      output: web, pdf

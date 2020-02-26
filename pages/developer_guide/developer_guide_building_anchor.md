@@ -144,3 +144,5 @@ Then execute the command ```mvn deploy``` in the parent directory of each reposi
 The order is important to match the[ dependency structure between repositories](/developer_guide_architecture_overview.html#repositories).
 
 The final command will copy a distribution into ```anchor.home.deploy```.
+
+{% include links.html %}
