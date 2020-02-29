@@ -15,8 +15,8 @@ folder: developer_guide
 Services running on the build-server include:
 
 * *Nexus* - repository server, to publish and retrieve **snapshot** JARs during building.
-* *Jenkins* - continuous integration server - running tests and other tasks when we commit changed source code, such as generting javadocs.
-* *SonarQube* - static code analyzer to find possible poor coding practices in the Java source.
+* [Jenkins](/developer_guide_environment_jenkins.html) - continuous integration server - running tests and other tasks when we commit changed source code, such as generting javadocs.
+* [SonarQube](/developer_guide_environment_sonarqube.html) - static code analyzer to find possible poor coding practices in the Java source.
 
 ## Key documents
 

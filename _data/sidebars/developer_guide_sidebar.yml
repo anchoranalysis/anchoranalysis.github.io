@@ -46,6 +46,11 @@ entries:
     output: web, pdf
     
     folderitems:
+
+    - title: Jenkins
+      url: /developer_guide_environment_jenkins.html
+      output: web, pdf    
+    
     - title: SonarQube
       url: /developer_guide_environment_sonarqube.html
       output: web, pdf
