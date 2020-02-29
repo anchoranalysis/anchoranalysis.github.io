@@ -27,4 +27,16 @@ Anchor's key Java repositories were introduced in [Architecture - Overview](deve
 
 Number of classes/code is as per *SonarQube, Feb 14th, 2020*. Lines-of-code excludes whitespace and comments.
 
+## Plugins 
+
+### Steps for adding a new plugin module
+
+Based in the root directory of a multi-module respository:
+
+1. Create a sub-directory containing the new module in [anchor-plugins](https://github.com/anchoranalysis/anchor-plugins) or [anchor-plugins-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl) depending on license.
+2. Add module name to the `pom.xml` in the root directory of this repository.
+3. Add a dependency in `anchor-assembly`:
+    1. if it's the regular MIT license (i.e. not-GPL), then add a dependency in [/addplugins/pom.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/addplugins/pom.xml) 
+    2. if it's GPL, then add a dependency in [/anchor-assembly/pom.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/pom.xml)
+
 {% include links.html %}
