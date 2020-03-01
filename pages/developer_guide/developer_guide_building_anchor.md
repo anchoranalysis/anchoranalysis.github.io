@@ -1,5 +1,5 @@
 ---
-title: "Introduction - Building Anchor"
+title: "Developer Guide - Building Anchor"
 tags: [build, maven, getting_started]
 keywords: maven, settings, repository, build, release
 sidebar: developer_guide_sidebar
@@ -28,19 +28,14 @@ Each module pom.xml outlines an artifiactID and version, that determines how it 
 
 Actually Anchor uses *several* multi-module projects, each in its own repository. And the pom.xml in [anchor-pom repository](https://bitbucket.org/anchorimageanalysis/anchor-pom/src/master/) provides a top-level base POM from which all other projects inherit. This is a convenient location for global settings for the build process.
 
-## Anchor repository server
+### Maven repository server {#mavenCredentials}
 
-This is an organisational repository, specific to Anchor, that provides three functions:
-
- * It stores versioned-jars of Anchor.
- * It provides several third-party dependencies that don't have corresponding public repositories.
- * It mirrors and caches public repositories for quicker downloads of dependencies.
+There is a Maven repository server called [Nexus](/developer_guide_environment_nexus.html) (provides versioned JARs) that is needed to build Anchor.
 
 It is found at:
 > http://maven.anchoranalysis.org:8081/nexus/
 
-Currently, this repository requires credentials to access, either to download-from (*read*) or to deploy-to (*write*). After Anchor is publicly released, public read-only access will be provided. Please contact Owen Feehan to obtain access to the repository.
-The repository also provides a web application at the same URL that provides for certain functions (search, upload).
+Currently, this repository **requires credentials** to access, either to download-from (*read*) or to deploy-to (*write*). Contact Owen Feehan to request.
 
 The credentials (username/password) should be specified in your private maven settings, e.g. in `$HOME/.m2/settings.xml` where `$HOME` is the user's *home directory*`.
 
@@ -95,7 +90,7 @@ The credentials (username/password) should be specified in your private maven se
 Replace *yourusername* and *yourpassword* appropriately, and update the `anchor.home.test` and `anchor.home.deploy` variable to match the path where Anchor will be deployed to.
 
 
-## Example commands
+### Example commands
 
 Maven's build process is centered around [https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html](lifecycles and phases).
 

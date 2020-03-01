@@ -1,5 +1,5 @@
 ---
-title: "Introduction - Anchor beans"
+title: "Developer Guide - Anchor beans"
 tags:
 keywords: beans
 sidebar: developer_guide_sidebar

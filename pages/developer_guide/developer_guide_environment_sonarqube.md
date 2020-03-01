@@ -10,7 +10,7 @@ toc: false
 
 ## Overview
 
-Anchor uses [SonarQube](https://www.sonarqube.org/) for static code analysis - to search for potential bugs or style errors. After code pushes to GitHub, [Jenkins](/developer_guide_environment_jenkins.html) automatically sends the updated code to SonarQube for each anchor Java repository.
+Anchor uses [SonarQube](https://www.sonarqube.org/) for static code analysis - to search for potential bugs or style errors. After code pushes to [GitHub](/developer_guide_environment_github.html), [Jenkins](/developer_guide_environment_jenkins.html) automatically sends the updated code to [SonarQube](/developer_guide_environment_sonarqube.html) for each anchor Java repository.
 
 ![sonarqube](/images/developer_guide/sonarqube.jpg)
 

@@ -11,9 +11,9 @@ folder: developer_guide
 
 The Anchor platform is spread across many library components (Maven *modules*), each packaged into a jar. Bundles of jars are packaged into different repositories:
 
-* [anchor](https://github.com/anchoranalysis/anchor) - main libraries used by Anchor, including frequently resused classes, and key abstract base classes
+* [anchor](https://github.com/anchoranalysis/anchor) - main libraries used by Anchor, including frequently reused classes, and key abstract base classes
 * [anchor-plugins](https://github.com/anchoranalysis/anchor-plugins) - specialised functionality that provides concrete implementations of algorithms, features etc. by extending the abstract base classes in *anchor*
-* [anchor-plugins-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl) - like anchor-plugins but for any source code that relies on a GPL library
+* [anchor-plugins-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl) - like `anchor-plugins` but for any source code that relies on a GPL library
 * [anchor-gui](https://github.com/anchoranalysis/anchor-gui) - the GUI application
 * [anchor-assembly](https://github.com/anchoranalysis/anchor-assembly) - creates a [distribution of anchor](/developer_guide_anchor_distribution.html), by combining JARs from the above with launcher applications
 * [anchor-pom](https://github.com/anchoranalysis/anchor-pom) - a parent Maven POM file used by all other anchor Java projects
@@ -38,7 +38,7 @@ We insert plugins using [Dependency Injection](https://en.wikipedia.org/wiki/Dep
 
 Many classes (especially plugins) inherit from AnchorBean class. This makes the class an [Anchor Bean](/developer_guide_anchor_beans.html), which can be instantiated from XML (and have other convenient properties).
 
-## Particular anchor-assembly modules
+## Key entry-point modules
 
 Some particular modules to take note of (all found in the [anchor-assembly repository](https://github.com/anchoranalysis/anchor-assembly)):
 * [anchor-launcher](https://github.com/anchoranalysis/anchor-assembly/tree/master/addplugins/anchor-launcher): a command-line application for running experiments. This is the typical way to use anchor!
