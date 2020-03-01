@@ -26,7 +26,7 @@ By encoding configuration in separate XML files, this allows the user to change 
 
 This approach implements principles of [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) and [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control), similarly to the [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) but simplified.
 
-## Anchor BeanXML
+## Anchor BeanXML {#beanXML}
 
 BeanXML is a basic XML standard for defining AnchorBeans, which just uses the [Apache Commons Configuration](https://commons.apache.org/proper/commons-configuration/) framework for serializing JavaBeans to/from XML.
 

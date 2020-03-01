@@ -31,7 +31,7 @@ Please see [Architecture - Overview](/developer_guide_architecture_overview.html
 | [anchor-plugins](https://github.com/anchoranalysis/anchor-plugins) | Java |
 | [anchor-plugins-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl) | Java |
 | [anchor-gui](https://github.com/anchoranalysis/anchor-gui) | Java |
-| [anchor-assembly](https://github.com/anchoranalysis/anchor-assembly) | Java, BeanXML |
+| [anchor-assembly](https://github.com/anchoranalysis/anchor-assembly) | Java, [BeanXML](/developer_guide_anchor_beans.html) |
 | [anchor-pom](https://github.com/anchoranalysis/anchor-pom) | Maven `pom.xml` |
 | [anchoranalysis.github.io](https://github.com/anchoranalysis/anchoranalysis.github.io) | Markdown, HTML - via [Jekyll](https://jekyllrb.com/) |
 
