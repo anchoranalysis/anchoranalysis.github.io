@@ -13,10 +13,25 @@ entries:
       url: /user_guide.html
       output: web, pdf
       type: homepage
+    - title: Command line arguments
+      url: /user_guide_command_line_arguments.html
+      output: web, pdf            
     - title: BeanXML
       url: /user_guide_bean_xml.html
       output: web, pdf
     - title: Supported image formats
       url: /user_guide_supported_formats.html
-      output: web, pdf            
-  -
+      output: web, pdf
+
+      
+  - title: Examples
+    output: web, pdf
+    folderitems:
+
+    - title: Histogram
+      url: /user_guide_examples_histogram.html
+      output: web, pdf
+      
+      
+      
+      

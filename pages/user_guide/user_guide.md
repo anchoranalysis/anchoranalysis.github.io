@@ -82,7 +82,7 @@ Two message-logs are produced:
 - one for **the experiment** as a whole - printed to the console, and often additionally to `experiment_log.txt`.
 - one for **each input** - printed to `job_log.txt` but only if an error occurs processing that particular input.
 
-Outputs are produced in **a particular location. INSERT more here**.
+Outputs are produced by default in a temporary directory, easily changed with the `-o` options.
 
 #### Parallelization
 
@@ -93,51 +93,11 @@ Inputs are processed in parallel if possible. Some tasks can be executed each in
 
 ## Example Usage
 
-### Generating histograms
+Some example guides walk through executing commands:
 
-Consider an example album, with three JPEGs:
-```
-PS D:\Users\owen\Pictures\SomeAlbum> anchor -t list
-jan      -> D:\Users\owen\Pictures\SomeAlbum\jan.jpg
-mar      -> D:\Users\owen\Pictures\SomeAlbum\mar.jpg
-feb      -> D:\Users\owen\Pictures\SomeAlbum\feb.jpg
-```
+- Generating a [histogram](/user_guide_examples_histogram.html) of pixel intensities from each channel.
 
-Let's first generate some summarization of the images (produces output **without** execution-details):
 
-```
-PS D:\Users\owen\Pictures\SomeAlbum> anchor -t summarizeImages
-Found 3 inputs.
--> Inputs have diverse sizes: 5148x2992(1) 4846x3888(1) 5184x3888(1)
--> All inputs have channels = 3
--> All inputs have bit depth = 8
-```
-
-Then let's generate histograms (produces output **with** execution-details):
-
-```
-PS D:\Users\owen\Pictures\SomeAlbum> anchor -t histogram                                                                Experiment TestDefaultCommandLineExperiment_1.0 started writing to C:\Users\owen\anchor\TestDefaultCommandLineExperiment_1.0
-Using 7 processors from: 8
-Job    3:       START   [  0 compl,   3 exec,   0 rem of   3]           mar
-Job    1:       START   [  0 compl,   3 exec,   0 rem of   3]           feb
-Job    2:       START   [  0 compl,   3 exec,   0 rem of   3]           jan
-Job    2:       END     [  1 compl,   2 exec,   0 rem of   3]   (1s)    jan
-Job    3:       END     [  2 compl,   1 exec,   0 rem of   3]   (1s)    mar
-Job    1:       END     [  3 compl,   0 exec,   0 rem of   3]   (1s)    feb
-Writing 3 grouped histograms into C:\Users\owen\anchor\TestDefaultCommandLineExperiment_1.0\grouped
-All 3 jobs completed successfully. The average execution time was 1.698 ms.
-Experiment TestDefaultCommandLineExperiment_1.0 completed (1s)
-```
-
-Note the complex output with execution details printed on incremental lines as the three inputs are executed.
-- Each time a job (for an input) starts or ends, an event line is printed, and with an updated overall status.
-- On the right-side, the name of the input is indicated (as well as the job execution-time for `END` events).
-- The log output for specific tasks is not printed to the console, but rather stored in the output directory in `sdsdsd.txt`.
-- The output directory `sdsdsds.fgf` is printed to the console at the start of the experiment.
-
-Files are created
-
-**insert example output here**
 
 
 {% include links.html %}
