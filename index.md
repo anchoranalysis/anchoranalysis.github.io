@@ -21,7 +21,7 @@ Anchor is a command-line application and platform for image analysis, especially
 - Reproducible and extensible pipelines defined via XML for image processing - using various image processing plugins.
 - Features to extract information from images and sub-regions of images (sets of voxels, geometric shapes) etc.
 - Extensible via Java to call operations in [ImageJ](https://imagej.net/Welcome), [Icy](http://icy.bioimageanalysis.org/), [OpenCV](https://opencv.org/) etc.
-- Cross-platform: Windows, Linux, Mac. - seemless switching between development environment and server
+- Cross-platform: Windows, Linux, Mac. - seemless switching between development environment and server.
 - A basic pinboard-style GUI for loading multiple images and processing results.
 
 
