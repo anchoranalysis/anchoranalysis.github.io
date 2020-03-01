@@ -13,7 +13,7 @@ Consider an [example album](/downloads/examples/alps.zip), with three JPEGs. Run
 
 ```
 $ anchor
-Searching for inputs as per default experiment. CTRL+C cancels.
+Searching recursively for image files. CTRL+C cancels.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
 
 Found 3 inputs.
