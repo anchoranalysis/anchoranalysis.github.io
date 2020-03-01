@@ -11,7 +11,7 @@ disable_editme: true
 
 ## Description
 
-Anchor is a command-line application and platform for image analysis, especially microscopy image analysis.  Open-source [license](/download.html#licensing).
+Anchor is a command-line application and platform for image analysis, especially microscopy image analysis.
 
 {% include tip.html content="It's a Swiss-army-knife for loading, transforming, and extracting information from **sets of images**, as single-image tools are often limiting." %}
 
