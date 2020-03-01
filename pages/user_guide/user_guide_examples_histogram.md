@@ -25,7 +25,7 @@ ${0} = "mar" (1) | "jan" (1) | "feb" (1)
 
 Anchor has found 3 images in this directory (searching recursively for known image types).
 
-It also found a pattern among the paths, which is used to extract a **name** for each input (`jan`, `feb` and `mar`), as seen with the `list` task:
+It also found a pattern among the paths, from which each input infers a **name** (`jan`, `feb` and `mar`), as seen with `-t list`:
 
 ```
 $ anchor -t list
