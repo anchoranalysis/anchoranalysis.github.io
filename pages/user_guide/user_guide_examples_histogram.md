@@ -9,7 +9,7 @@ folder: user_guide
 
 ## Inputs
 
-Consider an [example album](/downloads/examples/histogram.zip), with three JPEGs. Running the command from e.g. `D:\Users\owen\Pictures\SomeAlbum`:
+Consider an [example album](/downloads/examples/alps.zip), with three JPEGs. Running the command from e.g. `D:\Users\owen\Pictures\SomeAlbum`:
 
 ```
 $ anchor
