@@ -19,19 +19,19 @@ Learn how to select inputs, outputs and tasks with 'anchor -h'.
 Found 3 inputs.
 -> with uniform extension = jpg
 -> file-sizes range across [1 MB to 7 MB] with an average of 4 MB.
--> D:\Users\owen\Pictures\SomeAlbum\${0}.jpg
-${0} = "mar" (1) | "jan" (1) | "feb" (1)
+-> D:\Users\owen\Pictures\SomeAlbum\alps-${0}.jpg
+${0} = 3 unique integers between 13 and 91 inclusive
 ```
 
 Anchor has found 3 images in this directory (searching recursively for known image types).
 
-It also found a pattern among the paths, from which each input infers a **name** (`jan`, `feb` and `mar`), as seen with `-t list`:
+It also found a pattern among the paths, from which each input infers a **name** (`78`, `91` and `13`), as seen with `-t list`:
 
 ```
 $ anchor -t list
-jan      -> D:\Users\owen\Pictures\SomeAlbum\jan.jpg
-mar      -> D:\Users\owen\Pictures\SomeAlbum\mar.jpg
-feb      -> D:\Users\owen\Pictures\SomeAlbum\feb.jpg
+78       -> D:\Users\owen\Pictures\SomeAlbum\alps-78.jpg
+91       -> D:\Users\owen\Pictures\SomeAlbum\alps-91.jpg
+13       -> D:\Users\owen\Pictures\SomeAlbum\alps-13.jpg
 ```
 
 {% include tip.html content="This produces output **without** execution-details" %}
@@ -46,8 +46,8 @@ Found 3 inputs.
 -> with uniform channel = 3
 -> with uniform bit depth = 8
 -> file-sizes range across [1 MB to 7 MB] with an average of 4 MB.
--> D:\Users\owen\Pictures\SomeAlbum\${0}.jpg
-${0} = "mar" (1) | "jan" (1) | "feb" (1)
+-> D:\Users\owen\Pictures\SomeAlbum\alps-${0}.jpg
+${0} = 3 unique integers between 13 and 91 inclusive
 ```
 
 ## Task
@@ -58,37 +58,39 @@ Then let's generate histograms:
 
 ```
 $ anchor -t histogram -o ..
-Experiment histogram_2020.03.01 started writing to D:\Users\owen\Pictures\histogram_2020.03.01
+Experiment histogram_01.05.25 started writing to D:\Users\owen\Pictures\histogram_01.05.25
 Using 7 processors from: 8
-Job    2:       start   [  0 compl,   3 exec,   0 rem of   3]           jan
-Job    1:       start   [  0 compl,   3 exec,   0 rem of   3]           feb
-Job    3:       start   [  0 compl,   3 exec,   0 rem of   3]           mar
-Job    2:       end     [  1 compl,   2 exec,   0 rem of   3]   (1s)    jan
-Job    3:       end     [  2 compl,   1 exec,   0 rem of   3]   (1s)    mar
-Job    1:       end     [  3 compl,   0 exec,   0 rem of   3]   (1s)    feb
-Writing 3 grouped histograms into D:\Users\owen\Pictures\histogram_2020.03.01\grouped
-All 3 jobs completed successfully. The average execution time was 1.789 ms.
-Experiment histogram_2020.03.01 completed (1s) writing to D:\Users\owen\Pictures\histogram_2020.03.01
+Job    2:       start   [  0 compl,   3 exec,   0 rem of   3]           78
+Job    1:       start   [  0 compl,   3 exec,   0 rem of   3]           13
+Job    3:       start   [  0 compl,   3 exec,   0 rem of   3]           91
+Job    2:       end     [  1 compl,   2 exec,   0 rem of   3]   (1s)    78
+Job    3:       end     [  2 compl,   1 exec,   0 rem of   3]   (1s)    91
+Job    1:       end     [  3 compl,   0 exec,   0 rem of   3]   (1s)    13
+Writing 3 grouped histograms into D:\Users\owen\Pictures\histogram_01.05.25\grouped
+All 3 jobs completed successfully. The average execution time was 1.689 ms.
+Experiment histogram_01.05.25 completed (1s) writing to D:\Users\owen\Pictures\histogram_01.05.25
 ```
 
 Note the complex output with execution details printed on incremental lines as the three inputs are executed.
 - Each time a job (for an input) `start`s or `end`s, an event line is printed, and with an updated overall status.
 - On the right-side, the name of the input is indicated - and a job's execution time at the `end`.
-- The output directory `D:\Users\owen\Pictures\histogram_2020.03.01.04.28` is printed to the console at the start of the experiment. It was calculated relative to the current working directory with `-o ..`
+- The output directory `D:\Users\owen\Pictures\histogram_01.05.25` is printed to the console at the start and end. It was calculated relative to the current working directory with `-o ..` and from the task and time.
+
+By default, it will never replace an existing directory. If unspecified, a system temporary directory is used.
 
 ## Outputs
 
 ```
-experiment_log.txt  feb_red.csv   jan_green.csv  mar_green.csv
-feb_blue.csv        grouped/      jan_red.csv    mar_red.csv
-feb_green.csv       jan_blue.csv  mar_blue.csv
+13_blue.csv   78_blue.csv   91_blue.csv   experiment_log.txt
+13_green.csv  78_green.csv  91_green.csv  grouped/
+13_red.csv    78_red.csv    91_red.csv
 ```
 
 Many files have been created in the output directory:
 
 - A histogram CSV for each channel of each image (`red`, `green`, `blue`).
 - The output seen in the console is also logged to the file system in `experiment_log.txt`.
-- Similar output for specific tasks would be saved in `feb_job_log.txt` etc. **only if an error occurs**, which it didn't.
+- Similar output for specific tasks would be saved in `91_job_log.txt` etc. **only if an error occurs**, which it didn't.
 - A subdirectory exists `grouped/` with aggregated histograms across all images.
 
 {% include links.html %}
