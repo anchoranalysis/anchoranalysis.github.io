@@ -9,17 +9,17 @@ toc: false
 disable_editme: true
 ---
 
-## Description
+Anchor is a command-line application and platform for image analysis, especially microscopy image analysis.
 
-Anchor is a command-line application and platform for image analysis, especially microscopy image analysis. See [example usage](/user_guide_examples_histogram.html).
+{% include callout.html content="It's a Swiss-army-knife for loading, transforming, and extracting information from **sets of images**, as single-image tools are often limiting." %}
 
-{% include tip.html content="It's a Swiss-army-knife for loading, transforming, and extracting information from **sets of images**, as single-image tools are often limiting." %}
+See [example usage](/user_guide_examples_histogram.html).
 
 ## Features
-- Loading diverse image types (photos, 2D, 3D, time-series) across diverse formats, including microscopy formats via [Bio-formats](https://www.openmicroscopy.org/bio-formats/).
-- Reads and writes smartly by finding patterns in image filenames and paths.
-- Reproducible and extensible pipelines defined via XML for image processing - using various image processing plugins.
-- Features to extract information from images and sub-regions of images (sets of voxels, geometric shapes) etc.
+- Supports diverse image types and formats (photos, microscopy with 2D, 3D, time-series).
+- Smartly names outputs by finding patterns in filenames.
+- Reproducible pipelines defined via XML.
+- Feature-extraction libraries (sets of voxels, geometric shapes) etc.
 - Extensible via Java to call operations in [ImageJ](https://imagej.net/Welcome), [Icy](http://icy.bioimageanalysis.org/), [OpenCV](https://opencv.org/) etc.
 - Cross-platform - Windows, Linux, Mac - with seemless switching between local development environment and server.
 - A basic pinboard-style GUI for loading multiple images and processing results.
