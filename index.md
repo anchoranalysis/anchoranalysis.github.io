@@ -21,7 +21,7 @@ See [example usage](/user_guide_examples_histogram.html).
 - Reproducible pipelines defined via XML.
 - Feature-extraction libraries (sets of voxels, geometric shapes) etc.
 - Extensible via Java to call operations in [ImageJ](https://imagej.net/Welcome), [Icy](http://icy.bioimageanalysis.org/), [OpenCV](https://opencv.org/) etc.
-- Cross-platform - Windows, Linux, Mac - with seemless switching between local development environment and server.
+- Cross-platform - Windows, Linux, Mac - with seemless switching between local and server.
 - A basic pinboard-style GUI for images, segmentations and features.
 
 
