@@ -22,3 +22,5 @@ The software depends on many publicly available libraries, but to highlight some
 * [ImageJ/Fiji](https://imagej.net/Welcome) and its [contributors](https://imagej.net/Contributors#Fiji).
 * [path-pattern-finder](https://path-pattern-finder.github.io/) also by Owen Feehan.
 * And thanks to [Tom Johnson](https://idratherbewriting.com/aboutme/) who authored the [theme](https://idratherbewriting.com/documentation-theme-jekyll/index.html) for the website.
+
+Please see the `NOTICE.txt` and `notice/` sub-directories of each source-code repository for more detailed acknowledgement of libraries.
