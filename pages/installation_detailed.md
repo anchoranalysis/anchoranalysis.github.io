@@ -33,7 +33,6 @@ Please use the standard ways to set environment variables, e.g. for [Windows](ht
 
 ```shell
 export PATH=/SOME_PATH_TO_ANCHOR/bin/:$PATH
-export ANCHOR_HOME=/SOME_PATH_TO_ANCHOR/
 ```
 2. Type `java -version` in a shell, and check it returns at least version 1.8.
 
