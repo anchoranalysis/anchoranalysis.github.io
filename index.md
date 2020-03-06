@@ -13,9 +13,12 @@ Anchor is a command-line application and platform for image analysis, especially
 
 {% include callout.html type="danger" content="It's a Swiss-army-knife for loading, transforming, and extracting information from **sets of images**, as single-image tools are often limiting." %}
 
-See [example usage](/user_guide_examples_histogram.html).
+See [example usage](/user_guide_examples_histogram.html), the [user guide](/user_guide.html) and the [developer guide for Java programmers](/developer_guide.html).
 
 ## Features
+
+<img src="/images/anchor_medium_logo.png" alt="Anchor logo" style="float:right;width:341px;height:163px;">
+
 - Supports diverse image types and formats (photos, 2D / 3D / time-series microscopy).
 - Smartly names outputs by finding patterns in filenames.
 - Reproducible pipelines defined via XML.
