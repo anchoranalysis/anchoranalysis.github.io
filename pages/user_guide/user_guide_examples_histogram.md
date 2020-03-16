@@ -72,7 +72,7 @@ Experiment histogram_01.05.25 completed (1s) writing to D:\Users\owen\Pictures\h
 </pre>
 
 Note the complex output with execution details printed on incremental lines as the three inputs are executed.
-- Each time a job (for an input) `start`s or `end`s, an event line is printed, and with an updated overall status.
+- Each time a job (for an input) starts or ends, an event line is printed, and with an updated overall status.
 - On the right-side, the name of the input is indicated - and a job's execution time at the `end`.
 - The output directory `D:\Users\owen\Pictures\histogram_01.05.25` is printed to the console at the start and end. It was calculated relative to the current working directory with `-o ..` and from the task and time.
 
