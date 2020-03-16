@@ -11,8 +11,8 @@ folder: user_guide
 
 Consider an [example album](/downloads/examples/alps.zip), with three JPEGs. Running the command from e.g. `D:\Users\owen\Pictures\SomeAlbum`:
 
-```
-$ anchor
+<pre>
+$ <b>anchor</b>
 Searching recursively for image files. CTRL+C cancels.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
 
@@ -21,25 +21,25 @@ Found 3 inputs.
 -> file-sizes range across [1 MB to 7 MB] with an average of 4 MB.
 -> D:\Users\owen\Pictures\SomeAlbum\alps-${0}.jpg
 ${0} = 3 unique integers between 13 and 91 inclusive
-```
+</pre>
 
 Anchor has found 3 images in this directory (searching recursively for known image types).
 
 It also found a pattern among the paths, from which each input infers a **name** (`78`, `91` and `13`), as seen with `-t list`:
 
-```
-$ anchor -t list
+<pre>
+$ <b>anchor -t list</b>
 78       -> D:\Users\owen\Pictures\SomeAlbum\alps-78.jpg
 91       -> D:\Users\owen\Pictures\SomeAlbum\alps-91.jpg
 13       -> D:\Users\owen\Pictures\SomeAlbum\alps-13.jpg
-```
+</pre>
 
 {% include tip.html content="This produces output **without** execution-details" %}
 
 Now let's generate some more detailed summarization of the images (width, height, channels, bit depth etc.):
 
-```
-$ anchor -t summarize
+<pre>
+$ <b>anchor -t summarize</b>
 Found 3 inputs.
 -> with uniform extension = jpg
 -> with diverse sizes: 5148x2992(1) 4846x3888(1) 5184x3888(1)
@@ -48,7 +48,7 @@ Found 3 inputs.
 -> file-sizes range across [1 MB to 7 MB] with an average of 4 MB.
 -> D:\Users\owen\Pictures\SomeAlbum\alps-${0}.jpg
 ${0} = 3 unique integers between 13 and 91 inclusive
-```
+</pre>
 
 ## Task
 
@@ -56,8 +56,8 @@ Then let's generate histograms:
 
 {% include tip.html content="This produces output **with** execution-details" %}
 
-```
-$ anchor -t histogram -o ..
+<pre>
+$ <b>anchor -t histogram -o ..</b>
 Experiment histogram_01.05.25 started writing to D:\Users\owen\Pictures\histogram_01.05.25
 Using 7 processors from: 8
 Job    2:       start   [  0 compl,   3 exec,   0 rem of   3]           78
@@ -69,7 +69,7 @@ Job    1:       end     [  3 compl,   0 exec,   0 rem of   3]   (1s)    13
 Writing 3 grouped histograms into D:\Users\owen\Pictures\histogram_01.05.25\grouped
 All 3 jobs completed successfully. The average execution time was 1.689 ms.
 Experiment histogram_01.05.25 completed (1s) writing to D:\Users\owen\Pictures\histogram_01.05.25
-```
+</pre>
 
 Note the complex output with execution details printed on incremental lines as the three inputs are executed.
 - Each time a job (for an input) `start`s or `end`s, an event line is printed, and with an updated overall status.
@@ -80,11 +80,11 @@ By default, it will never replace an existing directory. If unspecified, a syste
 
 ## Outputs
 
-```
+<pre>
 13_blue.csv   78_blue.csv   91_blue.csv   experiment_log.txt
 13_green.csv  78_green.csv  91_green.csv  grouped/
 13_red.csv    78_red.csv    91_red.csv
-```
+</pre>
 
 Many files have been created in the output directory:
 
