@@ -19,7 +19,7 @@ BeanXML is a type of XML used by Anchor to define experiments, configuration and
 
 Some rules apply:
 - BeanXML is sub-divided into units called AnchorBeans, each described by an XML element.
-- It always has the following structure `<config><bean>....</bean></config>` where the `<bean>` element describes the top-level AnchorBean.
+- It always has the following structure `<config><bean>...</bean></config>` where the `<bean>` element describes the top-level AnchorBean.
 - Each AnchorBean has a necessary attribute `config-class='xxxxx'` where **xxxxx** is the fully-qualified name of a Java class. This class accepts particular properties (nested and non-nested).
 
 ### Types of properties
