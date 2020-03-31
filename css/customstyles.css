@@ -1199,18 +1199,27 @@ h4.panel-title {
     }
 }
 
-pre.commandLine {
+/* A block of code that looks like a command-shell */*
+pre.commandShell {
     background-color: black;
     color: white;
     border: 1px solid #347DBE;
 }
 
+.commandEntered {
+	color: #E50E51;
+	font-weight: bold;
+}
+
+/* Indicates some lines will follw within a command-shell */
+.commandLinesFollow {
+    font-style: italic;
+    color: orange;
+}
+
+/* A screen-shot used in an example */*
 .screenshotExample {
     border: 1px solid #eee;
     max-width: 300px;
 }
 
-.linesFollow {
-    font-style: italic;
-    color: orange;
-}

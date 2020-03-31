@@ -13,44 +13,41 @@ folder: user_guide
 
 Consider an [example album](/downloads/examples/alps.zip) with three images. Running the command from e.g. `D:\Users\owen\Pictures\SomeAlbum`:
 
-<pre class="commandLine">
-$ <b>anchor</b>
-Searching recursively for image files. CTRL+C cancels.
+{% include shell.html
+command="anchor"
+response="Searching recursively for image files. CTRL+C cancels.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
 
 Found 3 inputs.
 -> with uniform extension = jpg
 -> file-sizes range across [1 MB to 7 MB] with an average of 4 MB.
 -> D:\Users\owen\Pictures\SomeAlbum\alps-${0}.jpg
-${0} = 3 unique integers between 13 and 91 inclusive
-</pre>
+${0} = 3 unique integers between 13 and 91 inclusive" %}
 
 Anchor has found 3 images in this directory (searching recursively for known image types).
 
 It also found a pattern among the paths, from which each input infers a **name** (`78`, `91` and `13`), as seen with `-t list`:
 
-<pre class="commandLine">
-$ <b>anchor -t list</b>
-78       -> D:\Users\owen\Pictures\SomeAlbum\alps-78.jpg
+{% include shell.html
+command="anchor -t list"
+response="78       -> D:\Users\owen\Pictures\SomeAlbum\alps-78.jpg
 91       -> D:\Users\owen\Pictures\SomeAlbum\alps-91.jpg
-13       -> D:\Users\owen\Pictures\SomeAlbum\alps-13.jpg
-</pre>
+13       -> D:\Users\owen\Pictures\SomeAlbum\alps-13.jpg" %}
 
 {% include tip.html content="This produces output **without** execution-details" %}
 
 Now let's generate some more detailed summarization of the images (width, height, channels, bit depth etc.):
 
-<pre class="commandLine">
-$ <b>anchor -t summarize</b>
-Found 3 inputs.
+{% include shell.html
+command="anchor -t summarize"
+response="Found 3 inputs.
 -> with uniform extension = jpg
 -> with diverse sizes: 5148x2992(1) 4846x3888(1) 5184x3888(1)
 -> with uniform channel = 3
 -> with uniform bit depth = 8
 -> file-sizes range across [1 MB to 7 MB] with an average of 4 MB.
 -> D:\Users\owen\Pictures\SomeAlbum\alps-${0}.jpg
-${0} = 3 unique integers between 13 and 91 inclusive
-</pre>
+${0} = 3 unique integers between 13 and 91 inclusive" %}
 
 ## Task
 
@@ -58,9 +55,9 @@ Then let's generate histograms:
 
 {% include tip.html content="This produces output **with** execution-details" %}
 
-<pre class="commandLine">
-$ <b>anchor -t histogram -o ..</b>
-Experiment histogram_14.09.48 started writing to D:\Users\owen\Pictures\histogram_14.09.48
+{% include shell.html
+command="anchor -t histogram -o .."
+response="Experiment histogram_14.09.48 started writing to D:\Users\owen\Pictures\histogram_14.09.48
 Using 7 processors from: 8
 Job    2:       start   [  0 compl,   3 exec,   0 rem of   3]           78
 Job    1:       start   [  0 compl,   3 exec,   0 rem of   3]           13
@@ -70,11 +67,10 @@ Job    3:       end     [  2 compl,   1 exec,   0 rem of   3]   (1s)    91
 Job    1:       end     [  3 compl,   0 exec,   0 rem of   3]   (1s)    13
 Writing 3 grouped histograms into D:\Users\owen\Pictures\histogram_14.09.48\grouped
 All 3 jobs completed successfully. The average execution time was 1.689 ms.
-Experiment histogram_01.05.25 completed (1s) writing to D:\Users\owen\Pictures\histogram_14.09.48
-</pre>
+Experiment histogram_01.05.25 completed (1s) writing to D:\Users\owen\Pictures\histogram_14.09.48" %}
 
 Note:
-- the start/end events for each input.
+- the start / end events for each input.
 - the name of the input is indicated on the right-hand side - and a job's total execution time.
 - the output directory `D:\Users\owen\Pictures\histogram_14.09.48` is printed twice.
 

@@ -23,12 +23,12 @@ Anchor is a command-line application, designed to be used with `PowerShell` / `C
 
 Simply, open a shell in a directory with images, and run `anchor`
 
-<pre class="commandLine">
-$ <b>anchor</b>
-Searching recursively for image files. CTRL+C cancels.
+{% include shell.html
+command="anchor"
+response="Searching recursively for image files. CTRL+C cancels.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
-<span class="linesFollow">...lines will follow after it searches for images...</span>
-</pre>
+<span class='commandLinesFollow'>...lines will follow after it searches for images...</span>" %}
+
 
 {% include tip.html content="Follow the [User Guide](/user_guide.html) and [Example Usage](/user_guide_examples.html) to learn more." %}
 

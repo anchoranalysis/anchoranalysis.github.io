@@ -32,17 +32,16 @@ The [default-experiment](https://github.com/anchoranalysis/anchor-assembly/blob/
 2. prints some summary information (a **task**).
 3. produces no **outputs**.
 
-<pre class="commandLine">
-PS D:\Users\owen\Pictures\SomeAlbum> <b>anchor</b>
-Searching for inputs as per default experiment.
+{% include shell.html
+command="anchor"
+response="Searching for inputs as per default experiment.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
 
 Found 3 inputs.
 -> All inputs have extension = jpg
 -> File-sizes range across [1 MB to 7 MB] with an average of 4 MB.
 -> D:\Users\owen\Pictures\SomeAlbum\${0}.jpg
-${0} = "mar" (1) | "jan" (1) | "feb" (1)
-</pre>
+${0} = \"mar\" (1) | \"jan\" (1) | \"feb\" (1)" %}
 
 ### Overriding elements on command-line
 
