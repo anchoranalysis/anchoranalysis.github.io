@@ -50,7 +50,7 @@ ${0} = "mar" (1) | "jan" (1) | "feb" (1)
 
 Each element **(inputs, task, outputs)** can be overridden using a command-line argument `-i` or `-t` or `-o` as follows:
 
-#### Changing the input with `-i`:
+#### Changing inputs with `-i`
 
 |`-i` argument| input |
 |--------|------|
@@ -59,7 +59,7 @@ Each element **(inputs, task, outputs)** can be overridden using a command-line 
 | `-i` glob  *(e.g. `*.jpg`)* | reads **files matching the glob** |
 | `-i` other path | reads images recursively from the **specified** directory  |
 
-#### Changing the task with `-t`:
+#### Changing the task with `-t`
 
 |`-t` argument| input |
 |--------|------|
@@ -67,7 +67,7 @@ Each element **(inputs, task, outputs)** can be overridden using a command-line 
 | `-t` path to XML file | task as defined in **BeanXML** at this path |
 | `-t` other string | looks for a **task** in `config/tasks/` matching this name  |
 
-#### Changing the output with `-o`:
+#### Changing outputs with `-o`
 
 |`-o` argument| input |
 |--------|------|
