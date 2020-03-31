@@ -1,5 +1,5 @@
 ---
-title: "Examples - Histogram of pixel intensities"
+title: "Example Usage - Histogram of pixel intensities"
 tags:
 keywords:
 sidebar: user_guide_sidebar
@@ -9,7 +9,9 @@ folder: user_guide
 
 ## Inputs
 
-Consider an [example album](/downloads/examples/alps.zip), with three JPEGs. Running the command from e.g. `D:\Users\owen\Pictures\SomeAlbum`:
+<img alt="inputs in windows explorer" src="/images/examples/histogram/inputs_windows_explorer.jpg" class="screenshot"/>
+
+Consider an [example album](/downloads/examples/alps.zip) with three images. Running the command from e.g. `D:\Users\owen\Pictures\SomeAlbum`:
 
 <pre>
 $ <b>anchor</b>
@@ -58,7 +60,7 @@ Then let's generate histograms:
 
 <pre>
 $ <b>anchor -t histogram -o ..</b>
-Experiment histogram_01.05.25 started writing to D:\Users\owen\Pictures\histogram_01.05.25
+Experiment histogram_14.09.48 started writing to D:\Users\owen\Pictures\histogram_14.09.48
 Using 7 processors from: 8
 Job    2:       start   [  0 compl,   3 exec,   0 rem of   3]           78
 Job    1:       start   [  0 compl,   3 exec,   0 rem of   3]           13
@@ -66,30 +68,36 @@ Job    3:       start   [  0 compl,   3 exec,   0 rem of   3]           91
 Job    2:       end     [  1 compl,   2 exec,   0 rem of   3]   (1s)    78
 Job    3:       end     [  2 compl,   1 exec,   0 rem of   3]   (1s)    91
 Job    1:       end     [  3 compl,   0 exec,   0 rem of   3]   (1s)    13
-Writing 3 grouped histograms into D:\Users\owen\Pictures\histogram_01.05.25\grouped
+Writing 3 grouped histograms into D:\Users\owen\Pictures\histogram_14.09.48\grouped
 All 3 jobs completed successfully. The average execution time was 1.689 ms.
-Experiment histogram_01.05.25 completed (1s) writing to D:\Users\owen\Pictures\histogram_01.05.25
+Experiment histogram_01.05.25 completed (1s) writing to D:\Users\owen\Pictures\histogram_14.09.48
 </pre>
 
-Note the start/end details as the three inputs are executed, each as a separate job.
-- On the right-side, the name of the input is indicated - and a job's total execution time.
-- The output directory `D:\Users\owen\Pictures\histogram_01.05.25` is printed to the console at the start and end. It was calculated relative to the current working directory with `-o ..` and from the task and time.
+Note:
+- the start/end events for each input.
+- the name of the input is indicated on the right-hand side - and a job's total execution time.
+- the output directory `D:\Users\owen\Pictures\histogram_14.09.48` is printed twice.
 
-By default, it will never replace an existing directory. If unspecified, a system temporary directory is used.
+The output directory was calculated relative to the current working directory with `-o ..` and from the task and time.
 
 ## Outputs
 
-<pre>
-13_blue.csv   78_blue.csv   91_blue.csv   experiment_log.txt
-13_green.csv  78_green.csv  91_green.csv  grouped/
-13_red.csv    78_red.csv    91_red.csv
-</pre>
+<img alt="outputs in windows explorer" src="/images/examples/histogram/outputs_windows_explorer.jpg" class="screenshot"/>
 
 Many files have been created in the output directory:
 
-- A histogram CSV for each channel of each image (`red`, `green`, `blue`).
-- The output seen in the console is also logged to the file system in `experiment_log.txt`.
-- Similar output for specific tasks would be saved in `91_job_log.txt` etc. **only if an error occurs**, which it didn't.
-- A subdirectory exists `grouped/` with aggregated histograms across all images.
+- A **histogram CSV** for each channel of each image (`13_red.csv`, `13_green.csv`, `13_blue.csv` etc.).
+- A subdirectory `grouped/` with aggregated histograms across all images.
+- `experiment_log.txt` recording the execution details (identical to the console output).
+- **Only if an error occurs** (which it didn't!) then a job-specific log for `13_job_log.txt` etc.
+
+
+## Next steps
+
+Possibilities:
+- The CSV files can be opened and visualized in *Excel*, *Python* ([pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)), [R](https://www.r-project.org/), [Spotfire](https://www.tibco.com/products/tibco-spotfire), [Ron's Editor](https://www.ronsplace.eu/products/ronseditor), and similar.
+- The histograms can be attached to images (as *multi-inputs*) for subsequent tasks in Anchor.
+- Thresholds or color models can be calculated from the CSVs (e.g. using the `grouped/` aggregates for robustness).
+    - Consider `org.anchoranalysis.image.bean.threshold.calculatelevel.Otsu` or `org.anchoranalysis.plugin.image.bean.threshold.calculatelevel.OtsuWeighted` for thresholding.
 
 {% include links.html %}

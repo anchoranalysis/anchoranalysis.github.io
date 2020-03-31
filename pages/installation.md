@@ -25,10 +25,10 @@ It should be added to the system's `PATH` environmental variable.
 
 Simply, open a shell in a directory with images, and type:
 
-```
-anchor
-```
+<pre>
+<b>anchor</b>
+</pre>
 
-{% include tip.html content="Follow the [User Guide](user_guide.html) to learn more." %}
+{% include tip.html content="Follow the [User Guide](/user_guide.html) and [Example Usage](/user_guide_examples.html) to learn more." %}
 
 

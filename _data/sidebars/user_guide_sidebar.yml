@@ -24,14 +24,18 @@ entries:
       output: web, pdf
 
       
-  - title: Examples
+  - title: Example Usage
     output: web, pdf
     folderitems:
 
+    - title: Overview
+      url: /user_guide_examples.html
+      output: web, pdf
+      type: homepage
+      
     - title: Histogram
       url: /user_guide_examples_histogram.html
       output: web, pdf
-      
       
       
       

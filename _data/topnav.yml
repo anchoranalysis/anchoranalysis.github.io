@@ -22,6 +22,8 @@ topnav_dropdowns:
           url: /installation.html
         - title: User guide
           url: /user_guide.html
+        - title: Example usage
+          url: /user_guide_examples.html          
         - title: Supported formats
           url: /user_guide_supported_formats.html
     - title: Developer

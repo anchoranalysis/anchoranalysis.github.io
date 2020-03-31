@@ -46,28 +46,55 @@ Found 3 inputs.
 ${0} = "mar" (1) | "jan" (1) | "feb" (1)
 </pre>
 
-#### Overriding elements from the command-line
+### Overriding elements on command-line
 
 Each element **(inputs, task, outputs)** can be overridden using a command-line argument `-i` or `-t` or `-o` as follows:
 
+#### Changing the input with `-i`:
 
-|argument|effect|
+|`-i` argument| input |
 |--------|------|
-*&lt;ommitted&gt;* | **default behaviour** as per default experiment |
- path to XML file | the element is **defined in BeanXML** at this location |
- glob like `*.jpg` | defines **files for inputs** (only valid with `-i`) |
- other string | defines a **directory-location** for inputs/outputs, or the **task-name** for tasks |
+| *&lt;ommitted&gt;* | *default*: reads images recursively from **current** directory |
+| `-i` path to XML file | input as defined in **BeanXML** at this path |
+| `-i` glob  *(e.g. `*.jpg`)* | reads **files matching the glob** |
+| `-i` other path | reads images recursively from the **specified** directory  |
 
-#### Examples of tasks and commands
+#### Changing the task with `-t`:
 
-Tasks range from simple operations to complex pipelines of image processing operations (defined in BeanXML). A range of default tasks accompany Anchor that can be identified by a string e.g. `list`, `summarizeImages`, `histogram`.
+|`-t` argument| input |
+|--------|------|
+| *&lt;ommitted&gt;* | *default*: **summary statistics** for current inputs |
+| `-t` path to XML file | task as defined in **BeanXML** at this path |
+| `-t` other string | looks for a **task** in `config/tasks/` matching this name  |
+
+#### Changing the output with `-o`:
+
+|`-o` argument| input |
+|--------|------|
+| *&lt;ommitted&gt;* | *default*: writes into a **temporary directory** |
+| `-o` path to XML file | output as defined in **BeanXML** at this path |
+| `-o` other string | writes into the **specified** directory (creates a subdirectory)  |
+
+#### Combining arguments
+
+These arguments can be combined to accomplish both simple and complex pipelines (defined in BeanXML).
 
 Some example commands:
-- `anchor -i '..\*.png' -t grayscale -o c:\Temp\GrayscaleAlbum\`
-- `anchor -t summarizeImages`
-- `anchor -i sunday-hike.xml -t generate_thumbnail.xml -o ../thumbnails/`
 
-#### Defining in BeanXML
+```shell
+# input from glob, task by name, output into a specific absolute directory
+anchor -i '..\*.png' -t grayscale -o c:\Temp\GrayscaleAlbum\
+
+# task by name
+anchor -t summarizeImages
+
+# input and task from BeanXML, output into a specific relative directory
+anchor -i sunday-hike.xml -t generate_thumbnail.xml -o ../thumbnails/
+```
+
+{% include tip.html content="Prespecified tasks can be identified simple by their **task-name** e.g. `grayscale`, `summarizeImages`." %}
+
+### Defining an entire experiment in BeanXML
 
 Instead of element-wise definition on the command line (with `-i`, `-t`, `-o` etc.), an entire experiment can be defined in BeanXML, and simply called from the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
@@ -79,25 +106,20 @@ In full reality, an experiment has more than three elements, as well as wide par
 ### Outputs and logs are structured
 
 Two message-logs are produced:
-- one for **the experiment** as a whole - printed to the console, and often additionally to `experiment_log.txt`.
-- one for **each input** - printed to `job_log.txt` but only if an error occurs processing that particular input.
+- `experiment_log.txt` for the **experiment as a whole** and also printed to the console.
+- `job_log.txt` for **each input** but **only if an error occurs** processing that particular input.
 
 Outputs are produced by default in a temporary directory, easily changed with the `-o` options.
 
 #### Parallelization
 
-Inputs are processed in parallel if possible. Some tasks can be executed each input entirely independently, and so fully in parallel across cores (processors); others involve shared memory and a mixture of parallel and sequential steps.
+Inputs are processed in parallel if possible. Some tasks can be executed each input entirely independently, and so fully in parallel across cores; others involve shared memory and a mixture of parallel and sequential steps.
 
-{% include note.html content="For quick tasks that produce no outputs (i.e. log text only), the execution details are suppressed from the console. For more complicated-tasks, execution details are incrementally printed to the console. Observe if any errors occur!" %}
+{% include note.html content="Quick tasks that only print text to the console **suppress execution details**. Otherwise, for more complicated-tasks, **per-input execution progress** is incrementally printed to the console. Observe if any errors occur!" %}
 
 
 ## Example Usage
 
-Some example guides walk through executing commands:
-
-- Generating a [histogram](/user_guide_examples_histogram.html) of pixel intensities from each channel.
-
-
-
+See [Example Usage](/user_guide_examples.html) for step-by-step usage.
 
 {% include links.html %}
