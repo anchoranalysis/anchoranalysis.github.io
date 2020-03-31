@@ -1198,3 +1198,14 @@ h4.panel-title {
         display:block !important;
     }
 }
+
+pre.commandLine {
+    background-color: black;
+    color: white;
+    border: 1px solid #347DBE;
+}
+
+.screenshotExample {
+    border: 1px solid #eee;
+    max-width: 300px;
+}

@@ -9,11 +9,11 @@ folder: user_guide
 
 ## Inputs
 
-<img alt="inputs in windows explorer" src="/images/examples/histogram/inputs_windows_explorer.jpg" class="screenshot"/>
+<img alt="inputs in windows explorer" src="/images/examples/histogram/inputs_windows_explorer.jpg" class="screenshotExample"/>
 
 Consider an [example album](/downloads/examples/alps.zip) with three images. Running the command from e.g. `D:\Users\owen\Pictures\SomeAlbum`:
 
-<pre>
+<pre class="commandLine">
 $ <b>anchor</b>
 Searching recursively for image files. CTRL+C cancels.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
@@ -29,7 +29,7 @@ Anchor has found 3 images in this directory (searching recursively for known ima
 
 It also found a pattern among the paths, from which each input infers a **name** (`78`, `91` and `13`), as seen with `-t list`:
 
-<pre>
+<pre class="commandLine">
 $ <b>anchor -t list</b>
 78       -> D:\Users\owen\Pictures\SomeAlbum\alps-78.jpg
 91       -> D:\Users\owen\Pictures\SomeAlbum\alps-91.jpg
@@ -40,7 +40,7 @@ $ <b>anchor -t list</b>
 
 Now let's generate some more detailed summarization of the images (width, height, channels, bit depth etc.):
 
-<pre>
+<pre class="commandLine">
 $ <b>anchor -t summarize</b>
 Found 3 inputs.
 -> with uniform extension = jpg
@@ -58,7 +58,7 @@ Then let's generate histograms:
 
 {% include tip.html content="This produces output **with** execution-details" %}
 
-<pre>
+<pre class="commandLine">
 $ <b>anchor -t histogram -o ..</b>
 Experiment histogram_14.09.48 started writing to D:\Users\owen\Pictures\histogram_14.09.48
 Using 7 processors from: 8
@@ -82,7 +82,7 @@ The output directory was calculated relative to the current working directory wi
 
 ## Outputs
 
-<img alt="outputs in windows explorer" src="/images/examples/histogram/outputs_windows_explorer.jpg" class="screenshot"/>
+<img alt="outputs in windows explorer" src="/images/examples/histogram/outputs_windows_explorer.jpg" class="screenshotExample"/>
 
 Many files have been created in the output directory:
 

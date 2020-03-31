@@ -34,7 +34,7 @@ The [default-experiment](https://github.com/anchoranalysis/anchor-assembly/blob/
 2. prints some summary information (a **task**).
 3. produces no **outputs**.
 
-<pre>
+<pre class="commandLine">
 PS D:\Users\owen\Pictures\SomeAlbum> <b>anchor</b>
 Searching for inputs as per default experiment.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
@@ -117,9 +117,6 @@ Inputs are processed in parallel if possible. Some tasks can be executed each in
 
 {% include note.html content="Quick tasks that only print text to the console **suppress execution details**. Otherwise, for more complicated-tasks, **per-input execution progress** is incrementally printed to the console. Observe if any errors occur!" %}
 
-
-## Example Usage
-
-See [Example Usage](/user_guide_examples.html) for step-by-step usage.
+{% include tip.html content="See [Example Usage](/user_guide_examples.html) for a step-by-step guide to using Anchor for everyday tasks." %}
 
 {% include links.html %}
