@@ -90,13 +90,13 @@ anchor -t summarizeImages
 anchor -i sunday-hike.xml -t generate_thumbnail.xml -o ../thumbnails/
 ```
 
-{% include tip.html content="Prespecified tasks can be identified simple by their **task-name** e.g. `grayscale`, `summarizeImages`." %}
+{% include tip.html content="Prespecified tasks can be identified simple by their **task-name** e.g. [grayscale](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks/grayscale.xml), [summarizeImages](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks/summarizeImages.xml)." %}
 
 ### Defining an entire experiment in BeanXML
 
 Instead of element-wise definition on the command line (with `-i`, `-t`, `-o` etc.), an entire experiment can be defined in BeanXML, and simply called from the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
-{% include tip.html content="To see BeanXML look in the Anchor Distribution for [config/defaultExperiment.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/defaultExperiment.xml) or `[config/tasks/](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks)" %}
+{% include tip.html content="To see BeanXML look in the Anchor Distribution for [config/defaultExperiment.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/defaultExperiment.xml) or [config/tasks/](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks)" %}
 
 In full reality, an experiment has more than three elements, as well as wide parameterization possibilities, all initially hidden by defaults. BeanXML provides more finely-grained definition.
 
