@@ -83,7 +83,7 @@ Some example commands:
 
 ```shell
 # input from glob, task by name, output into a specific absolute directory
-anchor -i '..\*.png' -t grayscale -o c:\Temp\GrayscaleAlbum\
+anchor -i '..\*.png' -t grayscale -o 'c:\Temp\GrayscaleAlbum\'
 
 # task by name
 anchor -t summarizeImages
