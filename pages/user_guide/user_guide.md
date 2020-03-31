@@ -117,6 +117,6 @@ Inputs are processed in parallel if possible. Some tasks can be executed each in
 
 {% include note.html content="Quick tasks that only print text to the console **suppress execution details**. Otherwise, for more complicated-tasks, **per-input execution progress** is incrementally printed to the console. Observe if any errors occur!" %}
 
-{% include tip.html content="See [Example Usage](/user_guide_examples.html) for a step-by-step guide to using Anchor for everyday tasks." %}
+{% include tip.html content="See [Example Usage](/user_guide_examples.html) for a practical step-by-step guide to using Anchor." %}
 
 {% include links.html %}
