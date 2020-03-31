@@ -23,9 +23,7 @@ Inputs are usually images (or images plus extras). Outputs can be images, text-f
 
 To run an experiment, these three elements must be defined, though often by defaults.
 
-### Defining experiments
-
-#### The default experiment
+### Default experiment
 
 Anchor offers first sensible defaults, allowing for greater definition later.
 
