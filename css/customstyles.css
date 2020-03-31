@@ -1209,3 +1209,8 @@ pre.commandLine {
     border: 1px solid #eee;
     max-width: 300px;
 }
+
+.linesFollow {
+    font-style: italic;
+    color: orange;
+}

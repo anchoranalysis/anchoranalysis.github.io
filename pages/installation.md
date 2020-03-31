@@ -27,7 +27,7 @@ Simply, open a shell in a directory with images, and run `anchor`
 $ <b>anchor</b>
 Searching recursively for image files. CTRL+C cancels.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
-<i>...lines will follow after it searches for images...</i>
+<span class="linesFollow">...lines will follow after it searches for images...</span>
 </pre>
 
 {% include tip.html content="Follow the [User Guide](/user_guide.html) and [Example Usage](/user_guide_examples.html) to learn more." %}

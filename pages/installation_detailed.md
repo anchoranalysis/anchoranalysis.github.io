@@ -50,7 +50,7 @@ Open a shell (e.g. Command Prompt or PowerShell in Windows) in a directory with 
 $ <b>anchor</b>
 Searching recursively for image files. CTRL+C cancels.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
-<i>...lines will follow after it searches for images...</i>
+<span class="linesFollow">...lines will follow after it searches for images...</span>
 </pre>
 
 {% include tip.html content="Follow the [User Guide](user_guide.html) to learn more." %}
