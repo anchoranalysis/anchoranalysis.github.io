@@ -32,5 +32,7 @@ topnav_dropdowns:
           url: /developer_guide.html
         - title: Architecture
           url: /developer_guide_architecture_overview.html
+        - title: Modules
+          url: /developer_guide_architecture_modules.html          
         - title: GitHub
           external_url: https://github.com/anchoranalysis
