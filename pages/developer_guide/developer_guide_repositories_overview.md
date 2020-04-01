@@ -20,7 +20,7 @@ Anchor's source-code is distributed across several source-code repositories on [
 | [anchor-plugins](https://github.com/anchoranalysis/anchor) | `org.anchoranalysis.plugin`<br>Main set of plugins - MIT-licensed | 19 | 6.9k | 1.2k | 62k |
 | [anchor-plugins-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl) | `org.anchoranalysis.plugin.gpl`<br>Additional set of GPL-licensed plugins | 3 | 0.2k | 0.03k | 3k |
 | [anchor-gui](https://github.com/anchoranalysis/anchor-gui)  | `org.anchoranalysis.gui`<br>GUI application | 14 | 3.7k | 0.8k | 38k |
-| [anchor-assembly](https://github.com/anchoranalysis/anchor-assembly)  | `org.anchoranalysis`<br>Launcher, default config, distribution | 3 | 0.1k | 0.03k | 2k |
+| [anchor-assembly](https://github.com/anchoranalysis/anchor-assembly)  | `org.anchoranalysis`<br>Launcher, default config, [distribution](/developer_guide_anchor_distribution.html) | 3 | 0.1k | 0.03k | 2k |
 
 Number of classes/code is as per *SonarQube, Feb 14th, 2020*. Lines-of-code excludes whitespace and comments.
 

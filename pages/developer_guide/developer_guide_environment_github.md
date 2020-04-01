@@ -21,19 +21,8 @@ Anchor uses [GitHub](https://github.com/anchoranalysis) for several purposes:
 
 ## Source code repositories
 
-### Repositories and dependencies
+{% include tip.html content="Please see [Source Repositories](/developer_guide_repositories_overview.html) for descriptions and inter-dependencies." %}
 
-Please see [Architecture - Overview](/developer_guide_architecture_overview.html) for dependencies and repository descriptions.
-
-| Repository | Primary code language(s) |
-| --- | --- |
-| [anchor](https://github.com/anchoranalysis/anchor) | Java |
-| [anchor-plugins](https://github.com/anchoranalysis/anchor-plugins) | Java |
-| [anchor-plugins-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl) | Java |
-| [anchor-gui](https://github.com/anchoranalysis/anchor-gui) | Java |
-| [anchor-assembly](https://github.com/anchoranalysis/anchor-assembly) | Java, [BeanXML](/developer_guide_anchor_beans.html) |
-| [anchor-pom](https://github.com/anchoranalysis/anchor-pom) | Maven `pom.xml` |
-| [anchoranalysis.github.io](https://github.com/anchoranalysis/anchoranalysis.github.io) | Markdown, HTML - via [Jekyll](https://jekyllrb.com/) |
 
 ### Branches
 

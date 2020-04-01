@@ -22,12 +22,6 @@ Each Java source repository is sub-divided into several modules, typically each 
 
 {% include tip.html content="For a breakdown of modules and namespaces in each repository, see [Java Repositories](/developer_guide_repositories_overview.html#java)" %}
 
-### Locating source-code for a particular bean {#locatingSource}
-
-1. Read the bean-class from the `config-class` attribute
-2. The relevant source-code repository can be inferred from the root package namespace (see [Source Repositories](/developer_guide_repositories_overview.html)).
-3. Follow the maven structure of `src/main/java/org/anchoranalysis/` etc. backwards along the package namespace to eventually locate the class.
-
 ## Plugins
 
 Anchor makes heavy use of the [Dependency Inversion principle from SOLID](https://itnext.io/solid-principles-explanation-and-examples-715b975dcad4). This means we use a lot of abstract base classes in the main anchor application, which other classes rely on BUT the concrete implementations are only provided by **plugins**. These plugins are only specified at run-time, and can be easily exchanged/extended/modified without changing the main (Anchor) code.

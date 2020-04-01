@@ -58,5 +58,10 @@ The namespace to the left of **bean** is the root package namespace.
 
 {% include note.html content="Remember, a bean often inherits properties from parent-beans, so consider also all classes the bean inherits from." %}
 
+### Locating source-code for a particular bean {#locatingSource}
+
+1. Read the bean-class from the `config-class` attribute
+2. The relevant source-code repository can be inferred from the root package namespace (see [Source Repositories](/developer_guide_repositories_overview.html)).
+3. Follow the maven structure of `src/main/java/org/anchoranalysis/` etc. backwards along the package namespace to eventually locate the class.
 
 {% include links.html %}
