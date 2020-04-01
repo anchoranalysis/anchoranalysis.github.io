@@ -1,5 +1,5 @@
 ---
-title: "Source Repository - Anchor"
+title: "Source Repository - anchor"
 tags: [architecture]
 keywords: architecture, packages, repositories
 sidebar: developer_guide_sidebar
