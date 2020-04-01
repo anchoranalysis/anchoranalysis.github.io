@@ -46,7 +46,7 @@ The following command will delete all binary-files (a different lifecycle).
 These commands can be executed in the top-level directory (and thus applied to all sub-modules), or for a specific module only in the respective subdirectory.
 
 
-## Installation Steps  {#install}
+## Installation {#install}
 
 1. Download from [Apache Maven](https://maven.apache.org/)
 
