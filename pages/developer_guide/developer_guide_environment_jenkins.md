@@ -18,6 +18,6 @@ Anchor uses [Jenkins](https://jenkins.io/) as a continuous integration tool. Aft
 
 The projects follow the *dev* branch on the respositories in [GitHub](/developer_guide_environment_github.html).
 
-![jenkins](/images/developer_guide/jenkins.png)
+<img src="/images/developer_guide/jenkins.png" alt="Screenshot of Anchor projects on Jenkins" class="screenshotExample"/>
 
 {% include links.html %}

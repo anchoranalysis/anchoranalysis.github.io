@@ -13,11 +13,11 @@ toc: true
 Anchor uses [GitHub](https://github.com/anchoranalysis) for several purposes:
 
 - several repositories containing **all source-code needed to build Anchor**
-- **storing Anchor Distributions** in packages
+- **storing** [distributions of Anchor](/developer_guide_anchor_distribution.html) in packages
 - **maintaining issues** and [project task-boards](https://github.com/orgs/anchoranalysis/projects)
-- source code for **the Anchor website** at `http://www.anchoranalysis.org` in the [anchoranalysis.hithub.io repository](https://github.com/anchoranalysis/anchoranalysis.github.io)
+- source code for the Anchor website at `http://www.anchoranalysis.org` in the [anchoranalysis.hithub.io repository](https://github.com/anchoranalysis/anchoranalysis.github.io)
 
-![github](/images/developer_guide/github.png)
+<img src="/images/developer_guide/github.png" alt="Screenshot of Anchor project on GitHub" class="screenshotExample"/>
 
 ## Source code repositories
 

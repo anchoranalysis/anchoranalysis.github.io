@@ -12,6 +12,6 @@ toc: false
 
 Anchor uses [SonarQube](https://www.sonarqube.org/) for static code analysis - to search for potential bugs or style errors. After code pushes to [GitHub](/developer_guide_environment_github.html), [Jenkins](/developer_guide_environment_jenkins.html) automatically sends the updated code to [SonarQube](/developer_guide_environment_sonarqube.html) for each anchor Java repository.
 
-![sonarqube](/images/developer_guide/sonarqube.jpg)
+ <img src="/images/developer_guide/sonarqube.png" alt="Screenshot of anchor projects in SonarQube" class="screenshotExample"/>
 
 {% include links.html %}

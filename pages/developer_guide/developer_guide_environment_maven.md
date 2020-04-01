@@ -116,10 +116,17 @@ Replace *yourusername* and *yourpassword* appropriately, and update the `anchor.
 
 ## Multi-module projects
 
-Anchor uses a **multi-module** setup, where there is a hierarchy of `pom.xml` files, from the top-level directory to each nested module. The module-specific `pom.xml` inherits certain settings from the `pom.xml` in its parent-folders.
-Each module pom.xml outlines an artifiactID and version, that determines how it is stored in the repository server.
+Anchor uses a **multi-module** setup with a hierarchy of `pom.xml` files from the top-level directory to each nested module.
 
-Actually Anchor uses *several* multi-module projects, each in its own repository. And the pom.xml in [anchor-pom repository](https://bitbucket.org/anchorimageanalysis/anchor-pom/src/master/) provides a top-level base POM from which all other projects inherit. This is a convenient location for global settings for the build process.
+{% include tip.html content="The module-specific `pom.xml` inherits certain settings from the `pom.xml` in its parent-folders." %}
+
+Each module pom.xml outlines an `artifiactID` and `version` that determine how it is stored in the repository server.
+
+Actually Anchor uses **several multi-module projects**, each in its own repository. 
+
+{% include important.html content="The pom.xml in the [anchor-pom repository](https://github.com/anchoranalysis/anchor-pom) provides a top-level base POM across repositories." %}
+
+This is a convenient location for global settings for the build process.
 
 ### Steps for adding a new plugin module
 

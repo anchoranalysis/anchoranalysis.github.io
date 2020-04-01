@@ -19,7 +19,7 @@ Anchor uses [Nexus Repository OSS](https://www.sonatype.com/nexus-repository-oss
  When in use, it is found at:
 > http://maven.anchoranalysis.org:8081/nexus/
  
-![nexus](/images/developer_guide/nexus.png)
+ <img src="/images/developer_guide/nexus.png" alt="Screenshot of Nexus Repository Server for anchor" class="screenshotExample"/>
 
 ## Hosted Maven repositories
 
