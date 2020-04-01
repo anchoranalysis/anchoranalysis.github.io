@@ -13,8 +13,8 @@ entries:
       url: /user_guide.html
       output: web, pdf
       type: homepage
-    - title: Command line arguments
-      url: /user_guide_command_line_arguments.html
+    - title: Command line
+      url: /user_guide_command_line.html
       output: web, pdf            
     - title: BeanXML
       url: /user_guide_bean_xml.html
