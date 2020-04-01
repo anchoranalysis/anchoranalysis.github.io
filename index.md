@@ -32,7 +32,7 @@ Anchor is a free command-line application and platform for image analysis, espec
 
 ## Project Status {#projectStatus}
 
-Anchor's source-code can be found on [GitHub](https://github.com/anchoranalysis). It is a significant project, covering 170,000 [lines-of-code](/developer_guide_architecture_modules.html#moduleStatistics) across 3,600 Java classes, as well as [BeanXML](/developer_guide_anchor_beans.html) analysis pipelines.
+Anchor's source-code can be found on [GitHub](https://github.com/anchoranalysis). It is a significant project, covering 170,000 [lines-of-code](/developer_guide_repositories_overview.html#java) across 3,600 Java classes, as well as [BeanXML](/developer_guide_anchor_beans.html) analysis pipelines.
 
 {% include callout.html type="danger" content="An effort is ongoing to create documentation and address technical debt before the first formal public release. Only a pre-alpha distribution can be [downloaded](/download.html) until then." %}
 

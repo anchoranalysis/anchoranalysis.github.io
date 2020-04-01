@@ -33,10 +33,7 @@ entries:
     - title: Overview
       url: /developer_guide_architecture_overview.html
       output: web, pdf
-
-    - title: Modules
-      url: /developer_guide_architecture_modules.html
-      output: web, pdf
+      type: homepage
 
     - title: Error handling
       url: /developer_guide_architecture_error_handling.html
@@ -62,3 +59,18 @@ entries:
     - title: SonarQube
       url: /developer_guide_environment_sonarqube.html
       output: web, pdf
+      
+  - title: Source Repositories
+    output: web, pdf
+    
+    folderitems:
+
+    - title: Overview
+      url: /developer_guide_repositories_overview.html
+      output: web, pdf
+      type: homepage
+      
+    - title: anchor
+      url: /developer_guide_repositories_anchor.html
+      output: web, pdf
+      

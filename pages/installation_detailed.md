@@ -52,6 +52,6 @@ response="Searching recursively for image files. CTRL+C cancels.
 Learn how to select inputs, outputs and tasks with 'anchor -h'.
 <span class='commandLinesFollow'>...lines will follow after it searches for images...</span>" %}
 
-{% include tip.html content="Follow the [User Guide](user_guide.html) to learn more." %}
+{% include tip.html content="Follow the [Example Usage](/user_guide_examples.html) and [User Guide](/user_guide.html) to learn more." %}
 
 
