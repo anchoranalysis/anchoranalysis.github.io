@@ -23,7 +23,7 @@ Inputs are usually images (or images plus extras). Outputs can be images, text-f
 
 To run an experiment, these three elements must be defined, though often by defaults.
 
-### Default experiment
+### Default experiment {#defaultExperiment}
 
 Anchor offers first sensible defaults, allowing for greater definition later.
 
@@ -47,7 +47,7 @@ ${0} = \"mar\" (1) | \"jan\" (1) | \"feb\" (1)" %}
 
 Each element **(inputs, task, outputs)** can be overridden using a command-line argument `-i` or `-t` or `-o` as follows:
 
-#### Changing inputs with `-i`
+#### Changing inputs with `-i` {#inputs}
 
 |`-i` argument| input |
 |--------|------|
@@ -56,7 +56,7 @@ Each element **(inputs, task, outputs)** can be overridden using a command-line 
 | `-i` glob  *(e.g. `*.jpg`)* | reads **files matching the glob** |
 | `-i` other path | reads images recursively from the **specified** directory  |
 
-#### Changing the task with `-t`
+#### Changing the task with `-t` {#task}
 
 |`-t` argument| input |
 |--------|------|
@@ -64,7 +64,7 @@ Each element **(inputs, task, outputs)** can be overridden using a command-line 
 | `-t` path to XML file | task as defined in **BeanXML** at this path |
 | `-t` other string | looks for a **task** in `config/tasks/` matching this name  |
 
-#### Changing outputs with `-o`
+#### Changing outputs with `-o` {#outputs}
 
 |`-o` argument| input |
 |--------|------|

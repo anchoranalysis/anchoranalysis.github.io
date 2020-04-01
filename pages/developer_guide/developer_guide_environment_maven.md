@@ -10,23 +10,25 @@ toc: true
 
 ## Overview
 
+<img src="/images/developer_guide/maven.svg" alt="Apache Maven logo" style="float: right;"/>
+
 Anchor uses [Apache Maven](https://maven.apache.org/) as a build automation tool.
-
-{% include important.html content="Anchor currently uses **Maven Version 3.3.9**." %}
-
-Tutorials on Maven are widely available. Here follows a very brief introduction.
 
 Maven combines:
 - a build-tool (similar to Ant), and
-- repositories for storing versioned binary-artifacts (e.g. JARs) and dependencies.
+- repositories for storing versioned artefacts (JARs).
 
-See [SonarQube](/developer_guide_environment_sonarqube.html)) for the repository server that Anchor uses.
+{% include important.html content="Anchor currently uses **Maven Version 3.3.9**." %}
+
+See [SonarQube](/developer_guide_environment_sonarqube.html) for the repository server that Anchor uses.
 
 There exists a private local maven repository (`$HOME/.m2/` sub-directory in your home-directory) where artifacts may be stored, before being synchronized with the main server.
 
 {% include note.html content="A file `pom.xml` specifies build-related settings." %}
 
 ### Example commands
+
+Tutorials on Maven are widely available. Here follows a very brief introduction.
 
 Maven's build process is centered around [https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html](lifecycles and phases).
 

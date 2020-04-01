@@ -18,23 +18,23 @@ folder: developer_guide
 
 1. To separate the implementation of algorithms/components from their parameterization.
 2. To allow for easy serialization of configuration back and forth to XML.
-3. To have a core-object model that implements certain repeated functionality (initialization, duplication) across the platform.
-4. To remember of the parameters and algorithms used (for scientific record keeping).
-5. To facilitate rapid ongoing development i.e. the cost of adding new code-features must be kept small, as image analysis usually involves lots of prototyping.
+3. For a core-object model with certain repeated functionality (initialization, duplication).
+4. To remember parameters and algorithms for scientific record-keeping.
+5. To facilitate rapid ongoing development: low cost to add prototypes.
 
-By encoding configuration in separate XML files, this allows the user to change application behavior without recompiling. e.g. change configuration settings, define new experimental pipelines, modify existing pipelines, tweak parameters etc.
+{% include tip.html content="Application behavior can be changed via BeanXML without recompiling e.g. change configuration settings, define new experimental pipelines, modify existing pipelines, tweak parameters etc." %}
 
-This approach implements principles of [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) and [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control), similarly to the [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework) but simplified.
+We implement principles of [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) and [Inversion of Control (IoC)](https://en.wikipedia.org/wiki/Inversion_of_control) (similarly to the [Spring Framework](https://howtodoinjava.com/spring-core/spring-ioc-vs-di/)).
 
 ## Anchor BeanXML {#beanXML}
 
 BeanXML is a basic XML standard for defining AnchorBeans, which just uses the [Apache Commons Configuration](https://commons.apache.org/proper/commons-configuration/) framework for serializing JavaBeans to/from XML.
 
-**N.B. Please read and understand the [user-guide to BeanXML](user_guide_bean_xml.html)**
+{% include important.html content="**Please read and understand the [user-guide to BeanXML](user_guide_bean_xml.html)**" %}
  
-For technical code-level details on BeanXML and Java please see the guide [Declaring and Creating Beans](https://commons.apache.org/proper/commons-configuration/userguide/howto_beans.html) before proceeding.
+{% include note.html content="For technical Java coding on BeanXML please see [Declaring and Creating Beans](https://commons.apache.org/proper/commons-configuration/userguide/howto_beans.html) before proceeding." %}
 
-Additional Anchor-specific aspects are added to standard BeanXML. For example, when certain operations are executed (duplication, configuration-checks etc.), they occur not only on the bean itself, but **recursively** on all its child properties e.g. duplicate() is a deep-copy not a shallow-copy
+Additional Anchor-specific aspects are added to standard BeanXML. e.g. duplication occurs not only on the bean itself, but **recursively** on all its child properties, thus giving a deep copy.
 
 ### Important prior step before usage in code
 

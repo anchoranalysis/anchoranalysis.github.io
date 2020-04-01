@@ -1223,3 +1223,10 @@ pre.commandShell {
     max-width: 300px;
 }
 
+.optionArg {
+    color: #ED1951;
+    font-style: italic;
+    margin-left:5px;
+    margin-right:5px;
+}
+
