@@ -24,13 +24,15 @@ Each Java source repository is sub-divided into several modules, typically each 
 
 ## Plugins
 
-Anchor makes heavy use of the [Dependency Inversion principle from SOLID](https://itnext.io/solid-principles-explanation-and-examples-715b975dcad4). This means we use a lot of abstract base classes in the main anchor application, which other classes rely on BUT the concrete implementations are only provided by **plugins**. These plugins are only specified at run-time, and can be easily exchanged/extended/modified without changing the main (Anchor) code.
+Anchor makes heavy use of the [Dependency Inversion principle from SOLID](https://itnext.io/solid-principles-explanation-and-examples-715b975dcad4).
 
-As a rule, the top-level library components should NEVER depend on the plugins, only the other way around. 
+This means we use a lot of abstract base classes in the anchor application, which other classes rely on *but* the concrete implementations are only specified at run-time.
 
-An exception is allowed for testing, and library classes are allowed depend on plugins, but confined to *test* scope only.
+This run-time specification occurs via one type of module called a **plugin**, which can be easily exchanged / extended / modified without recompiling the main code-base.
 
-We insert plugins using [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) (giving us [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control)) using BeanXML.
+{% include warning.html content="As a rule, the top-level library components should *never* depend on the plugins, only the other way around." %}
+
+We insert plugins using [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) via BeanXML (giving us [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control)).
 
 ### Steps for adding a new plugin module
 
@@ -44,7 +46,7 @@ Based in the root directory of a multi-module respository:
 
 ## Anchor Beans
 
-Many classes (especially plugins) inherit from AnchorBean class. This makes the class an [Anchor Bean](/developer_guide_anchor_beans.html), which can be instantiated from XML (and have other convenient properties).
+Many classes (especially plugins) inherit from AnchorBean class. This makes the class an [Anchor Bean](/developer_guide_anchor_beans.html), which can be instantiated from XML and has other convenient properties.
 
 ## Key entry-point modules
 
