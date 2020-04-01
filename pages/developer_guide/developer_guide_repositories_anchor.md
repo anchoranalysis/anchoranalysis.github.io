@@ -23,7 +23,7 @@ used by Anchor.
 
 ## Modules
 
-| Module | Java Package Root and Description  | Classes | Lines&#x2011;of&#x2011;Code |
+| Module | Java Package Root &amp; Description  | Classes | Lines&#x2011;of&#x2011;Code |
 |------------|------------------|-------------:|-------------:|
 | [anchor-annotation](https://github.com/anchoranalysis/anchor/tree/master/anchor-annotation) | `org.anchoranalysis.annotation`<br>Annotating images with shapes / labels. | 5 | 191 |
 | [anchor-annotation-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-annotation-io) | `org.anchoranalysis.annotation.io`<br>Reading / writing related to `anchor-annotation` | 28 | 1,299 |

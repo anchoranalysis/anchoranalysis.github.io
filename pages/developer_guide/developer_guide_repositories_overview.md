@@ -14,7 +14,7 @@ Anchor's source-code is distributed across several source-code repositories on [
 ## Java repositories {#java}
 
 
-| Repository | Java Package Root and Description | Modules | Functions | Classes | Lines&#x2011;of&#x2011;Code |
+| Repository | Java Package Root &amp; Description | Modules | Functions | Classes | Lines&#x2011;of&#x2011;Code |
 |------------|-------------|-----------:|-----------:|---------------:|---------------:|
 | [anchor](/developer_guide_repositories_anchor) | `org.anchoranalysis`<br>Main libraries for Anchor platform | 28 | 8.7k | 1.6k | 66k |
 | [anchor-plugins](https://github.com/anchoranalysis/anchor) | `org.anchoranalysis.plugin`<br>Main set of plugins - MIT-licensed | 19 | 6.9k | 1.2k | 62k |
