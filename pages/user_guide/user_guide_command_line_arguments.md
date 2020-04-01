@@ -31,6 +31,8 @@ The **most important** command-line options are:
 
 {% include tip.html content="Typing `anchor -h` will display available command-line arguments" %}
 
+{% include tip.html content="It's best to use `-d` as the final option to avoid ambiguity about its optional argument." %}
+
 ## Minor options
 
 Options of **lesser importance** are:
