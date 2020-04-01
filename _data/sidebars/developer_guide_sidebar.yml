@@ -47,15 +47,19 @@ entries:
     - title: GitHub
       url: /developer_guide_environment_github.html
       output: web, pdf
-      
-    - title: Jenkins
-      url: /developer_guide_environment_jenkins.html
-      output: web, pdf
 
+    - title: Maven
+      url: /developer_guide_environment_maven.html
+      output: web, pdf
+            
     - title: Nexus repository server
       url: /developer_guide_environment_nexus.html
       output: web, pdf    
-        
+
+    - title: Jenkins
+      url: /developer_guide_environment_jenkins.html
+      output: web, pdf
+              
     - title: SonarQube
       url: /developer_guide_environment_sonarqube.html
       output: web, pdf

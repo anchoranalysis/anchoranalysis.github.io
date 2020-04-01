@@ -34,16 +34,6 @@ This run-time specification occurs via one type of module called a **plugin**, w
 
 We insert plugins using [Dependency Injection](https://en.wikipedia.org/wiki/Dependency_injection) via BeanXML (giving us [Inversion of Control](https://en.wikipedia.org/wiki/Inversion_of_control)).
 
-### Steps for adding a new plugin module
-
-Based in the root directory of a multi-module respository:
-
-1. Create a sub-directory containing the new module in [anchor-plugins](https://github.com/anchoranalysis/anchor-plugins) or [anchor-plugins-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl) depending on license.
-2. Add module name to the `pom.xml` in the root directory of this repository.
-3. Add a dependency in `anchor-assembly`:
-    1. if it's the regular MIT license (i.e. not-GPL), then add a dependency in [/addplugins/pom.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/addplugins/pom.xml) 
-    2. if it's GPL, then add a dependency in [/anchor-assembly/pom.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/pom.xml)
-
 ## Anchor Beans
 
 Many classes (especially plugins) inherit from AnchorBean class. This makes the class an [Anchor Bean](/developer_guide_anchor_beans.html), which can be instantiated from XML and has other convenient properties.

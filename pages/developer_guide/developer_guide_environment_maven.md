@@ -1,0 +1,134 @@
+---
+title: "Development Environment - Maven"
+tags: [build]
+keywords: sonarqube, environment, ci, continuousintegration
+sidebar: developer_guide_sidebar
+permalink: developer_guide_environment_maven.html
+folder: developer_guide
+toc: true
+---
+
+## Overview
+
+Anchor uses [Apache Maven](https://maven.apache.org/) as a build automation tool.
+
+{% include important.html content="Anchor currently uses **Maven Version 3.3.9**." %}
+
+Tutorials on Maven are widely available. Here follows a very brief introduction.
+
+Maven combines:
+- a build-tool (similar to Ant), and
+- repositories for storing versioned binary-artifacts (e.g. JARs) and dependencies.
+
+See [SonarQube](/developer_guide_environment_sonarqube.html)) for the repository server that Anchor uses.
+
+There exists a private local maven repository (`$HOME/.m2/` sub-directory in your home-directory) where artifacts may be stored, before being synchronized with the main server.
+
+{% include note.html content="A file `pom.xml` specifies build-related settings." %}
+
+### Example commands
+
+Maven's build process is centered around [https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html](lifecycles and phases).
+
+To perform a build task, simply open a command-shell and change directory to where a *pom.xml* is located. Then execute maven with a phase as an argument. All necessary prior phases are also executed.
+
+For example, the following command, executes the *deploy* phase, which builds, installs the binary output in the local maven repository, and then copies the final binaries onto the repository-server.
+> mvn deploy
+
+The following command will only execute only as far as the *install* phase.
+> mvn install
+
+The following command will delete all binary-files (a different lifecycle).
+> mvn clean
+
+These commands can be executed in the top-level directory (and thus applied to all sub-modules), or for a specific module only in the respective subdirectory.
+
+
+## Installation Steps  {#install}
+
+1. Download from [Apache Maven](https://maven.apache.org/)
+
+2. Add the `bin/` directory to `$PATH`
+
+3. Setup a `.m2/settings.xml` file as outlined below to access the Anchor repositories.
+
+
+### Settings file
+
+There is a Maven repository server called [Nexus](/developer_guide_environment_nexus.html) (provides versioned JARs) that is needed to build Anchor.
+
+It is found at:
+> http://maven.anchoranalysis.org:8081/nexus/
+
+Currently, this repository **requires credentials** to access, either to download-from (*read*) or to deploy-to (*write*). Contact Owen Feehan to request.
+
+The credentials (username/password) should be specified in your private maven settings, e.g. in `$HOME/.m2/settings.xml` where `$HOME` is the user's *home directory*`.
+
+{% include note.html content="On Windows, a user's home directory is typically found at `C:\Users\owen\` (replace the username)." %}
+
+```xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+    <servers>
+        <server>
+            <id>anchor</id>
+            <username>yourusername</username>
+            <password>yourpassword</password>
+        </server>
+        <server>
+            <id>anchor-releases</id>
+            <username>yourusername</username>
+            <password>yourpassword</password>
+        </server>
+        <server>
+            <id>anchor-snapshots</id>
+            <username>yourusername</username>
+            <password>yourpassword</password>
+        </server>
+        <server>
+            <id>anchor-thirdparty</id>
+            <username>yourusername</username>
+            <password>yourpassword</password>
+        </server>
+    </servers>
+
+    <profiles>
+        <profile>
+            <id>anchorTestConfig</id>
+            <properties>
+                <anchor.home.test>C:\Users\SOMEUSER\Apps\anchor\</anchor.home.test>
+                <anchor.home.deploy>C:\Users\SOMEUSER\Apps\anchor\</anchor.home.deploy>
+                <maven.test.skip>true</maven.test.skip>
+                <maven.javadoc.skip>true</maven.javadoc.skip>
+            </properties>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>anchorTestConfig</activeProfile>
+    </activeProfiles>
+
+</settings>
+```
+
+Replace *yourusername* and *yourpassword* appropriately, and update the `anchor.home.test` and `anchor.home.deploy` variable to match the path where Anchor will be deployed to.
+
+## Multi-module projects
+
+Anchor uses a **multi-module** setup, where there is a hierarchy of `pom.xml` files, from the top-level directory to each nested module. The module-specific `pom.xml` inherits certain settings from the `pom.xml` in its parent-folders.
+Each module pom.xml outlines an artifiactID and version, that determines how it is stored in the repository server.
+
+Actually Anchor uses *several* multi-module projects, each in its own repository. And the pom.xml in [anchor-pom repository](https://bitbucket.org/anchorimageanalysis/anchor-pom/src/master/) provides a top-level base POM from which all other projects inherit. This is a convenient location for global settings for the build process.
+
+### Steps for adding a new plugin module
+
+Based in the root directory of a multi-module respository:
+
+1. Create a sub-directory containing the new module in [anchor-plugins](https://github.com/anchoranalysis/anchor-plugins) or [anchor-plugins-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl) depending on license.
+2. Add module name to the `pom.xml` in the root directory of this repository.
+3. Add a dependency in `anchor-assembly`:
+    1. if it's the regular MIT license (i.e. not-GPL), then add a dependency in [/addplugins/pom.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/addplugins/pom.xml) 
+    2. if it's GPL, then add a dependency in [/anchor-assembly/pom.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/pom.xml)
+
+{% include links.html %}
