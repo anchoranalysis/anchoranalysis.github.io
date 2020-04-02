@@ -35,13 +35,19 @@ Maven's build process is centered around [https://maven.apache.org/guides/introd
 To perform a build task, simply open a command-shell and change directory to where a *pom.xml* is located. Then execute maven with a phase as an argument. All necessary prior phases are also executed.
 
 For example, the following command, executes the *deploy* phase, which builds, installs the binary output in the local maven repository, and then copies the final binaries onto the repository-server.
-> mvn deploy
+
+{% include shellSingleLine.html
+command="mvn deploy" %}
 
 The following command will only execute only as far as the *install* phase.
-> mvn install
+
+{% include shellSingleLine.html
+command="mvn install" %}
 
 The following command will delete all binary-files (a different lifecycle).
-> mvn clean
+
+{% include shellSingleLine.html
+command="mvn clean" %}
 
 These commands can be executed in the top-level directory (and thus applied to all sub-modules), or for a specific module only in the respective subdirectory.
 
