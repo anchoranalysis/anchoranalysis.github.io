@@ -15,7 +15,7 @@ Authored by: Owen Feehan
 
 [Do not repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). By eliminating duplication in code, the code becomes better structured and is easier to understand and maintain. [SonarQube](developer_guide_environment_sonarqube.html) automatically checks for duplicated code patterns.
 
-{% include warning.html content="Don't WET (write everything twice) unless there is a strong mitigating circumstances, as it is just deferring and increasing deduplication for the next developer - who may not even realise the preexisting duplication." %}
+{% include warning.html content="Don't WET (write everything twice) unless there is a strong mitigating circumstances, as it is just deferring and increasing deduplication effort for the next developer - who may not even realise the preexisting duplication." %}
 
 ### Encapsulate enthusiastically
 
