@@ -1,6 +1,6 @@
 ---
 title: "Source Repository - anchor-pom"
-tags: [architecture]
+tags:
 keywords: architecture, packages, repositories
 sidebar: developer_guide_sidebar
 permalink: developer_guide_repositories_anchor_pom.html
