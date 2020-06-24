@@ -12,7 +12,7 @@ folder: developer_guide
 ### Repositories
 
 The Anchor platform is spread across many library components bundled together into [source repositories](/developer_guide_repositories_overview.html).
-- Java repositories with most code
+- Java repositories (containing the bulk of the codebase).
 - BeanXML repositories with projects, pipelines and tasks.
 - Various other supporting smaller projects (website, plotting and machine-learning scripts).
 
