@@ -9,6 +9,8 @@ folder: developer_guide
 
 ## Code Structure
 
+Please see [Coding Style](/developer_guide_architecture_coding_style.html) for general coding approach. Here refers to code structure on a higher architectural-level.
+
 ### Repositories
 
 The Anchor platform is spread across many library components bundled together into [source repositories](/developer_guide_repositories_overview.html).

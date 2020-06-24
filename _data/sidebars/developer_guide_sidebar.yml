@@ -35,6 +35,10 @@ entries:
       output: web, pdf
       type: homepage
 
+    - title: Coding style
+      url: /developer_guide_architecture_coding_style.html
+      output: web, pdf      
+      
     - title: Error handling
       url: /developer_guide_architecture_error_handling.html
       output: web, pdf

@@ -35,6 +35,8 @@ topnav_dropdowns:
         - title: Architecture
           url: /developer_guide_architecture_overview.html
         - title: Source Repositorities
-          url: /developer_guide_repositories_overview.html          
+          url: /developer_guide_repositories_overview.html
+        - title: Coding Style
+          url: /developer_guide_architecture_coding_style.html          
         - title: GitHub
           external_url: https://github.com/anchoranalysis
