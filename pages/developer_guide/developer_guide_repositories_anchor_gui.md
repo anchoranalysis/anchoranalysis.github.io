@@ -9,22 +9,11 @@ folder: developer_guide
 
 ## Introduction
 
-A Java (maven) source repository on [GitHub](https://github.com/anchoranalysis/anchor-gui) containing the GUI application for Anchor.
+A Java (maven) source repository on [GitHub](https://github.com/anchoranalysis/anchor-gui) containing the [GUI application](/user_guide_advanced_gui.html) for Anchor.
 
 {% include warning.html content="This repository is considered (mostly) legacy code. It is not maintained to same standards as elsewhere." %}
 
 It uses [Swing](https://en.wikipedia.org/wiki/Swing_(Java)) to run a graphical-app on the desktop.
-
-{% include callout.html content="The command `anchor-gui` will launch it in an [Anchor distribution](developer_guide_anchor_distribution.html)" %}
-
-### What can I do with the GUI application?
-
-The GUI application supports:
-- Loading sets of images
-- Visualizing collections of objects and marks on top of individual images (including time-series and 3D).
-- Interactive feature querying and calculation for objects and marks (click on objects and see its features!).
-- Collecting ground truth by adding annotations (labels or marks) on top of images.
-- Replaying optimization processes from the serialized output recorded.
 
 ### What belongs in the repository?
 

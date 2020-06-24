@@ -1,5 +1,5 @@
 ---
-title: "Advanced - Marked point processes"
+title: "Marked point processes"
 tags:
 keywords:
 sidebar: user_guide_sidebar
