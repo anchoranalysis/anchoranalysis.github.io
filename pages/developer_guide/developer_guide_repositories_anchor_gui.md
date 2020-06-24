@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A Java (maven) source repository on [GitHub](https://github.com/anchoranalysis/anchor-gui) containing the [GUI application](/user_guide_advanced_gui.html) for Anchor.
+A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository on [GitHub](https://github.com/anchoranalysis/anchor-gui) containing the [GUI application](/user_guide_advanced_gui.html) for Anchor.
 
 {% include warning.html content="This repository is considered (mostly) legacy code. It is not maintained to same standards as elsewhere." %}
 

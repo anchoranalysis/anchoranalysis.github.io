@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A repository on [GitHub](https://github.com/anchoranalysis/anchor-pom) containing a Maven `pom.xml` which provides a parent POM for other Java repositories.
+A **Maven** repository on [GitHub](https://github.com/anchoranalysis/anchor-pom) containing a [Maven](/developer_guide_environment_maven.html) `pom.xml` which provides a parent POM for other Java repositories.
 
 Its purpose is to provide shared variables and configuration across all the anchor Java repositories.
 

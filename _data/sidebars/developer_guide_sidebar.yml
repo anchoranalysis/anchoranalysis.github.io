@@ -97,3 +97,8 @@ entries:
     - title: anchor-pom
       url: /developer_guide_repositories_anchor_pom.html
       output: web, pdf
+      
+    - title: anchor-r
+      url: /developer_guide_repositories_anchor_r.html
+      output: web, pdf      
+      

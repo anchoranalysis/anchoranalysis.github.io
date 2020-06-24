@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A Java (maven) source repository on [GitHub](https://github.com/anchoranalysis/anchor-plugins) containing the main plugins for Anchor. This includes most of the image processing algorithms.
+A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository on [GitHub](https://github.com/anchoranalysis/anchor-plugins) containing the main plugins for Anchor. This includes most of the image processing algorithms.
 
 ### What belongs?
 

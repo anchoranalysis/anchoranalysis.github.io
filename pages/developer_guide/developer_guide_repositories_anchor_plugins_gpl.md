@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A Java (maven) source repository on [GitHub](https://github.com/anchoranalysis/anchor-plugins-gpl) containing plugins for Anchor that are licensed under the [GPL license](https://opensource.org/licenses/gpl-license) (rather than the [MIT license](https://opensource.org/licenses/MIT) used by the [primary plugin repository](https://github.com/anchoranalysis/anchor-plugins)).
+A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository on [GitHub](https://github.com/anchoranalysis/anchor-plugins-gpl) containing plugins for Anchor that are licensed under the [GPL license](https://opensource.org/licenses/gpl-license) (rather than the [MIT license](https://opensource.org/licenses/MIT) used by the [primary plugin repository](https://github.com/anchoranalysis/anchor-plugins)).
 
 ### What belongs?
 

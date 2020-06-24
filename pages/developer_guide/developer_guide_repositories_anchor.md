@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A Java (maven) source repository on [GitHub](https://github.com/anchoranalysis/anchor) containing the main libraries
+A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository on [GitHub](https://github.com/anchoranalysis/anchor) containing the main libraries
 used by Anchor.
 
 ### What belongs?

@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A Java (maven) source repository on [GitHub](https://github.com/anchoranalysis/anchor-assembly). It provides:
+A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository on [GitHub](https://github.com/anchoranalysis/anchor-assembly). It provides:
 
 - command-line launchers for Anchor
 - procedure for making an [Anchor Distribution](/developer_guide_anchor_distribution.html)
