@@ -89,4 +89,7 @@ entries:
     - title: anchor-gui
       url: /developer_guide_repositories_anchor_gui.html
       output: web, pdf      
-      
+
+    - title: anchor-assembly
+      url: /developer_guide_repositories_anchor_assembly.html
+      output: web, pdf      
