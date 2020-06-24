@@ -33,14 +33,14 @@ used by Anchor.
 | [anchor-experiment](https://github.com/anchoranalysis/anchor/tree/master/anchor-experiment) | `org.anchoranalysis.experiment`<br>Defines an experiment and how to execute it. | 55 | 2,606 |
 | [anchor-feature](https://github.com/anchoranalysis/anchor/tree/master/anchor-feature) | `org.anchoranalysis.feature`<br>Defines a *feature* generically and related utilities. | 75 | 2,969 |
 | [anchor-feature-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-feature-io) | `org.anchoranalysis.feature.io`<br>Reading / writing related to `anchor-feature` | 6 | 382 |
-| [anchor-feature-session](https://github.com/anchoranalysis/anchor/tree/master/anchor-feature-session) | | 25 | 1,098 |
-| [anchor-graph](https://github.com/anchoranalysis/anchor/tree/master/anchor-graph) | | 15 | 731 |
-| [anchor-image](https://github.com/anchoranalysis/anchor/tree/master/anchor-image) | | 257 | 14,834 |
-| [anchor-image-bean](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-bean) | | 63 | 1,950 |
-| [anchor-image-experiment](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-experiment) | | 8 | 356 |
-| [anchor-image-feature](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-feature) | | 55 | 1,827 |
-| [anchor-image-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-io) | | 74 | 3,691 |
-| [anchor-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-io) | | 94 | 3,416 |
+| [anchor-feature-session](https://github.com/anchoranalysis/anchor/tree/master/anchor-feature-session) | `org.anchoranalysis.feature.session`<br>Sessions to calculate many features optimally. | 25 | 1,098 |
+| [anchor-graph](https://github.com/anchoranalysis/anchor/tree/master/anchor-graph) | `org.anchoranalysis.graph`<br>Plotting of some basic charts. | 15 | 731 |
+| [anchor-image](https://github.com/anchoranalysis/anchor/tree/master/anchor-image) | `org.anchoranalysis.image`<br>Core (non-bean) data objects for images. | 257 | 14,834 |
+| [anchor-image-bean](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-bean) | `org.anchoranalysis.image.bean`<br>Core (bean) data objects for images. | 63 | 1,950 |
+| [anchor-image-experiment](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-experiment) | `org.anchoranalysis.image.experiment`<br>Base classes for general tasks that involve images. | 8 | 356 |
+| [anchor-image-feature](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-feature) | `org.anchoranalysis.image.feature`<br>Feature calculation on images or parts of images. | 55 | 1,827 |
+| [anchor-image-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-io) | `org.anchoranalysis.image.io`<br>Reading / writing related to `anchor-image` | 74 | 3,691 |
+| [anchor-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-io) | `org.anchoranalysis.io`<br>Reading / writing without specific application. | 94 | 3,416 |
 | [anchor-io-generator](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-generator) | | 43 | 1,789 |
 | [anchor-io-manifest](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-manifest) | | 74 | 2,253 |
 | [anchor-io-output](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-output) | | 20 | 936 |
