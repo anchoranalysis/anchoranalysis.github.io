@@ -92,4 +92,8 @@ entries:
 
     - title: anchor-assembly
       url: /developer_guide_repositories_anchor_assembly.html
-      output: web, pdf      
+      output: web, pdf
+      
+    - title: anchor-pom
+      url: /developer_guide_repositories_anchor_pom.html
+      output: web, pdf
