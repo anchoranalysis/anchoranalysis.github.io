@@ -94,6 +94,6 @@ Possibilities:
 - The CSV files can be opened and visualized in *Excel*, *Python* ([pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)), [R](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html), [Spotfire](https://www.tibco.com/products/tibco-spotfire), [Ron's Editor](https://www.ronsplace.eu/products/ronseditor), and similar.
 - The histograms can be attached to images (as *multi-inputs*) for subsequent tasks in Anchor.
 - Thresholds or color models can be calculated from the CSVs (e.g. using the `grouped/` aggregates for robustness).
-    - Consider [Otsu's method](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-image/src/main/java/org/anchoranalysis/plugin/image/bean/threshold/calculatelevel/Otsu.java) or anchor's [Weighted Otsu](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-image/src/main/java/org/anchoranalysis/plugin/image/bean/threshold/calculatelevel/OtsuWeighted.java).
+    - Consider [Otsu's method](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-image/src/main/java/org/anchoranalysis/plugin/image/bean/histogram/threshold/Otsu.java) or anchor's [Weighted Otsu](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-image/src/main/java/org/anchoranalysis/plugin/image/bean/histogram/threshold/OtsuWeighted.java).
 
 {% include links.html %}
