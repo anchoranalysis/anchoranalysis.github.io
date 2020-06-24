@@ -78,3 +78,15 @@ entries:
       url: /developer_guide_repositories_anchor.html
       output: web, pdf
       
+    - title: anchor-plugins
+      url: /developer_guide_repositories_anchor_plugins.html
+      output: web, pdf
+      
+    - title: anchor-plugins-gpl
+      url: /developer_guide_repositories_anchor_plugins_gpl.html
+      output: web, pdf
+      
+    - title: anchor-gui
+      url: /developer_guide_repositories_anchor_gui.html
+      output: web, pdf      
+      
