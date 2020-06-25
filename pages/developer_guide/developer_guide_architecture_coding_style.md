@@ -66,7 +66,7 @@ The `final` keyword can be useful to indicate immutable variables, but it's good
 
 {% include warning.html content="Note that some parts of Anchor interact with third-party-libraries that use nullable functions. Please document clearly these circumstances." %}
 
-## Python-specific
+## Python-specific {#python}
 
 ### Type-hints
 

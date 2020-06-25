@@ -19,7 +19,7 @@ A [R](https://www.r-project.org/) source repository on [GitHub](https://github.c
 
 ## Packages
 
-| Resource Location | Description  |
+| Package | Description  |
 |------------|------------------|-------------:|-------------:|
 | [anchor-r](https://github.com/anchoranalysis/anchor-r/tree/master/anchor-r) | Very general utility functions |
 | [anchor-r-features](https://github.com/anchoranalysis/anchor-r/tree/master/anchor-r-features) | Processing feature-export data (CSV) from Anchor (building classifiers, plotting etc.) |
