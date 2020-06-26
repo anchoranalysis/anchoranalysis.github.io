@@ -21,16 +21,16 @@ A [R](https://www.r-project.org/) source repository on [GitHub](https://github.c
 
 | Package | Description  |
 |------------|------------------|-------------:|-------------:|
-| [anchor-r](https://github.com/anchoranalysis/anchor-r/tree/master/anchor-r) | Very general utility functions |
+| [anchor-r](https://github.com/anchoranalysis/anchor-r/tree/master/anchor-r) | General utility functions for interacting with Anchor output. |
 | [anchor-r-features](https://github.com/anchoranalysis/anchor-r/tree/master/anchor-r-features) | Processing feature-export data (CSV) from Anchor (building classifiers, plotting etc.) |
-| [anchor-r-experiment](https://github.com/anchoranalysis/anchor-r/tree/master/anchor-r-experiment) | Utilities for accessing the structured output from an Anchor experiment |
+| [anchor-r-experiment](https://github.com/anchoranalysis/anchor-r/tree/master/anchor-r-experiment) | Class for accessing the structured output from an Anchor experiment. |
 | [anchor-r-nuclei](https://github.com/anchoranalysis/anchor-r/tree/master/anchor-r-experiment) | Functions to help with nuclei segmentation pipelines. |
 
 ### Code structure
 
-- Each function is documented in its header (in the respective `R/` subdirectory)
-- The `NAMESPACE` file specifies which functions are publicly-exposed
-- R-package dependencies are listed in the `DESCRIPTION` file and in `NAMESPACE`
+- Each function is documented in its header (in the respective `R/` subdirectory).
+- The `NAMESPACE` file specifies which functions are publicly-exposed.
+- R-package dependencies are listed in the `DESCRIPTION` file and in `NAMESPACE`.
 
 ## Installation
 
