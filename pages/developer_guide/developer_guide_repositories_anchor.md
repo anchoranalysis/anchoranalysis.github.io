@@ -48,12 +48,11 @@ used by Anchor.
 | [anchor-math](https://github.com/anchoranalysis/anchor/tree/master/anchor-math) | `org.anchoranalysis.math`<br>Mathematical algorithms or utility functions. | 14 | 668 |
 | [anchor-mpp](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp) | `org.anchoranalysis.mpp`<br>Core data classes for Marked Point Processes | 136 | 6,012 |
 | [anchor-mpp-feature](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp-feature) | `org.anchoranalysis.mpp.feature`<br>Feature calculation on objects in [anchor-mpp](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp) | 57 | 2,643 |
-(https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp) | 6 | 308 |
 | [anchor-mpp-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp-io) | `org.anchoranalysis.mpp.io`<br>Input / output related to objects in [anchor-mpp](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp) | 32 | 1,517 |
-| [anchor-mpp-plot](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp-plot) | `org.anchoranalysis.mpp.graph`<br>Plotting related to objects in [anchor-mpp]
+| [anchor-mpp-plot](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp-plot) | `org.anchoranalysis.mpp.plot`<br>Plotting related to objects in [anchor-mpp](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp) | 6 | 308 |
 | [anchor-mpp-sgmn](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp-sgmn) | `org.anchoranalysis.mpp.sgmn`<br>Segmentation involving objects in [anchor-mpp](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp) | 68 | 2,376 |
 | [anchor-overlay](https://github.com/anchoranalysis/anchor/tree/master/anchor-overlay) | `org.anchoranalysis.anchor.overlay`<br>Graphics output of entities on top of a raster. | 15 | 676 |
-| [anchor-plot](https://github.com/anchoranalysis/anchor/tree/master/anchor-plot) | `org.anchoranalysis.graph`<br>Plotting of some basic charts. | 15 | 718 |
+| [anchor-plot](https://github.com/anchoranalysis/anchor/tree/master/anchor-plot) | `org.anchoranalysis.plot`<br>Plotting of some basic charts. | 15 | 718 |
 | [anchor-test](https://github.com/anchoranalysis/anchor/tree/master/anchor-test) | `org.anchoranalysis.test`<br>Reusable test fixtures/utilities *(at highest generality)*. | 4 | 199 |
 | [anchor-test-feature](https://github.com/anchoranalysis/anchor/tree/master/anchor-test-feature) | `org.anchoranalysis.test.feature`<br>Reusable test fixtures/utilities *(related to features)*. | 1 | 55 |
 | [anchor-test-image](https://github.com/anchoranalysis/anchor/tree/master/anchor-test-image) | `org.anchoranalysis.test.image`<br>Reusable test fixtures/utilities *(related to images)*. | 14 | 588 |
