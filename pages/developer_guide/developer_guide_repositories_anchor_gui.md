@@ -32,9 +32,9 @@ It uses [Swing](https://en.wikipedia.org/wiki/Swing_(Java)) to run a graphical-a
 | [anchor-gui-feature-evaluator](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-feature-evaluator) | | 50 | 2,034 |
 | [anchor-gui-finder](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-finder) | | 14 | 609 |
 | [anchor-gui-frame](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-frame) | | 228 | 9,421 |
-| [anchor-gui-graph](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-graph) | | 39 | 1,836 |
 | [anchor-gui-import](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-import) | | 16 | 566 |
 | [anchor-gui-mdi](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-mdi) | | 31 | 1,334 |
+| [anchor-gui-plot](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-plot) | | 39 | 1,836 |
 | [anchor-plugin-gui-annotation](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-plugin-gui-annotation) | | 5 | 396 |
 | [anchor-plugin-gui-export](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-plugin-gui-export) | | 33 | 1,463 |
 | [anchor-plugin-gui-import](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-annotation) | | 146 | 7,570 |
