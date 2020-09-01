@@ -42,7 +42,7 @@ used by Anchor.
 | [anchor-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-io) | `org.anchoranalysis.io`<br>Reading / writing without specific application. | 72 | 3,749 |
 | [anchor-io-bioformats](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-bioformats) | `org.anchoranalysis.io.bioformats`<br>Input / output that uses [Bioformats](https://www.openmicroscopy.org/bio-formats/). | 35 | 1,494 |
 | [anchor-io-generator](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-generator) | `org.anchoranalysis.io.generator`<br>*Generators* for producing output.  | 41 | 1,688 |
-| [anchor-io-ij](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-ij) | `org.anchoranalysis.io.ij`<br>Input / output that uses [ImageJ](https://imagej.net/Welcome). | 5 | 225 |
+| [anchor-imagej](https://github.com/anchoranalysis/anchor/tree/master/anchor-imagej) | `org.anchoranalysis.io.ij`<br>Converters and IO that uses [ImageJ](https://imagej.net/Welcome). | 5 | 225 |
 | [anchor-io-manifest](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-manifest) | `org.anchoranalysis.io.manifest`<br>Manifests for recording outputs from an experiment. | 71 | 2,052 |
 | [anchor-io-output](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-output) | `org.anchoranalysis.io.output`<br>Output-manager and utilities for outputting. | 30 | 1,222 |
 | [anchor-math](https://github.com/anchoranalysis/anchor/tree/master/anchor-math) | `org.anchoranalysis.math`<br>Mathematical algorithms or utility functions. | 14 | 668 |

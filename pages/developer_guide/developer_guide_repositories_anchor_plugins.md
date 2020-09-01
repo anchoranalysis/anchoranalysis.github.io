@@ -22,15 +22,15 @@ A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository 
 | Module | Java Package Root &amp; Description  | Classes | Lines&#x2011;of&#x2011;Code |
 |------------|------------------|-------------:|-------------:|
 | [anchor-plugin-annotation](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-annotation) | | 36 | 1,989 |
-| [anchor-plugin-ij](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-ij) | | 33 | 1,987 |
 | [anchor-plugin-image](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-image) | | 312 | 13,785 |
+| [anchor-plugin-imagej](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-imagej) | | 33 | 1,987 |
 | [anchor-plugin-image-feature](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-image-feature) | | 183 | 6,590 |
 | [anchor-plugin-image-task](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-image-task) | | 55 | 3,273 |
 | [anchor-plugin-io](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-io) | | 144 | 6,665 |
 | [anchor-plugin-mpp](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-mpp) | | 113 | 6,142 |
 | [anchor-plugin-mpp-experiment](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-mpp-experiment) | | 35 | 2,641 |
 | [anchor-plugin-mpp-feature](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-mpp-feature) | | 78 | 2,875 |
-| [anchor-plugin-mpp-sgmn](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-mpp-sgmn) | | 95 | 5,056 |
+| [anchor-plugin-mpp-segment](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-mpp-segment) | | 95 | 5,056 |
 | [anchor-plugin-opencv](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-opencv) | | 24 | 1,309 |
 | [anchor-plugin-operator-feature](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-operator-feature) | | 35 | 1,004 |
 | [anchor-plugin-points](https://github.com/anchoranalysis/anchor-plugins/tree/master/anchor-plugin-points) | | 33 | 2,036 |
