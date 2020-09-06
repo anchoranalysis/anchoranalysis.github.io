@@ -34,7 +34,7 @@ A [R](https://www.r-project.org/) source repository on [GitHub](https://github.c
 
 ## Installation
 
-{% include warning.html content="The packages are not on [CRAN](https://cran.r-project.org/) and thus cannot be imported through the usual R functions" %}
+{% include warning.html content="The packages are not on [CRAN](https://cran.r-project.org/) and thus cannot be imported through the usual R functions." %}
 
 Before using these functions in a script elsewhere, a package must be installed locally, either:
 
