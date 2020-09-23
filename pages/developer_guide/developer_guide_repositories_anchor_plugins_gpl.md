@@ -22,7 +22,7 @@ A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository 
 | Module | Java Package Root &amp; Description  | Classes | Lines&#x2011;of&#x2011;Code |
 |------------|------------------|-------------:|-------------:|
 | [anchor-plugin-fiji](https://github.com/anchoranalysis/anchor-plugins-gpl/tree/master/anchor-plugin-fiji) | `org.anchoranalysis.plugin.fiji`<br>GPL-ed plugins from [Fiji](https://fiji.sc/) or [ImageJ](https://imagej.nih.gov/ij/). | 18 | 1,247 |
-| [anchor-plugin-io-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl/tree/master/anchor-plugin-io-gpl) |  - <br>Adds [Bio-Formats](https://www.openmicroscopy.org/bio-formats/) GPL classes. | - | 58 |
+| [anchor-plugin-io-gpl](https://github.com/anchoranalysis/anchor-plugins-gpl/tree/master/anchor-plugin-io-gpl) | Adds [Bio-Formats](https://www.openmicroscopy.org/bio-formats/) GPL classes. | - | 58 |
 | [anchor-plugin-ml](https://github.com/anchoranalysis/anchor-plugins-gpl/tree/master/anchor-plugin-ml) | `org.anchoranalysis.plugin.ml`<br>Machine-learning operations that are GPLed. | 7 | 657 |
 
 Number of classes/code is as per *SonarQube, June 24th, 2020*. Lines-of-code excludes whitespace and comments.
