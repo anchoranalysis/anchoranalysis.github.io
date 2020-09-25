@@ -26,7 +26,7 @@ The GUI application is based on [Swing](https://en.wikipedia.org/wiki/Swing_(Jav
 | Module | Java Package Root &amp; Description  | Classes | Lines&#x2011;of&#x2011;Code |
 |------------|------------------|-------------:|-------------:|
 | [anchor-gui-annotation](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-annotation) | `org.anchoranalysis.gui.annotation`<br>**Deprecated**. Interactively annotating images. | 107 | 4,588 |
-| [anchor-gui-browser](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-browser) | `org.anchoranalysis.gui.interactivebrowser`<br>**Deprecated**. Launching GUI application. | 17 | 1,185 |
+| [anchor-gui-browser](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-browser) | `org.anchoranalysis.gui.interactivebrowser`<br>**Deprecated**. Launching the GUI application. | 17 | 1,185 |
 | [anchor-gui-common](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-common) | `org.anchoranalysis.gui.common`<br>**Deprecated**. Shared utilities and data classes. | 92 | 3,717 |
 | [anchor-gui-export](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-export) | `org.anchoranalysis.gui.export`<br>**Deprecated**. Exporting from the GUI. | 9 | 305 |
 | [anchor-gui-feature-evaluator](https://github.com/anchoranalysis/anchor-gui/tree/master/anchor-gui-feature-evaluator) | `org.anchoranalysis.gui.feature.evaluator`<br>**Deprecated**. Evaluating features on images. | 50 | 2,034 |
