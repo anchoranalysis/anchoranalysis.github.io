@@ -69,11 +69,11 @@ Other drivers  in `org.anchoranalysis.plugin.io.bean.rasterreader` provide usefu
 
 |Class | Function|
 |------|---------|
-[FlattenAsChannel](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/rasterreader/FlattenAsChannel.java) | Converts indexed/time-series images into different channels.
-[ImposeResolution](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/rasterreader/ImposeResolution.java)|Imposes a specific physical pixel size (across X,Y,Z dimensions).
-[ReadVoxelExtentXml](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/rasterreader/ReadVoxelExtentXml.java)|Reads physical pixel-size from an accompanying `.xml` file for each image.
-[ThreeWayBranchXYResolution](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/rasterreader/ThreeWayBranchXYResolution.java)|Uses different readers for different ranges of X,Y physical pixel size.
-[RejectIfConditionXYResolution](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/rasterreader/RejectIfConditionXYResolution.java)|Rejects images if a condition is filled on the X-Y resolution.
+[FlattenAsChannel](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/stack/reader/FlattenAsChannel.java) | Converts indexed/time-series images into different channels.
+[ImposeResolution](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/stack/reader/ImposeResolution.java)|Imposes a specific physical pixel size (across X,Y,Z dimensions).
+[ReadVoxelExtentXml](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/stack/reader/ReadVoxelExtentXml.java)|Reads physical pixel-size from an accompanying `.xml` file for each image.
+[ThreeWayBranchXYResolution](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/stack/reader/ThreeWayBranchXYResolution.java)|Uses different readers for different ranges of X,Y physical pixel size.
+[RejectIfConditionXYResolution](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/stack/reader/RejectIfConditionXYResolution.java)|Rejects images if a condition is filled on the X-Y resolution.
 
 
 #### Custom drivers
