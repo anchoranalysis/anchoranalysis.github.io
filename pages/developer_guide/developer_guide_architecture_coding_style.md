@@ -89,7 +89,7 @@ This means internal packages should only ordinarily be imported via `from packag
 
 ### Use `.` as a prefix for private functions
 
-The `R` language does not have any equivalent of `private` for only-internally-used functions. As a workaround, prefix such a a function conventionally with a period. This promises only be called from the current source-file. e.g.
+The `R` language does not have any equivalent of `private` for only-internally-used functions. As a workaround, prefix such a function conventionally with a period. This promises only be called from the current source-file. e.g.
 
 ```R
 .some_private_function <- function() {
