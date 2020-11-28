@@ -30,23 +30,16 @@ To completely build Anchor from scratch. Pre-conditions:
 * You've configured the ```$HOME/.m2/settings.xml``` file.
 * You've cloned all necessary Anchor Java repositories from [GitHub](https://github.com/anchoranalysis/) (see below).
 
-Then execute the command ```mvn deploy``` in the parent directory of each repository **IN THIS ORDER**.
+Then execute the command ```mvn deploy``` in the root of each repository directory **IN THIS ORDER**.
 
 1. `anchor-pom/`
 2. `anchor/`
 3. `anchor-plugins/`
 4. `anchor-plugins-gpl/`
 5. `anchor-gui/`
+6. `anchor-assembly/`
 
 The order is important to match the[ dependency structure between repositories](/developer_guide_architecture_overview.html#repositories).
-
-Finally, change into `anchor-assembly/` and execute a similar command (but targetting a particular operating-system).
-
-```
- mvn "-Djavacpp.platform=windows-x86_64" deploy
-```
-
-or with `linux-x86_64`, `macosx-x86_64` etc. for [other operating systems](https://github.com/bytedeco/javacpp-presets).
 
 The final command will copy a distribution into ```anchor.home.deploy``` with needed native libraries for the chosen operating system.
 
