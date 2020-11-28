@@ -30,14 +30,6 @@ The **most important** command-line options are:
 
 {% include tip.html content="Typing `anchor -h` will display available command-line arguments" %}
 
-## Minor options
-
-Options of **lesser importance** are:
-
-| Option | Description|
-|----------|------------|
-| -v | Displays version and authorship information. |
-
 ## Debug options
 
 Options useful for **debugging**:
@@ -47,5 +39,13 @@ Options useful for **debugging**:
 | -sa | Shows additional argument information, otherwise executes as normal. |
 
 {% include tip.html content="It's best to use `-d` as the final argument to avoid ambiguity about its optional argument." %}
+
+## Other options
+
+Options of **lesser importance** are:
+
+| Option | Description|
+|----------|------------|
+| -v | Displays version and authorship information. |
 
 {% include links.html %}

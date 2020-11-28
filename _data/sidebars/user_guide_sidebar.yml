@@ -13,6 +13,9 @@ entries:
       url: /user_guide.html
       output: web, pdf
       type: homepage
+    - title: Tasks
+      url: /user_guide_tasks.html
+      output: web, pdf      
     - title: Command line
       url: /user_guide_command_line.html
       output: web, pdf            

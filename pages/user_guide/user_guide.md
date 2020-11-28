@@ -53,8 +53,8 @@ Each element **(inputs, task, outputs)** can be overridden using a command-line 
 |--------|------|
 | *&lt;ommitted&gt;* | *default*: reads images recursively from **current** directory |
 | `-i` path to XML file | input as defined in **BeanXML** at this path |
-| `-i` glob  *(e.g. `*.jpg`)* | reads **files matching the glob** |
-| `-i` other path | reads images recursively from the **specified** directory  |
+| `-i` glob  *(e.g. `-i *.jpg`)* | reads **files matching the glob** |
+| `-i` path to directory | reads images recursively from the **specified** directory (matching against popular image file extensions) |
 
 #### Changing the task with `-t` {#task}
 
