@@ -30,7 +30,7 @@ inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 Some [tasks](/user_guide_tasks.html) are included in the Anchor distribution, to be easily
 [run from the command-line](/user_guide_command_line.html) with `-t taskname`.  
 
-### For image processing 
+### Image processing 
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
@@ -40,20 +40,20 @@ Some [tasks](/user_guide_tasks.html) are included in the Anchor distribution, to
 | [resize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/resize.xml) | images | **scales each image to fit inside fixed dimensions**, preserving aspect ratio. |
 | [stack/montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/stack/montage.xml) | images (3D) | produces a tiled **montage of all z-slices of a 3D image** |
 
-### For image segmentation
+### Image segmentation
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
 | [text](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/text.xml) | images | finds text-regions in images. |
 
-### For image feature extraction
+### Feature extraction
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
 | [feature/hog](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/feature/hog.xml) | images | extracts a [HOG feature descriptor](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) for all images. |
 | [feature/metadata](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/feature/metadata.xml) | images | extracts some basic metadata as features, including dimensions. |
 
-### For file copying / conversion 
+### File copying / conversion 
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
@@ -61,7 +61,7 @@ Some [tasks](/user_guide_tasks.html) are included in the Anchor distribution, to
 | [convert](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/convert.xml) | images | **converts the file format** of input images. |
 | [copy](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/copy.xml) | any files | **copies files**, preserving naming and subdirectory structure. |
 
-### For summarizing inputs
+### Summarizing inputs
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
