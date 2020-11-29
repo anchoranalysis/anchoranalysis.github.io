@@ -11,15 +11,14 @@ folder: user_guide
 
 ### Image types
 
-We typically intuitively think of an image file as a digital photograph like a JPEG similar in appearance to human vision, containing a matrix of RGB pixels (three interdependent channels), or perhaps grayscale photographs (single channel).
+We typically intuitively think of an image file as a digital photograph, similar in appearance to human vision, containing a matrix of RGB or grayscale pixels.
 
-In reality, images come in much more diverse form:
+In reality, images come in diverse form:
 
-1. They may be three-dimensions.
-2. They may contain multiple images indexed by time (time series, like movies or animated gifts), or other variables (location, modality).
-3. They may have independent or dependent channels of any number.
-4. The pixel color depth varies: 8-bit (as per RGB), 12-bit, 16-bit, floating point, color maps etc.
-6. Their pixel-sizes may not be physically uniform in X, Y and Z dimensions (anisotropy).
+1. An image may be three-dimensional.
+3. An arbitrary number of independent or dependent channels may exist, neither three (RGB) nor one channel (grayscale).
+4. Pixel color depth varies: 8-bit, 12-bit, 16-bit, floating point, color maps etc.
+6. Pixel-sizes may not be physically uniform in X, Y and Z dimensions (anisotropy).
 7. Rather than pixels, they may be vectors or point-cloud images *(neither supported in Anchor)*.
 8. They may be non-rectangular or support transparency *(neither supported in Anchor)*.
 
@@ -27,11 +26,11 @@ In reality, images come in much more diverse form:
 
 And when encoded onto a filesystem:
 
-* A single image may span several files; or a single file may contain several images.
-* Formats vary widely and are often propietary.
+* A single image may span several files; or a single file may contain several images (e.g an animated gif).
+* Formats vary widely and are often proprietary.
 * Compression or color-space encoding may introduce artefacts.
-* Metadata is often included, text, numbers, shapes (annotations).
-* Pyramid formats may introduce additional structure (multiple scaled-down version of the original) for quick access.
+* Metadata is often included: text, numbers, shapes (annotations), etc.
+* Pyramid formats may introduce additional structure (multiple scaled-down versions of the original) for quick access.
 
 ## Supported in Anchor
 
@@ -39,16 +38,17 @@ And when encoded onto a filesystem:
 
 Anchor supports much of this diversity:
 
-* 2D/3D rectangular images with arbitrary number of channels and pixel-size, and 8-bit/16-bit color depths (some limited support for other depths). This is sufficient to include conventional photography, and many forms of biomedical, geospatial or scientific images.
-* Time-series and other indexed forms of images (in a limited way).
-* Certain forms of metadata (pixel size, channel names) but not others.
-* Anchor-specific data structures for object-segmentations (pixel subregions, encoded into [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format)) and  geometric shapes (useful for shape annotations and certain kinds of processing).
+* **2D/3D rectangular images with arbitrary number of channels and pixel-size**.
+* **Diverse bit depths**: *unsigned 8-bit*, *unsigned 16-bit*, *unsigned 32-bit* and *floating point*.
+* Time-series and other indexed forms of images in a limited way.
+* **Certain forms of metadata (pixel size, channel names)** but not others.
+* Anchor-specific data structures for object-segmentations (pixel subregions, encoded into [HDF5](https://en.wikipedia.org/wiki/Hierarchical_Data_Format)) and  geometric shapes (useful for shape annotations).
 
 {% include note.html content="Remember, in all cases, anchor supports **sets** of these image-types, rather than processing only single images." %}
 
 ### Image file formats
 
-The drivers for reading images in Anchor are termed *readers* and all inherit from [org.anchoranalysis.image.io.bean.rasterreader.RasterReader](https://github.com/anchoranalysis/anchor/blob/master/anchor-image-io/src/main/java/org/anchoranalysis/image/io/bean/rasterreader/RasterReader.java)
+Anchor supports customizable <i>drivers</i> for reading and writing images, inheriting from [StackReader](/javadoc/org/anchoranalysis/image/io/bean/stack/StackReader.html) and [StackWriter](/javadoc/org/anchoranalysis/image/io/bean/stack/writer/StackWriter.html) respectively. 
 
 #### Default Reader - Bioformats
 
@@ -75,16 +75,16 @@ Other drivers  in `org.anchoranalysis.plugin.io.bean.rasterreader` provide usefu
 [ThreeWayBranchXYResolution](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/stack/reader/ThreeWayBranchXYResolution.java)|Uses different readers for different ranges of X,Y physical pixel size.
 [RejectIfConditionXYResolution](https://github.com/anchoranalysis/anchor-plugins/blob/master/anchor-plugin-io/src/main/java/org/anchoranalysis/plugin/io/bean/stack/reader/RejectIfConditionXYResolution.java)|Rejects images if a condition is filled on the X-Y resolution.
 
-
-#### Custom drivers
-
-Drivers for a wider range of formats are architecturally easily possible, but not currently implemented in the standard Anchor distribution.
-
 ### Changing the default driver
 
-The default `RasterReader` is set in a configuration-file:
+The default readers and writers are set in a `defaultBeans.xml` configuration-file:
 
 * `$ANCHOR_HOME/config/defaultBeans.xml` in the main Anchor distribution, and
 * `$USER_HOME/.anchor/defaultBeans.xml` optionally, taking precedence.
+
+In practice, these readers and writers are usually implemented via hierarchies of rules that select an appropriate driver for a particular type of image, based upon whether its 2D/3D, the number
+of channels, bit depth etc.
+
+The user may also suggest a file format via the [`-of` command-line-option](/user_guide_command_line.html#output-options). 
 
 {% include links.html %}

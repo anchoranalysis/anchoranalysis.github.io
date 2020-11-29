@@ -23,12 +23,29 @@ The **most important** command-line options are:
 
 | Option | Description|
 |----------|------------|
+| -i *arg* | [Changes inputs](/user_guide.html#inputs) where *arg* = <span class="optionArg"> glob</span> or <span class="optionArg">path to an input-directory</span> or <span class="optionArg">path to BeanXML</span>. |
+| -t *arg* | [Changes the task](/user_guide.html#task) where *arg* = <span class="optionArg">task-name</span> or <span class="optionArg">path to BeanXML</span>. |
+| -o *arg* | [Changes outputs](/user_guide.html#outputs) where *arg* = <span class="optionArg">path to an output-directory</span> or <span class="optionArg">path to BeanXML</span>. |
 | -h | Displays help message with *all* command-line options |
-| -i *arg* | [Changes inputs](/user_guide.html#inputs). *arg* = a <span class="optionArg">glob</span>, a <span class="optionArg">path to an input-directory</span>, or a <span class="optionArg">path to BeanXML</span> |
-| -t *arg* | [Changes the task](/user_guide.html#task). *arg* = a <span class="optionArg">task-name</span> or a <span class="optionArg">path to BeanXML</span> |
-| -o *arg* | [Changes outputs](/user_guide.html#outputs). *arg* = <span class="optionArg">path to an output-directory</span> or a <span class="optionArg">path to BeanXML</span> |
 
 {% include tip.html content="Typing `anchor -h` will display available command-line arguments" %}
+
+## Output options
+
+Note: 
+- tasks produce one or more outputs, with certain outputs enabled by default.
+- the file-format used for any given is determined by rules in [defaultBeans.xml](/user_guide_supported_formats.html#changing-the-default-driver).
+
+Options useful for influencing **outputting**:
+
+| -o *arg* | [Changes outputs](/user_guide.html#outputs) where *arg* = <span class="optionArg">path to an output-directory</span> or <span class="optionArg">path to BeanXML</span> |
+| -oa | **Enables all** outputs. |
+| -od *outputName(s)* | **Disables specific** output(s). Multiple outputs are comma-separated. |
+| -oe *outputName(s)* | **Enables specific** output(s). Multiple outputs are comma-separated. |
+| -of *formatExtension* | Suggests an output **image file format**. e.g `-of jpg` or `-of ome.xml` |
+
+{% include warning.html content="Non-standard image types (3D, neither monochrome nor RGB etc.) are unsupported by most file formats, so a suggestion with `-of` will often be ignored, in favour of a supported format." %}
+
 
 ## Debug options
 
@@ -40,12 +57,13 @@ Options useful for **debugging**:
 
 {% include tip.html content="It's best to use `-d` as the final argument to avoid ambiguity about its optional argument." %}
 
-## Other options
+## Application information options
 
-Options of **lesser importance** are:
+Options to show general application information are:
 
 | Option | Description|
 |----------|------------|
+| -h | Displays help message with *all* command-line options |
 | -v | Displays version and authorship information. |
 
 {% include links.html %}
