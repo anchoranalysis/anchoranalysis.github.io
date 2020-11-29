@@ -15,22 +15,22 @@ We typically intuitively think of an image file as a digital photograph, similar
 
 In reality, images come in diverse form:
 
-1. An image may be three-dimensional.
-3. An arbitrary number of independent or dependent channels may exist, neither three (RGB) nor one channel (grayscale).
-4. Pixel color depth varies: 8-bit, 12-bit, 16-bit, floating point, color maps etc.
-6. Pixel-sizes may not be physically uniform in X, Y and Z dimensions (anisotropy).
-7. Rather than pixels, they may be vectors or point-cloud images *(neither supported in Anchor)*.
-8. They may be non-rectangular or support transparency *(neither supported in Anchor)*.
+- An image may be three-dimensional.
+- An arbitrary number of independent or dependent channels may exist, neither three (*RGB*) nor one channel (*grayscale*).
+- Pixel color depth varies: 8-bit, 12-bit, 16-bit, floating point, color maps etc.
+- Pixel-sizes may not be physically uniform in X, Y and Z dimensions (*anisotropy*).
+- Rather than pixels, they may be vectors or point-cloud images *(neither supported in Anchor)*.
+- They may be non-rectangular or support transparency *(neither supported in Anchor)*.
 
 ### Image file formats
 
 And when encoded onto a filesystem:
 
-* A single image may span several files; or a single file may contain several images (e.g an animated gif).
+* A single image may span several files; or a single file may contain several images *(e.g an animated gif)*.
 * Formats vary widely and are often proprietary.
 * Compression or color-space encoding may introduce artefacts.
 * Metadata is often included: text, numbers, shapes (annotations), etc.
-* Pyramid formats may introduce additional structure (multiple scaled-down versions of the original) for quick access.
+* Pyramid formats may introduce additional structure *(multiple scaled-down versions of the original)* for quick access.
 
 ## Supported in Anchor
 
