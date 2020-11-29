@@ -5,12 +5,25 @@ keywords:
 sidebar: user_guide_sidebar
 permalink: user_guide_examples.html
 folder: user_guide
-toc: false
+toc: true
 ---
 
 ## Step-by-step guides
 
 - Generating a [histogram](/user_guide_examples_histogram.html) of pixel intensities from each channel.
+
+## Try a task
+
+To run a [task](/user_guide_tasks.html):
+
+1. Open a shell (`Command Prompt` or `Powershell` in Windows).
+2. Change directory to where images resize (e.g. with `cd /path/to/someimages`)
+3. Enter: ``anchor -t taskName``
+
+Next, consider enabling additional outputs with [the ``-o`` options](/user_guide_command_line.html#major-options) or refining your
+inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
+
+{% include tip.html content="In Windows, [hold the shift key when right-clicking on a folder in Windows Explorer](https://www.zdnet.com/article/windows-10-tip-the-fastest-smartest-ways-to-open-a-command-prompt/) to open a Command Prompt or Powershell in that folder. " %}
 
 ## Predefined tasks
 
@@ -21,18 +34,44 @@ Some [tasks](/user_guide_tasks.html) are included in the Anchor distribution, to
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
-| [histogram](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/convert.xml) | images | extracts histograms of the intensity values an image. |
+| [histogram](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/histogram.xml) | images | **extracts histograms** of the intensity values an image. |
+| [mean](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/mean.xml) | images | creates a **mean-intensity projection** of all inputs. |
+| [meanResize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/meanResize.xml) | images | scales inputs to fixed dimensions, and then a mean-intensity projection. |
+| [resize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/resize.xml) | images | **scales each image to fit inside fixed dimensions**, preserving aspect ratio. |
+| [stack/montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/stack/montage.xml) | images (3D) | produces a tiled **montage of all z-slices of a 3D image** |
+
+### For image segmentation
+
+| Task Name | Input Type | Description  |
+|-----------|------------|--------------|
+| [text](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/text.xml) | images | finds text-regions in images. |
+
+### For image feature extraction
+
+| Task Name | Input Type | Description  |
+|-----------|------------|--------------|
+| [feature/hog](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/feature/hog.xml) | images | extracts a [HOG feature descriptor](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) for all images. |
+| [feature/metadata](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/feature/metadata.xml) | images | extracts some basic metadata as features, including dimensions. |
 
 ### For file copying / conversion 
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
-| [convert](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/convert.xml) | images | converts an image into another file format. |
+| [anonymize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/anonymize.xml) | any files | copies files, **randomizing order and hiding the original naming**. |
+| [convert](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/convert.xml) | images | **converts the file format** of input images. |
+| [copy](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/copy.xml) | any files | **copies files**, preserving naming and subdirectory structure. |
 
 ### For summarizing inputs
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
-| [countFiles](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/countFiles.xml) | file paths | counts the number of input-files. |
+| [countFiles](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/countFiles.xml) | any files | counts the number of input-files. |
+| [list](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/list.xml) | any files | shows a line `inputName -> inputPath` for each input. |
+| [listNames](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/listNames.xml) | any files | shows each **input's name** on a separate line. |
+| [listPaths](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/listPaths.xml) | any files | shows each **input's path** on a separate line. |
+| [summarize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/summarize.xml) | images | combines the summaries in `summarizeImages` and `summarizePaths`. |
+| [summarizeImages](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/summarizeImages.xml) | images | **summarizes image attributes** (dimensions, bit depth etc.) |
+| [summarizePaths](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/summarizePaths.xml) | any files | **summarizes file attributes** (size, patterns among the file-paths etc.) |
+
 
 {% include links.html %}
