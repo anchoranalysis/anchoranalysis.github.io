@@ -49,28 +49,30 @@ Each element **(inputs, task, outputs)** can be overridden using a command-line 
 
 #### Changing inputs with `-i` {#inputs}
 
-|`-i` argument| input |
+| Argument | Description |
 |--------|------|
 | *&lt;ommitted&gt;* | *default*: reads images recursively from **current** directory |
-| `-i` path to XML file | input as defined in **BeanXML** at this path |
-| `-i` glob  *(e.g. `-i *.jpg`)* | reads **files matching the glob** |
-| `-i` path to directory | reads images recursively from the **specified** directory (matching against popular image file extensions) |
+| `-i` *path to XML file* | input as defined in **BeanXML** at this path |
+| `-i` *glob* | reads **files matching the glob** *(e.g. `-i *.jpg`)* |
+| `-i` *path to directory* | reads images recursively from the **specified** directory |
+
+When specifying a directory (without a glob), files are filtered against list of popular image file extensions.
 
 #### Changing the task with `-t` {#task}
 
-|`-t` argument| input |
+| Argument | Description |
 |--------|------|
 | *&lt;ommitted&gt;* | *default*: **summary statistics** for current inputs |
-| `-t` path to XML file | task as defined in **BeanXML** at this path |
-| `-t` other string | looks for a **task** in `config/tasks/` matching this name  |
+| `-t` *path to XML file* | task as defined in **BeanXML** at this path |
+| `-t` *another string* | looks for a **task** in `config/tasks/` matching this name  |
 
 #### Changing outputs with `-o` {#outputs}
 
-|`-o` argument| input |
+| Argument | Description |
 |--------|------|
 | *&lt;ommitted&gt;* | *default*: writes into a **temporary directory** |
-| `-o` path to XML file | output as defined in **BeanXML** at this path |
-| `-o` other string | writes into the **specified** directory (creates a subdirectory)  |
+| `-o` *path to XML file* | output as defined in **BeanXML** at this path |
+| `-o` *another string* | writes into the **specified** directory (creates a subdirectory)  |
 
 #### Combining arguments
 

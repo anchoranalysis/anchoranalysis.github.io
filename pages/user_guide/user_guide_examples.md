@@ -12,7 +12,10 @@ toc: true
 
 - Generating a [histogram](/user_guide_examples_histogram.html) of pixel intensities from each channel.
 
-## Try a task
+## Predefined tasks
+
+Some [tasks](/user_guide_tasks.html) are included in the Anchor distribution, to be easily
+[run from the command-line](/user_guide_command_line.html) with `-t taskname`.  
 
 To run a [task](/user_guide_tasks.html):
 
@@ -24,11 +27,6 @@ Next, consider enabling additional outputs with [the ``-o`` options](/user_guide
 inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 
 {% include tip.html content="In Windows, [hold the shift key when right-clicking on a folder in Windows Explorer](https://www.zdnet.com/article/windows-10-tip-the-fastest-smartest-ways-to-open-a-command-prompt/) to open a Command Prompt or Powershell in that folder. " %}
-
-## Predefined tasks
-
-Some [tasks](/user_guide_tasks.html) are included in the Anchor distribution, to be easily
-[run from the command-line](/user_guide_command_line.html) with `-t taskname`.  
 
 ### Image processing 
 

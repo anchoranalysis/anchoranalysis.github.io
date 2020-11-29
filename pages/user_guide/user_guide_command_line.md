@@ -23,9 +23,9 @@ The **most important** command-line options are:
 
 | Option | Description|
 |----------|------------|
-| -i *arg* | [Changes inputs](/user_guide.html#inputs) where *arg* = <span class="optionArg"> glob</span> or <span class="optionArg">path to an input-directory</span> or <span class="optionArg">path to BeanXML</span>. |
-| -t *arg* | [Changes the task](/user_guide.html#task) where *arg* = <span class="optionArg">task-name</span> or <span class="optionArg">path to BeanXML</span>. |
-| -o *arg* | [Changes outputs](/user_guide.html#outputs) where *arg* = <span class="optionArg">path to an output-directory</span> or <span class="optionArg">path to BeanXML</span>. |
+| -i *arg* | [Changes inputs](/user_guide.html#inputs), where *arg* = <span class="optionArg"> glob</span> or <span class="optionArg">path to an input-directory</span> or <span class="optionArg">path to BeanXML</span> |
+| -t *arg* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">task-name</span> or <span class="optionArg">path to BeanXML</span> |
+| -o *arg* | [Changes outputs](/user_guide.html#outputs), where *arg* = <span class="optionArg">path to an output-directory</span> or <span class="optionArg">path to BeanXML</span> |
 | -h | Displays help message with *all* command-line options |
 
 {% include tip.html content="Typing `anchor -h` will display available command-line arguments" %}
@@ -38,11 +38,13 @@ Note:
 
 Options useful for influencing **outputting**:
 
+| Option | Description|
+|----------|------------|
 | -o *arg* | [Changes outputs](/user_guide.html#outputs) where *arg* = <span class="optionArg">path to an output-directory</span> or <span class="optionArg">path to BeanXML</span> |
 | -oa | **Enables all** outputs. |
 | -od *outputName(s)* | **Disables specific** output(s). Multiple outputs are comma-separated. |
 | -oe *outputName(s)* | **Enables specific** output(s). Multiple outputs are comma-separated. |
-| -of *formatExtension* | Suggests an output **image file format**. e.g `-of jpg` or `-of ome.xml` |
+| -of *formatExtension* | Suggests an output **image file format**: e.g `-of jpg` or `-of ome.xml` |
 
 {% include warning.html content="Non-standard image types (3D, neither monochrome nor RGB etc.) are unsupported by most file formats, so a suggestion with `-of` will often be ignored, in favour of a supported format." %}
 
@@ -51,7 +53,9 @@ Options useful for influencing **outputting**:
 
 Options useful for **debugging**:
 
-| -d [*string*] | Enables debug-mode: runs only the first available input [whose name contains *string*] |
+| Option | Description|
+|----------|------------|
+| -d *[string]* | Enables debug-mode: runs only the first available input [whose name contains *string*] |
 | -l *path* | Logs initial [BeanXML](/user_guide_bean_xml.html) errors in greater detail to a <span class="optionArg">file-path</span>  |
 | -sa | Shows additional argument information, otherwise executes as normal. |
 
