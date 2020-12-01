@@ -17,11 +17,9 @@ toc: true
 Some [tasks](/user_guide_tasks.html) are included in the Anchor distribution, to be easily
 [run from the command-line](/user_guide_command_line.html) with `-t taskname`.  
 
-To run a [task](/user_guide_tasks.html):
+To run a [task](/user_guide_tasks.html), open a shell (`Command Prompt` or `Powershell` in Windows), and then:
 
-1. Open a shell (`Command Prompt` or `Powershell` in Windows).
-2. Change directory to where images resize (e.g. with `cd /path/to/someimages`)
-3. Enter: ``anchor -t taskName``
+![commandPrompt_taskName.png](/images/user_guide/commandPrompt_taskName.png)
 
 Next, consider enabling additional outputs with [the ``-o`` options](/user_guide_command_line.html#major-options) or refining your
 inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).

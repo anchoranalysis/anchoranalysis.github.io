@@ -78,7 +78,6 @@ Other drivers  in `org.anchoranalysis.plugin.io.bean.rasterreader` provide usefu
 [FlattenAsChannel](/javadoc/org/anchoranalysis/plugin/io/bean/stack/reader/FlattenAsChannel.html) | Converts indexed/time-series images into different channels.
 [ImposeResolution](/javadoc/org/anchoranalysis/plugin/io/bean/stack/reader/ImposeResolution.html)|Imposes a specific physical pixel size (across X,Y,Z dimensions).
 [ReadVoxelExtentXml](/javadoc/org/anchoranalysis/plugin/io/bean/stack/reader/ReadVoxelExtentXml.html)|Reads physical pixel-size from an accompanying `.xml` file for each image.
-[ThreeWayBranchXYResolution](/javadoc/org/anchoranalysis/plugin/io/bean/stack/reader/ThreeWayBranchXYResolution.html)|Uses different readers for different ranges of X,Y physical pixel size.
 [RejectIfConditionXYResolution](/javadoc/org/anchoranalysis/plugin/io/bean/stack/reader/RejectIfConditionXYResolution.html)|Rejects images if a condition is filled on the X-Y resolution.
 
 ### Writing images
@@ -89,7 +88,7 @@ By default, the following logic decides which writer is used for an image:
 |-----------|--------|-------------------|
 | Binary 2D | [PNG](/javadoc/org/anchoranalysis/io/imagej/bean/stack/writer/PNG.html) via *ImageJ* | Avoids compression artefacts. |
 | Binary 3D | [Tiff](/javadoc/org/anchoranalysis/io/bioformats/bean/writer/Tiff.html) via *Bioformats* | Like above, but can save 3D images. |
-| *RGB or Grayscale 2D | [PNG](/javadoc/org/anchoranalysis/io/imagej/bean/stack/writer/PNG.html) via *ImageJ* | Offers wide support and lossless compression. |
+| *RGB or Grayscale 2D | [PNG](/javadoc/org/anchoranalysis/io/imagej/bean/stack/writer/PNG.html) via *ImageJ* | Widely-supported and lossless compression. |
 | RGB or Grayscale 3D | [Tiff](/javadoc/org/anchoranalysis/io/bioformats/bean/writer/Tiff.html) via *Bioformats* | Can save 3D images as multi-frame. |
 | *Three-channels but **not** RGB | [Tiff](/javadoc/org/anchoranalysis/io/bioformats/bean/writer/Tiff.html) via *Bioformats* | Can save three channels independently. | 
 | anything else | [OMETiff](/javadoc/org/anchoranalysis/io/bioformats/bean/writer/OMETiff.html) via *Bioformats* | Supports diverse image types. |
