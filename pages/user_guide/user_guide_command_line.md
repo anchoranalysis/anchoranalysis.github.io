@@ -58,7 +58,7 @@ Options useful for **debugging**:
 | -d *[string]* | Enables debug-mode: runs only the first available input [whose name contains *string*] |
 | -l *path* | Logs initial [BeanXML](/user_guide_bean_xml.html) errors in greater detail to a <span class="optionArg">file-path</span>  |
 | -sa | Shows additional argument information, otherwise executes as normal. |
-| -st | Prints the names of pre-defined tasks that can be easily used with `-t` |
+| -st | Prints the names of predefined tasks that can be easily used with `-t` |
 
 {% include tip.html content="It's best to use `-d` as the final argument to avoid ambiguity about its optional argument." %}
 
