@@ -56,7 +56,7 @@ Options useful for **tasks**:
 |----------|------------|
 | -t *arg* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">task-name</span> or <span class="optionArg">path to BeanXML</span> |
 | -st | Prints the names of predefined tasks that can be used with `-t` |
-| -tr | Suggests an <span class="optionArg">image dimensions to resize to</span> e.g. `-tr 1024x768` or a <span class="optionArg">scaling factor</span> e.g.`-tr 0.5`<br>To preserve aspect ratio, try: `200x` or `x50` to resize to a particular width/height, or `1000x500+` to resize maximally within these dimensions.<br>No scaling in the z-dimension is supported. |
+| -tr | Suggests an <span class="optionArg">image dimensions to resize to</span> (e.g. `-tr 1024x768`) or a <span class="optionArg">scaling factor</span> (e.g.`-tr 0.5`)<ul><li>To preserve aspect ratio: `200x` or `x50` resizes to a particular width/height, and `1000x500+` to resize maximally within these dimensions.</li><li>No scaling in the z-dimension is supported.</li><li>The order of dimensions is always {@code width}x{@code height}</ul> |
 
 Certain options like `-ts` apply only to particular tasks that employ scaling.
 
