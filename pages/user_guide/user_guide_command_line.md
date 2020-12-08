@@ -26,7 +26,7 @@ The **most important** command-line options are:
 | -i *arg* | [Changes inputs](/user_guide.html#inputs), where *arg* = <span class="optionArg"> glob</span> or <span class="optionArg">path to an input-directory</span> or <span class="optionArg">path to BeanXML</span> |
 | -t *arg* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">task-name</span> or <span class="optionArg">path to BeanXML</span> |
 | -o *arg* | [Changes outputs](/user_guide.html#outputs), where *arg* = <span class="optionArg">path to an output-directory</span> or <span class="optionArg">path to BeanXML</span> |
-| -h | Displays help message with *all* command-line options |
+| -h | Displays help message with *all* command-line options. |
 
 {% include tip.html content="Typing `anchor -h` will display available command-line arguments" %}
 
@@ -55,10 +55,10 @@ Options useful for **debugging**:
 
 | Option | Description|
 |----------|------------|
-| -d *[string]* | Enables debug-mode: runs only the first available input [whose name contains *string*] |
+| -d *[string]* | Enables debug-mode: runs only the first available input [whose name contains *string*]. |
 | -l *path* | Logs initial [BeanXML](/user_guide_bean_xml.html) errors in greater detail to a <span class="optionArg">file-path</span>  |
 | -sa | Shows additional argument information, otherwise executes as normal. |
-| -st | Prints the names of predefined tasks that can be easily used with `-t` |
+| -st | Prints the names of predefined tasks that can be used with `-t` |
 
 {% include tip.html content="It's best to use `-d` as the final argument to avoid ambiguity about its optional argument." %}
 
@@ -68,7 +68,7 @@ Options to show general application information are:
 
 | Option | Description|
 |----------|------------|
-| -h | Displays help message with *all* command-line options |
+| -h | Displays help message with *all* command-line options. |
 | -v | Displays version and authorship information. |
 
 {% include links.html %}
