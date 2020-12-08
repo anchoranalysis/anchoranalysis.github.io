@@ -11,7 +11,7 @@ folder: user_guide
 
 ### Experiments are inputs, task, outputs
 
-An experiment is *roughly-speaking* the execution of a **task** on **inputs** to produce **outputs**.
+An experiment is *roughly-speaking* the execution of a [task](/user_guide_tasks.html) on **inputs** to produce **outputs**.
 
 ```
 outputs = task(inputs)
@@ -29,7 +29,7 @@ Anchor offers first sensible defaults, allowing for greater definition later.
 
 The [default-experiment](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/defaultExperiment.xml) occurs when you type `anchor` without arguments, and:
 1. reads image files (**inputs**) from the current working directory.
-2. prints some summary information (a **task**).
+2. prints some summary information (a [task](/user_guide_tasks.html)).
 3. produces no **outputs**.
 
 {% include shell.html
@@ -63,8 +63,8 @@ When specifying a directory (without a glob), files are filtered against list of
 | Argument | Description |
 |--------|------|
 | *&lt;ommitted&gt;* | *default*: **summary statistics** for current inputs |
-| `-t` *path to XML file* | task as defined in **BeanXML** at this path |
-| `-t` *another string* | looks for a **task** in `config/tasks/` matching this name  |
+| `-t` *path to XML file* | [task](/user_guide_tasks.html) as defined in **BeanXML** at this path |
+| `-t` *another string* | looks for a [task](/user_guide_tasks.html) in `config/tasks/` matching this name  |
 
 #### Changing outputs with `-o` {#outputs}
 

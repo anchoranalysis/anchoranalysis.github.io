@@ -15,7 +15,7 @@ Anchor can be used from the command-line as follows:
 anchor [options] [experimentFile.xml]
 ```
 
-If an `experimentFile.xml` isn't specified, the [default experiment](/user_guide.html#defaultExperiment) is employed, with default *inputs*, *task*, *outputs*.
+If an `experimentFile.xml` isn't specified, the [default experiment](/user_guide.html#defaultExperiment) is employed, with default *inputs*, [task](/user_guide_tasks.html), *outputs*.
 
 ## Major options
 
