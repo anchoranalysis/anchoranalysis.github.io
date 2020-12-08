@@ -48,6 +48,15 @@ Options useful for influencing **outputting**:
 
 {% include warning.html content="Non-standard image types (3D, neither monochrome nor RGB etc.) are unsupported by most file formats, so a suggestion with `-of` will often be ignored, in favour of a supported format." %}
 
+## Task options
+
+Options useful for **tasks**:
+
+| Option | Description|
+|----------|------------|
+| -t *arg* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">task-name</span> or <span class="optionArg">path to BeanXML</span> |
+| -st | Prints the names of predefined tasks that can be used with `-t` |
+| -ts | Suggests an image size to scale to or a scaling factor (for certain tasks only). |
 
 ## Debug options
 
@@ -58,7 +67,6 @@ Options useful for **debugging**:
 | -d *[string]* | Enables debug-mode: runs only the first available input [whose name contains *string*]. |
 | -l *path* | Logs initial [BeanXML](/user_guide_bean_xml.html) errors in greater detail to a <span class="optionArg">file-path</span>  |
 | -sa | Shows additional argument information, otherwise executes as normal. |
-| -st | Prints the names of predefined tasks that can be used with `-t` |
 
 {% include tip.html content="It's best to use `-d` as the final argument to avoid ambiguity about its optional argument." %}
 
