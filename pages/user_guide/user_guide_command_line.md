@@ -45,7 +45,7 @@ Options useful for influencing **outputting**:
 | -od *outputName(s)* | **Disables specific** output(s). Multiple outputs are comma-separated. |
 | -oe *outputName(s)* | **Enables specific** output(s). Multiple outputs are comma-separated. |
 | -of *formatExtension* | Suggests an output **image file format**: e.g `-of jpg` or `-of ome.xml` |
-| -os | Outputs with an incrementing number instead of the input identifier (useful for creating sequences of images) |
+| -os | Outputs with an incrementing number instead of the input identifier<b>*(useful for creating sequences of images)* |
 
 {% include warning.html content="Non-standard image types (3D, neither monochrome nor RGB etc.) are unsupported by most file formats, so a suggestion with `-of` will often be ignored, in favour of a supported format." %}
 
