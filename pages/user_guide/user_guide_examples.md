@@ -34,7 +34,7 @@ inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 | [mean](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/mean.xml) | images | creates a **mean-intensity projection** of all inputs. | |
 | [meanResize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/meanResize.xml) | images | scales inputs to fixed dimensions, and then a mean-intensity projection. | |
 | [resize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/resize.xml) | images | **scales each image to fit inside fixed dimensions**, preserving aspect ratio. | [-pr](/user_guide_command_line.html#task-options) |
-| [stack/montage] (https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/stack/montage.xml) | images (3D) | produces a tiled **montage of all z-slices of a 3D image** | |
+| [stack/montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/tasks/stack/montage.xml) | images (3D) | produces a tiled **montage of all z-slices of a 3D image** | |
 
 ### Image segmentation
 
