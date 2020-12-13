@@ -1,7 +1,7 @@
 ---
-title:  "Second pre-release"
+title:  "Third pre-release"
 categories: version download
-permalink: second-prerelease.html
+permalink: third-prerelease.html
 tags: [news, version]
 ---
 
