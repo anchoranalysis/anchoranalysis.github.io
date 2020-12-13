@@ -31,7 +31,6 @@ org.anchoranalysis.bean.shared.random
 org.anchoranalysis.bean.shared.regex
 org.anchoranalysis.bean.shared.relation
 org.anchoranalysis.bean.shared.relation.threshold
-org.anchoranalysis.bean.store
 org.anchoranalysis.bean.xml
 org.anchoranalysis.bean.xml.exception
 org.anchoranalysis.bean.xml.factory
@@ -127,6 +126,8 @@ org.anchoranalysis.image.core.channel.convert.attached.channel
 org.anchoranalysis.image.core.channel.convert.attached.histogram
 org.anchoranalysis.image.core.channel.factory
 org.anchoranalysis.image.core.dimensions
+org.anchoranalysis.image.core.dimensions.resize
+org.anchoranalysis.image.core.dimensions.resize.suggestion
 org.anchoranalysis.image.core.mask
 org.anchoranalysis.image.core.mask.combine
 org.anchoranalysis.image.core.merge
@@ -162,7 +163,6 @@ org.anchoranalysis.image.io
 org.anchoranalysis.image.io.bean.channel
 org.anchoranalysis.image.io.bean.object.draw
 org.anchoranalysis.image.io.bean.object.feature
-org.anchoranalysis.image.io.bean.stack
 org.anchoranalysis.image.io.bean.stack.combine
 org.anchoranalysis.image.io.bean.stack.reader
 org.anchoranalysis.image.io.bean.stack.writer
@@ -278,12 +278,13 @@ org.anchoranalysis.launcher.config
 org.anchoranalysis.launcher.executor
 org.anchoranalysis.launcher.executor.selectparam
 org.anchoranalysis.launcher.executor.selectparam.experiment
-org.anchoranalysis.launcher.executor.selectparam.io
 org.anchoranalysis.launcher.executor.selectparam.path
-org.anchoranalysis.launcher.executor.selectparam.task
+org.anchoranalysis.launcher.executor.selectparam.path.convert
 org.anchoranalysis.launcher.options
 org.anchoranalysis.launcher.options.outputs
-org.anchoranalysis.launcher.parser
+org.anchoranalysis.launcher.resources
+org.anchoranalysis.launcher.run
+org.anchoranalysis.launcher.run.tasks
 org.anchoranalysis.math.arithmetic
 org.anchoranalysis.math.equation
 org.anchoranalysis.math.histogram
@@ -497,13 +498,12 @@ org.anchoranalysis.plugin.image.task.bean.labeller
 org.anchoranalysis.plugin.image.task.bean.scale
 org.anchoranalysis.plugin.image.task.bean.segment
 org.anchoranalysis.plugin.image.task.bean.slice
-org.anchoranalysis.plugin.image.task.channel
 org.anchoranalysis.plugin.image.task.feature
 org.anchoranalysis.plugin.image.task.feature.calculator
 org.anchoranalysis.plugin.image.task.grouped
 org.anchoranalysis.plugin.image.task.labeller
 org.anchoranalysis.plugin.image.task.segment
-org.anchoranalysis.plugin.image.task.slice
+org.anchoranalysis.plugin.image.task.stack
 org.anchoranalysis.plugin.image.thumbnail
 org.anchoranalysis.plugin.imagej.bean.channel.provider
 org.anchoranalysis.plugin.imagej.bean.channel.provider.filter
