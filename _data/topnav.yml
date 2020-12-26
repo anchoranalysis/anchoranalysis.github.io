@@ -32,8 +32,6 @@ topnav_dropdowns:
       folderitems:
         - title: Developer guide
           url: /developer_guide.html
-        - title: Javadoc
-          external_url: /javadoc/          
         - title: Architecture
           url: /developer_guide_architecture_overview.html
         - title: Source Repositorities
@@ -44,4 +42,6 @@ topnav_dropdowns:
           external_url: https://github.com/anchoranalysis
         - title: SonarCloud
           external_url: https://sonarcloud.io/organizations/anchoranalysis/projects  
+        - title: Javadoc
+          external_url: https://www.anchoranalysis.org/javadoc/
        
