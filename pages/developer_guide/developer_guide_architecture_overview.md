@@ -14,13 +14,13 @@ Please see [Coding Style](/developer_guide_architecture_coding_style.html) for g
 ### Repositories
 
 The Anchor platform is spread across many library components bundled together into [source repositories](/developer_guide_repositories_overview.html).
-- Java repositories (containing the bulk of the codebase).
+- [Java repositories](/developer_guide_repositories_overview.html#java) (containing the bulk of the codebase).
 - BeanXML repositories with projects, pipelines and tasks.
 - Various other supporting smaller projects (website, plotting and machine-learning scripts).
 
 ### Modules
 
-Each Java source repository is sub-divided into several modules, typically each producing a JAR.  Each module is sub-divided into packages, with a naming chosen to reflect the module.
+Each [Java source repository]((/developer_guide_repositories_overview.html#java)  is sub-divided into several modules, typically each producing a JAR.  Each module is sub-divided into packages, with a naming chosen to reflect the module.
 
 {% include tip.html content="For a breakdown of modules and namespaces in each repository, see [Java Repositories](/developer_guide_repositories_overview.html#java)" %}
 
