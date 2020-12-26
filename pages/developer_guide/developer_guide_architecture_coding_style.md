@@ -68,7 +68,7 @@ Prefer immutable data structures, and functions without side-effects, unless it 
 
 The `final` keyword can be useful to indicate immutable variables, but it's good to generally indicate that class/function is immutable in its `Javadoc`.
 
-{% include warning.html content="Note that some parts of Anchor interact with third-party-libraries that use nullable functions. Please document clearly these circumstances." %}
+{% include tip.html content="Some parts of Anchor interact with third-party-libraries that use <i>nullable</i> parameters to functions. Please document clearly these circumstances." %}
 
 ### Use Project Lombok's stable features
 
