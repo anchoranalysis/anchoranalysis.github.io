@@ -25,4 +25,6 @@ Java code to match the [Google Java Style Guide](https://google.github.io/styleg
 
 * [VavR](https://www.vavr.io/) for additional functional programming constructs.
 
+* [JUnit 4](https://junit.org/junit4/) and [Mockito](https://site.mockito.org/) for testing.
+
 {% include links.html %}
