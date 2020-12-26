@@ -46,25 +46,33 @@ Creating a small function with a clear understandable name is preferable to a co
 
 Parts of the codebase suffer from being in Java instead of native code, or could be made performance at the expense of cleaner code. But these are rare, and should be tackled only when clearly necessary.
 
+### Reuse key libraries
+
+Reuse existing third-party [key libraries](/developer_guide_environment_key_libraries.html) rather than introducing new code or new dependencies.
+
 ### Testing
 
 The more tests the better, but coverage is currently low on Anchor's (large) code base. Concentrate and enhance coverage around problematic areas, especially after a bug-fix.
 
 ## Java-specific
 
-### Use `Optional` instead of nullable variables.
+### Use `Optional` instead of nullable variables
 
 Prefer to avoid variables that can be null in favour of [Optional](https://www.oracle.com/technical-resources/articles/java/java8-optional.html).
 
 **Strongly** avoid nullable-variables in function interfances (arguments in and out of a function). When deviating from this rule, very clearly document it in the `Javadoc`.
 
-### Prefer functional-style inside classes.
+### Prefer functional-style inside classes
 
 Prefer immutable data structures, and functions without side-effects, unless it clashes with the design of a system component or a third-party library, or creates an impactful performance penalty.
 
 The `final` keyword can be useful to indicate immutable variables, but it's good to generally indicate that class/function is immutable in its `Javadoc`.
 
 {% include warning.html content="Note that some parts of Anchor interact with third-party-libraries that use nullable functions. Please document clearly these circumstances." %}
+
+### Use Project Lombok's stable features
+
+Use [stable features](https://projectlombok.org/features/all) from [Project Lombok](/developer_guide_environment_key_libraries.html#maven-plugins) to reduce boiler-plate and duplication.
 
 ## Python-specific {#python}
 

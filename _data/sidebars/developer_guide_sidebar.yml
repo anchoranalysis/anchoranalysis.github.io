@@ -60,6 +60,10 @@ entries:
       url: /developer_guide_environment_sonarcloud.html
       output: web, pdf
       
+    - title: Key libraries
+      url: /developer_guide_environment_key_libraries.html
+      output: web, pdf      
+      
   - title: Source Repositories
     output: web, pdf
     

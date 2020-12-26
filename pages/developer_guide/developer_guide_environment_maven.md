@@ -25,6 +25,11 @@ See [SonarCloud](/developer_guide_environment_sonarcloud.html) for the repositor
 
 {% include note.html content="A file `pom.xml` specifies build-related settings." %}
 
+### Plugins
+
+Maven's configuration combines many plugins, and some [key third-party libraries](/developer_guide_environment_key_libraries.html#maven-plugins) are integrated
+via this mechanism into Anchor's build process.
+
 ### Example commands
 
 Tutorials on Maven are widely available. Here follows a very brief introduction.
