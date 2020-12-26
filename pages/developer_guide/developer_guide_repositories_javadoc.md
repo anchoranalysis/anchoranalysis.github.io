@@ -9,8 +9,8 @@ folder: developer_guide
 
 ## Introduction
 
-A [Maven](/developer_guide_environment_maven.html) `pom.xml` source repository on [GitHub](https://github.com/anchoranalysis/javadoc) to generate *aggregated* (across projects and repository) [Javadoc](https://en.wikipedia.org/wiki/Javadoc)
-code documentation.
+A [Maven](/developer_guide_environment_maven.html) `pom.xml` source repository on [GitHub](https://github.com/anchoranalysis/javadoc) to generate *aggregated* [Javadoc](https://en.wikipedia.org/wiki/Javadoc)
+code documentation across many projects and repositories.
 
 ### What belongs?
 
@@ -22,7 +22,7 @@ code documentation.
 
 Each top-level directory refers to a Maven project for  different combinations of projects. 
 
-On a change to the master branch, [GitHub Actions](/developer_guide_environment_github.html) will execute the *anchor-all-except-gui* project and upload it to the `gh-pages` branch of the repository. This feeds automatically into
+On a change to the master branch, [GitHub Actions](/developer_guide_environment_github.html) will execute the `anchor-all-except-gui` project and upload it to the `gh-pages` branch of the repository. This feeds automatically into
 the Anchor [website](http://www.anchoranalysis.org/javadoc/).
 
 ## Updating to latest commits
