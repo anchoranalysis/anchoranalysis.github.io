@@ -42,3 +42,6 @@ topnav_dropdowns:
           url: /developer_guide_architecture_coding_style.html          
         - title: GitHub
           external_url: https://github.com/anchoranalysis
+        - title: SonarCloud
+          external_url: https://sonarcloud.io/organizations/anchoranalysis/projects  
+       

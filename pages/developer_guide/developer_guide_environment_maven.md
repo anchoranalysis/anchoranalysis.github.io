@@ -1,7 +1,7 @@
 ---
 title: "Development Environment - Maven"
 tags: [build]
-keywords: sonarqube, environment, ci, continuousintegration
+keywords: sonarqube, sonarcloud, environment, ci, continuousintegration
 sidebar: developer_guide_sidebar
 permalink: developer_guide_environment_maven.html
 folder: developer_guide
@@ -20,9 +20,8 @@ Maven combines:
 
 {% include important.html content="Anchor currently uses **Maven Version 3.3.9**." %}
 
-See [SonarQube](/developer_guide_environment_sonarqube.html) for the repository server that Anchor uses.
-
-There exists a private local maven repository (`$HOME/.m2/` sub-directory in your home-directory) where artifacts may be stored, before being synchronized with the main server.
+There exists a private local maven repository (`$HOME/.m2/` sub-directory in your home-directory) where artifacts may be stored, before being synchronized with the [main repository server for packages](
+See [SonarCloud](/developer_guide_environment_sonarcloud.html) for the repository server that Anchor uses.).
 
 {% include note.html content="A file `pom.xml` specifies build-related settings." %}
 
@@ -63,14 +62,16 @@ These commands can be executed in the top-level directory (and thus applied to a
 
 ### Settings file
 
-There is a Maven repository server called [Nexus](/developer_guide_environment_nexus.html) (provides versioned JARs) that is needed to build Anchor.
+The project uses [GitHub Packages](https://github.com/features/packages) as a repository serve (provides versioned JARs) that is needed to build Anchor.
 
 It is found at:
-> http://maven.anchoranalysis.org:8081/nexus/
+> https://maven.pkg.github.com/anchoranalysis/ANCHOR-REPOSITORY-NAME
 
-Currently, this repository **requires credentials** to access, either to download-from (*read*) or to deploy-to (*write*). Contact Owen Feehan to request.
+where `ANCHOR-REPOSITORY-NAME` should be substituted with the respect repository name e.g. `anchor` or `anchor-plugins` etc.
 
-The credentials (username/password) should be specified in your private maven settings, e.g. in `$HOME/.m2/settings.xml` where `$HOME` is the user's *home directory*`.
+This repository requires a [token](https://docs.github.com/en/free-pro-team@latest/packages/guides/configuring-apache-maven-for-use-with-github-packages) from GitHub to read from (and **requires credentials** from Owen Feehan to write to).
+
+The [credentials](https://docs.github.com/en/free-pro-team@latest/packages/guides/configuring-apache-maven-for-use-with-github-packages) (username/token) should be specified in your private maven settings, e.g. in `$HOME/.m2/settings.xml` where `$HOME` is the user's *home directory*`.
 
 {% include note.html content="On Windows, a user's home directory is typically found at `C:\Users\owen\` (replace the username)." %}
 
@@ -79,34 +80,19 @@ The credentials (username/password) should be specified in your private maven se
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
     <servers>
-        <server>
-            <id>anchor</id>
-            <username>yourusername</username>
-            <password>yourpassword</password>
-        </server>
-        <server>
-            <id>anchor-releases</id>
-            <username>yourusername</username>
-            <password>yourpassword</password>
-        </server>
-        <server>
-            <id>anchor-snapshots</id>
-            <username>yourusername</username>
-            <password>yourpassword</password>
-        </server>
-        <server>
-            <id>anchor-thirdparty</id>
-            <username>yourusername</username>
-            <password>yourpassword</password>
-        </server>
+    <server>
+        <id>github</id>
+        <username>YOUR_USERNAME</username>
+        <password>YOUR_TOKEN</password>
+    </server>  
     </servers>
 
     <profiles>
         <profile>
             <id>anchorTestConfig</id>
             <properties>
-                <anchor.home.test>C:\Users\SOMEUSER\Apps\anchor\</anchor.home.test>
-                <anchor.home.deploy>C:\Users\SOMEUSER\Apps\anchor\</anchor.home.deploy>
+                <anchor.home.test>C:\SOMEDIRECTORY\Apps\anchor\</anchor.home.test>
+                <anchor.home.deploy>C:\SOMEDIRECTORY\Apps\anchor\</anchor.home.deploy>
                 <maven.test.skip>true</maven.test.skip>
                 <maven.javadoc.skip>true</maven.javadoc.skip>
             </properties>
@@ -120,7 +106,7 @@ The credentials (username/password) should be specified in your private maven se
 </settings>
 ```
 
-Replace *yourusername* and *yourpassword* appropriately, and update the `anchor.home.test` and `anchor.home.deploy` variable to match the path where Anchor will be deployed to.
+Replace `YOUR_USERNAME` and `YOUR_TOKEN` appropriately, and update the `anchor.home.test` and `anchor.home.deploy` variable to match the path where Anchor will be deployed to.
 
 ## Multi-module projects
 
