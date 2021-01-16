@@ -20,7 +20,7 @@ The Anchor platform is spread across many library components bundled together in
 
 ### Modules
 
-Each [Java source repository]((/developer_guide_repositories_overview.html#java)  is sub-divided into several modules, typically each producing a JAR.  Each module is sub-divided into packages, with a naming chosen to reflect the module.
+Each [Java source repository](/developer_guide_repositories_overview.html#java)  is sub-divided into several modules, typically each producing a JAR.  Each module is sub-divided into packages, with a naming chosen to reflect the module.
 
 {% include tip.html content="For a breakdown of modules and namespaces in each repository, see [Java Repositories](/developer_guide_repositories_overview.html#java)" %}
 

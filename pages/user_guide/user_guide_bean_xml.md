@@ -42,7 +42,7 @@ To understand the available properties in a bean:
 2. Any examples in guides or in existing BeanXML.
 3. The Java source-code for a Bean for the respective `config-class` attribute.
 
-{% include note.html content="The Java source-code for particular classes are stored in GitHub in a [particular predictable location](developer_guide_architecture_overview.html#locatingSource), as can be inferred from the `config-class` value." %}
+{% include note.html content="The Java source-code for particular classes are stored in GitHub in a [particular predictable location](/developer_guide_anchor_beans.html#locatingSource), as can be inferred from the `config-class` value." %}
 
 ### Choice of beans
 

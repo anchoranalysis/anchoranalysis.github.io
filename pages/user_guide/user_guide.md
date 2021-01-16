@@ -27,7 +27,7 @@ To run an experiment, these three elements must be defined, though often by defa
 
 Anchor offers first sensible defaults, allowing for greater definition later.
 
-The [default-experiment](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/defaultExperiment.xml) occurs when you type `anchor` without arguments, and:
+The [default-experiment](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultExperiment.xml) occurs when you type `anchor` without arguments, and:
 1. reads image files (**inputs**) from the current working directory.
 2. prints some summary information (a [task](/user_guide_tasks.html)).
 3. produces no **outputs**.
@@ -97,7 +97,7 @@ anchor -i sunday-hike.xml -t generate_thumbnail.xml -o ../thumbnails/
 
 Instead of element-wise definition on the command line (with `-i`, `-t`, `-o` etc.), an entire experiment can be defined in BeanXML, and simply called from the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
-{% include tip.html content="To see BeanXML look in the Anchor Distribution for [config/defaultExperiment.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor-assembly/src/main/resources/config/defaultExperiment.xml) or [config/tasks/](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks)" %}
+{% include tip.html content="To see BeanXML look in the Anchor Distribution for [config/defaultExperiment.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultExperiment.xml) or [config/tasks/](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks)" %}
 
 In full reality, an experiment has more than three elements, as well as wide parameterization possibilities, all initially hidden by defaults. BeanXML provides more finely-grained definition.
 
