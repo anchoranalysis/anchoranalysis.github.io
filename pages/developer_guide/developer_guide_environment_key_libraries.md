@@ -27,4 +27,16 @@ Java code to match the [Google Java Style Guide](https://google.github.io/styleg
 
 * [JUnit 4](https://junit.org/junit4/) and [Mockito](https://site.mockito.org/) for testing.
 
+## Python libraries
+
+* [Pandas](https://pandas.pydata.org/)
+
+* [NumPy](https://numpy.org/)
+
+* [scikit-learn](https://scikit-learn.org/stable/)
+
+* [TensorFlow](https://www.tensorflow.org/)
+
+* [Plotly](https://plotly.com/)
+
 {% include links.html %}
