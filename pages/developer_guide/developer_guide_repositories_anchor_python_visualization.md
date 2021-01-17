@@ -9,13 +9,17 @@ folder: developer_guide
 
 ## Introduction
 
-A **Python** source repository on [GitHub]((https://github.com/anchoranalysis/anchor-python-visualization)). It provides functions for visualizing the outputs of Anchor in various ways.
+A **Python** source repository on [GitHub]((https://github.com/anchoranalysis/anchor-python-visualization). It provides functions for visualizing the outputs of Anchor in various ways.
 
 ### What belongs in the repository?
 
 {% include tip.html content="It **should** include: Python scripts/packages for processing data produced by Anchor for visualization." %}
 
 {% include warning.html content="It should **not** include: Python scripts/packages for other purposes, or non-Python code." %}
+
+## API Documentation
+
+[API documentation](https://github.com/anchoranalysis/anchor-python-visualization/) is automatically generated from *master* branch using Sphinx for public modules and classes.
 
 ## Code Structure
 
