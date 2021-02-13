@@ -20,7 +20,7 @@ Anchor is a free command-line application and platform for image analysis, espec
 <img src="/images/anchor_medium_logo.png" alt="Anchor logo" style="float:right;width:341px;height:163px;">
 
 - Supports diverse image types and formats (photos, 2D / 3D / time-series microscopy).
-- Smartly names outputs by finding patterns in filenames.
+- Smartly names outputs by finding patterns in filenames. Preserves directory structure.
 - Reproducible pipelines defined via XML.
 - Feature-extraction libraries (sets of voxels, geometric shapes) etc.
 - Extensible via Java to call operations in [ImageJ](https://imagej.net/Welcome), [Icy](http://icy.bioimageanalysis.org/), [OpenCV](https://opencv.org/) etc.
