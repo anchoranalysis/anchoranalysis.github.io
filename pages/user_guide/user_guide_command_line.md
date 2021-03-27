@@ -30,6 +30,22 @@ The **most important** command-line options are:
 
 {% include tip.html content="Typing `anchor -h` will display available command-line arguments" %}
 
+## Input options
+
+Note:
+ 
+- Each input file is assigned a unique identifier, which subsequently determines corresponding output file paths.
+
+- By default, this is inferred from a pattern in the input filenames (e.g. an incrementing integer, varying string etc.) in a minimal way, while capturing the varying elements.
+
+Options useful for influencing **inputting**:
+
+| Option | Description|
+|----------|------------|
+| -i *arg* | [Changes inputs](/user_guide.html#inputs), where *arg* = <span class="optionArg"> glob</span> or <span class="optionArg">path to an input-directory</span> or <span class="optionArg">path to BeanXML</span> |
+| -ir | Derives the unique identifier from the **entire relative filename or path** (excluding file extension).  |
+| -is | Shuffles (randomizes) the order of the inputs.  |
+
 ## Output options
 
 Note: 
