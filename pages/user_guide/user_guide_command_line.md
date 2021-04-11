@@ -61,8 +61,8 @@ Options useful for influencing **outputting**:
 | -od *outputName(s)* | **Disables specific** output(s). Multiple outputs are comma-separated. |
 | -oe *outputName(s)* | **Enables specific** output(s). Multiple outputs are comma-separated. |
 | -of *formatExtension* | Suggests an output **image file format**: e.g `-of jpg` or `-of ome.xml` |
-| -oo | **Omits experiment name** and version when outputting. |
 | -on | Outputs with **an incrementing number** instead of the input identifier.<br>*(useful for creating sequences of images)* |
+| -oo | Omits experiment name and version when outputting. |
 | -os | Replaces directory separators (for a file identifier) with an underscore when outputting. |
 
 {% include warning.html content="Non-standard image types (3D, neither monochrome nor RGB etc.) are unsupported by most file formats, so a suggestion with `-of` will often be ignored, in favour of a supported format." %}
