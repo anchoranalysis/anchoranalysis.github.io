@@ -10,7 +10,9 @@ toc: true
 
 ## Predefined tasks
 
-An overview of [predefined tasks](/user_guide_predefined_tasks.html) that can be easily applied on image files. 
+An overview of [predefined tasks](/user_guide_predefined_tasks.html) that can be easily applied on image files.
+
+See [command-line arguments](/user_guide_command_line.html) to easily select tasks, inputs, outputs and other settings.
 
 ## Step-by-step guides
 
