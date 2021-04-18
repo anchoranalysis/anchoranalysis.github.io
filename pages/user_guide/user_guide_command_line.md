@@ -43,6 +43,7 @@ Options useful for influencing **inputting**:
 | Option | Description|
 |----------|------------|
 | -i *arg* | [Changes inputs](/user_guide.html#inputs), where *arg* = <span class="optionArg"> glob</span> or <span class="optionArg">path to an input-directory</span> or <span class="optionArg">path to BeanXML</span> |
+| -ic | Additionally copies any files in the input directory not used as inputs. |
 | -ir | Derives the unique identifier from the **entire relative filename or path** (excluding file extension).  |
 | -is | Shuffles (randomizes) the order of the inputs.  |
 
