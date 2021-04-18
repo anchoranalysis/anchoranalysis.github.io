@@ -40,7 +40,7 @@ anchor -i *.png -t /path/to/anchorDistribution/config/tasks/features/hog.xml
 
 ### Understanding each task
 
-- An overview of all the predefined tasks is found in [Example Usage](/user_guide_examples.html).
+- See an overview of all [Predefined Tasks](/user_guide_predefined_tasks.html) and [Example Usage](/user_guide_examples.html).
 - Each task also includes a more detailed description as a comment in its [BeanXML](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks).
 
 
