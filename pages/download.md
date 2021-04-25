@@ -9,7 +9,7 @@ toc: false
 disable_editme: true
 ---
 
-Anchor can be downloaded as a distribution ([zip](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.5-prerelease/anchor-0.5-prerelease.zip) or [tar.gz](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.4-prerelease/anchor-0.4-prerelease.tar.gz)). This must be unpacked into a directory, followed by setting some environment variables.
+Anchor can be downloaded as a distribution ([zip](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.5-prerelease/anchor-0.5-prerelease.zip) or [tar.gz](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.5-prerelease/anchor-0.5-prerelease.tar.gz)). This must be unpacked into a directory, followed by setting some environment variables.
 
 Please download the [latest version](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.5-prerelease/anchor-0.5-prerelease.zip) from GitHub.
 
