@@ -1,7 +1,7 @@
 ---
 title:  "Fourth pre-release"
 categories: version download
-permalink: third-prerelease.html
+permalink: fourth-prerelease.html
 tags: [news, version]
 ---
 
