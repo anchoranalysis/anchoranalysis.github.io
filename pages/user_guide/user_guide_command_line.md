@@ -75,6 +75,7 @@ Options useful for **tasks**:
 | Option | Description|
 |----------|------------|
 | -t *arg* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">task-name</span> or <span class="optionArg">path to BeanXML</span> |
+| -tp | Suggests a maximum number of CPU processors. |
 | -st | Prints the names of predefined tasks that can be used with `-t` |
 | -ps | Suggests <span class="optionArg">image size</span> (e.g. `1024x768`) or a <span class="optionArg">scaling factor</span> (e.g.`0.5`)<br>- The order of dimensions is always `width`x`height`<br>- No scaling in the z-dimension is supported.<br>- Some tasks support omitting one dimension to resize to a particular width/height e.g. `200x` or `x50`<br>- Some tasks allow a trailing plus character to <b>preserve aspect ratio</b> e.g. `1000x500+` resizes maximally within these dimensions. |
 
