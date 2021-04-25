@@ -77,7 +77,7 @@ Options useful for **tasks**:
 | -t *arg* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">task-name</span> or <span class="optionArg">path to BeanXML</span> |
 | -tp *number* | Suggests a maximum number of CPU processors. |
 | -st | Prints the names of predefined tasks that can be used with `-t` |
-| -ps *size* | Suggests <span class="optionArg">image size</span> (e.g. `1024x768`) or a <span class="optionArg">scaling factor</span> (e.g.`0.5`)<br>- The order of dimensions is always `width`x`height`<br>- No scaling in the z-dimension is supported.<br>- Some tasks support omitting one dimension to resize to a particular width/height e.g. `200x` or `x50`<br>- Some tasks allow a trailing plus character to <b>preserve aspect ratio</b> e.g. `1000x500+` resizes maximally within these dimensions. |
+| -ps *size* | Suggests <span class="optionArg">image size</span> (e.g. `1024x768`) or a <span class="optionArg">scaling factor</span> (e.g.`0.5`)<br>- The order of dimensions is always `width`x`height`<br>- No scaling in the z-dimension is supported.<br>- In some tasks, omitting one dimension resizes to a particular width/height <b>preserving aspect-ratio</b> e.g. `200x` or `x50`<br>- Some tasks allow a trailing plus character to <b>preserve aspect ratio</b> within a box e.g. `1000x500+` resizes maximally within these dimensions. |
 
 The options beginning with `-p` are parameters that are optionally used only by specific tasks.
 
