@@ -92,8 +92,8 @@ The [credentials](https://docs.github.com/en/free-pro-team@latest/packages/guide
         </server>  
         <server>
             <id>path-pattern-finder</id>
-            <username>owenfeehan</username>
-            <password>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</password>
+            <username>YOUR_USERNAME</username>
+            <password>YOUR_TOKEN</password>
         </server>  	    
     </servers>
 
