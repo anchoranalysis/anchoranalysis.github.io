@@ -62,7 +62,11 @@ entries:
       
     - title: Key libraries
       url: /developer_guide_environment_key_libraries.html
-      output: web, pdf      
+      output: web, pdf
+      
+    - title: Debugging tips
+      url: /developer_guide_environment_debugging_tips.html
+      output: web, pdf           
       
   - title: Source Repositories
     output: web, pdf
