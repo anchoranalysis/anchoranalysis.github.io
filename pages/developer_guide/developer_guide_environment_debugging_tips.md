@@ -1,6 +1,6 @@
 ---
 title: "Development Environment - Debugging Tips"
-tags: [build]
+tags: [debugging]
 keywords: environment, debugging, tips, eclipse
 sidebar: developer_guide_sidebar
 permalink: developer_guide_environment_debugging_tips.html
@@ -14,7 +14,7 @@ toc: false
 
 The anchor application can be launched in debugging-mode in Eclipse by running
 
-```java
+```javascript
 org.anchoranalysis.launcher.Launcher
 ```
 
@@ -40,7 +40,7 @@ default.config.path.relative=C:/Users/someuser/Apps/anchor/config/defaultExperim
 
 The above is similarly true of the [anchor-gui](developer_guide_repositories_anchor_gui.html) application, which can be debugged in Eclipse with:
 
-```java
+```javascript
 org.anchoranalysis.browser.launcher.LaunchInteractiveBrowser
 ```
 
