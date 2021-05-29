@@ -26,7 +26,7 @@ And as a further step, it copies this output into the path defined by ```anchor.
 
 To completely build Anchor from scratch. Pre-conditions:
 
-* You've learnt Maven basics.
+* You've learned Maven basics.
 * You've configured the ```$HOME/.m2/settings.xml``` file.
 * You've cloned all necessary Anchor Java repositories from [GitHub](https://github.com/anchoranalysis/) (see below).
 

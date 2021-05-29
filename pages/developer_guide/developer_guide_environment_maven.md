@@ -85,11 +85,16 @@ The [credentials](https://docs.github.com/en/free-pro-team@latest/packages/guide
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
     <servers>
-    <server>
-        <id>github</id>
-        <username>YOUR_USERNAME</username>
-        <password>YOUR_TOKEN</password>
-    </server>  
+        <server>
+            <id>github</id>
+            <username>YOUR_USERNAME</username>
+            <password>YOUR_TOKEN</password>
+        </server>  
+        <server>
+            <id>path-pattern-finder</id>
+            <username>owenfeehan</username>
+            <password>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</password>
+        </server>  	    
     </servers>
 
     <profiles>
