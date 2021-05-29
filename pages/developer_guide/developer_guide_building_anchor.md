@@ -16,7 +16,7 @@ Anchor uses [Apache Maven](https://maven.apache.org/) as a build tool. As a prio
 The *anchor-assembly* is a special module that doesn't generate a .jar artifact, but rather assembles the output of other modules (artifacts) into an [Anchor distribution](developer_guide_anchor_distribution.html).
 
 It produces its output (after *mvn deploy*) in a sub-directory:
-> anchor-assembly/target/anchor-assembly-*version*-dist/
+> anchor-assembly/anchor/target/anchor-*version*/anchor-*version*/
 
 where *version* is replaced by the current version identifier (e.g. 0.0.1-SNAPSHOT).
 
