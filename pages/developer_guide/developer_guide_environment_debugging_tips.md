@@ -36,6 +36,8 @@ To resolve this error, simply create the small bootstrap files in this location,
 default.config.path.relative=C:/Users/someuser/Apps/anchor/config/defaultExperiment.xml
 ```
 
+- The `config/defaultBeans.xml` will also not be found, and needs to be explicitly copied either into the `${current working directory}/config/defaultBeans.xml` or into `$HOME/.anchor/defaultBeans.xml` (which is also searched, and takes precedence).
+
 ### Debugging the GUI application
 
 The above is similarly true of the [anchor-gui](developer_guide_repositories_anchor_gui.html) application, which can be debugged in Eclipse with:
