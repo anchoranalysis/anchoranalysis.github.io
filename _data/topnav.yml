@@ -20,22 +20,26 @@ topnav_dropdowns:
 #          url: /what_is.html
         - title: Installation
           url: /installation.html
-        - title: User guide
-          url: /user_guide.html
+        - title: Example usage
+          url: /user_guide_examples.html
         - title: Command line
           url: /user_guide_command_line.html
-        - title: Example usage
-          url: /user_guide_examples.html         
+        - title: Predefined tasks
+          url: /user_guide_predefined_tasks.html
+        - title: Essentials / User Guide
+          url: /user_guide.html          
         - title: Supported formats
           url: /user_guide_supported_formats.html
+        - title: BeanXML
+          url: /user_guide_bean_xml.html
     - title: Developer
       folderitems:
-        - title: Developer guide
-          url: /developer_guide.html
-        - title: Architecture
-          url: /developer_guide_architecture_overview.html
         - title: Source Repositorities
           url: /developer_guide_repositories_overview.html
+        - title: Developer guide
+          url: /developer_guide.html          
+        - title: Architecture
+          url: /developer_guide_architecture_overview.html          
         - title: Coding Style
           url: /developer_guide_architecture_coding_style.html          
         - title: GitHub

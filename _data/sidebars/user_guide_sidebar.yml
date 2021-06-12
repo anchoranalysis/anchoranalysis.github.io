@@ -40,7 +40,11 @@ entries:
       url: /user_guide_predefined_tasks.html
       output: web, pdf
       
-    - title: Histogram
+    - title: Investigating image files
+      url: /user_guide_examples_investigating_images.html
+      output: web, pdf
+      
+    - title: Histograms from images
       url: /user_guide_examples_histogram.html
       output: web, pdf
 

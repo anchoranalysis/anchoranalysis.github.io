@@ -23,7 +23,7 @@ paradigm, these can be considered like a *map* step or a *reduce* step.
 
 ## Predefined tasks
 
-Several predefined tasks are bundled with the Anchor distribution - intended to be easily executed from the command line.
+Several [predefined tasks](/user_guide_predefined_tasks.html) are bundled with the Anchor distribution - intended to be easily executed from the command line.
 
 ### The `/config/tasks/` directory.
 
@@ -44,8 +44,8 @@ anchor -i *.png -t /path/to/anchorDistribution/config/tasks/features/hog.xml
 - Each task also includes a more detailed description as a comment in its [BeanXML](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks).
 
 
-## Building a new task
+## Custom tasks
  
-New tasks can be specified in BeanXML using classes that inherit from [Task](/javadoc/org/anchoranalysis/experiment/bean/task/Task.html).
+New tasks can be specified in a [BeanXML](/user_guide_bean_xml.html) file referring to an [AnchorBean](/developer_guide_anchor_beans.html) that inherit from [Task](/javadoc/org/anchoranalysis/experiment/bean/task/Task.html).
 
 {% include links.html %}

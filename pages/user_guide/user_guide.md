@@ -56,7 +56,9 @@ Each element **(inputs, task, outputs)** can be overridden using a command-line 
 | `-i` *glob* | reads **files matching the glob** *(e.g. `-i *.jpg`)* |
 | `-i` *path to directory* | reads images recursively from the **specified** directory |
 
-When specifying a directory (without a glob), files are filtered against list of popular image file extensions.
+When specifying a directory (without a glob), files are filtered against list of [popular image file extensions](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/format/ImageFileFormat.java).
+
+{% include tip.html content="These options are described in greater detail in the [Investigating image files in a directory](/user_guide_examples_investigating_images.html#further-specifying-the-search) example." %}
 
 #### Changing the task with `-t` {#task}
 

@@ -13,7 +13,7 @@ Anchor is a free command-line application and platform for image analysis, espec
 
 {% include callout.html type="danger" content="It's a Swiss-army-knife for loading, transforming, and extracting information from **sets of images**, as single-image tools are often limiting." %}
 
-{% include tip.html content="[Download](/download.html) and [install](/installation.html). Then see [example usage](/user_guide_examples.html), the [user guide](/user_guide.html) and the [developer guide](/developer_guide.html)." %}
+{% include tip.html content="[Download](/download.html) and [install](/installation.html). Then see [example usage](/user_guide_examples.html), the [user guide](/user_guide.html) and the [command line](/user_guide_command_line.html)." %}
 
 ## Features
 
