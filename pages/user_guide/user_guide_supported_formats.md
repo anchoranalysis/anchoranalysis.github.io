@@ -45,14 +45,14 @@ classes for reading and writing images, inheriting from [StackReader](/javadoc/o
 
 ### Specifying default readers and writers
 
-The default readers and writers are set in `defaultBeans.xml` configuration-files, found at:
+The default readers and writers are set in [defaultBeans.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultBeans.xml) configuration-files, found at:
 
 * `$ANCHOR_HOME/config/defaultBeans.xml` in the main Anchor distribution, and
 * `$USER_HOME/.anchor/defaultBeans.xml` optionally, taking precedence.
 
 In practice, these readers and writers are usually implemented via hierarchies of rules that select an appropriate driver for a particular type of image, based upon whether its 2D/3D, the number of channels, bit depth etc.
 
-The user may also suggest a preferred file format for writing via the [`-of` command-line-option](/user_guide_command_line.html#output-options).
+The user may also suggest a preferred file format for writing via the [`-of` command-line-option](/user_guide_command_line.html#output-options). See the [Converting and manipulating images](/user_guide_examples_converting_manipulating_images.html) for example usage.
 
 ### Reading images
 

@@ -19,9 +19,9 @@ See [command-line arguments](/user_guide_command_line.html) to easily select tas
 ## Step-by-step guides
 
 - [Investigating image files](/user_guide_examples_investigating_images.html) in a directory.
-- Converting image format or resizing.
-- Creating a video from images.
+- [Converting and manipulating images](/user_guide_examples_converting_manipulating_images.html) (resizing etc.)
 - Generating and aggregating [histograms from images](/user_guide_examples_histogram.html) of pixel intensities.
+- Creating a [video from images](/user_guide_examples_video_from_images.html).
 - Finding text regions in images.
 - Anonymizing and randomly sampling files. 
 

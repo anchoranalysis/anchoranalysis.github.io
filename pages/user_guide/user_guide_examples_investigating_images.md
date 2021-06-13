@@ -77,7 +77,7 @@ ${0} = 3 unique integers between 13 and 91 inclusive" %}
 
 ### Further specifying the search
 
-The [`-i` command-line argument](/user_guide.html#inputs) can further specify which images we seek:
+The [`-i` command-line option](/user_guide.html#inputs) can further specify which images we seek:
 
 - **a file extension** not included in the [default search](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/format/ImageFileFormat.java): `-i .zvi` or `-i *.zvi`
 - **a narrower range with a *wildcard*** (applied on all filenames recursively): `-i foo*bar`
@@ -90,7 +90,7 @@ The [`-i` command-line argument](/user_guide.html#inputs) can further specify wh
 
 By default, the unique name is derived only from the varying elements of the pattern found in the paths e.g. (`13`, `78` and `91`).
 
-The [`-ir` command-line argument](/user_guide_command_line.html#input-options) instead **keeps the entire file-name** (the entire file-path after the input directory), including the non-varying elements e.g. (`alps-78`, `alps-91` and `alps-13`). Note the file extension continues to be omitted.
+The [`-ir` command-line option](/user_guide_command_line.html#input-options) instead **keeps the entire file-name** (the entire file-path after the input directory), including the non-varying elements e.g. (`alps-78`, `alps-91` and `alps-13`). Note the file extension continues to be omitted.
 
 {% include shell.html
 command="anchor -ir -t list"
@@ -98,7 +98,7 @@ response="alps-13  -> alps-13.jpg
 alps-78  -> alps-78.jpg
 alps-91  -> alps-91.jpg" %}
 
-If the path has **redundant varying elements** (parts of the path which vary, but are not needed for the unique identifier), then the [`-ii` command-line argument](/user_guide_command_line.html#input-options) will remove the unneeded elements.
+If the path has **redundant varying elements** (parts of the path which vary, but are not needed for the unique identifier), then the [`-ii` command-line option](/user_guide_command_line.html#input-options) will remove the unneeded elements.
 
 ## Extracting features from images
 
@@ -154,7 +154,7 @@ The following files are produced:
 
 The latter is useful for visualizing features alongside each other via derived embeddings etc. 
 
-{% include tip.html content="The output directory can be changed with the [`-o` command-line argument](/user_guide.html#outputs) e.g. `-o path_to_parent_directory`" %}
+{% include tip.html content="The output directory can be changed with the [`-o` command-line option](/user_guide.html#outputs) e.g. `-o path_to_parent_directory`" %}
 
 ## Next steps
 

@@ -8,10 +8,21 @@ folder: user_guide
 toc: true
 ---
 
-## How to run a task
+## Introduction
 
 Some [tasks](/user_guide_tasks.html) are included in the Anchor distribution, to be easily
-[run from the command-line](/user_guide_command_line.html) with `-t taskname`.  
+[run from the command-line](/user_guide_command_line.html) with `-t taskname`, and are termed *predefined tasks*.
+
+### Listing available predefined tasks
+
+To list the names of all available predefined tasks, type in a shell either:
+
+- `anchor -st` or
+- `anchor -t` (without an argument)
+
+A user can extend the available predefined tasks, by adding [BeanXML](/user_guide_bean_xml.html) to the `/config/tasks` subdirectory in an [Anchor distribution](/developer_guide_anchor_distribution.html).
+
+### How to run a predefined task
 
 To run a [task](/user_guide_tasks.html), open a shell (e.g. `Command Prompt` or `Powershell` in Windows), change to a directory with images, and then:
 
@@ -20,7 +31,7 @@ To run a [task](/user_guide_tasks.html), open a shell (e.g. `Command Prompt` or 
 Next, consider enabling additional outputs with [the ``-o`` options](/user_guide_command_line.html#major-options) or refining your
 inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 
-{% include tip.html content="In Windows, [hold the shift key when right-clicking on a folder in Windows Explorer](https://www.zdnet.com/article/windows-10-tip-the-fastest-smartest-ways-to-open-a-command-prompt/) to open a Command Prompt or Powershell in that folder. " %}
+{% include tip.html content="In Windows, [hold the shift key when right-clicking on a folder in Windows Explorer](https://www.zdnet.com/article/windows-10-tip-the-fastest-smartest-ways-to-open-a-command-prompt/) to open a Command Prompt or Powershell in that folder." %}
 
 ## Image processing 
 
@@ -64,6 +75,5 @@ inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 | [summarize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/summarize.xml) | images | combines the summaries in `summarizeImages` and `summarizePaths`. |
 | [summarizeImages](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/summarizeImages.xml) | images | **summarizes image attributes** (dimensions, bit depth etc.) |
 | [summarizePaths](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/summarizePaths.xml) | any files | **summarizes file attributes** (size, patterns among the file-paths etc.) |
-
 
 {% include links.html %}
