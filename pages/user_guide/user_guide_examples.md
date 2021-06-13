@@ -12,7 +12,7 @@ toc: true
 
 An overview of [predefined tasks](/user_guide_predefined_tasks.html) that can be easily applied on image files.
 
-{% include tip.html content="[Predefined tasks](/user_guide_predefined_tasks.html) are operations that can be applied from the command-line without writing custom [BeanXML](/user_guide_bean_xml.html). They are a good starting point to using Anchor!" %}
+{% include tip.html content="[Predefined tasks](/user_guide_predefined_tasks.html) are operations that can be applied from the command-line without writing custom [BeanXML](/user_guide_bean_xml.html). They are a good starting point for using Anchor!" %}
 
 See [command-line arguments](/user_guide_command_line.html) to easily select tasks (both [predefined](/user_guide_predefined_tasks.html) and custom), inputs, outputs and other settings.
 
@@ -22,7 +22,7 @@ See [command-line arguments](/user_guide_command_line.html) to easily select tas
 - [Converting and manipulating images](/user_guide_examples_converting_manipulating_images.html) (resizing etc.)
 - Generating and aggregating [histograms from images](/user_guide_examples_histogram.html) of pixel intensities.
 - Creating a [video from images](/user_guide_examples_video_from_images.html).
-- Finding text regions in images.
-- Anonymizing and randomly sampling files. 
+- Finding text regions in images (*work in progress*).
+- Anonymizing and randomly sampling files (*work in progress*). 
 
 {% include links.html %}

@@ -53,9 +53,9 @@ This [`-of` command-line option](/user_guide_command_line.html#output-options) c
 
 ### Additionally copying non-input files 
 
-Given an input directory, typically *Anchor* will create an output directory with *n* files derived from each input. For all examples on this page, *n==1*, and as a special case, this single output file is assigned *simply* the name of the input.
+Given an input directory, typically *Anchor* will create an output directory with *n* files derived from each input. For all examples on this page, a single input is created (*n==1*), and as a special case, the output is assigned the same as the input-name.
 
-Using the [`-ir`](/user_guide_examples_investigating_images.html#changing-the-derived-input-name) command-line option, each task can then ***immutably* transform images** from one directory to another, preserving file-names and subdirectory-structure.
+Using the [`-ir`](/user_guide_examples_investigating_images.html#changing-the-derived-input-name) command-line option, the input-name is identical to the file-name (and any subdirectories). As a whole, the task ***immutably* transforms images** from one directory to another, preserving file-names and subdirectory-structure.
 
 e.g. `input_directory/foo/file12.png` produces `output_directory/foo/file12.ext`. 
 
@@ -141,7 +141,7 @@ To resize an image, use the predefined task [resize](https://github.com/anchoran
 
 {% include tip.html content="The previously-described command-line options can *all* be applied, including to change the outputted file format." %}
 
-**By default, images are resized to `1280x768`** (*width* x *height*). 
+**By default, images are resized to 1280x768** (*width* x *height*). 
 
 ```none
 anchor -t resize
@@ -153,13 +153,13 @@ For simplicity, the following examples omit the [`-i` command-line option](user_
 
 #### Resizing with a scaling factor 
 
-To resize to ***half* the current width and height**:
+To resize to ***half* the existing width and height**:
 
 ```none
 anchor -t resize -ps 0.5
 ```
 
-To resize to ***double* the current width and height**:
+To resize to ***double* the existing width and height**:
 
 ```none
 anchor -t resize -ps 2

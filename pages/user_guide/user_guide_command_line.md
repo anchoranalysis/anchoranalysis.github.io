@@ -46,7 +46,7 @@ Options useful for influencing **inputting**:
 | [-ic](/user_guide_examples_converting_manipulating_images.html#additionally-copying-non-input-files) | **Copies any files unused as inputs** (but existing within the input directory) to the output directory. |
 | [-ii](/user_guide_examples_investigating_images.html#changing-the-derived-input-name) | **Subsets the name**. Zero-indexed. Negatives count backwards from the end. e.g. `2` (`a/b/c/d` becomes `c/d`) or `-2` (from second-last) or `3:-2` (fourth to second-last) or `:2` (until third). |
 | [-ir](/user_guide_examples_investigating_images.html#changing-the-derived-input-name) | Derives the name instead from the **entire relative file-path** excluding the file extension.<br>e.g. it selects `subdir/prefix_234` rather than `234` (by default, only what varies among filenames).  |
-| -is | **Shuffles** (randomizes) the order of the inputs. |
+| [-is](/user_guide_examples_video_from_images.html#randomizing-the-image-order) | **Shuffles** (randomizes) the order of the inputs. |
 
 ## Output options
 
