@@ -47,7 +47,8 @@ inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
-| [text](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/text.xml) | images | finds text-regions in images. |
+| [segment/coco](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/segment/coco.xml) | images | instance segmentation based on 80 MSCOCO object categories. |
+| [segment/text](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/segment/text.xml) | images | finds text-regions in images. |
 
 ## Feature extraction
 
