@@ -41,7 +41,7 @@ used by Anchor.
 | [anchor-image-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-io) | `org.anchoranalysis.image.io`<br>Reading / writing related to [anchor-image](https://github.com/anchoranalysis/anchor/tree/master/anchor-image) | 86 | 3,716 |
 | [anchor-image-voxel](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-voxel) | `org.anchoranalysis.image.voxel`<br>Data objects for per-voxel manipulation of images. | 230 | 10,195 |
 | [anchor-imagej](https://github.com/anchoranalysis/anchor/tree/master/anchor-imagej) | `org.anchoranalysis.io.ij`<br>Converters and IO that uses [ImageJ](https://imagej.net/Welcome). | 11 | 656 |
-| [anchor-inference](https://github.com/anchoranalysis/anchor/tree/master/anchor-inference) | `org.anchoranalysis.inference`<br>High-level classes for performing machine learning model inference. | 6 | 143 |
+| [anchor-inference](https://github.com/anchoranalysis/anchor/tree/master/anchor-inference) | `org.anchoranalysis.inference`<br>Performing machine learning model inference. | 6 | 143 |
 | [anchor-io-bioformats](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-bioformats) | `org.anchoranalysis.io.bioformats`<br>Input / output that uses [Bioformats](https://www.openmicroscopy.org/bio-formats/). | 37 | 1,510 |
 | [anchor-io-generator](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-generator) | `org.anchoranalysis.io.generator`<br>*Generators* for producing output.  | 35 | 1,325 |
 | [anchor-io-input](https://github.com/anchoranalysis/anchor/tree/master/anchor-io-input) | `org.anchoranalysis.io.input`<br>Collecting inputs (not image specific) for tasks/experiments. | 46 | 1,372 |

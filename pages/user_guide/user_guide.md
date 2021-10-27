@@ -93,7 +93,7 @@ anchor -t summarizeImages
 anchor -i sunday-hike.xml -t generate_thumbnail.xml -o ../thumbnails/
 ```
 
-{% include tip.html content="Prespecified tasks can be identified simple by their **task-name** e.g. [grayscale](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks/grayscale.xml), [summarizeImages](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks/summarizeImages.xml)." %}
+{% include tip.html content="Prespecified tasks can be identified simple by their **task-name** e.g. [resize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/resize.xml), [summarizeImages](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/summarizeImages.xml)." %}
 
 ### Defining an entire experiment in BeanXML
 
