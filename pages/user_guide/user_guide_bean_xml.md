@@ -52,9 +52,7 @@ Two situations are common:
 
 ### Inheritance
 
-By **inherits**, we refer to a concept from object-oriented programming, where a **subclass** is as an expanded version of a **parent class**. The subclass includes all properties from the parent, and adds some more.
-
-**insert more instructions**
+By **inheritance**, we refer to a concept from object-oriented programming, where a **subclass** is as an expanded version of a **parent class**. The subclass includes all properties from the parent, and adds some more.
 
 {% include note.html content="This relates closely to a computer science principle called *polymorphism*." %}
 
