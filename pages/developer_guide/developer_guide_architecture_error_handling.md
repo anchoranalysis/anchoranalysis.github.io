@@ -12,8 +12,8 @@ folder: developer_guide
 
 ### Base classes
 
-1. All custom platform exceptions should inherit from [AnchorCheckedException](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/error/AnchorCheckedException.java) and [AnchorRuntimeException](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/error/AnchorRuntimeException.java).
-2. Two additional abstract classes [AnchorFriendlyCheckedException](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/error/friendly/AnchorFriendlyCheckedException.java) and [AnchorFriendlyRuntimeException](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/error/friendly/AnchorFriendlyRuntimeException.java) indicate exceptions which are guaranteed to have either:
+1. All custom platform exceptions should inherit from [AnchorCheckedException](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/exception/AnchorCheckedException.java) and [AnchorRuntimeException](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/exception/AnchorRuntimeException.java).
+2. Two additional abstract classes [AnchorFriendlyCheckedException](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/exception/friendly/AnchorFriendlyCheckedException.java) and [AnchorFriendlyRuntimeException](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/exception/friendly/AnchorFriendlyRuntimeException.java) indicate exceptions which are guaranteed to have either:
   * either a user-friendly error message describing whats going wrong.
   * simply nest another exception, with a blank `""` message.
 
