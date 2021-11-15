@@ -60,6 +60,7 @@ Options useful for influencing **outputting**:
 |----------|------------|
 | [-o](/user_guide.html#outputs) *arg* | [Changes outputs](/user_guide.html#outputs) where *arg* = <span class="optionArg">path to an output-directory</span> or <span class="optionArg">path to BeanXML</span> |
 | -oa | **Enables all** outputs. |
+| -oc | Disables opening the output directory in the desktop at experiment end. |
 | -od *outputName(s)* | **Disables specific** output(s). Multiple outputs are comma-separated. |
 | -oe *outputName(s)* | **Enables specific** output(s). Multiple outputs are comma-separated. |
 | [-of](/user_guide_examples_converting_manipulating_images.html#specifying-image-format) *formatExtension* | Suggests an output **image file format**: e.g `-of jpg` or `-of ome.xml` |
