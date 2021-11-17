@@ -30,15 +30,15 @@ A **Python** source repository on [GitHub](https://www.anchoranalysis.org/anchor
 
 | Package | Description  |
 |------------|------------------|-------------:|-------------:|
-| [histogram_plot.py](https://github.com/anchoranalysis/anchor-python-visualization/blob/master/histogram_plot.py) | Plots / exports a histogram from the CSVs produced by an Anchor export. |
-| [visualize_features.py](https://github.com/anchoranalysis/anchor-python-visualization/blob/master/visualize_features.py) | Plots a lower-dimensionality visualization of features. |
+| [histogram_plot.py](https://github.com/anchoranalysis/anchor-python-visualization/blob/master/src/anchor_python_visualization/histogram_plot.py) | Plots / exports a histogram from the CSVs produced by an Anchor export. |
+| [visualize_features.py](https://github.com/anchoranalysis/anchor-python-visualization/blob/master/src/anchor_python_visualization/visualize_features.py) | Plots a lower-dimensionality visualization of features. |
 
 ### Packages
 
 | Package | Description  |
 |------------|------------------|-------------:|-------------:|
-| [features/](https://github.com/anchoranalysis/anchor-python-visualization/tree/master/features) | Methods for loading features and determining labels. |
-| [projection/](https://github.com/anchoranalysis/anchor-python-visualization/tree/master/projection) | Methods for projecting a feature space to lower dimensionality. |
-| [visualize/](https://github.com/anchoranalysis/anchor-python-visualization/tree/master/visualize) | Different schemes for visualizing features or other types of data. |
+| [embeddings/](https://github.com/anchoranalysis/anchor-python-visualization/tree/master/src/anchor_python_visualization/embeddings) | Methods for loading features and determining labels. |
+| [projection/](https://github.com/anchoranalysis/anchor-python-visualization/tree/master/src/anchor_python_visualization/projection) | Methods for projecting a feature space to lower dimensionality. |
+| [visualize/](https://github.com/anchoranalysis/anchor-python-visualization/tree/master/src/anchor_python_visualization/visualize) | Different schemes for visualizing features or other types of data. |
 
 {% include links.html %}
