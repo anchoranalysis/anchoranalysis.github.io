@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A **Python** source repository on [GitHub](https://www.anchoranalysis.org/anchor-python-sphinx/). It provides common documentation-generation configuration (for [Sphinx](https://www.sphinx-doc.org/en/master/)) across Python projects in Anchor.
+A **Python** source repository on [GitHub](https://github.com/anchoranalysis/anchor-python-sphinx). It provides common documentation-generation configuration (for [Sphinx](https://www.sphinx-doc.org/en/master/)) across Python projects in Anchor.
 ### What belongs in the repository?
 
 {% include tip.html content="It **should** include: Python functions for configuring Sphinx." %}
