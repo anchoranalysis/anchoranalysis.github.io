@@ -17,9 +17,9 @@ A **Python** source repository on [GitHub](https://www.anchoranalysis.org/anchor
 
 {% include warning.html content="It should **not** include: Python scripts/packages for other purposes, or non-Python code." %}
 
-## API Documentation
+## Documentation
 
-[API documentation](https://www.anchoranalysis.org/anchor-python-visualization/) is automatically generated from *master* branch using Sphinx for public modules and classes.
+[Documentation](https://www.anchoranalysis.org/anchor-python-visualization/) is automatically generated from *master* branch using Sphinx for public modules and classes.
 
 ## Code Structure
 
