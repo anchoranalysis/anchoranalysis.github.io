@@ -61,7 +61,7 @@ By default, the following logic decides which reader is used for an image file:
 | Condition | Reader | Supported Formats |
 |-----------|--------|-------------------|
 | `.bmp` extension | [OpenCVReader](/javadoc/org/anchoranalysis/plugin/opencv/bean/stack/OpenCVReader.html) | BMP |
-| `.jpg` or `.jpeg` extension | | [BioformatsReader](/javadoc/org/anchoranalysis/io/bioformats/bean/BioformatsReader.html) | JPEG ([auto-adjusted to any EXIF orientation](https://www.howtogeek.com/254830/why-your-photos-dont-always-appear-correctly-rotated/)) |
+| `.jpg` or `.jpeg` extension | [BioformatsReader](/javadoc/org/anchoranalysis/io/bioformats/bean/BioformatsReader.html) | JPEG ([auto-adjusted to any EXIF orientation](https://www.howtogeek.com/254830/why-your-photos-dont-always-appear-correctly-rotated/)) |
 | anything else | [BioformatsReader](/javadoc/org/anchoranalysis/io/bioformats/bean/BioformatsReader.html) | approximately [150 supported formats](https://docs.openmicroscopy.org/bio-formats/6.3.1/supported-formats.html) |
 
 {% include warning.html content="Caveat emptor. Anchor has been tested so far on a limited subset of these formats." %}
