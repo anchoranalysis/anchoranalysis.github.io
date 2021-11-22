@@ -55,6 +55,7 @@ inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
 | [feature/hog](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/feature/hog.xml) | images | extracts a [HOG feature descriptor](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) for all images. |
+| [feature/intensity](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/feature/intensity.xml) | images | extracts intensity-related statistics. |
 | [feature/metadata](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/feature/metadata.xml) | images | extracts some basic metadata as features, including dimensions. |
 
 ## Clustering
