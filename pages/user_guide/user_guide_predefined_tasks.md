@@ -57,6 +57,12 @@ inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 | [feature/hog](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/feature/hog.xml) | images | extracts a [HOG feature descriptor](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) for all images. |
 | [feature/metadata](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/feature/metadata.xml) | images | extracts some basic metadata as features, including dimensions. |
 
+## Clustering
+
+| Task Name | Input Type | Description  |
+|-----------|------------|--------------|
+| [cluster/timestamp](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/cluster/timestamp.xml) | files | clusters files by timestamp (from EXIF metadata, file attributes or naming pattern). |
+
 ## File copying / conversion 
 
 | Task Name | Input Type | Description  |
