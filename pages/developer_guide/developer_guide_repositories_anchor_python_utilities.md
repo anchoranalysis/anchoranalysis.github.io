@@ -13,9 +13,9 @@ A **Python** source repository on [GitHub](https://www.anchoranalysis.org/anchor
 
 ### What belongs in the repository?
 
-{% include tip.html content="It **should** include: reusable Python functions and classes used by more than one Anchor Python project, and which are relatively generic." %}
+{% include tip.html content="It **should** include: reusable  Python functions and classes used by more than one Anchor Python project." %}
 
-{% include warning.html content="It should **not** include: functions and classes specific to one project, or which better long in a specific dedicated library." %}
+{% include warning.html content="It should **not** include: functions and classes specific to one project, or that better belong in a dedicated library." %}
 
 ## Documentation
 
