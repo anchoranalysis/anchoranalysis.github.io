@@ -62,7 +62,7 @@ inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
-| [cluster/timestamp](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/cluster/timestamp.xml) | files | clusters files by timestamp (from EXIF, file attributes or naming). |
+| [cluster/timestamp](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/cluster/timestamp.xml) | any files | clusters files by timestamp (from EXIF, file attributes or naming). |
 
 ## File copying / conversion 
 
