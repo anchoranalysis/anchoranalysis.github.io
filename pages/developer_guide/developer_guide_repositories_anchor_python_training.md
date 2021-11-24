@@ -13,9 +13,9 @@ A **Python** source repository on [GitHub](https://github.com/anchoranalysis/anc
 
 ### What belongs in the repository?
 
-{% include tip.html content="It **should** include: Python scripts/functions/classes for training convolutional-neural-network (CNN) models from images." %}
+{% include tip.html content="It **should** include: Python scripts/functionality for training convolutional-neural-network (CNN) models from images." %}
 
-{% include warning.html content="It should **not** include: Python scripts/functions/classes for inference, visualization or non-training purposes, or non-Python code." %}
+{% include warning.html content="It should **not** include: Python scripts/functionality for inference, visualization or non-training purposes, or non-Python code." %}
 
 ## Documentation
 
