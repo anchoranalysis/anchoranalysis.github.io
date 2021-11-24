@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A **Python** source repository on [GitHub](https://github.com/anchoranalysis/anchor-python-visualization/). It provides functions for training [Convolutional Neural Network (CNN)](https://en.wikipedia.org/wiki/Convolutional_neural_network) models from images.
+A **Python** source repository on [GitHub](https://github.com/anchoranalysis/anchor-python-training/). It provides functions for training [Convolutional Neural Network (CNN)](https://en.wikipedia.org/wiki/Convolutional_neural_network) models from images.
 
 ### What belongs in the repository?
 
