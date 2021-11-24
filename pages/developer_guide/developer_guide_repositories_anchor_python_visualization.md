@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A **Python** source repository on [GitHub](https://www.anchoranalysis.org/anchor-python-visualization/). It provides functions for visualizing the outputs of Anchor in various ways.
+A **Python** source repository on [GitHub](https://github.com/anchoranalysis/anchor-python-visualization/). It provides functions for visualizing the outputs of Anchor in various ways.
 
 ### What belongs in the repository?
 

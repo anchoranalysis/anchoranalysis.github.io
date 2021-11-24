@@ -9,7 +9,7 @@ folder: developer_guide
 
 ## Introduction
 
-A **Python** source repository on [GitHub](https://www.anchoranalysis.org/anchor-python-utilities/). It provides shared utility functions and classes across Anchor Python projects.
+A **Python** source repository on [GitHub](https://github.com/anchoranalysis/anchor-python-utilities/). It provides shared utility functions and classes across Anchor Python projects.
 
 ### What belongs in the repository?
 
