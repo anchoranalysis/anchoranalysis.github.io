@@ -34,10 +34,12 @@ used by Anchor.
 | [anchor-feature](https://github.com/anchoranalysis/anchor/tree/master/anchor-feature) | `org.anchoranalysis.feature`<br>Defines a *feature* generically and related utilities. | 72 | 2,351 |
 | [anchor-feature-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-feature-io) | `org.anchoranalysis.feature.io`<br>Reading / writing related to [anchor-feature](https://github.com/anchoranalysis/anchor/tree/master/anchor-feature) | 18 | 717 |
 | [anchor-feature-session](https://github.com/anchoranalysis/anchor/tree/master/anchor-feature-session) | `org.anchoranalysis.feature.session`<br>Sessions to calculate many features optimally. | 35 | 1,479 |
+| [anchor-inference](https://github.com/anchoranalysis/anchor/tree/master/anchor-inference) | `org.anchoranalysis.inference`<br>High-level classes for performing machine learning model inference. | 9 | 222 |
 | [anchor-image-bean](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-bean) | `org.anchoranalysis.image.bean`<br>Core *(bean)* data objects for images. | 80 | 1,932 |
 | [anchor-image-core](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-core) | `org.anchoranalysis.image.core`<br>Core *(non-bean)* data objects for images. | 117 | 5,508 |
 | [anchor-image-experiment](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-experiment) | `org.anchoranalysis.image.experiment`<br>Base classes for general tasks that involve images. | 4 | 152 |
 | [anchor-image-feature](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-feature) | `org.anchoranalysis.image.feature`<br>Feature calculation on images or parts of images. | 48 | 1,445 |
+| [anchor-image-inference](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-inference) | `org.anchoranalysis.image.inference`<br>Machine learning model inference on images. | 18 | 775 |
 | [anchor-image-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-io) | `org.anchoranalysis.image.io`<br>Reading / writing related to [anchor-image](https://github.com/anchoranalysis/anchor/tree/master/anchor-image) | 86 | 3,716 |
 | [anchor-image-voxel](https://github.com/anchoranalysis/anchor/tree/master/anchor-image-voxel) | `org.anchoranalysis.image.voxel`<br>Data objects for per-voxel manipulation of images. | 230 | 10,195 |
 | [anchor-imagej](https://github.com/anchoranalysis/anchor/tree/master/anchor-imagej) | `org.anchoranalysis.io.ij`<br>Converters and IO that uses [ImageJ](https://imagej.net/Welcome). | 11 | 656 |
