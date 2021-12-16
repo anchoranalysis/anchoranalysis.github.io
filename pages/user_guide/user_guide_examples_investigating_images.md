@@ -133,8 +133,8 @@ Job    3:       end     [  2 compl,   1 exec,   0 rem of   3]   (6s)    91
 Job    1:       end     [  3 compl,   0 exec,   0 rem of   3]   (7s)    13
 All 3 jobs completed successfully. The average execution time was 6.700 ms.
 ----------------------------------- Outputs ------------------------------------
-Enabled:        experiment_log, features, thumbnails
-Disabled:       experiment_manifest, job_manifest
+Enabled:        logExperiment, features, thumbnails
+Disabled:       manifestExperiment, manifestJob
 --------------------------------------------------------------------------------
 Experiment metadata_12.41.23 completed (7s) writing to C:\Users\owen\AppData\Local\Temp\metadata_12.41.23" %}
 

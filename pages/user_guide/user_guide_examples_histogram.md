@@ -71,9 +71,9 @@ Job    3:       end     [  2 compl,   1 exec,   0 rem of   3]   (6s)    91
 Job    1:       end     [  3 compl,   0 exec,   0 rem of   3]   (7s)    13
 All 3 jobs completed successfully. The average execution time was 6.628 ms.
 ----------------------------------- Outputs ------------------------------------
-Enabled:        channels, experiment_log, sum
+Enabled:        channels, logExperiment, sum
 |- channels     blue, green, red
-Disabled:       experiment_manifest, job_manifest
+Disabled:       manifestExperiment, manifestJob
 --------------------------------------------------------------------------------" %}
 
 {% include note.html content="This produces console messages **with** [execution-details](/user_guide.html#parallelization)." %}
