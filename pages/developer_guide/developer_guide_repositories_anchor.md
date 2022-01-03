@@ -55,7 +55,6 @@ used by Anchor.
 | [anchor-mpp-io](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp-io) | `org.anchoranalysis.mpp.io`<br>Input / output related to objects in [anchor-mpp](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp) | 29 | 1,5152 |
 | [anchor-mpp-segment](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp-segment) | `org.anchoranalysis.mpp.segment`<br>Segmentation involving objects in [anchor-mpp](https://github.com/anchoranalysis/anchor/tree/master/anchor-mpp) | 64 | 1,867 |
 | [anchor-overlay](https://github.com/anchoranalysis/anchor/tree/master/anchor-overlay) | `org.anchoranalysis.anchor.overlay`<br>Graphics output of entities on top of a raster. | 17 | 710 |
-| [anchor-plot](https://github.com/anchoranalysis/anchor/tree/master/anchor-plot) | `org.anchoranalysis.plot`<br>Plotting of some basic charts. | 14 | 605 |
 | [anchor-spatial](https://github.com/anchoranalysis/anchor/tree/master/anchor-spatial) | `org.anchoranalysis.spatial`<br>Core geometry and spatial manipulation. | 27 | 1,178 |
 | [anchor-test](https://github.com/anchoranalysis/anchor/tree/master/anchor-test) | `org.anchoranalysis.test`<br>Reusable test fixtures/utilities *(at highest generality)*. | 4 | 212 |
 | [anchor-test-feature](https://github.com/anchoranalysis/anchor/tree/master/anchor-test-feature) | `org.anchoranalysis.test.feature`<br>Reusable test fixtures *related to features*. | 1 | 60 |
