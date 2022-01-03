@@ -36,8 +36,7 @@ Then execute the command ```mvn deploy``` in the root of each repository directo
 2. `anchor/`
 3. `anchor-plugins/`
 4. `anchor-plugins-gpl/`
-5. `anchor-gui/`
-6. `anchor-assembly/`
+5. `anchor-assembly/`
 
 The order is important to match the[ dependency structure between repositories](/developer_guide_architecture_overview.html#repositories).
 

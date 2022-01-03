@@ -38,18 +38,5 @@ default.config.path.relative=C:/Users/someuser/Apps/anchor/config/defaultExperim
 
 - The `config/defaultBeans.xml` will also not be found, and needs to be explicitly copied either into the `${current working directory}/config/defaultBeans.xml` or into `$HOME/.anchor/defaultBeans.xml` (which is also searched, and takes precedence).
 
-### Debugging the GUI application
-
-The above is similarly true of the [anchor-gui](developer_guide_repositories_anchor_gui.html) application, which can be debugged in Eclipse with:
-
-```javascript
-org.anchoranalysis.browser.launcher.LaunchInteractiveBrowser
-```
-
-It expects an `anchorGUI.properties` bootstrap file, e.g.
-
-```none
-default.config.path.relative=C:/Users/someuser/Apps/anchor/configGUI/experiment.xml
-```
 
 {% include links.html %}

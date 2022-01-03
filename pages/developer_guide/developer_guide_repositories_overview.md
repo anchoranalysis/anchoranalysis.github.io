@@ -24,17 +24,12 @@ Anchor's source-code is distributed across several source-code repositories on [
 <script type="text/javascript">
 $('map').imageMapResize();
 </script>
-	
-<!-- <area shape="rect" coords="16,120,888,209" alt="anchor" href="/developer_guide_repositories_anchor.html">
-  <area shape="rect" coords="15,245,455,88" alt="anchor-plugins" href="/developer_guide_repositories_anchor_plugins.html">
-  <area shape="rect" coords="484,246,406,88" alt="anchor-gui" href="/developer_guide_repositories_anchor_gui.html">-->
 
 | Repository | Java Package Root &amp; Description | Modules | Functions | Classes | Lines&#x2011;of&#x2011;Code |
 |------------|-------------|-----------:|-----------:|---------------:|---------------:|
 | [anchor](/developer_guide_repositories_anchor.html) | `org.anchoranalysis`<br>Main libraries for Anchor platform | 28 | 8.7k | 1.6k | 66k |
 | [anchor-plugins](/developer_guide_repositories_anchor_plugins.html) | `org.anchoranalysis.plugin`<br>Main set of plugins - MIT-licensed | 19 | 6.9k | 1.2k | 62k |
 | [anchor-plugins-gpl](/developer_guide_repositories_anchor_plugins_gpl.html) | `org.anchoranalysis.plugin.gpl`<br>Additional GPL-licensed plugins | 3 | 0.2k | 0.03k | 3k |
-| [anchor-gui](/developer_guide_repositories_anchor_gui.html)  | `org.anchoranalysis.gui`<br>GUI application | 14 | 3.7k | 0.8k | 38k |
 | [anchor-assembly](/developer_guide_repositories_anchor_assembly.html)  | `org.anchoranalysis`<br>Launcher, creates a [distribution](/developer_guide_anchor_distribution.html) | 3 | 0.1k | 0.03k | 2k |
 
 Number of classes/code is as per *SonarQube, Feb 14th, 2020*. Lines-of-code excludes whitespace and comments.

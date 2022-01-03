@@ -60,11 +60,6 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: GUI application
-      url: /user_guide_advanced_gui.html
-      output: web, pdf
-      type: homepage    
-      
     - title: Marked point processes
       url: /user_guide_advanced_marked_point_processes.html
       output: web, pdf

@@ -26,7 +26,6 @@ A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository 
 | Module | Java Package Root &amp; Description  | Classes | Lines&#x2011;of&#x2011;Code |
 |------------|------------------|-------------:|-------------:|
 | [anchor-launcher](https://github.com/anchoranalysis/anchor-assembly/tree/master/addplugins/anchor-launcher) | `org.anchoranalysis.launcher`<br>The **anchor** command-line application. | 38 | 1,627 |
-| [anchor-browser](https://github.com/anchoranalysis/anchor-assembly/tree/master/addplugins/anchor-browser) | `org.anchoranalysis.browser.launcher`<br>The **anchor-gui** command-line application. | 2 | 118 |
 
 
 Number of classes/code is as per *SonarQube, June 24th, 2020*. Lines-of-code excludes whitespace and comments.

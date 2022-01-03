@@ -44,7 +44,6 @@ Many classes (especially plugins) inherit from AnchorBean class. This makes the 
 
 Some particular modules to take note of (all found in the [anchor-assembly repository](https://github.com/anchoranalysis/anchor-assembly)):
 * [anchor-launcher](https://github.com/anchoranalysis/anchor-assembly/tree/master/addplugins/anchor-launcher): a command-line application for running experiments. This is the typical way to use anchor!
-* [anchor-browser](https://github.com/anchoranalysis/anchor-assembly/tree/master/addplugins/anchor-browser): an application for starting the AnchorGUI browser
 * [anchor-assembly](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly): a maven module that packages components together to form an [Anchor distribution](https://bitbucket.org/anchorimageanalysis/anchor/wiki/Anchor%20Distribution).
 
 {% include links.html %}
