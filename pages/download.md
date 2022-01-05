@@ -9,9 +9,14 @@ toc: false
 disable_editme: true
 ---
 
-Anchor can be downloaded as a distribution ([zip](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.7-prerelease/anchor-0.7-prerelease.zip) or [tar.gz](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.7-prerelease/anchor-0.7-prerelease.tar.gz)). This must be unpacked into a directory, followed by setting some environment variables.
+Anchor can be downloaded as a distribution (*zip* or *tar.gz*). This must be unpacked into a directory, followed by setting some environment variables.
 
-Please download the [latest version](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.7-prerelease/anchor-0.7-prerelease.zip) from GitHub.
+Please download the latest version (`anchor-0.8-prerelease`) from GitHub, as matches your operating system:
+
+- [Windows](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-windows.zip)
+- [MacOS](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-macos.zip)
+- [Linux](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-linux.zip)
+
 
 {% include warning.html content="Anchor is currently only available pre-alpha, due to ongoing [project status](/index.html#projectStatus)." %}
 

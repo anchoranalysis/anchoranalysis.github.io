@@ -1,7 +1,7 @@
 ---
 title:  "Sixth pre-release"
 categories: version download
-permalink: fifth-prerelease.html
+permalink: sixth-prerelease.html
 tags: [news, version]
 ---
 
