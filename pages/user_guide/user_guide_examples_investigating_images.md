@@ -148,7 +148,7 @@ Note in the console messages:
 The following files are produced:
 
 - `features.csv` where each row represents an input image, and each column an extracted feature.
-- `experiment_log.txt` records the console output.
+- `experimentLog.txt` records the console output.
 - the `thumbnails/` subdirectory, which contains a thumbnail for each row in the CSV file.
 - **Only if an error occurs** (which it didn't!) then a job-specific log for `13_job_log.txt` etc.
 

@@ -107,8 +107,8 @@ In full reality, an experiment has more than three elements, as well as wide par
 ### Outputs and logs are structured
 
 Two message-logs are produced:
-- `experiment_log.txt` for the **experiment as a whole** and also printed to the console.
-- `job_log.txt` for **each input** but **only if an error occurs**.
+- `experimentLog.txt` for the **experiment as a whole** and also printed to the console.
+- `jobLog.txt` for **each input** but **only if an error occurs**.
 
 Outputs are produced by default in a temporary directory, easily changed with the `-o` options.
 

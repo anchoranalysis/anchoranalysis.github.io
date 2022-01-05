@@ -93,7 +93,7 @@ Many files have been created in the output directory:
 
 - A **histogram CSV** for each channel of each image (`13_red.csv`, `13_green.csv`, `13_blue.csv` etc.).
 - A subdirectory `sum/` with aggregated histograms across all images.
-- `experiment_log.txt` records the console output.
+- `experimentLog.txt` records the console output.
 - **Only if an error occurs** (which it didn't!) then a job-specific log for `13_job_log.txt` etc.
 
 
