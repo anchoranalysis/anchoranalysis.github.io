@@ -14,8 +14,8 @@ Anchor can be downloaded as a distribution (*zip* or *tar.gz*). This must be unp
 Please download the latest version (`anchor-0.8-prerelease`) from GitHub, as matches your operating system:
 
 - [Windows](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-windows.zip)
-- [MacOS](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-macos.zip)
-- [Linux](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-linux.zip)
+- [MacOS](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-macos.tar.gz)
+- [Linux](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-linux.tar.gz)
 
 
 {% include warning.html content="Anchor is currently only available pre-alpha, due to ongoing [project status](/index.html#projectStatus)." %}
