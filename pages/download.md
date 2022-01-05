@@ -17,10 +17,9 @@ Please download the latest version (`anchor-0.8-prerelease`) from GitHub, as mat
 - [MacOS](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-macos.tar.gz)
 - [Linux](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.8-prerelease/anchor-0.8-prerelease-linux.tar.gz)
 
+{% include tip.html content="After downloading, please follow the [Installation Guide](installation.html)." %}
 
 {% include warning.html content="Anchor is currently only available pre-alpha, due to ongoing [project status](/index.html#projectStatus)." %}
-
-{% include tip.html content="After downloading, please follow the [Installation Guide](installation.html)." %}
 
 ## Licensing {#licensing}
 
