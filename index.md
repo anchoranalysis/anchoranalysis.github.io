@@ -25,6 +25,7 @@ Anchor is a free command-line application and platform for image analysis, espec
 - Feature-extraction libraries (sets of voxels, geometric shapes) etc.
 - Extensible via Java to call operations in [ImageJ](https://imagej.net/Welcome), [Icy](http://icy.bioimageanalysis.org/), [OpenCV](https://opencv.org/) etc.
 - Cross-platform - Windows, Linux, Mac - with seemless switching between local and server.
+- Deep Learning inference with the [ONNX Runtime](https://onnxruntime.ai/).
 
 
 {% include links.html %}
