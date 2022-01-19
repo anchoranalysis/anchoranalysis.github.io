@@ -25,6 +25,9 @@ entries:
     - title: Supported image formats
       url: /user_guide_supported_formats.html
       output: web, pdf
+    - title: Troubleshooting
+      url: /user_guide_troubleshooting.html
+      output: web, pdf      
 
       
   - title: Example Usage
@@ -44,9 +47,13 @@ entries:
       url: /user_guide_examples_investigating_images.html
       output: web, pdf
 
-    - title: Converting and manipulating images
-      url: /user_guide_examples_converting_manipulating_images.html
-      output: web, pdf      
+    - title: Converting and copying images
+      url: /user_guide_examples_converting_copying_images.html
+      output: web, pdf
+      
+    - title: Resizing images
+      url: /user_guide_examples_resizing_images.html
+      output: web, pdf        
       
     - title: Histograms from images
       url: /user_guide_examples_histogram.html
@@ -54,7 +61,12 @@ entries:
       
     - title: Video from images
       url: /user_guide_examples_video_from_images.html
-      output: web, pdf      
+      output: web, pdf
+      
+    - title: Changing output format or naming
+      url: /user_guide_examples_changing_output_options.html
+      output: web, pdf
+
 
   - title: Advanced Usage
     output: web, pdf

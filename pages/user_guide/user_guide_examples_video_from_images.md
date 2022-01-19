@@ -84,7 +84,7 @@ Remember to:
 
 - **Change the pattern in** `-i img%03d.png` to reflect the filename pattern, replacing the `3` with the width of numeric sequence (the **total number of digits** including leading zeros to describe the number). 
 
-- Adjust the `-framerate` argument to the **number of frames per second**, to control the **speed of the video**.
+- Adjust the `-framerate` option to the **number of frames per second**, to control the **speed of the video**.
 
 - For `-vf fps=` it is recommended to **use the same number** as `-framerate` if it's `>=1`. Otherwise simply use `1` and the `mp4` format (or a higher number to be less jumpy, but create a larger file size).
 
@@ -94,7 +94,7 @@ Remember to:
 
 {% include tip.html content="Outputting `.wmv` files are friendly to use in Microsoft Powerpoint, but is problematic with a `framerate <1`." %}
 
-{% include warning.html content="The `-framerate` argument should always be placed **to the left** of the `-i` argument in the command." %}
+{% include warning.html content="The `-framerate` option should always be placed **to the left** of the `-i` option in the command." %}
 
 `ffmpeg` is very sensitive to parameter changes, and can be buggy, so please see its [Slideshow documentation](https://trac.ffmpeg.org/wiki/Slideshow) to try different parameters if undesired video output occurs.
 
