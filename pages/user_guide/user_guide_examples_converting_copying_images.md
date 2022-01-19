@@ -89,8 +89,17 @@ The [copy](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/
 can be applied to any type of input. Use a file-filter on, the [`-i` command-line option](/user_guide_command_line.html#input-options) to search for particular types of
 file extension - overriding the default behavior which only looks for images.
 
+e.g. to search for text files *non-recursively* and copy:
+
 ```none
-anchor -i c:\foo\source\*.txt -ir -t copy -o c:\bar\destination\ -oo
+anchor -i "c:\foo\source\*.txt" -ir -t copy -o c:\bar\destination\ -oo
 ```
+
+But to search *recursively* and copy:
+
+```none
+anchor -i "c:\foo\source\**.txt" -ir -t copy -o c:\bar\destination\ -oo
+```
+
 
 {% include links.html %}

@@ -33,6 +33,8 @@ inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 
 {% include tip.html content="In Windows, [hold the shift key when right-clicking on a folder in Windows Explorer](https://www.zdnet.com/article/windows-10-tip-the-fastest-smartest-ways-to-open-a-command-prompt/) to open a Command Prompt or Powershell in that folder." %}
 
+See some [Quick Start - Example Commands](/index.html) and the following tables for guidance.
+
 ## Image processing 
 
 | Task Name | Input Type | Description  |
@@ -62,7 +64,7 @@ inputs with [the ``-i`` options](/user_guide_command_line.html#major-options).
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
-| [cluster/timestamp](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/cluster/timestamp.xml) | any files | clusters files by timestamp (from EXIF, file attributes or naming). |
+| [cluster/timestamp](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/cluster/timestamp.xml) | any files | clusters files by timestamp (from (from [EXIF](https://en.wikipedia.org/wiki/Exif), file attributes or naming). |
 
 ## File copying / conversion 
 
