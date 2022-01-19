@@ -18,7 +18,7 @@ The anchor application can be launched in debugging-mode in Eclipse by running
 org.anchoranalysis.launcher.Launcher
 ```
 
-with appropriate command-line arguments.
+with appropriate command-line options.
 
 Be aware that in this context:
 

@@ -98,7 +98,7 @@ response="alps-13  -> alps-13.jpg
 alps-78  -> alps-78.jpg
 alps-91  -> alps-91.jpg" %}
 
-If the path has **redundant varying elements** (parts of the path which vary, but are not needed for the unique identifier), then the [`-ii` command-line option](/user_guide_command_line.html#input-options) will remove the unneeded elements.
+If the path has **redundant varying elements** (parts of the path which vary, but are not needed for the unique identifier), then the [`-ii` command-line option](/user_guide_command_line.html#input-options) can remove the unneeded elements by subsetting them.
 
 ## Extracting features from images
 

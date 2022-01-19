@@ -27,7 +27,7 @@ Several [predefined tasks](/user_guide_predefined_tasks.html) are bundled with t
 
 ### The `/config/tasks/` directory.
 
-The predefined tasks are specified by BeanXML in the [/config/tasks/](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks) subdirectory in an [Anchor distribution](/developer_guide_anchor_distribution.html).
+The predefined tasks are specified by BeanXML in the [/config/tasks/](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor/src/main/resources/config/tasks) subdirectory in an [Anchor distribution](/developer_guide_anchor_distribution.html).
 
 Users are free to add (or remove) tasks to this directory.
 
@@ -41,7 +41,7 @@ anchor -i *.png -t /path/to/anchorDistribution/config/tasks/features/hog.xml
 ### Understanding each task
 
 - See an overview of all [Predefined Tasks](/user_guide_predefined_tasks.html) and [Example Usage](/user_guide_examples.html).
-- Each task also includes a more detailed description as a comment in its [BeanXML](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks).
+- Each task also includes a more detailed description as a comment in its [BeanXML](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor/src/main/resources/config/tasks).
 
 
 ## Custom tasks

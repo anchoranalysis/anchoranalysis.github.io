@@ -27,7 +27,7 @@ To run an experiment, these three elements must be defined, though often by defa
 
 Anchor offers first sensible defaults, allowing for greater definition later.
 
-The [default-experiment](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultExperiment.xml) occurs when you type `anchor` without arguments, and:
+The [default-experiment](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultExperiment.xml) occurs when you type `anchor` without options, and:
 1. reads image files (**inputs**) from the current working directory.
 2. prints some summary information (a [task](/user_guide_tasks.html)).
 3. produces no **outputs**.
@@ -45,11 +45,11 @@ ${0} = \"mar\" (1) | \"jan\" (1) | \"feb\" (1)" %}
 
 ### Overriding elements on command-line
 
-Each element **(inputs, task, outputs)** can be overridden using a command-line argument `-i` or `-t` or `-o` as follows:
+Each element **(inputs, task, outputs)** can be overridden using a command-line option `-i` or `-t` or `-o` as follows:
 
 #### Changing inputs with `-i` {#inputs}
 
-| Argument | Description |
+| Option | Description |
 |--------|------|
 | *&lt;ommitted&gt;* | *default*: reads images recursively from **current** directory |
 | `-i` *path to XML file* | input as defined in **BeanXML** at this path |
@@ -62,7 +62,7 @@ When specifying a directory (without a glob), files are filtered against list of
 
 #### Changing the task with `-t` {#task}
 
-| Argument | Description |
+| Option | Description |
 |--------|------|
 | *&lt;ommitted&gt;* | *default*: **summary statistics** for current inputs |
 | `-t` *path to XML file* | [task](/user_guide_tasks.html) as defined in **BeanXML** at this path |
@@ -70,15 +70,15 @@ When specifying a directory (without a glob), files are filtered against list of
 
 #### Changing outputs with `-o` {#outputs}
 
-| Argument | Description |
+| Option | Description |
 |--------|------|
 | *&lt;ommitted&gt;* | *default*: writes into a **temporary directory** |
 | `-o` *path to XML file* | output as defined in **BeanXML** at this path |
 | `-o` *another string* | writes into the **specified** directory (creates a subdirectory)  |
 
-#### Combining arguments
+#### Combining options
 
-These arguments can be combined to accomplish both simple and complex pipelines (defined in BeanXML).
+These options can be combined to accomplish both simple and complex pipelines (defined in BeanXML).
 
 Some example commands:
 
@@ -99,7 +99,7 @@ anchor -i sunday-hike.xml -t generate_thumbnail.xml -o ../thumbnails/
 
 Instead of element-wise definition on the command line (with `-i`, `-t`, `-o` etc.), an entire experiment can be defined in BeanXML, and simply called from the command-line as a whole, e.g. `anchor pathToSomeExperiment.xml`.
 
-{% include tip.html content="To see BeanXML look in the Anchor Distribution for [config/defaultExperiment.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultExperiment.xml) or [config/tasks/](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config/tasks)" %}
+{% include tip.html content="To see BeanXML look in the Anchor Distribution for [config/defaultExperiment.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultExperiment.xml) or [config/tasks/](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor/src/main/resources/config/tasks)" %}
 
 In full reality, an experiment has more than three elements, as well as wide parameterization possibilities, all initially hidden by defaults. BeanXML provides more finely-grained definition.
 

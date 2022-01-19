@@ -64,6 +64,8 @@ By default, the following logic decides which reader is used for an image file:
 | `.jpg` or `.jpeg` extension | [BioformatsReader](/javadoc/org/anchoranalysis/io/bioformats/bean/BioformatsReader.html) | JPEG ([auto-adjusted to any EXIF orientation](https://www.howtogeek.com/254830/why-your-photos-dont-always-appear-correctly-rotated/)) |
 | anything else | [BioformatsReader](/javadoc/org/anchoranalysis/io/bioformats/bean/BioformatsReader.html) | approximately [150 supported formats](https://docs.openmicroscopy.org/bio-formats/6.3.1/supported-formats.html) |
 
+See the `StackReader` section of [defaultBeans.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultBeans.xml) for the exact [configurable](/user_guide_supported_formats.html#specifying-default-readers-and-writers) rules.
+
 {% include warning.html content="Caveat emptor. Anchor has been tested so far on a limited subset of these formats." %}
 
 #### Multi-file driver
@@ -98,5 +100,8 @@ Binary images are stored as unsigned 8-bit but with only 0 and 255 as valid stat
 
 In the two asterixed cases, if a [`-of` command-line-option](/user_guide_command_line.html#output-options) is supplied, a matching writer for this format
 will be found and instead used, but only if one is available and supports the image-type.
+
+See the `StackWriter` section of [defaultBeans.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultBeans.xml) for the exact [configurable](/user_guide_supported_formats.html#specifying-default-readers-and-writers) rules.
+
 
 {% include links.html %}

@@ -46,7 +46,7 @@ Number of classes/code is as per *SonarQube, June 24th, 2020*. Lines-of-code exc
 |------------|------------------|-------------:|-------------:|
 | [addplugins/pom.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/addplugins/pom.xml) | Where non GPL-plugins are listed to be included. |
 | [anchor-assembly/pom.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/pom.xml) | Building `.exe` launchers, and GPL-plugins listed to be included. |
-| [dist.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/assembly/dist.xml) | Specifies what files are contained in a distribution. |
+| [Distribution XML files](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/assembly/) | Specifies what files are contained in a distribution. |
 
 
 
