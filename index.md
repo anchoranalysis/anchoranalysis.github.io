@@ -9,9 +9,11 @@ toc: false
 disable_editme: true
 ---
 
-Anchor is a free command-line application and platform for image analysis, especially microscopy image analysis.
+Anchor is a free command-line application and platform for image processing and computer vision.
 
 {% include callout.html type="danger" content="It's a Swiss-army-knife for loading, transforming, and extracting information from **sets of images**, as single-image tools are often limiting." %}
+
+It quickly searches subdirectories of images on the file-system and processes!
 
 {% include tip.html content="[Download](/download.html) and [install](/installation.html). Then see [example usage](/user_guide_examples.html), the [user guide](/user_guide.html) and the [command line](/user_guide_command_line.html)." %}
 
@@ -49,12 +51,17 @@ By default, it will search recursively for all images in this directory (with [s
 |||
 | `anchor -t summarize` | [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) images into bullet points (extension, file naming patterns, size etc.). |
 | `anchor -t summarize -i d:\foo\` | [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) images recursively in a particular directory. |
-| `anchor -t summarize -i "*.tif"`| [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) only images that match a filter (the quotes are advised!) |
+| `anchor -t summarize -i .tif`| [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) only images that end with the extension `.tif` |
+| `anchor -t summarize -i *match*.tif`| [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) only images matching the wildcard *non-recursively* in the input directory. |
+| `anchor -t summarize -i "**match**.tif"`| [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) only images matching the wildcard <i>recursively</i> (unsupported on some shells!) |
 | `anchor -t list`| [lists](/user_guide_examples_investigating_images.html#searching-by-default) the paths and unique-identifier for each input. |
 |||
 | `anchor -t feature/metadata` | [creates a CSV](/user_guide_examples_extracting_image_features.html) with images as rows, and **image metadata** as columns. |
 | `anchor -t feature/intensity` | [creates a CSV](/user_guide_examples_extracting_image_features.html) with images as rows, and **intensity statistics** as columns. |
 | `anchor -t feature/hog` | [creates a CSV](/user_guide_examples_extracting_image_features.html) with images as rows, and a [HOG descriptor](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) as columns. |
+|||
+| `anchor -t segment/text` | finds and segments regions of texts in images |
+| `anchor -t segment/coco` | finds and segments common categories of objects in images. |
 |||
 | `anchor -t convert -ir -of png` | [converts](/user_guide_examples_converting_copying_images.html#converting-images-to-a-different-file-format) all images to *PNG* format (or pick [another extension](/user_guide_examples_changing_output_options.html#specifying-an-alternative-image-format)!) |
 | `anchor -t convert -ir -of png -ic -o -oo d:\foo` | [converts](/user_guide_examples_converting_copying_images.html#preserving-relative-file-paths-and-any-non-image-files) like above to a particular directory, and copies non-image files (e.g. metadata!) |
@@ -73,7 +80,6 @@ By default, it will search recursively for all images in this directory (with [s
 |||
 | `anchor -t mean` | calculates the mean-intensity of all images together (which must be identically sized!) |
 | `anchor -t meanResize` | like above, but first resizes all images to a common size, and then calculates. |
-
 
 Note the `-i` and `-o` command line options are [can be applied to any command](/user_guide_examples.html), to select input and outputs.
 

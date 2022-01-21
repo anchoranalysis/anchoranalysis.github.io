@@ -53,10 +53,10 @@ Each element **(inputs, task, outputs)** can be overridden using a command-line 
 |--------|------|
 | *&lt;ommitted&gt;* | *default*: reads images recursively from **current** directory |
 | `-i` *path to XML file* | input as defined in **BeanXML** at this path |
-| `-i` *glob* | reads **files matching the glob** *(e.g. `-i *.jpg`)* |
+| `-i` *wildcards* | reads **files matching the [wildcards](/user_guide_examples_investigating_images.html#filtering-with-wildcards)** *(e.g. `-i *.jpg`)* |
 | `-i` *path to directory* | reads images recursively from the **specified** directory |
 
-When specifying a directory (without a glob), files are filtered against list of [popular image file extensions](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/format/ImageFileFormat.java).
+When specifying a directory (without wildcards), files are filtered against list of [popular image file extensions](https://github.com/anchoranalysis/anchor/blob/master/anchor-core/src/main/java/org/anchoranalysis/core/format/ImageFileFormat.java).
 
 {% include tip.html content="These options are described in greater detail in the [Investigating image files in a directory](/user_guide_examples_investigating_images.html#further-specifying-the-search) example." %}
 
@@ -83,8 +83,8 @@ These options can be combined to accomplish both simple and complex pipelines (d
 Some example commands:
 
 ```shell
-# input from glob, task by name, output into a specific absolute directory
-anchor -i '..\*.png' -t grayscale -o 'c:\Temp\GrayscaleAlbum\'
+# input from wildcards, task by name, output into a specific absolute directory
+anchor -i *.png -t grayscale -o 'c:\Temp\GrayscaleAlbum\'
 
 # task by name
 anchor -t summarizeImages
