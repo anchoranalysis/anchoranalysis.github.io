@@ -1,6 +1,6 @@
 ---
 title: "User Guide - Troubleshooting"
-tags: [getting_started]
+tags: [getting_started, debugging]
 keywords:
 sidebar: user_guide_sidebar
 permalink: user_guide_troubleshooting.html

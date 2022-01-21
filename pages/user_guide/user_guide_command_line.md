@@ -23,7 +23,7 @@ The **most important** command-line options are:
 
 | Option | Description|
 |----------|------------|
-| [-i](/user_guide_examples_investigating_images.html#further-specifying-the-search) *arg* | [Changes inputs](/user_guide.html#inputs), where *arg* = <span class="optionArg"> glob</span> or <span class="optionArg">path to an input-directory</span> or <span class="optionArg">path to BeanXML</span> |
+| [-i](/user_guide_examples_investigating_images.html#further-specifying-the-search) *arg* | [Changes inputs](/user_guide.html#inputs), where *arg* = [extension](/user_guide_examples_investigating_images.html#filtering-with-a-file-extension) or [wildcards](/user_guide_examples_investigating_images.html#filtering-with-wildcards) or <span class="optionArg">input-directory path</span> or <span class="optionArg">path to BeanXML</span> |
 | [-t](/user_guide.html#task) *arg* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">[task-name](/user_guide_predefined_tasks.html)</span> or <span class="optionArg">path to BeanXML</span> |
 | [-o](/user_guide.html#outputs) *arg* | [Changes outputs](/user_guide.html#outputs), where *arg* = <span class="optionArg">path to an output-directory</span> or <span class="optionArg">path to BeanXML</span> |
 | -h | Displays help message with *all* command-line options. |
@@ -42,7 +42,7 @@ Options useful for influencing **inputting**:
 
 | Option | Description|
 |----------|------------|
-| [-i](/user_guide_examples_investigating_images.html#further-specifying-the-search) *arg* | [Changes inputs](/user_guide.html#inputs), where *arg* = <span class="optionArg"> glob</span> or <span class="optionArg">path to an input-directory</span> or <span class="optionArg">path to BeanXML</span> |
+| [-i](/user_guide_examples_investigating_images.html#further-specifying-the-search) *arg* | [Changes inputs](/user_guide.html#inputs), where *arg* = [extension](/user_guide_examples_investigating_images.html#filtering-with-a-file-extension) or [wildcards](/user_guide_examples_investigating_images.html#filtering-with-wildcards) or <span class="optionArg">input-directory path</span> or <span class="optionArg">path to BeanXML</span> |
 | [-ic](/user_guide_examples_changing_output_options.html#additionally-copying-non-input-files) | **Copies any files unused as inputs** (but existing within the input directory) to the output directory. |
 | [-ii](/user_guide_examples_investigating_images.html#changing-the-derived-input-name) | **Subsets the name** from the file-path pattern. Type `anchor` and look for `${0}`, `${1}` etc.<br>Zero-indexed. Negatives count backwards from the end. Can be a single index or a range.<br>e.g. `2` (third only) or `-3` (third-last) or `3:-1` (fourth to last) or `:2` (until third) or `2:` (from third). |
 | [-ir](/user_guide_examples_investigating_images.html#changing-the-derived-input-name) | Derives the name instead from the **entire relative file-path** excluding the file extension.<br>e.g. it selects `subdir/prefix_234` rather than `234` (by default, only what varies among filenames).  |

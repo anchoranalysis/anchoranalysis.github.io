@@ -58,6 +58,10 @@ entries:
     - title: Histograms from images
       url: /user_guide_examples_histogram.html
       output: web, pdf
+
+    - title: Extracting image features
+      url: /user_guide_examples_extracting_image_features.html
+      output: web, pdf      
       
     - title: Video from images
       url: /user_guide_examples_video_from_images.html
