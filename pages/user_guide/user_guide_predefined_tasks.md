@@ -42,8 +42,8 @@ See some [Quick Start - Example Commands](/index.html) and the following tables 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
 | [histogram](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/histogram.xml) | images | [extracts histograms](/user_guide_examples_histogram.html) of the intensity values an image. |
-| [mean](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/mean.xml) | images | creates a **mean-intensity projection** of all inputs. |
-| [meanResize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/meanResize.xml) | images | scales inputs to fixed dimensions, and then a mean-intensity projection. |
+| [project/mean](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/mean.xml) | images | creates a **mean-intensity projection** of all inputs. |
+| [project/meanResize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/meanResize.xml) | images | scales inputs to fixed dimensions, and then a mean-intensity projection. |
 | [resize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/resize.xml) | images | [scales each image](/user_guide_examples_resizing_images.html) to fit inside fixed dimensions, preserving aspect ratio. Optionally accepts [-ps](/user_guide_command_line.html#task-options). |
 | [stack/montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/stack/montage.xml) | images (3D) | produces a tiled **montage of all z-slices of a 3D image** |
 
