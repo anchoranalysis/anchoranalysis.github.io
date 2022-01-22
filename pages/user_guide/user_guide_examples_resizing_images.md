@@ -57,7 +57,7 @@ anchor -t resize -ps 800x
 To resize to ***600* pixels height, preserving existing aspect ratio**.
 
 ```none
-anchor -t resize -ps 1024x
+anchor -t resize -ps x600
 ```
 
 To resize to **the maximal-size possible, preserving existing aspect ratio, that fits inside 1000x900**.
