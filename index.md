@@ -46,12 +46,15 @@ By default, it will search recursively for all images in this directory (with [s
 
 | Command | What it does? |
 |------------|------------------|
+| `anchor` | searches for images *recursively* in the current directory, and derives a naming pattern. |
+| `anchor -i c:\foo\bar` | like above, but searches in the specified directory (*recursively*). |
+| `anchor -i .png` | like above, but searches only for `.png` in the current directory (*recursively*). |
 | `anchor -h` | shows all available [command-line options](/user_guide_command_line.html) |
 | `anchor -t` or `anchor -st` | shows all available [predefined tasks](/user_guide_predefined_tasks.html). |
 |||
 | `anchor -t summarize` | [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) images into bullet points (extension, file naming patterns, size etc.). |
 | `anchor -t summarize -i d:\foo\` | [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) images recursively in a particular directory. |
-| `anchor -t summarize -i .tif`| [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) only images that end with the extension `.tif` |
+| `anchor -t summarize -i .tif,.png`| [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) only images that end with the extensions `.tif` or '.png' |
 | `anchor -t summarize -i *match*.tif`| [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) only images matching the wildcard *non-recursively* in the input directory. |
 | `anchor -t summarize -i "**match**.tif"`| [summarizes](/user_guide_examples_investigating_images.html#searching-by-default) only images matching the wildcard <i>recursively</i> (unsupported on [some shells](/user_guide_examples_investigating_images.html#filtering-with-wildcards)! |
 | `anchor -t list`| [lists](/user_guide_examples_investigating_images.html#searching-by-default) the paths and unique-identifier for each input. |
