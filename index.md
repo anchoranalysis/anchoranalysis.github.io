@@ -78,8 +78,11 @@ By default, it will search recursively for all images in this directory (with [s
 |||
 | `anchor -t histogram` | [creates a histogram CSV file](/user_guide_examples_histogram.html) of the pixel values of each image, and all images summed. |
 |||
-| `anchor -t project/mean` | calculates the mean-intensity of all images together (which must be identically sized!) |
+| `anchor -t project/mean` | projects the [mean-intensity](/user_guide_examples_intensity_projections.html#mean-intensity-projection) of all images (which must be identically sized!) |
 | `anchor -t project/meanResize` | like above, but first resizes all images to a common size, and then calculates. |
+| `anchor -t project/max` | projects the [maximum-intensity](/user_guide_examples_intensity_projections.html#maximum-intensity-projection) of all images (which must be identically sized!) |
+| `anchor -t project/min` | projects the [minimum-intensity](/user_guide_examples_intensity_projections.html#minimum-intensity-projection) of all images (which must be identically sized!) |
+| `anchor -t project/standardDeviation` | projects the [standard-deviation](/user_guide_examples_intensity_projections.html#standard-deviation-intensity-projection) of all images (which must be identically sized!) |
 
 Note the `-i` and `-o` command line options are [can be applied to any task](/user_guide_examples.html) to select inputs and an output path. `outputs = task(inputs)`
 

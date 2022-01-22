@@ -26,7 +26,8 @@ See [command-line options](/user_guide_command_line.html) for <i>all</i> command
 - Creating a photomontage of images (*work in progress*).
 - [Extracting features](/user_guide_examples_extracting_image_features.html) from images.
 - Anonymizing and randomly sampling files (*work in progress*).
-- Calculating a mean image for background subtraction (*work in progress*).
+- Finding and segmenting objects in images (*work in progress*).
+- Calculating [intensity projections](/user_guide_examples_intensity_projections.html) across images.
 - Clustering images (*work in progress*).
 - [Changing output options](user_guide_examples_changing_output_options.html) - selecting alternative file format or file naming.
 

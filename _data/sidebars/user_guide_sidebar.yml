@@ -15,7 +15,10 @@ entries:
       type: homepage
     - title: Tasks
       url: /user_guide_tasks.html
-      output: web, pdf      
+      output: web, pdf
+    - title: Predefined tasks
+      url: /user_guide_predefined_tasks.html
+      output: web, pdf            
     - title: Command line
       url: /user_guide_command_line.html
       output: web, pdf            
@@ -39,10 +42,6 @@ entries:
       output: web, pdf
       type: homepage
       
-    - title: Predefined tasks
-      url: /user_guide_predefined_tasks.html
-      output: web, pdf
-      
     - title: Investigating image files
       url: /user_guide_examples_investigating_images.html
       output: web, pdf
@@ -65,6 +64,10 @@ entries:
       
     - title: Video from images
       url: /user_guide_examples_video_from_images.html
+      output: web, pdf
+      
+    - title: Intensity projections  
+      url: /user_guide_examples_intensity_projections.html
       output: web, pdf
       
     - title: Changing output format or naming
