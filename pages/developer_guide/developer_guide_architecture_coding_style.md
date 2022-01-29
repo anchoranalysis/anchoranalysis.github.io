@@ -76,6 +76,13 @@ Use [stable features](https://projectlombok.org/features/all) from [Project Lomb
 
 ## Python-specific {#python}
 
+### Style guides
+
+Adhere to the wisdom of:
+
+- [PEP-8](https://www.python.org/dev/peps/pep-0008/)
+- the [Google Python style guide](https://google.github.io/styleguide/pyguide.html)
+
 ### Type-hints
 
 Always use Python's [type-hints](https://docs.python.org/3/library/typing.html) to document the type of each argument in and out of functions. It helps create understandable code and provides for a certain amount of automated checking at build time.
