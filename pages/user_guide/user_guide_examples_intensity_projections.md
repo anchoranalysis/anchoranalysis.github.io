@@ -86,4 +86,10 @@ anchor -t project/standardDeviationResize
 
 *The original tennis time-series images come from the [UCF101 video classification dataset](https://www.crcv.ucf.edu/data/UCF101.php) downloaded from [Kaggle](https://www.kaggle.com/ashuguptahere/video-classification-ucf101).*
 
+## Next steps
+
+- Use a projection to inform further analysis of time-series images / video, e.g
+	- to [background subtract](https://docs.opencv.org/4.x/d1/dc5/tutorial_background_subtraction.html) the mean-intensity.
+	- to consider only regions with significant standard-deviation.
+
 {% include links.html %}

@@ -70,7 +70,7 @@ By default, it will search recursively for all images in this directory (with [s
 | `anchor -t convert -ir -of png -ic -o -oo d:\foo` | [converts](/user_guide_examples_converting_copying_images.html#preserving-relative-file-paths-and-any-non-image-files) like above to a particular directory, and copies non-image files (e.g. metadata!) |
 | `anchor -t copy -ir -o -oo d:\foo` | [copies](/user_guide_examples_converting_copying_images.html#copying-files) all images to a particular new directory. |
 | `anchor -t copy -is -on` | randomizes the order of images and anonymizes the filename. |
-| `anchor -t cluster/timestamp` | creates clusters of images that are adjacent in time (from [EXIF](https://en.wikipedia.org/wiki/Exif), file attributes or naming) |
+| `anchor -t cluster/timestamp` | clusters images that are adjacent in time (from [EXIF](https://en.wikipedia.org/wiki/Exif), file attributes or naming) |
 |||
 | `anchor -t resize -ps 0.1`| [resizes](/user_guide_examples_resizing_images.html) each image to have a <i>tenth</i> of the width and height (try `2` to double). |
 | `anchor -t resize -ps 1024x768`| [resizes](/user_guide_examples_resizing_images.html) each image to have 1024x768 size in pixels. |
