@@ -49,6 +49,10 @@ entries:
     - title: Converting and copying images
       url: /user_guide_examples_converting_copying_images.html
       output: web, pdf
+
+    - title: Anonymizing and random sampling
+      url: /user_guide_examples_anonymizing_sampling.html
+      output: web, pdf      
       
     - title: Resizing images
       url: /user_guide_examples_resizing_images.html
