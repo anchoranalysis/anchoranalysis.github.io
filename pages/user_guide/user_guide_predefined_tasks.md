@@ -77,10 +77,10 @@ See some [Quick Start - Example Commands](/index.html) and the following tables 
 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
-| [montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage.xml) | images | changes the number of images per row to [balance available space](/user_guide_examples_montage.html#balancing-the-number-of-images-per-row). |
+| [montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage.xml) | images | creates a montage that [balances available space](/user_guide_examples_montage.html#balancing-the-number-of-images-per-row). |
 | [montage/balance](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/balance.xml) | images | identical to above. |
-| [montage/table](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/table.xml) | images | imposes a [table structure](/user_guide_examples_montage.html#table-structure), resizing only within aligned cells. |
-| [montage/slices](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/slices.xml) | images | montages all z-slices in a 3D image. |
+| [montage/table](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/table.xml) | images | creates a montage that imposes a [table structure](/user_guide_examples_montage.html#table-structure). |
+| [montage/slices](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/slices.xml) | images | creates a montage of all z-slices in a 3D image. |
 
 
 ## Summarizing inputs
