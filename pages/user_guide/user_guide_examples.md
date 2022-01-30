@@ -18,17 +18,27 @@ See [command-line options](/user_guide_command_line.html) for <i>all</i> command
 
 ## Step-by-step guides
 
+### File exploration and manipulation
+
 - [Investigating images](/user_guide_examples_investigating_images.html) in a directory.
 - [Converting and copying](/user_guide_examples_converting_copying_images.html) images.
+- [Anonymizing and randomly sampling](/user_guide_examples_anonymizing_sampling.html) files.
+- [Changing output options](user_guide_examples_changing_output_options.html) - selecting outputs, an alternative file format or file naming.
+
+### Image processing
 - [Resizing](/user_guide_examples_resizing_images.html) images.
 - Creating and aggregating [histograms](/user_guide_examples_histogram.html) of pixel intensities.
+- Calculating [intensity projections](/user_guide_examples_intensity_projections.html) across images.
+
+### Visualization
 - Creating a [video from images](/user_guide_examples_video_from_images.html).
-- Creating a photomontage of images (*work in progress*).
+- Creating a [photomontage](/user_guide_examples_montage.html) of images.
+
+### Machine learning
 - [Extracting features](/user_guide_examples_extracting_image_features.html) from images.
-- Anonymizing and randomly sampling files (*work in progress*).
-- Calculating a mean image for background subtraction (*work in progress*).
+- Finding and segmenting objects in images (*work in progress*).
 - Clustering images (*work in progress*).
-- [Changing output options](user_guide_examples_changing_output_options.html) - selecting alternative file format or file naming.
+
 
 {% include tip.html content="[Troubleshooting](/user_guide_troubleshooting.html) helps to explain common issues!" %}
 

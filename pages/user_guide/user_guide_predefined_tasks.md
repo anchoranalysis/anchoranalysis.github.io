@@ -42,10 +42,7 @@ See some [Quick Start - Example Commands](/index.html) and the following tables 
 | Task Name | Input Type | Description  |
 |-----------|------------|--------------|
 | [histogram](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/histogram.xml) | images | [extracts histograms](/user_guide_examples_histogram.html) of the intensity values an image. |
-| [mean](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/mean.xml) | images | creates a **mean-intensity projection** of all inputs. |
-| [meanResize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/meanResize.xml) | images | scales inputs to fixed dimensions, and then a mean-intensity projection. |
 | [resize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/resize.xml) | images | [scales each image](/user_guide_examples_resizing_images.html) to fit inside fixed dimensions, preserving aspect ratio. Optionally accepts [-ps](/user_guide_command_line.html#task-options). |
-| [stack/montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/stack/montage.xml) | images (3D) | produces a tiled **montage of all z-slices of a 3D image** |
 
 ## Image segmentation
 
@@ -76,6 +73,16 @@ See some [Quick Start - Example Commands](/index.html) and the following tables 
 | [convert](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/convert.xml) | images | [converts](/user_guide_examples_converting_copying_images.html#converting-images-to-a-different-file-format) the file format** of input images. |
 | [copy](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/copy.xml) | any files | [copies](/user_guide_examples_converting_copying_images.html#copying-files) files, preserving naming and subdirectory structure. |
 
+## Montages
+
+| Task Name | Input Type | Description  |
+|-----------|------------|--------------|
+| [montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage.xml) | images | creates a montage that [balances available space](/user_guide_examples_montage.html#balancing-the-number-of-images-per-row). |
+| [montage/balance](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/balance.xml) | images | identical to above. |
+| [montage/table](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/table.xml) | images | creates a montage that imposes a [table structure](/user_guide_examples_montage.html#table-structure). |
+| [montage/slices](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/slices.xml) | images | creates a montage of all z-slices in a 3D image. |
+
+
 ## Summarizing inputs
 
 | Task Name | Input Type | Description  |
@@ -88,4 +95,16 @@ See some [Quick Start - Example Commands](/index.html) and the following tables 
 | [summarize/images](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/summarize/images.xml) | images | [summarizes](/user_guide_examples_investigating_images.html#summarizing-images) image attributes (dimensions, bit depth etc.) |
 | [summarize/paths](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/summarize/paths.xml) | any files | [summarizes](/user_guide_examples_investigating_images.html#summarizing-images) file attributes (size, patterns among the file-paths etc.) |
 
+## Projections across images
+
+| Task Name | Input Type | Description  |
+|-----------|------------|--------------|
+| [project/mean](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/mean.xml) | images | creates a [mean-intensity projection](/user_guide_examples_intensity_projections.html#mean-intensity-projection) of all inputs. |
+| [project/meanResize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/meanResize.xml) | images | scales inputs to a constant size, then the `mean` projection. |
+| [project/max](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/max.xml) | images | creates a [maximum-intensity projection](/user_guide_examples_intensity_projections.html#maximum-intensity-projection) of all inputs. |
+| [project/maxResize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/maxResize.xml) | images | scales inputs to constant size, then the `max` projection. |
+| [project/min](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/min.xml) | images | creates a [minimum-intensity projection](/user_guide_examples_intensity_projections.html#minimum-intensity-projection) of all inputs. |
+| [project/minResize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/minResize.xml) | images | scales inputs to constant size, then the `mean` projection. |
+| [project/standardDeviation](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/standardDeviation.xml) | images | creates a [standard-deviation projection](/user_guide_examples_intensity_projections.html#standard-deviation-intensity-projection) of all inputs. |
+| [project/standardDeviationResize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/project/standardDeviationResize.xml) | images | scales inputs to constant size, then the above projection. |
 {% include links.html %}

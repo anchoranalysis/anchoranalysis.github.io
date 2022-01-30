@@ -15,7 +15,10 @@ entries:
       type: homepage
     - title: Tasks
       url: /user_guide_tasks.html
-      output: web, pdf      
+      output: web, pdf
+    - title: Predefined tasks
+      url: /user_guide_predefined_tasks.html
+      output: web, pdf            
     - title: Command line
       url: /user_guide_command_line.html
       output: web, pdf            
@@ -39,16 +42,20 @@ entries:
       output: web, pdf
       type: homepage
       
-    - title: Predefined tasks
-      url: /user_guide_predefined_tasks.html
-      output: web, pdf
-      
     - title: Investigating image files
       url: /user_guide_examples_investigating_images.html
       output: web, pdf
 
     - title: Converting and copying images
       url: /user_guide_examples_converting_copying_images.html
+      output: web, pdf
+
+    - title: Anonymizing and random sampling
+      url: /user_guide_examples_anonymizing_sampling.html
+      output: web, pdf    
+                  
+    - title: Changing output options
+      url: /user_guide_examples_changing_output_options.html
       output: web, pdf
       
     - title: Resizing images
@@ -58,18 +65,22 @@ entries:
     - title: Histograms from images
       url: /user_guide_examples_histogram.html
       output: web, pdf
-
-    - title: Extracting image features
-      url: /user_guide_examples_extracting_image_features.html
-      output: web, pdf      
+      
+    - title: Intensity projections  
+      url: /user_guide_examples_intensity_projections.html
+      output: web, pdf
       
     - title: Video from images
       url: /user_guide_examples_video_from_images.html
       output: web, pdf
       
-    - title: Changing output format or naming
-      url: /user_guide_examples_changing_output_options.html
-      output: web, pdf
+    - title: Creating a photomontage
+      url: /user_guide_examples_montage.html
+      output: web, pdf      
+            
+    - title: Extracting image features
+      url: /user_guide_examples_extracting_image_features.html
+      output: web, pdf      
 
 
   - title: Advanced Usage
