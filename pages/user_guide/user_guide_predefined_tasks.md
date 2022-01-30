@@ -43,7 +43,6 @@ See some [Quick Start - Example Commands](/index.html) and the following tables 
 |-----------|------------|--------------|
 | [histogram](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/histogram.xml) | images | [extracts histograms](/user_guide_examples_histogram.html) of the intensity values an image. |
 | [resize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/resize.xml) | images | [scales each image](/user_guide_examples_resizing_images.html) to fit inside fixed dimensions, preserving aspect ratio. Optionally accepts [-ps](/user_guide_command_line.html#task-options). |
-| [stack/montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/stack/montage.xml) | images (3D) | produces a tiled **montage of all z-slices of a 3D image** |
 
 ## Image segmentation
 
@@ -73,6 +72,16 @@ See some [Quick Start - Example Commands](/index.html) and the following tables 
 | [anonymize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/anonymize.xml) | any files | copies files, **randomizing order and hiding the original naming**. |
 | [convert](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/convert.xml) | images | [converts](/user_guide_examples_converting_copying_images.html#converting-images-to-a-different-file-format) the file format** of input images. |
 | [copy](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/copy.xml) | any files | [copies](/user_guide_examples_converting_copying_images.html#copying-files) files, preserving naming and subdirectory structure. |
+
+## Montages
+
+| Task Name | Input Type | Description  |
+|-----------|------------|--------------|
+| [montage](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage.xml) | images | changes the number of images per row to [balance available space](/user_guide_examples_montage.html#balancing-the-number-of-images-per-row). |
+| [montage/balance](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/balance.xml) | images | identical to above. |
+| [montage/table](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/table.xml) | images | imposes a [table structure](/user_guide_examples_montage.html#table-structure), resizing only within aligned cells. |
+| [montage/slices](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/montage/slices.xml) | images | montages all z-slices in a 3D image. |
+
 
 ## Summarizing inputs
 

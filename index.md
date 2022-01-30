@@ -81,6 +81,15 @@ By default, it will search recursively for all images in this directory (with [s
 |||
 | `anchor -t histogram` | [creates a histogram CSV file](/user_guide_examples_histogram.html) of the pixel values of each image, and all images summed. |
 |||
+| `anchor -t montage` | creates a [montage of all images](/user_guide_examples_montage.html#filling-all-available-space) (recursively). |
+| `anchor -t montage -is -il 20` | creates a montage from a [random sample](/user_guide_examples_montage.html#sampling-images) of `20` images. |
+| `anchor -t montage -is -il 0.04` | creates a montage from a [random sample](/user_guide_examples_montage.html#sampling-images) of `4%` of all images. |
+| `anchor -t montage -oe unlabelled` | creates an [unlabelled montage](/user_guide_examples_montage.html#removing-labels) (additionally). |
+| `anchor -t montage -ps 2000x` | creates a montage that has `2000 pixels` [width](/user_guide_examples_montage.html#specifying-the-size). |
+| `anchor -t montage -ps 0.3` | creates a montage where [image widths](/user_guide_examples_montage.html#specifying-the-size) are approximately `30%` of their original. |
+| `anchor -t montage/table` | creates a montage with a [table structure](/user_guide_examples_montage.html#table-structure). |
+| `anchor -t montage/slices` | creates a montage of the z-slices of a 3D image. |
+|||
 | `anchor -t project/mean` | projects the [mean-intensity](/user_guide_examples_intensity_projections.html#mean-intensity-projection) of all images (which must be identically sized!) |
 | `anchor -t project/meanResize` | like above, but first resizes all images to a common size, and then calculates. |
 | `anchor -t project/max` | projects the [maximum-intensity](/user_guide_examples_intensity_projections.html#maximum-intensity-projection) of all images (which must be identically sized!) |

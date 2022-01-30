@@ -84,7 +84,7 @@ anchor -t project/standardDeviationResize
 <img alt="standard-deviation-intensity-projection of time-series tennis photos" src="/images/examples/intensityProjections/standardDeviation.png"/>
 
 
-*The original tennis time-series images come from the [UCF101 video classification dataset](https://www.crcv.ucf.edu/data/UCF101.php) downloaded from [Kaggle](https://www.kaggle.com/ashuguptahere/video-classification-ucf101).*
+*The original tennis time-series images come from the [UCF101 video classification dataset](https://www.crcv.ucf.edu/data/UCF101.php), downloaded from [Kaggle](https://www.kaggle.com/ashuguptahere/video-classification-ucf101).*
 
 ## Next steps
 
