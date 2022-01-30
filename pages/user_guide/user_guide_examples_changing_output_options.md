@@ -1,5 +1,5 @@
 ---
-title: "Example - Changing output format or naming"
+title: "Example - Changing output options"
 tags:
 keywords:
 sidebar: user_guide_sidebar
@@ -50,7 +50,7 @@ The [`-ir` command-line option](/user_guide_command_line.html#input-options) dis
 
  e.g. the previous example would produce [`selfie_january.jpg`, `selfie_february.jpg`, `selfie_december.jpg`] 
 
-### Perserving file-paths exactly
+### Preserving file-paths exactly
 
 If only a single output file produced (see [Case 1](/user_guide_examples_changing_output_options.html#background)), the `-ir` option gives it an identical name to the corresponding input-file.
 
@@ -62,6 +62,46 @@ The following example command converts input files from one directory to another
 
 ```none
 anchor -i c:\foo\source\ -ir -t convert -o c:\bar\destination\ -oo
+```
+
+## Enabling and disabling outputs
+
+A task typically can make several outputs, but only certain outputs occur by default. All available outputs are printed upon completion e.g.
+
+{% include shell.html
+command="anchor -t feature/intensity"
+response="Experiment intensity_09.50.11 started writing to C:\Users\owen\AppData\Local\Temp\intensity_09.50.11
+------------------------------------ Inputs ------------------------------------
+The job has 3 inputs.
+
+They are named with the pattern: ${0}
+${0} = 3 unique integers between 13 and 91 inclusive
+---------------------------------- Processing ----------------------------------
+Preparing jobs to run with common initialization.
+Maximally using 7 simultaneous CPUs (from 8 available), and up to 1 simultaneous GPU (if available).
+Job    3:       start   [  0 compl,   2 exec,   1 rem of   3]           91
+Job    1:       start   [  0 compl,   2 exec,   1 rem of   3]           13
+Job    2:       start   [  0 compl,   3 exec,   0 rem of   3]           78
+Job    2:       end     [  1 compl,   2 exec,   0 rem of   3]   (0s)    78
+Job    3:       end     [  2 compl,   1 exec,   0 rem of   3]   (0s)    91
+Job    1:       end     [  3 compl,   0 exec,   0 rem of   3]   (0s)    13
+All 3 jobs completed successfully. The average execution time was 0.315 s.
+----------------------------------- Outputs ------------------------------------
+Enabled:        features, logExperiment
+Disabled:       executionTime, featuresAggregated, thumbnails
+--------------------------------------------------------------------------------" %}
+
+The last four lines indicate which outputs were enabled and disabled. The user can enable/disable these outputs with the `-oe` and `-od` and `-oa` [command-line options](/user_guide_command_line.html#output-options):
+
+```bash
+# Enable all outputs
+anchor -t feature/intensity -oa
+
+# Enables thumbnails and disables two (multiple options)
+anchor -t feature/intensity -oe thumbnails -od logExperiment -od features
+
+# Enables two (comma-separated), disables one
+anchor -t feature/intensity -oe thubmnails,featuresAggregated -od features
 ```
 
 ## Additionally copying non-input files 

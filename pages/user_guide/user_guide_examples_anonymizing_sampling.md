@@ -1,5 +1,5 @@
 ---
-title: "Example - Anonymizing and random sampling files"
+title: "Example - Anonymizing and randomly sampling files"
 tags:
 keywords:
 sidebar: user_guide_sidebar
@@ -15,7 +15,7 @@ This can be:
 
 - **temporarily**, testing a command before running it on the entire set of inputs.
 - **permanently**, extracting a subset into another directory.
-- **permanently with anonymization** - so that the filenames lose identifying information.
+- **permanently with anonymization** - like above, but the filenames lose identifying information.
 
 Anchor provides a series of [input command options](/user_guide_command_line.html#input-options), that can be combined to achieve this for many tasks.
 
@@ -67,19 +67,19 @@ The easiest anonymizaton occurs by combining the `-il` and `-is` [command input 
 anchor -is -il 20 -on -t convert
 ```
 
-{% include tip.html content="This method is valid for any [predefined task](/user_guide_predefined_tasks.html), whether copying, converting, resizing etc." %}
+{% include tip.html content="This approach is valid for any [predefined task](/user_guide_predefined_tasks.html), whether copying, converting, resizing etc." %}
 
 ### The `anonymize` predefined task
 
 Alternatively, the `anonymize` [predefined-task](/user_guide_predefined_tasks.html#file-copying--conversion) is similar to the `copy` task, but will automatically anonymize the names.
 
-The `-is` option must be included when the `-il` option is also present. Otherwise it is unneeded, as the inputs will always be randomized internally within the task.
+For fully random selection, the `-is` option must be included when the `-il` option is also present. Otherwise it is unneeded, as the inputs will always be randomized internally within the task.
 
 ```none
 anchor -t anonymize			# anonymize all the inputs
 anchor -is -il 0.3 -t anonymize		# anonymize 30% of the inputs
 ```
 
-{% include warning.html content="This approach is valid only for copying files" %}
+{% include warning.html content="This approach is valid **only** for copying files" %}
 
 {% include links.html %}

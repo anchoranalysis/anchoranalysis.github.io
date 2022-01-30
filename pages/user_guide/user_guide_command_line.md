@@ -53,17 +53,17 @@ Options useful for influencing **inputting**:
 
 Note: 
 - tasks produce one or more outputs, with certain outputs enabled by default.
-- the file-format used for any given is determined by rules in [defaultBeans.xml](/user_guide_supported_formats.html#changing-the-default-driver).
+- the file-format used for any given is determined by rules in [defaultBeans.xml](/user_guide_supported_formats.html#specifying-default-readers-and-writers).
 
 Options useful for influencing **outputting**:
 
 | Option | Description|
 |----------|------------|
 | [-o](/user_guide.html#outputs) *arg* | [Changes outputs](/user_guide.html#outputs) where *arg* = <span class="optionArg">path to an output-directory</span> or <span class="optionArg">path to BeanXML</span> |
-| -oa | **Enables all** outputs. |
-| -oc | Disables opening the output directory in the desktop at experiment end. |
-| -od *outputName(s)* | **Disables specific** output(s). Multiple outputs are comma-separated. |
-| -oe *outputName(s)* | **Enables specific** output(s). Multiple outputs are comma-separated. |
+| -oa | [Enables all](/user_guide_examples_changing_output_options.html#enabling-and-disabling-outputs) outputs. |
+| -oc | Disables opening the output directory in the desktop (upon experiment end). |
+| -od *outputName(s)* | [Disables specific](/user_guide_examples_changing_output_options.html#enabling-and-disabling-outputs) output(s). Multiple outputs are comma-separated. |
+| -oe *outputName(s)* | [Enables specific](/user_guide_examples_changing_output_options.html#enabling-and-disabling-outputs) output(s). Multiple outputs are comma-separated. |
 | -of *formatExtension* | Suggests an output [image file format](/user_guide_examples_changing_output_options.html#specifying-an-alternative-image-format): e.g `-of jpg` or `-of ome.xml` |
 | -on | Outputs with [an incrementing number](/user_guide_examples_changing_output_options.html#writing-outputs-as-a-sequence) instead of the input name.<br>*(useful for creating sequences of images)* |
 | -oo | [Omits experiment name and version](/user_guide_examples_changing_output_options.html#outputting-to-a-specific-output-directory-avoiding-creating-a-subdirectory) when outputting. |

@@ -21,7 +21,7 @@ We usually instead specify a different target size with the [`-ps` command-line 
 
 {% include note.html content="For simplicity, the following examples omit the [`-i` command-line option](user_guide_command_line.html#input-options) (therefore reading images from the current directory) and the [`-o` command-line option](/user_guide.html#outputs) (therefore outputting into a temporary directory)." %}
 
-{% include tip.html content="See [changing output format or naming](http://localhost:4000/user_guide_examples_changing_output_options.html) for useful
+{% include tip.html content="See [changing output options](http://localhost:4000/user_guide_examples_changing_output_options.html) for useful
 tips on how to change the output image format or naming." %}
 
 ### Resizing with a scaling factor 

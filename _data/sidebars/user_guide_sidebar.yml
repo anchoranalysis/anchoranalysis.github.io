@@ -74,7 +74,7 @@ entries:
       url: /user_guide_examples_intensity_projections.html
       output: web, pdf
       
-    - title: Changing output format or naming
+    - title: Changing output options
       url: /user_guide_examples_changing_output_options.html
       output: web, pdf
 

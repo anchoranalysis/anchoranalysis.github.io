@@ -22,7 +22,7 @@ This produces the following files in `C:\Users\owen\Desktop\convert_20.31.08`: [
 
 {% include note.html content="If the [`-of` command-line option](/user_guide_command_line.html#output-options) is omitted, the default rules are applied to determine the format. This may be different from the existing file format of the input file." %}
 
-### Perserving the image file-name
+### Preserving the image file-name
 
 To similarly convert but **keep the *full* image file-name preserved** add the [`-ir` command-line option](/user_guide_command_line.html#input-options):
 
