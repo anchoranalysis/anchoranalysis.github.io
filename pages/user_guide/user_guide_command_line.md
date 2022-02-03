@@ -47,6 +47,7 @@ Options useful for influencing **inputting**:
 | -ii *range* | **Subsets the file-path pattern**. Type `anchor` and look for variable-components `${0}`, `${1}` etc.<br>Specify which component(s) to retain via a single index or index-range ala [grouping](/user_guide_command_line.html#grouping). Zero-indexed. |
 | -il *num* | Uses [only the initial](/user_guide_examples_anonymizing_sampling.html#subsetting-inputs) `num` inputs (when an integer), or `(num*100)%` when in interval `(0.0,1.0)` |
 | -ip | Derives the name instead from the [entire relative file-path](/user_guide_examples_changing_output_options.html#disabling-the-shortened-identifiers) excluding the file extension.<br>e.g. it selects `subdir/prefix_234` rather than `234` (by default, only what varies among filenames).  |
+| -ir *num* | [Randomly samples](/user_guide_examples_anonymizing_sampling.html#a-random-subset) `num` inputs (when an integer), or `(num*100)%` when in interval `(0.0,1.0)` |
 | -is | [Shuffles](/user_guide_examples_video_from_images.html#randomizing-the-image-order) (randomizes) the order of the inputs. |
 
 ## Output options

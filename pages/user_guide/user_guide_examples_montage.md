@@ -84,13 +84,13 @@ anchor -is -t montage -of jpg
 
 ### Sampling images
 
-To take a random sample, we additionally add the `-il` [command-line-option](/user_guide_command_line.html#input-options).
+To take a random sample, we additionally add the `-ir` [command-line-option](/user_guide_command_line.html#input-options).
 
 Let's randomly sample 120 images from the entire dataset (not <i>just</i> pineapples!) for the montage.
 
 ```
 cd ..
-anchor -is -il 120 -t montage -of jpg
+anchor -ir 120 -t montage -of jpg
 ```
 
 <img alt="labelled montage of a random sample" src="/images/examples/montage/smaller_sample_labelled.jpg" class="screenshotExample"/>
@@ -116,7 +116,7 @@ Labels are present in the former, and omitted in the latter.
 To produce an unlabelled version only, use the `-oe` and `-od` [command-line-option](/user_guide_command_line.html#output-options):
 
 ```
-anchor -is -il 120 -t montage -of jpg -oe unlabelled -od labelled
+anchor -ir 120 -t montage -of jpg -oe unlabelled -od labelled
 ```
 
 <img alt="unlabelled montage of a random sample" src="/images/examples/montage/smaller_sample_unlabelled.jpg" class="screenshotExample"/>
@@ -136,7 +136,7 @@ The user may be specify a custom size with the `-ps` [command-line-option](/user
 Let's create a much larger sample of very small images (scaled to `30%` of their original size).
 
 ```
-anchor -is -il 1000 -t montage -of jpg -oe unlabelled -od labelled -ps 0.3
+anchor -ir 1000 -t montage -of jpg -oe unlabelled -od labelled -ps 0.3
 ```
 
 <img alt="unlabelled montage of a larger random sample" src="/images/examples/montage/larger_sample_unlabelled.jpg" class="screenshotExample"/>
@@ -150,7 +150,7 @@ The previous dataset had images of constant-size. Let's try now with a dataset w
 - the images vary in size.
 - the images are meaningfully ordered, as successive time-frames.
 
-The images come from the [UCF101 video classification dataset](https://www.crcv.ucf.edu/data/UCF101.php), downloaded from [Kaggle](https://www.kaggle.com/ashuguptahere/video-classification-ucf101), but let's initially focus only on the first 20 images (of kayaking). We've manipulated their sizes by cropping.
+The images come from the [UCF101 video classification dataset](https://www.crcv.ucf.edu/data/UCF101.php), downloaded from [Kaggle](https://www.kaggle.com/ashuguptahere/video-classification-ucf101), but let's initially focus only on the initial 20 images (of kayaking) by appending `-il 20`. We've manipulated their sizes by cropping.
 
 ### Balancing the number of images per row
 
@@ -183,7 +183,7 @@ anchor -il 20 -t montage/table -of jpg
 Let's take a random sample of `0.2%` of the entire dataset, and to have `1800 pixels` width.
 
 ```
-anchor -is -il 0.002 -t montage -of jpg -ps 1800x
+anchor -ir 0.002 -t montage -of jpg -ps 1800x
 ```
 
 <img alt="random sample of all sports images" src="/images/examples/montage/sports_random_sample.jpg" class="screenshotExample"/>

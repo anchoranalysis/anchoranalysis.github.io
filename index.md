@@ -82,8 +82,9 @@ By default, it will search recursively for all images in this directory (with [s
 | `anchor -t histogram` | [creates a histogram CSV file](/user_guide_examples_histogram.html) of the pixel values of each image, and all images summed. |
 |||
 | `anchor -t montage` | creates a [montage of all images](/user_guide_examples_montage.html#filling-all-available-space) (recursively). |
-| `anchor -t montage -is -il 20` | creates a montage from a [random sample](/user_guide_examples_montage.html#sampling-images) of `20` images. |
-| `anchor -t montage -is -il 0.04` | creates a montage from a [random sample](/user_guide_examples_montage.html#sampling-images) of `4%` of all images. |
+| `anchor -t montage -il 20` | creates a montage from the [initial](/user_guide_examples_anonymizing_sampling.html#taking-the-initial-n-inputs-in-order) `20` images in order. |
+| `anchor -t montage -ir 20` | creates a montage from a [random sample](/user_guide_examples_montage.html#sampling-images) of `20` images. |
+| `anchor -t montage -ir 0.04` | creates a montage from a [random sample](/user_guide_examples_montage.html#sampling-images) of `4%` of all images. |
 | `anchor -t montage -oe unlabelled` | creates an [unlabelled montage](/user_guide_examples_montage.html#removing-labels) (additionally). |
 | `anchor -t montage -ps 2000x` | creates a montage that has `2000 pixels` [width](/user_guide_examples_montage.html#specifying-the-size). |
 | `anchor -t montage -ps 0.3` | creates a montage where [image widths](/user_guide_examples_montage.html#specifying-the-size) are approximately `30%` of their original. |
@@ -96,9 +97,9 @@ By default, it will search recursively for all images in this directory (with [s
 | `anchor -t project/min` | projects the [minimum-intensity](/user_guide_examples_intensity_projections.html#minimum-intensity-projection) of all images (which must be identically sized!) |
 | `anchor -t project/standardDeviation` | projects the [standard-deviation](/user_guide_examples_intensity_projections.html#standard-deviation-intensity-projection) of all images (which must be identically sized!) |
 |||
-| `anchor -is -il 20 -t copy` | [randomly samples 20 inputs](/user_guide_examples_anonymizing_sampling.html#subsetting-inputs). |
-| `anchor -is -il 0.3 -t copy` | [randomly samples 30% of all inputs](/user_guide_examples_anonymizing_sampling.html#subsetting-inputs). |
-| `anchor -is -il 0.3 -t copy -on` | [randomly samples 30% of all inputs](/user_guide_examples_anonymizing_sampling.html#subsetting-inputs) and [anonymizes](/user_guide_examples_anonymizing_sampling.html#anonymizing). |
+| `anchor -ir 20 -t copy` | [randomly samples 20 inputs](/user_guide_examples_anonymizing_sampling.html#subsetting-inputs). |
+| `anchor -ir 0.3 -t copy` | [randomly samples 30% of all inputs](/user_guide_examples_anonymizing_sampling.html#subsetting-inputs). |
+| `anchor -ir 0.3 -t copy -on` | [randomly samples 30% of all inputs](/user_guide_examples_anonymizing_sampling.html#subsetting-inputs) and [anonymizes](/user_guide_examples_anonymizing_sampling.html#anonymizing). |
 | `anchor -t anonymize` | [anonymizes](/user_guide_examples_anonymizing_sampling.html#anonymizing) all inputs. |
 
 Note the `-i` and `-o` command line options are [can be applied to any task](/user_guide_examples.html) to select inputs and an output path. `outputs = task(inputs)`
