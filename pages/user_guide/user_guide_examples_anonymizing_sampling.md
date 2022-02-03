@@ -75,8 +75,6 @@ anchor -ir 20 -on -t convert
 
 Alternatively, the `anonymize` [predefined-task](/user_guide_predefined_tasks.html#file-copying--conversion) is similar to the `copy` task, but will automatically anonymize the names.
 
-For fully random selection, the `-is` option must be included when the `-il` option is also present. Otherwise it is unneeded, as the inputs will always be randomized internally within the task.
-
 ```none
 anchor -t anonymize			# anonymize all the inputs
 anchor -ir 0.3 -t anonymize		# anonymize 30% of the inputs
