@@ -126,7 +126,7 @@ anchor -ir 120 -t montage -of jpg -oe unlabelled -od labelled
 
 A sensible default-size is chosen for the montaged image (scaling down the input images).
 
-The user may be specify a custom size with the `-ps` [command-line-option](/user_guide_command_line.html#task-options):
+The user may specify a custom size with the `-ps` [command-line-option](/user_guide_command_line.html#task-options):
 
 - `-ps 0.1` to scale the images to approximately `10%` of their original size in the montage.
 - `-ps 2000x` to produce a montage that has exactly 2000 pixels width.

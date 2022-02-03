@@ -81,7 +81,7 @@ Options useful for **tasks**:
 | -t *[arg]* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">predefined-task-name</span> or <span class="optionArg">path to BeanXML</span> |
 | -tp *number* | Suggests a [maximum number of CPU processors](/user_guide_troubleshooting.html#limiting-parallel-cpu-cores). |
 | -st | Prints the names of [predefined tasks](/user_guide_predefined_tasks.html) that can be used with `-t` |
-| -pg *range* | Activates grouping from a subset of each input's identifier (see [below](/user_guide_command_line.html#grouping)). |
+| -pg *range* | Activates [grouping](/user_guide_command_line.html#grouping) from a subset of each input's identifier (see [below](/user_guide_command_line.html#grouping)). |
 | -ps *size* | [Suggests](/user_guide_examples_resizing_images.html) <span class="optionArg">image size</span> (e.g. `1024x768`) or a <span class="optionArg">scaling factor</span> (e.g.`0.5`)<br>- The order of dimensions is always `width`x`height`<br>- No scaling in the z-dimension is supported.<br>- Omitting a dimension resizes to the width/height and <b>preserves aspect-ratio</b> e.g. `200x` or `x50`<br>- A trailing plus character <b>preserves aspect ratio</b> maximally within dimensions e.g. `1000x500+` |
 
 The options beginning with `-p` are parameters that are optionally used only by specific tasks.
