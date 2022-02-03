@@ -18,8 +18,15 @@ used by Anchor.
 
 {% include warning.html content="It should **not** include: plugins, anything GUI-related, pipeline BeanXML, entry-point applications." %}
 
+### Supporting libraries and tooling
 
+- A [SonarCloud project](https://sonarcloud.io/project/overview?id=anchoranalysis_anchor) performs static code analysis.
 
+- [Project Lombok](https://projectlombok.org/) reduces boiler-plate source code. Please see [key libraries](/developer_guide_environment_key_libraries.html) for relevant libraries and tooling.
+
+- [Coding style](http://localhost:4000/developer_guide_architecture_coding_style.html) specifies the applicable style-guide.
+
+- [GitHub Actions](https://github.com/anchoranalysis/anchor/actions) and [Maven](https://maven.apache.org/) for [CI/CD](https://en.wikipedia.org/wiki/CI/CD).
 
 ## Modules
 
