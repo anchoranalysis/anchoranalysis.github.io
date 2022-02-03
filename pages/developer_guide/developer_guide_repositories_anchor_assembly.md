@@ -21,6 +21,16 @@ A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository 
 
 {% include warning.html content="It should **not** include: data objects, algorithms related to image processing." %}
 
+### Supporting libraries and tooling
+
+- A [SonarCloud project](https://sonarcloud.io/project/overview?id=anchoranalysis_anchor-assembly) performs static code analysis.
+
+- [Project Lombok](https://projectlombok.org/) reduces boiler-plate source code. Please see [key libraries](/developer_guide_environment_key_libraries.html) for relevant libraries and tooling.
+
+- [Coding style](http://localhost:4000/developer_guide_architecture_coding_style.html) specifies the applicable style-guide.
+
+- [GitHub Actions](https://github.com/anchoranalysis/anchor-assembly/actions) and [Maven](https://maven.apache.org/) for [CI/CD](https://en.wikipedia.org/wiki/CI/CD).
+
 ## Modules
 
 | Module | Java Package Root &amp; Description  | Classes | Lines&#x2011;of&#x2011;Code |

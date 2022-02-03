@@ -23,6 +23,14 @@ Java code to match the [Google Java Style Guide](https://google.github.io/styleg
 
 * [Guava](https://en.wikipedia.org/wiki/Google_Guava) for additional data structures and algorithms.
 
+* [ONNX Runtime](https://onnxruntime.ai/) for inference of deep learning models.
+
+* [OpenCV](https://opencv.org/) (specifically the [OpenPNP distribution for Java](https://github.com/openpnp/opencv)) for image processing and I/O.
+
+* [Bioformats](https://www.openmicroscopy.org/bio-formats/) for image I/O.
+
+* [ImageJ](https://imagej.net/) for image processing functions.
+
 * [VavR](https://www.vavr.io/) for additional functional programming constructs.
 
 * [JUnit 5](https://junit.org/junit5/) and [Mockito](https://site.mockito.org/) for testing.
@@ -33,10 +41,12 @@ Java code to match the [Google Java Style Guide](https://google.github.io/styleg
 
 * [NumPy](https://numpy.org/)
 
-* [scikit-learn](https://scikit-learn.org/stable/)
+* [scikit-learn](https://scikit-learn.org/stable/) for classical [Machine Learning](https://en.wikipedia.org/wiki/Machine_learning) algorithms.
 
-* [TensorFlow](https://www.tensorflow.org/)
+* [PyTorch](https://pytorch.org/) and [PyTorch Lightning](https://pytorch-lightning.readthedocs.io/en/latest/) for scripts to train [CNN](https://en.wikipedia.org/wiki/Convolutional_neural_network) models.
 
-* [Plotly](https://plotly.com/)
+* [TensorFlow](https://www.tensorflow.org/) for exporting to [TensorBoard](https://www.tensorflow.org/tensorboard).
+
+* [Plotly](https://plotly.com/) for data visualization.
 
 {% include links.html %}

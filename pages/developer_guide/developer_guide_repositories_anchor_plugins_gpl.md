@@ -17,6 +17,16 @@ A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository 
 
 {% include warning.html content="It should **not** include: code that can be licensed more permissively under the [MIT license](https://opensource.org/licenses/MIT), anything GUI-related, pipeline BeanXML, entry-point applications." %}
 
+### Supporting libraries and tooling
+
+- A [SonarCloud project](https://sonarcloud.io/project/overview?id=anchoranalysis_anchor_plugins-gpl) performs static code analysis.
+
+- [Project Lombok](https://projectlombok.org/) reduces boiler-plate source code. Please see [key libraries](/developer_guide_environment_key_libraries.html) for relevant libraries and tooling.
+
+- [Coding style](http://localhost:4000/developer_guide_architecture_coding_style.html) specifies the applicable style-guide.
+
+- [GitHub Actions](https://github.com/anchoranalysis/anchor-plugins-gpl/actions) and [Maven](https://maven.apache.org/) for [CI/CD](https://en.wikipedia.org/wiki/CI/CD).
+
 ## Modules
 
 | Module | Java Package Root &amp; Description  | Classes | Lines&#x2011;of&#x2011;Code |
