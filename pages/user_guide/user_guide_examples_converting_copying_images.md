@@ -24,10 +24,10 @@ This produces the following files in `C:\Users\owen\Desktop\convert_20.31.08`: [
 
 ### Preserving the image file-name
 
-To similarly convert but **keep the *full* image file-name preserved** add the [`-ir` command-line option](/user_guide_command_line.html#input-options):
+To similarly convert but **keep the *full* image file-name preserved** add the [`-ip` command-line option](/user_guide_command_line.html#input-options):
 
 ```none
-anchor -ir -t convert -of png -o C:\Users\owen\Desktop
+anchor -ip -t convert -of png -o C:\Users\owen\Desktop
 ```
 
 This produces instead: `alps-13.png` `alps-78.png` and `alps-91.png`.  
@@ -49,7 +49,7 @@ This creates the `C:\Users\owen\Desktop\desired_output_directory\` directory, an
 This command will convert images from a source directory to a target directory, while preserving file-names and subdirectory-structure **and** [any other non-image files](/http://localhost:4000/user_guide_examples_changing_output_options.html#additionally-copying-non-input-files) in the directory (via the [`-ic` command line option](/user_guide_command_line.html#output-options)).
 
 ```none
-anchor -i c:\foo\source\ -ir -ic -t convert -of png -o c:\bar\destination\ -oo
+anchor -i c:\foo\source\ -ip -ic -t convert -of png -o c:\bar\destination\ -oo
 ```
 
 ## Copying files
@@ -64,10 +64,10 @@ anchor -i c:\foo\source\ -t copy -o c:\bar\destination\ -oo
 
 ### Preserving file-names
 
-To **preserve file-names**, the [`-ir` command-line option](/user_guide_command_line.html#input-options) is added.
+To **preserve file-names**, the [`-ip` command-line option](/user_guide_command_line.html#input-options) is added.
 
 ```none
-anchor -i c:\foo\source\ -ir -t copy -o c:\bar\destination\ -oo
+anchor -i c:\foo\source\ -ip -t copy -o c:\bar\destination\ -oo
 ```
 
 This also preserves subdirectory hierarchy.
@@ -77,7 +77,7 @@ This also preserves subdirectory hierarchy.
 To **preserve file-names but suppress subdirectory hierarchy**, the [`-os` command-line option](/user_guide_command_line.html#output-options) is added.
 
 ```none
-anchor -i c:\foo\source\ -ir -t copy -o c:\bar\destination\ -oo -os
+anchor -i c:\foo\source\ -ip -t copy -o c:\bar\destination\ -oo -os
 ```
 
 {% include note.html content="The `copy` task executes more quickly than `convert`, copying files bytewise rather than loading as images. If the [-of command-line option](/user_guide_examples_converting_manipulating_images.htmlspecifying-an-alternative-image-format) is selected to request a different output format, then `copy` behaves instead like `convert`." %}
@@ -92,13 +92,13 @@ file extension - overriding the default behavior which only looks for images.
 e.g. to search for text files *non-recursively* and copy:
 
 ```none
-anchor -i "c:\foo\source\*.txt" -ir -t copy -o c:\bar\destination\ -oo
+anchor -i "c:\foo\source\*.txt" -ip -t copy -o c:\bar\destination\ -oo
 ```
 
 But to search *recursively* and copy:
 
 ```none
-anchor -i "c:\foo\source\**.txt" -ir -t copy -o c:\bar\destination\ -oo
+anchor -i "c:\foo\source\**.txt" -ip -t copy -o c:\bar\destination\ -oo
 ```
 
 

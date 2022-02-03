@@ -44,9 +44,9 @@ Options useful for influencing **inputting**:
 |----------|------------|
 | -i *arg* | [Changes inputs](/user_guide.html#inputs), where *arg* = [extension](/user_guide_examples_investigating_images.html#filtering-with-a-file-extension) or [wildcards](/user_guide_examples_investigating_images.html#filtering-with-wildcards) or <span class="optionArg">input-directory path</span> or <span class="optionArg">path to BeanXML</span> |
 | -ic | [Copies any files unused as inputs](/user_guide_examples_changing_output_options.html#additionally-copying-non-input-files) (but existing within the input directory) to the output directory. |
-| -ii | **Subsets the name** from the file-path pattern. Type `anchor` and look for `${0}`, `${1}` etc.<br>Zero-indexed. Negatives count backwards from the end. Can be a single index or a range.<br>e.g. `2` (third only) or `-3` (third-last) or `3:-1` (fourth to last) or `:2` (until third) or `2:` (from third). |
+| -ii *range* | **Subsets the file-path pattern**. Type `anchor` and look for variable-components `${0}`, `${1}` etc.<br>Specify which component(s) to retain via a single index or index-range ala [grouping](/user_guide_command_line.html#grouping). Zero-indexed. |
 | -il *num* | Uses [only the initial](/user_guide_examples_anonymizing_sampling.html#subsetting-inputs) `num` inputs (when an integer), or `(num*100)%` when in interval `(0.0,1.0)` |
-| -ir | Derives the name instead from the [entire relative file-path](/user_guide_examples_changing_output_options.html#disabling-the-shortened-identifiers) excluding the file extension.<br>e.g. it selects `subdir/prefix_234` rather than `234` (by default, only what varies among filenames).  |
+| -ip | Derives the name instead from the [entire relative file-path](/user_guide_examples_changing_output_options.html#disabling-the-shortened-identifiers) excluding the file extension.<br>e.g. it selects `subdir/prefix_234` rather than `234` (by default, only what varies among filenames).  |
 | -is | [Shuffles](/user_guide_examples_video_from_images.html#randomizing-the-image-order) (randomizes) the order of the inputs. |
 
 ## Output options
@@ -80,6 +80,7 @@ Options useful for **tasks**:
 | -t *[arg]* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">predefined-task-name</span> or <span class="optionArg">path to BeanXML</span> |
 | -tp *number* | Suggests a [maximum number of CPU processors](/user_guide_troubleshooting.html#limiting-parallel-cpu-cores). |
 | -st | Prints the names of [predefined tasks](/user_guide_predefined_tasks.html) that can be used with `-t` |
+| -pg *range* | Activates grouping from a subset of each input's identifier (see [below](/user_guide_command_line.html#grouping)). |
 | -ps *size* | [Suggests](/user_guide_examples_resizing_images.html) <span class="optionArg">image size</span> (e.g. `1024x768`) or a <span class="optionArg">scaling factor</span> (e.g.`0.5`)<br>- The order of dimensions is always `width`x`height`<br>- No scaling in the z-dimension is supported.<br>- Omitting a dimension resizes to the width/height and <b>preserves aspect-ratio</b> e.g. `200x` or `x50`<br>- A trailing plus character <b>preserves aspect ratio</b> maximally within dimensions e.g. `1000x500+` |
 
 The options beginning with `-p` are parameters that are optionally used only by specific tasks.
@@ -106,5 +107,42 @@ Options to show general application information are:
 |----------|------------|
 | -h | Displays help message with *all* command-line options. |
 | -v | Displays version and authorship information. |
+
+## Grouping
+
+For certain tasks, the `-pg` option activates **grouping**.
+
+This is similar to a [GROUP BY](https://en.wikipedia.org/wiki/Group_by_(SQL)) in relational databases, and aggregates inputs together based upon
+a common key.
+
+This key is derived from the *identifier* associated with each input, best illustrated by example.
+
+Consider inputs with the corresponding identifiers (usually inferred from patterns in the file-paths):
+
+```
+france/paris/001
+france/paris/002
+france/paris/003
+france/lyon/001
+france/lyon/002
+france/countryMap
+spain/madrid/image1
+spain/madrid/image2
+```
+
+Each identifier is split into its elements: `france/countryMap` has *two* elements; all others have *three*.
+
+A subset of element(s) can then be derived from these elements, depending on the indices set on `-pg`'s argument.
+
+The argument may be either a **single index** or a **range**. Zero-indexed. Negatives count backwards from the end.
+
+Examples:
+
+- `-pg 0` (*first only*) would produce `[france, france, france, france, france, spain, spain]`
+- `-pg -1`(*last only*) would produce `[001, 002, 003, 001, 002, countryMap, image1, image2]`
+- `-pg 0:-2` *(from first to second-last)* would produce `[france/paris, france/paris, france/paris, france/lyon, france/lyon, france, spain/madrid, spaid/madrid]`
+- `-pg :-2` *(until second-last)* is identical to the above.
+- `-pg: 1:` (*from second)* would produce `[paris/001, paris/002, paris/003, lyon/001, lyon/002, countryMap, madrid/image1, madrid/image2]`
+
 
 {% include links.html %}
