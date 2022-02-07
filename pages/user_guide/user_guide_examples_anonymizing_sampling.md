@@ -29,7 +29,7 @@ Use the `-il` [command option](/user_guide_command_line.html#input-options) to r
 
 e.g. to form a montage of the initial 7 files (maximally).
 
-```none
+```bash
 anchor -il 7 -t montage
 ```
 
@@ -39,7 +39,7 @@ The `-il` [command option](/user_guide_command_line.html#input-options) also acc
 
 e.g. to convert the initial `20%` of all inputs (maximally).
 
-```none
+```bash
 anchor -il 0.2 -t convert
 ```
 
@@ -50,7 +50,7 @@ Use the `-ir` [command option](/user_guide_command_line.html#input-options) to t
 
 e.g. to copy a random subset:
 
-```none
+```bash
 anchor -ir 20 -t copy		# a random subset of 20 files (maximally)
 anchor -ir 0.5 -t copy		# a random subset of 50% of the total number of inputs
 ```
@@ -65,7 +65,7 @@ Internally, `-ir <arg>` is equivalent to `-il <arg> -is`.
 
 The easiest anonymizaton occurs by combining the `-il` and `-is` [command input options](/user_guide_command_line.html#input-options) (see above) with the `-on` [command output options](/user_guide_command_line.html#output-options), which writes files as an incrementing numeric series.
 
-```none
+```bash
 anchor -ir 20 -on -t convert
 ```
 
@@ -75,7 +75,7 @@ anchor -ir 20 -on -t convert
 
 Alternatively, the `anonymize` [predefined-task](/user_guide_predefined_tasks.html#file-copying--conversion) is similar to the `copy` task, but will automatically anonymize the names.
 
-```none
+```bash
 anchor -t anonymize			# anonymize all the inputs
 anchor -ir 0.3 -t anonymize		# anonymize 30% of the inputs
 ```

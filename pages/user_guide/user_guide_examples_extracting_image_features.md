@@ -66,6 +66,37 @@ The latter is useful for visualizing features alongside each other via derived e
 
 {% include tip.html content="The output directory can be changed with the [`-o` command-line option](/user_guide.html#outputs) e.g. `-o path_to_parent_directory`" %}
 
+
+Here follows an *example `features.csv`* (with `-t feature/intensity`) from the [fruits dataset](/user_guide_examples_montage.html#example---fruits):
+
+<img alt="screenshot of example features.csv" src="/images/examples/features/csv_ungrouped.jpg" class="screenshotExample"/>
+
+
+## Grouping
+
+Features can also be assigned a group via the [`-pg` command-line option](/user_guide_command_line.html#grouping):
+
+```bash
+anchor -t feature/hog -pg 0		# to group by the first identifier element (directory)
+anchor -t feature/intensity -pg 0:-2	# to group by all elements, except the last
+
+# like above, but enables other relevant outputs
+anchor -t feature/intensity -pg 0:-2 -oe featuresAggregated,featuresGroup,featuresAggregatedGroup	
+```
+
+This has four impacts:
+
+- A `group` column is added to `features.csv`
+- Creates `featuresAggregated.csv` with group feature statistics (if the `featuresAggregated` output is enabled).
+- Creates `featuresGroup.csv`*per group* with feature values (if the `featuresGroup` output is enabled).
+- Creates `featuresAggregatedGroup.xml` *per group* with group statistics (if `featuresAggregatedGroup` is enabled).
+
+
+Here follows an *example `featuresAggregated.csv`* (with `-t feature/intensity`) from sample of the [fruits dataset](/user_guide_examples_montage.html#example---fruits):
+
+<img alt="screenshot of example featuresAggregated.csv" src="/images/examples/features/csv_grouped.jpg" class="screenshotExample"/>
+
+
 ## Next steps
 
 - The CSV files can be visualized / processed in *Excel*, *Python* ([pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html)), [R](https://stat.ethz.ch/R-manual/R-devel/library/utils/html/read.table.html), [Spotfire](https://www.tibco.com/products/tibco-spotfire), [Ron's Editor](https://www.ronsplace.eu/products/ronseditor), and similar.

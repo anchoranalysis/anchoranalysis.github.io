@@ -63,7 +63,7 @@ This pattern will determine the identifiers and labels for each image.
 
 As that's too many images to include in a single montage, let's change into a subdirectory containing 490 inputs. Then create montage:
 
-```
+```bash
 cd Pineapple
 anchor -t montage -of jpg
 ```
@@ -76,7 +76,7 @@ We output as a JPEG (instead of the PNG default) using the `-of` [command-line-o
 
 To randomize the image order, we add the `-is` [command-line-option](/user_guide_command_line.html#input-options).
 
-```
+```bash
 anchor -is -t montage -of jpg
 ```
 
@@ -88,7 +88,7 @@ To take a random sample, we additionally add the `-ir` [command-line-option](/us
 
 Let's randomly sample 120 images from the entire dataset (not <i>just</i> pineapples!) for the montage.
 
-```
+```bash
 cd ..
 anchor -ir 120 -t montage -of jpg
 ```
@@ -115,7 +115,7 @@ Labels are present in the former, and omitted in the latter.
 
 To produce an unlabelled version only, use the `-oe` and `-od` [command-line-option](/user_guide_command_line.html#output-options):
 
-```
+```bash
 anchor -ir 120 -t montage -of jpg -oe unlabelled -od labelled
 ```
 
@@ -135,7 +135,7 @@ The user may specify a custom size with the `-ps` [command-line-option](/user_gu
 
 Let's create a much larger sample of very small images (scaled to `30%` of their original size).
 
-```
+```bash
 anchor -ir 1000 -t montage -of jpg -oe unlabelled -od labelled -ps 0.3
 ```
 
@@ -156,7 +156,7 @@ The images come from the [UCF101 video classification dataset](https://www.crcv.
 
 Let's make a montage, where the number of images per row is allowed vary, to try and keep the height of each row approximately uniform. This occurs via the `montage` (i.e. `montage/balance`) predefined task.
 
-```
+```bash
 anchor -il 20 -t montage -of jpg
 ```
 
@@ -171,7 +171,7 @@ The black background is part of the images, and was not introduced by the algori
 
 Let's now try a tabular structure, that inists on an identical number of images per row (apart from the last row).
 
-```
+```bash
 anchor -il 20 -t montage/table -of jpg
 ```
 
@@ -182,7 +182,7 @@ anchor -il 20 -t montage/table -of jpg
 
 Let's take a random sample of `0.2%` of the entire dataset, and to have `1800 pixels` width.
 
-```
+```bash
 anchor -ir 0.002 -t montage -of jpg -ps 1800x
 ```
 

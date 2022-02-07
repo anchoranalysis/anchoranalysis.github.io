@@ -18,7 +18,7 @@ It finds the <b>maximum</b> across the corresponding voxels in many images / sli
 
 ### Across constant size images
 
-```none
+```bash
 anchor -t project/mean
 ```
 
@@ -27,7 +27,7 @@ anchor -t project/mean
 The following is similar to previous, but first resizes images to a particular size (*1024x768* by default), and flattens any 3D
 image. This allows the operation to work with images of different sizes.
 
-```none
+```bash
 anchor -t project/meanResize
 ```
 
@@ -51,7 +51,7 @@ This is similar to the previous projection except it finds the <b>mean</b> (aver
 
 It can be useful for <a href="https://en.wikipedia.org/wiki/Foreground_detection">background subtraction</a>, or investigating the consistency of images.
 
-```none
+```bash
 anchor -t project/mean
 anchor -t project/meanResize
 ```
@@ -62,7 +62,7 @@ anchor -t project/meanResize
 
 And similarly, but to find the <b>minimum</b> across the corresponding voxels in many images.
 
-```none
+```bash
 anchor -t project/min
 anchor -t project/minResize
 ```
@@ -76,7 +76,7 @@ And to find the <b>standard-deviation</b> across the corresponding voxels in man
 
 This can be useful for identifying the pixels which change little over the course of a time-series.
 
-```none
+```bash
 anchor -t project/standardDeviation
 anchor -t project/standardDeviationResize
 ```
@@ -86,9 +86,26 @@ anchor -t project/standardDeviationResize
 
 *The original tennis time-series images come from the [UCF101 video classification dataset](https://www.crcv.ucf.edu/data/UCF101.php), downloaded from [Kaggle](https://www.kaggle.com/ashuguptahere/video-classification-ucf101).*
 
+## Grouping
+
+The images above all performed the projection on every input image. To instead, partition the inputs into groups, and perform a separate projection for each group use the [`-pg` command-line option](/user_guide_command_line.html#grouping):
+
+```bash
+anchor -t project/meanResize -pg 0	# to partition by the first identifier element (directory).
+anchor -t project/min -pg 0:-2		# to partition by all elements, except the last.
+anchor -t project/min -pg -1		# to partition by the last element.
+```
+
+Examples ([montaged](/user_guide_examples_montage.html) together) follow of `project/mean` and `project/standardDeviation`, as  applied on groups in the [fruits dataset]:
+
+<img alt="mean-intensity-projection of groups of fruits" src="/images/examples/intensityProjections/fruit_grouped_mean.jpg"/>
+
+<img alt="standard-deviation-intensity-projection of groups of fruits" src="/images/examples/intensityProjections/fruit_grouped_standardDeviation.jpg"/>
+
+
 ## Next steps
 
-- Use a projection to inform further analysis of time-series images / video, e.g
+- Use a projection to inform further analysis of time-series images / video, e.g:
 	- to [background subtract](https://docs.opencv.org/4.x/d1/dc5/tutorial_background_subtraction.html) the mean-intensity.
 	- to consider only regions with significant standard-deviation.
 

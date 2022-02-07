@@ -60,7 +60,7 @@ e.g. `input_directory/foo/file12.png` produces `output_directory/foo/file12.ext`
 
 The following example command converts input files from one directory to another, preserving the file-naming and hierarchy.
 
-```none
+```bash
 anchor -i c:\foo\source\ -ip -t convert -o c:\bar\destination\ -oo
 ```
 
@@ -112,7 +112,7 @@ The [`-ic` command-line option](/user_guide_command_line.html#input-options) ach
 
 e.g. `input_directory/foo/file12.txt` (not an input image file) is copied to `output_directory/foo/file12.txt`
 
-```none
+```bash
 anchor -i c:\foo\source\ -ic -t convert -o c:\bar\destination\ -oo
 ```
 
@@ -169,7 +169,7 @@ The `-oo` option is always accompanied by an `-o` to specify directly the direct
 
 e.g. the following creates the `C:\Users\owen\Desktop\desired_output_directory\` directory, and outputs directly into it.
 
-```none
+```bash
 anchor -t convert -of png -o C:\Users\owen\Desktop\desired_output_directory\ -oo
 ```
 
