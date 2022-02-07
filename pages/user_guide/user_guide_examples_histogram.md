@@ -103,8 +103,9 @@ The tasks above created a histogram for each image, and a summation of all image
 Instead of *all* images, separate summations can be produced for each group of inputs. Groups are derived from the input identifiers using the [`-pg` command-line option](/user_guide_command_line.html#grouping):
 
 ```bash
-anchor -t histogram -pg 0		# to group by the first identifier element (directory).
-anchor -t histogram -pg 0:-2		# to group by all elements, except the last.
+anchor -t histogram -pg		# to group by the first identifier element (directory).
+anchor -t histogram -pg 0	# identical to above
+anchor -t histogram -pg 0:-2	# to group by all elements, except the last.
 ```
 
 

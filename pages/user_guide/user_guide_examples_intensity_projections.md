@@ -91,12 +91,13 @@ anchor -t project/standardDeviationResize
 The images above all performed the projection on every input image. To instead, partition the inputs into groups, and perform a separate projection for each group use the [`-pg` command-line option](/user_guide_command_line.html#grouping):
 
 ```bash
-anchor -t project/meanResize -pg 0	# to partition by the first identifier element (directory).
+anchor -t project/meanResize -pg	# to partition by the first identifier element (directory).
+anchor -t project/meanResize -pg 0	# identical to above
 anchor -t project/min -pg 0:-2		# to partition by all elements, except the last.
 anchor -t project/min -pg -1		# to partition by the last element.
 ```
 
-Examples ([montaged](/user_guide_examples_montage.html) together) follow of `project/mean` and `project/standardDeviation`, as  applied on groups in the [fruits dataset]:
+Examples ([montaged](/user_guide_examples_montage.html) together) follow of `project/mean` and `project/standardDeviation`, as  applied on groups in the [fruits dataset](/user_guide_examples_montage.html#example---fruits):
 
 <img alt="mean-intensity-projection of groups of fruits" src="/images/examples/intensityProjections/fruit_grouped_mean.jpg"/>
 

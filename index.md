@@ -62,6 +62,7 @@ By default, it will search recursively for all images in this directory (with [s
 | `anchor -t feature/metadata` | [creates a CSV](/user_guide_examples_extracting_image_features.html) with images as rows, and **image metadata** as columns. |
 | `anchor -t feature/intensity` | [creates a CSV](/user_guide_examples_extracting_image_features.html) with images as rows, and **intensity statistics** as columns. |
 | `anchor -t feature/hog` | [creates a CSV](/user_guide_examples_extracting_image_features.html) with images as rows, and a [HOG descriptor](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) as columns. |
+| `anchor -t feature/hog -pg -oe featuresAggregated` | like above, but adds [grouping](/user_guide_examples_extracting_image_features.html#grouping) with an aggregated CSV file.  |
 |||
 | `anchor -t segment/text` | finds and segments regions of texts in images |
 | `anchor -t segment/coco` | finds and segments common categories of objects in images. |
@@ -91,11 +92,14 @@ By default, it will search recursively for all images in this directory (with [s
 | `anchor -t montage/table` | creates a montage with a [table structure](/user_guide_examples_montage.html#table-structure). |
 | `anchor -t montage/slices` | creates a montage of the z-slices of a 3D image. |
 |||
-| `anchor -t project/mean` | projects the [mean-intensity](/user_guide_examples_intensity_projections.html#mean-intensity-projection) of all images (which must be identically sized!) |
+| `anchor -t project/mean` | projects the [mean-intensity](/user_guide_examples_intensity_projections.html#mean-intensity-projection) of all images (which *must* be identically sized!) |
 | `anchor -t project/meanResize` | like above, but first resizes all images to a common size, and then calculates. |
-| `anchor -t project/max` | projects the [maximum-intensity](/user_guide_examples_intensity_projections.html#maximum-intensity-projection) of all images (which must be identically sized!) |
-| `anchor -t project/min` | projects the [minimum-intensity](/user_guide_examples_intensity_projections.html#minimum-intensity-projection) of all images (which must be identically sized!) |
-| `anchor -t project/standardDeviation` | projects the [standard-deviation](/user_guide_examples_intensity_projections.html#standard-deviation-intensity-projection) of all images (which must be identically sized!) |
+| `anchor -t project/meanResize -pg 0` | like above, but [groups](/user_guide_examples_intensity_projections.html#grouping) by the *first* element in the identifier. |
+| `anchor -t project/meanResize -pg 0:1` | like above, but [groups](/user_guide_examples_intensity_projections.html#grouping) by the *first two* elements in the identifier. |
+| `anchor -t project/meanResize -pg -1` | like above, but [groups](/user_guide_examples_intensity_projections.html#grouping) by the *last* element in the identifier. |
+| `anchor -t project/max` | projects the [maximum-intensity](/user_guide_examples_intensity_projections.html#maximum-intensity-projection) of all images (which *must* be identically sized!) |
+| `anchor -t project/min` | projects the [minimum-intensity](/user_guide_examples_intensity_projections.html#minimum-intensity-projection) of all images (which *must* be identically sized!) |
+| `anchor -t project/standardDeviation` | projects the [standard-deviation](/user_guide_examples_intensity_projections.html#standard-deviation-intensity-projection) of all images (which *must* be identically sized!) |
 |||
 | `anchor -t copy -ir 20` | [randomly samples](/user_guide_examples_anonymizing_sampling.html#a-random-subset) 20 inputs. |
 | `anchor -t copy -ir 0.3` | [randomly samples](/user_guide_examples_anonymizing_sampling.html#a-random-subset) 30% of all inputs. |

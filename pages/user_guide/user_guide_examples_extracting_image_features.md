@@ -77,7 +77,8 @@ Here follows an *example `features.csv`* (with `-t feature/intensity`) from the 
 Features can also be assigned a group via the [`-pg` command-line option](/user_guide_command_line.html#grouping):
 
 ```bash
-anchor -t feature/hog -pg 0		# to group by the first identifier element (directory)
+anchor -t feature/hog -pg		# to group by the first identifier element (directory)
+anchor -t feature/hog -pg 0		# identical to above
 anchor -t feature/intensity -pg 0:-2	# to group by all elements, except the last
 
 # like above, but enables other relevant outputs
