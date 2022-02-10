@@ -15,7 +15,7 @@ A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository 
 
 {% include tip.html content="It **should** include: algorithms, beans, data-classes and any other implementations of abstract classes in the [anchor repository](/developer_guide_repositories_anchor.html), if they **must** be licensed under the [GPL license](https://opensource.org/licenses/gpl-license)." %}
 
-{% include warning.html content="It should **not** include: code that can be licensed more permissively under the [MIT license](https://opensource.org/licenses/MIT), anything GUI-related, pipeline BeanXML, entry-point applications." %}
+{% include warning.html content="It should **not** include: code that can be licensed more permissively under the [MIT license](https://opensource.org/licenses/MIT), pipeline BeanXML, entry-point applications." %}
 
 ### Supporting libraries and tooling
 

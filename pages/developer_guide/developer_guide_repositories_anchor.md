@@ -16,7 +16,7 @@ used by Anchor.
 
 {% include tip.html content="It **should** include: frequently used utility classes, and key abstract base classes for plugins." %}
 
-{% include warning.html content="It should **not** include: plugins, anything GUI-related, pipeline BeanXML, entry-point applications." %}
+{% include warning.html content="It should **not** include: plugins, pipeline BeanXML, entry-point applications." %}
 
 ### Supporting libraries and tooling
 

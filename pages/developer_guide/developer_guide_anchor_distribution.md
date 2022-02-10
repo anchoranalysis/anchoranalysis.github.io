@@ -22,8 +22,8 @@ An *Anchor distribution* is a folder which contains all the jars and configurati
 
 ## Launcher applications
 
-Launcher applications (`anchor`, `anchor.exe`, `anchorGUI`, `anchorGUI.exe` etc.) run the relevant jar with a specific memory profile, also ensuring `lib/` and `plugins/`are added to the classpath.
+Launcher applications (`anchor`, `anchor.exe`, etc.) run the relevant jar with a specific memory profile, also ensuring `lib/` and `plugins/`are added to the classpath.
 
-The UNIX launcher applications (`anchor` and `anchorGUI`) are BASH scripts that can be easily edited.
+The UNIX launcher application (`anchor` ) is a BASH script that can be easily edited.
 
-The Windows launcher applications (`anchor.exe` and `anchorGUI.exe`) use [Launch4J](http://launch4j.sourceforge.net/) to launch Java directly from windows. These are created during the Maven build process.
+The Windows launcher application (`anchor.exe`) uses [Launch4J](http://launch4j.sourceforge.net/) to launch Java directly from windows. These are created during the Maven build process.
