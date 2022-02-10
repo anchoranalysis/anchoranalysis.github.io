@@ -43,6 +43,12 @@ Images containing the following are not yet supported:
 A flexible method of reading and writing different file-formats is provided through customizable
 classes for reading and writing images, inheriting from [StackReader](/javadoc/org/anchoranalysis/image/io/bean/stack/StackReader.html) and [StackWriter](/javadoc/org/anchoranalysis/image/io/bean/stack/writer/StackWriter.html) respectively.
 
+### Specifying image file extensions
+
+By default anchor, searches for image-files by comparing file-extensions against those in [defaultInputExtensions.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultInputExtensions.xml):
+
+* `$ANCHOR_HOME/config/defaultInputExtensions.xml` in the main Anchor distribution.
+
 ### Specifying default readers and writers
 
 The default readers and writers are set in [defaultBeans.xml](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/defaultBeans.xml) configuration-files, found at:
