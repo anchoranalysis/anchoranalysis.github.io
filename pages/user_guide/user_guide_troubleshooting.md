@@ -25,7 +25,7 @@ It is then recommended **to reduce the number of cores**, by setting an explicit
 
 e.g. to permit *no more than 4 cores in parallel:
 
-```none
+```bash
 anchor -t resize -tp 4
 ```
 

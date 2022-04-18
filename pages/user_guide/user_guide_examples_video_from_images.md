@@ -31,30 +31,30 @@ The [`-on` command-line option](/user_guide_examples_converting_manipulating_ima
 
 To write images in a **automatically-created subdirectory of a parent**:
 
-```none
+```bash
 anchor -i path_to_input_directory/ -t copy -o path_to_parent_output_directory/ -on
 ```
 
 To write images in a **newly-created specific output directory**:
 
-```none
-anchor -i path_to_input_directory/ -t copy -o path_to_specific_output_directory/ -on -oo
+```bash
+anchor -i path_to_input_directory/ -t copy -oo path_to_specific_output_directory/ -on
 ```
 
 ### Randomizing the image order
 
 To add *randomized* order to images, add the [`-is` command-line option](/user_guide_command_line.html#input-options) to **shuffle the inputs**.
 
-```none
-anchor -i path_to_input_directory/ -is -t copy -o path_to_specific_output_directory/ -on -oo
+```bash
+anchor -i path_to_input_directory/ -is -t copy -oo path_to_specific_output_directory/ -on
 ```
 
 ### Images with different sizes
 
 With images of varying sizes, use the `resize` [predefined task](/user_guide_predefined_tasks.html) instead of `copy`, [setting the desired size with the -ps option](/user_guide_examples_converting_manipulating_images.html#resizing-images).
 
-```none
-anchor -i path_to_input_directory/ -t resize -ps 800x600 -o path_to_specific_output_directory/ -on -oo
+```bash
+anchor -i path_to_input_directory/ -t resize -ps 800x600 -oo path_to_specific_output_directory/ -on
 ```
 
 ## Creating the video with ffmpeg
@@ -76,7 +76,7 @@ Open a shell in the images directory. See [how to run a predefined task](/user_g
 
 Try `ffmpeg` with a command similar to the following:
 
-```none
+```bash
 ffmpeg -framerate 2 -i img%03d.png -c:v libx264 -vf fps=2 -pix_fmt yuv420p out.mp4
 ```
 

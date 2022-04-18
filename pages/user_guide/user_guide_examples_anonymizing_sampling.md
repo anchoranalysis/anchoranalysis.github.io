@@ -29,7 +29,7 @@ Use the `-il` [command option](/user_guide_command_line.html#input-options) to r
 
 e.g. to form a montage of the initial 7 files (maximally).
 
-```none
+```bash
 anchor -il 7 -t montage
 ```
 
@@ -39,23 +39,25 @@ The `-il` [command option](/user_guide_command_line.html#input-options) also acc
 
 e.g. to convert the initial `20%` of all inputs (maximally).
 
-```none
+```bash
 anchor -il 0.2 -t convert
 ```
 
 
 ### A random subset
 
-Add the `-is` [command option](/user_guide_command_line.html#input-options) to shuffle the files, before the limit is applied.
+Use the `-ir` [command option](/user_guide_command_line.html#input-options) to take a random-sample, taking a similar argument as `-il`.
 
 e.g. to copy a random subset:
 
-```none
-anchor -is -il 20 -t copy		# a random subset of 20 files (maximally)
-anchor -is -il 0.5 -t copy		# a random subset of 50% of the total number of inputs
+```bash
+anchor -ir 20 -t copy		# a random subset of 20 files (maximally)
+anchor -ir 0.5 -t copy		# a random subset of 50% of the total number of inputs
 ```
 
-{% include tip.html content="The `-il` and `-is` options can be applied to the inputs for any [predefined task](/user_guide_predefined_tasks.html)." %}
+Internally, `-ir <arg>` is equivalent to `-il <arg> -is`.
+
+{% include tip.html content="The `-il` and `-is` and `-ir` options can be applied to the inputs for any [predefined task](/user_guide_predefined_tasks.html)." %}
 
 ## Anonymizing
 
@@ -63,8 +65,8 @@ anchor -is -il 0.5 -t copy		# a random subset of 50% of the total number of inpu
 
 The easiest anonymizaton occurs by combining the `-il` and `-is` [command input options](/user_guide_command_line.html#input-options) (see above) with the `-on` [command output options](/user_guide_command_line.html#output-options), which writes files as an incrementing numeric series.
 
-```none
-anchor -is -il 20 -on -t convert
+```bash
+anchor -ir 20 -on -t convert
 ```
 
 {% include tip.html content="This approach is valid for any [predefined task](/user_guide_predefined_tasks.html), whether copying, converting, resizing etc." %}
@@ -73,11 +75,9 @@ anchor -is -il 20 -on -t convert
 
 Alternatively, the `anonymize` [predefined-task](/user_guide_predefined_tasks.html#file-copying--conversion) is similar to the `copy` task, but will automatically anonymize the names.
 
-For fully random selection, the `-is` option must be included when the `-il` option is also present. Otherwise it is unneeded, as the inputs will always be randomized internally within the task.
-
-```none
+```bash
 anchor -t anonymize			# anonymize all the inputs
-anchor -is -il 0.3 -t anonymize		# anonymize 30% of the inputs
+anchor -ir 0.3 -t anonymize		# anonymize 30% of the inputs
 ```
 
 {% include warning.html content="This approach is valid **only** for copying files" %}

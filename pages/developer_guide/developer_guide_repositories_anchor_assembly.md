@@ -17,7 +17,7 @@ A **Java** ([Maven](/developer_guide_environment_maven.html)) source repository 
 
 ### What belongs in the repository?
 
-{% include tip.html content="It **should** include: command-line programs for launching and configuring anchor and the GUI application (entry-point applications), Maven directives to build an [Anchor Distribution](/developer_guide_anchor_distribution.html), any default configuration and tasks." %}
+{% include tip.html content="It **should** include: command-line programs for launching and configuring anchor launcher application (entry-point application), Maven directives to build an [Anchor Distribution](/developer_guide_anchor_distribution.html), any default configuration and tasks." %}
 
 {% include warning.html content="It should **not** include: data objects, algorithms related to image processing." %}
 
@@ -45,7 +45,6 @@ Number of classes/code is as per *SonarQube, June 24th, 2020*. Lines-of-code exc
 | Resource Location | Description  |
 |------------|------------------|-------------:|-------------:|
 | [config](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config) | What becomes the `config/` directory in a distribution |
-| [configGUI](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/configGUI) | What becomes the `configGUI/` directory in a distribution |
 | [models](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/config) | What becomes the `models/` directory in a distribution |
 | [helperapps](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/helperapps) | Files placed into the `bin/` directory to help start anchor correctly-configured |
 | [topleveldocs](https://github.com/anchoranalysis/anchor-assembly/tree/master/anchor-assembly/src/main/resources/topleveldocs) | Documentation placed in the root directory (i.e. `/`) of a distribution |

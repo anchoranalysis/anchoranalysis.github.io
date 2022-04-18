@@ -13,7 +13,7 @@ To resize an image, use the predefined task [resize](https://github.com/anchoran
 
 **By default, images are resized to 1280x768** (*width* x *height*). 
 
-```none
+```bash
 anchor -t resize
 ```
 
@@ -28,13 +28,13 @@ tips on how to change the output image format or naming." %}
 
 To resize to ***half* the existing width and height**:
 
-```none
+```bash
 anchor -t resize -ps 0.5
 ```
 
 To resize to ***double* the existing width and height**:
 
-```none
+```bash
 anchor -t resize -ps 2
 ```
 
@@ -42,7 +42,7 @@ anchor -t resize -ps 2
 
 To resize to **specifically *1024x768*** (*width* x *height*), breaking aspect ratio if necessary.
 
-```none
+```bash
 anchor -t resize -ps 1024x768
 ```
 
@@ -50,19 +50,19 @@ anchor -t resize -ps 1024x768
 
 To resize to ***800* pixels width, preserving existing aspect ratio**.
 
-```none
+```bash
 anchor -t resize -ps 800x
 ```
 
 To resize to ***600* pixels height, preserving existing aspect ratio**.
 
-```none
+```bash
 anchor -t resize -ps x600
 ```
 
 To resize to **the maximal-size possible, preserving existing aspect ratio, that fits inside 1000x900**.
 
-```none
+```bash
 anchor -t resize -ps 1000x900+
 ```
 
@@ -70,8 +70,8 @@ anchor -t resize -ps 1000x900+
 
 The following command ***immutably* resizes images from a source directory into a destination directory**, preserving filenames, directory-structure and any adjacent non-image files. 
 
-```none
-anchor -i c:\foo\source\ -ir -ic -t resize -ps 250x350 -o c:\bar\destination\ -oo
+```bash
+anchor -i c:\foo\source\ -ip -ic -t resize -ps 250x350 -oo c:\bar\destination\
 ```
 
 {% include tip.html content="See [command line](http://localhost:4000/user_guide_command_line.html) for a summary of each command-line option, and [more detailed explanation](http://localhost:4000/user_guide_examples_changing_output_options.html)." %}

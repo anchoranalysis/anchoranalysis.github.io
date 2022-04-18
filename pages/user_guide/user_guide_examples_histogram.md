@@ -92,9 +92,21 @@ The output directory was calculated relative to the current working directory wi
 Many files have been created in the output directory:
 
 - A **histogram CSV** for each channel of each image (`13_red.csv`, `13_green.csv`, `13_blue.csv` etc.).
-- A subdirectory `sum/` with aggregated histograms across all images.
+- A subdirectory `sum/` with aggregated histograms across **all** images.
 - `experimentLog.txt` records the console output.
 - **Only if an error occurs** (which it didn't!) then a job-specific log for `13_job_log.txt` etc.
+
+## Grouping
+
+The tasks above created a histogram for each image, and a summation of all images (in the `sum/` subdirectory).
+
+Instead of *all* images, separate summations can be produced for each group of inputs. Groups are derived from the input identifiers using the [`-pg` command-line option](/user_guide_command_line.html#grouping):
+
+```bash
+anchor -t histogram -pg		# to group by the first identifier element (directory).
+anchor -t histogram -pg 0	# identical to above
+anchor -t histogram -pg 0:-2	# to group by all elements, except the last.
+```
 
 
 ## Next steps

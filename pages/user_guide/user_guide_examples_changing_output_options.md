@@ -46,13 +46,13 @@ Outputs would be formed for each of the three cases above, as follows:
 
 As described above, the default behaviour guesses a shorted identifier from the file-path (using the varying elements).
 
-The [`-ir` command-line option](/user_guide_command_line.html#input-options) disables this shortening behaviour. It instead **preserves the entire input file-name**.
+The [`-ip` command-line option](/user_guide_command_line.html#input-options) disables this shortening behaviour. It instead **preserves the entire input file-name**.
 
  e.g. the previous example would produce [`selfie_january.jpg`, `selfie_february.jpg`, `selfie_december.jpg`] 
 
 ### Preserving file-paths exactly
 
-If only a single output file produced (see [Case 1](/user_guide_examples_changing_output_options.html#background)), the `-ir` option gives it an identical name to the corresponding input-file.
+If only a single output file produced (see [Case 1](/user_guide_examples_changing_output_options.html#background)), the `-ip` option gives it an identical name to the corresponding input-file.
 
 In fact, the behaviour is *more general*: the entire **relative file-path** (relative to the input-directory) is considered, so that any subdirectory hierarchy is perfectly preserved. This is ideal for repeated successive immutable transformations.
 
@@ -60,8 +60,8 @@ e.g. `input_directory/foo/file12.png` produces `output_directory/foo/file12.ext`
 
 The following example command converts input files from one directory to another, preserving the file-naming and hierarchy.
 
-```none
-anchor -i c:\foo\source\ -ir -t convert -o c:\bar\destination\ -oo
+```bash
+anchor -i c:\foo\source\ -ip -t convert -oo c:\bar\destination\
 ```
 
 ## Enabling and disabling outputs
@@ -112,8 +112,8 @@ The [`-ic` command-line option](/user_guide_command_line.html#input-options) ach
 
 e.g. `input_directory/foo/file12.txt` (not an input image file) is copied to `output_directory/foo/file12.txt`
 
-```none
-anchor -i c:\foo\source\ -ic -t convert -o c:\bar\destination\ -oo
+```bash
+anchor -i c:\foo\source\ -ic -t convert -oo c:\bar\destination\
 ```
 
 ## Specifying an alternative image format
@@ -163,14 +163,12 @@ By default, output files are **not** placed directly in the output-directory spe
 
 However, the behavior isn't always desired, and the [`-oo` command-line option](/user_guide_command_line.html#output-options) will disable it.
 
-The `-oo` option is always accompanied by an `-o` to specify directly the directory.
-
 {% include warning.html content="As a safety protection, **a directory must not already exist at this path**, Anchor will exit with an error. The existing directory must be deleted or moved, before re-executing the command." %}
 
 e.g. the following creates the `C:\Users\owen\Desktop\desired_output_directory\` directory, and outputs directly into it.
 
-```none
-anchor -t convert -of png -o C:\Users\owen\Desktop\desired_output_directory\ -oo
+```bash
+anchor -t convert -of png -oo C:\Users\owen\Desktop\desired_output_directory\
 ```
 
 

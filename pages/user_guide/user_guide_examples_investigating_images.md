@@ -97,7 +97,7 @@ When combined, the leading period must only exist at the beginning, but it must 
 
 e.g. all of the following are valid (and equivalent!):
 
-```none
+```bash
 anchor -i .jpg,png,bmp			# search for either of the three extensions
 anchor -i .jpg,png,.bmp
 anchor -i ".jpg, png, .bmp"
@@ -111,7 +111,7 @@ Including wildcards `*` or `**` with the `-i` command-line option, adds a filter
 Where possible, Anchor treats a single wildcard `*` as a **non-recursive** filter, and a double wildcard `**`
 as a **recursive** e.g.
 
-```none
+```bash
 -i foo*bar		# only files in the directory root
 -i foo**bar		# also files in subdirectories
 -i "foo**bar"		# also files in subdirectories
@@ -139,6 +139,10 @@ The predefined task [feature/metadata](https://github.com/anchoranalysis/anchor-
 
 {% include tip.html content="It also provides physical measurements in microns, if included in image metadata." %}
 
-Example usage for `feature/metadata` can be found in [Extracting image features](http://localhost:4000/user_guide_examples_extracting_image_features.html#example-extracting-metadata-features).
+Example usage for `feature/metadata` can be found in [extracting image features](/user_guide_examples_extracting_image_features.html#example-extracting-metadata-features).
+
+Here follows an *example `features.csv`* from a random-sample of the [fruits dataset](/user_guide_examples_montage.html#example---fruits):
+
+<img alt="screenshot of example features.csv" src="/images/examples/investigatingImages/csv_metadata.jpg" class="screenshotExample"/>
 
 {% include links.html %}

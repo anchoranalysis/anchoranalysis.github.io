@@ -29,6 +29,8 @@ Java code to match the [Google Java Style Guide](https://google.github.io/styleg
 
 * [Bioformats](https://www.openmicroscopy.org/bio-formats/) for image I/O.
 
+* [metadata-extractor](https://github.com/drewnoakes/metadata-extractor) for image metadata I/O.
+
 * [ImageJ](https://imagej.net/) for image processing functions.
 
 * [VavR](https://www.vavr.io/) for additional functional programming constructs.

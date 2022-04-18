@@ -11,11 +11,11 @@ disable_editme: true
 
 Anchor can be downloaded as a distribution (*zip* or *tar.gz*). This must be unpacked into a directory, followed by setting some environment variables.
 
-Please download the latest version (`anchor-0.9-prerelease`) from GitHub, as matches your operating system:
+Please download the latest version (`anchor-0.10-prerelease`) from GitHub, as matches your operating system:
 
-- [Windows](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.9-prerelease/anchor-0.9-prerelease-windows.zip)
-- [MacOS](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.9-prerelease/anchor-0.9-prerelease-macos.tar.gz)
-- [Linux](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.9-prerelease/anchor-0.9-prerelease-linux.tar.gz)
+- [Windows](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.10-prerelease/anchor-0.10-prerelease-windows.zip)
+- [MacOS](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.10-prerelease/anchor-0.10-prerelease-macos.tar.gz)
+- [Linux](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.10-prerelease/anchor-0.10-prerelease-linux.tar.gz)
 
 {% include tip.html content="After downloading, please follow the [Installation Guide](installation.html)." %}
 
