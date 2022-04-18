@@ -38,7 +38,7 @@ anchor -i path_to_input_directory/ -t copy -o path_to_parent_output_directory/ -
 To write images in a **newly-created specific output directory**:
 
 ```bash
-anchor -i path_to_input_directory/ -t copy -o path_to_specific_output_directory/ -on -oo
+anchor -i path_to_input_directory/ -t copy -oo path_to_specific_output_directory/ -on
 ```
 
 ### Randomizing the image order
@@ -46,7 +46,7 @@ anchor -i path_to_input_directory/ -t copy -o path_to_specific_output_directory/
 To add *randomized* order to images, add the [`-is` command-line option](/user_guide_command_line.html#input-options) to **shuffle the inputs**.
 
 ```bash
-anchor -i path_to_input_directory/ -is -t copy -o path_to_specific_output_directory/ -on -oo
+anchor -i path_to_input_directory/ -is -t copy -oo path_to_specific_output_directory/ -on
 ```
 
 ### Images with different sizes
@@ -54,7 +54,7 @@ anchor -i path_to_input_directory/ -is -t copy -o path_to_specific_output_direct
 With images of varying sizes, use the `resize` [predefined task](/user_guide_predefined_tasks.html) instead of `copy`, [setting the desired size with the -ps option](/user_guide_examples_converting_manipulating_images.html#resizing-images).
 
 ```bash
-anchor -i path_to_input_directory/ -t resize -ps 800x600 -o path_to_specific_output_directory/ -on -oo
+anchor -i path_to_input_directory/ -t resize -ps 800x600 -oo path_to_specific_output_directory/ -on
 ```
 
 ## Creating the video with ffmpeg

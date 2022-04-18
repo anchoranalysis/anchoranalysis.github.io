@@ -71,7 +71,7 @@ anchor -t resize -ps 1000x900+
 The following command ***immutably* resizes images from a source directory into a destination directory**, preserving filenames, directory-structure and any adjacent non-image files. 
 
 ```bash
-anchor -i c:\foo\source\ -ip -ic -t resize -ps 250x350 -o c:\bar\destination\ -oo
+anchor -i c:\foo\source\ -ip -ic -t resize -ps 250x350 -oo c:\bar\destination\
 ```
 
 {% include tip.html content="See [command line](http://localhost:4000/user_guide_command_line.html) for a summary of each command-line option, and [more detailed explanation](http://localhost:4000/user_guide_examples_changing_output_options.html)." %}

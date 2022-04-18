@@ -67,7 +67,7 @@ Options useful for influencing **outputting**:
 | -oe *outputName(s)* | [Enables specific](/user_guide_examples_changing_output_options.html#enabling-and-disabling-outputs) output(s). Multiple outputs are comma-separated. |
 | -of *formatExtension* | Suggests an output [image file format](/user_guide_examples_changing_output_options.html#specifying-an-alternative-image-format): e.g `-of jpg` or `-of ome.xml` |
 | -on | Outputs with [an incrementing number](/user_guide_examples_changing_output_options.html#writing-outputs-as-a-sequence) instead of the input name.<br>*(useful for creating sequences of images)* |
-| -oo | [Omits experiment name and version](/user_guide_examples_changing_output_options.html#outputting-to-a-specific-output-directory-avoiding-creating-a-subdirectory) when outputting. |
+| -oo *arg* | Like `-o arg` but [omits the subdirectory](/user_guide_examples_changing_output_options.html#outputting-to-a-specific-output-directory-avoiding-creating-a-subdirectory) with experiment name / version. |
 | -os | [Replaces directory separators](/user_guide_examples_changing_output_options.html#suppressing-directory-structure) in the output file-path with an underscore. |
 
 {% include warning.html content="Non-standard image types (3D, neither monochrome nor RGB etc.) are unsupported by most file formats, so a suggestion with `-of` will often be ignored, in favour of a supported format." %}
@@ -80,7 +80,7 @@ Options useful for **tasks**:
 |----------|------------|
 | -t *[arg]* | [Changes the task](/user_guide.html#task), where *arg* = <span class="optionArg">predefined-task-name</span> or <span class="optionArg">path to BeanXML</span> |
 | -tp *number* | Suggests a [maximum number of CPU processors](/user_guide_troubleshooting.html#limiting-parallel-cpu-cores). |
-| -st | Prints the names of [predefined tasks](/user_guide_predefined_tasks.html) that can be used with `-t` |
+| -st | Prints the names of [predefined tasks](/user_guide_predefined_tasks.html) that can be used with `-t`. |
 | -pg *range* | Activates [grouping](/user_guide_command_line.html#grouping) from a subset of each input's identifier (see [below](/user_guide_command_line.html#grouping)). |
 | -ps *size* | [Suggests](/user_guide_examples_resizing_images.html) <span class="optionArg">image size</span> (e.g. `1024x768`) or a <span class="optionArg">scaling factor</span> (e.g.`0.5`)<br>- The order of dimensions is always `width`x`height`<br>- No scaling in the z-dimension is supported.<br>- Omitting a dimension resizes to the width/height and <b>preserves aspect-ratio</b> e.g. `200x` or `x50`<br>- A trailing plus character <b>preserves aspect ratio</b> maximally within dimensions e.g. `1000x500+` |
 

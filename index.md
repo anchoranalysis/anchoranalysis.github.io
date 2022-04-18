@@ -68,8 +68,8 @@ By default, it will search recursively for all images in this directory (with [s
 | `anchor -t segment/coco` | finds and segments common categories of objects in images. |
 |||
 | `anchor -t convert -ip -of png` | [converts](/user_guide_examples_converting_copying_images.html#converting-images-to-a-different-file-format) all images to *PNG* format (or pick [another extension](/user_guide_examples_changing_output_options.html#specifying-an-alternative-image-format)!) |
-| `anchor -t convert -ip -of png -ic -o -oo d:\foo` | [converts](/user_guide_examples_converting_copying_images.html#preserving-relative-file-paths-and-any-non-image-files) like above to a particular directory, and copies non-image files (e.g. metadata!) |
-| `anchor -t copy -ip -o -oo d:\foo` | [copies](/user_guide_examples_converting_copying_images.html#copying-files) all images to a particular new directory. |
+| `anchor -t convert -ip -of png -ic -oo d:\foo` | [converts](/user_guide_examples_converting_copying_images.html#preserving-relative-file-paths-and-any-non-image-files) like above to a particular directory, and copies non-image files (e.g. metadata!) |
+| `anchor -t copy -ip -oo d:\foo` | [copies](/user_guide_examples_converting_copying_images.html#copying-files) all images to a particular new directory. |
 | `anchor -t copy -is -on` | randomizes the order of images and anonymizes the filename. |
 | `anchor -t cluster/timestamp` | clusters images that are adjacent in time (from [EXIF](https://en.wikipedia.org/wiki/Exif), file attributes or naming) |
 |||

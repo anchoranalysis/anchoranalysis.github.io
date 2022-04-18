@@ -61,7 +61,7 @@ e.g. `input_directory/foo/file12.png` produces `output_directory/foo/file12.ext`
 The following example command converts input files from one directory to another, preserving the file-naming and hierarchy.
 
 ```bash
-anchor -i c:\foo\source\ -ip -t convert -o c:\bar\destination\ -oo
+anchor -i c:\foo\source\ -ip -t convert -oo c:\bar\destination\
 ```
 
 ## Enabling and disabling outputs
@@ -113,7 +113,7 @@ The [`-ic` command-line option](/user_guide_command_line.html#input-options) ach
 e.g. `input_directory/foo/file12.txt` (not an input image file) is copied to `output_directory/foo/file12.txt`
 
 ```bash
-anchor -i c:\foo\source\ -ic -t convert -o c:\bar\destination\ -oo
+anchor -i c:\foo\source\ -ic -t convert -oo c:\bar\destination\
 ```
 
 ## Specifying an alternative image format
@@ -163,14 +163,12 @@ By default, output files are **not** placed directly in the output-directory spe
 
 However, the behavior isn't always desired, and the [`-oo` command-line option](/user_guide_command_line.html#output-options) will disable it.
 
-The `-oo` option is always accompanied by an `-o` to specify directly the directory.
-
 {% include warning.html content="As a safety protection, **a directory must not already exist at this path**, Anchor will exit with an error. The existing directory must be deleted or moved, before re-executing the command." %}
 
 e.g. the following creates the `C:\Users\owen\Desktop\desired_output_directory\` directory, and outputs directly into it.
 
 ```bash
-anchor -t convert -of png -o C:\Users\owen\Desktop\desired_output_directory\ -oo
+anchor -t convert -of png -oo C:\Users\owen\Desktop\desired_output_directory\
 ```
 
 

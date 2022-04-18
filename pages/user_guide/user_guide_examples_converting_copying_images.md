@@ -36,10 +36,10 @@ This produces instead: `alps-13.png` `alps-78.png` and `alps-91.png`.
 
 Note how the output-directory becomes a newly created subdirectory `convert_20.31.08` of what is passed to the `-o` option.
 
-However, the behavior isn't always desired, and the [`-oo` command-line option](/user_guide_command_line.html#output-options) will disable it, letting the output directory be specified directly with `-o`. 
+However, the behavior isn't always desired, and the [`-oo` command-line option](/user_guide_command_line.html#output-options) will disable it, otherwise accepting an identical argument to `-o`.
 
 ```bash
-anchor -t convert -of png -o C:\Users\owen\Desktop\desired_output_directory\ -oo
+anchor -t convert -of png -oo C:\Users\owen\Desktop\desired_output_directory\
 ```
 
 This creates the `C:\Users\owen\Desktop\desired_output_directory\` directory, and outputs to it.
@@ -49,7 +49,7 @@ This creates the `C:\Users\owen\Desktop\desired_output_directory\` directory, an
 This command will convert images from a source directory to a target directory, while preserving file-names and subdirectory-structure **and** [any other non-image files](/http://localhost:4000/user_guide_examples_changing_output_options.html#additionally-copying-non-input-files) in the directory (via the [`-ic` command line option](/user_guide_command_line.html#output-options)).
 
 ```bash
-anchor -i c:\foo\source\ -ip -ic -t convert -of png -o c:\bar\destination\ -oo
+anchor -i c:\foo\source\ -ip -ic -t convert -of png -oo c:\bar\destination\
 ```
 
 ## Copying files
@@ -59,7 +59,7 @@ To copy images, use the predefined task [copy](https://github.com/anchoranalysis
 By default, it will find image files, and copy them to the output-directory, using the varying parts of the filenames.
 
 ```bash
-anchor -i c:\foo\source\ -t copy -o c:\bar\destination\ -oo
+anchor -i c:\foo\source\ -t copy -oo c:\bar\destination\
 ```
 
 ### Preserving file-names
@@ -67,7 +67,7 @@ anchor -i c:\foo\source\ -t copy -o c:\bar\destination\ -oo
 To **preserve file-names**, the [`-ip` command-line option](/user_guide_command_line.html#input-options) is added.
 
 ```bash
-anchor -i c:\foo\source\ -ip -t copy -o c:\bar\destination\ -oo
+anchor -i c:\foo\source\ -ip -t copy -oo c:\bar\destination\
 ```
 
 This also preserves subdirectory hierarchy.
@@ -77,7 +77,7 @@ This also preserves subdirectory hierarchy.
 To **preserve file-names but suppress subdirectory hierarchy**, the [`-os` command-line option](/user_guide_command_line.html#output-options) is added.
 
 ```bash
-anchor -i c:\foo\source\ -ip -t copy -o c:\bar\destination\ -oo -os
+anchor -i c:\foo\source\ -ip -t copy -oo c:\bar\destination\ -os
 ```
 
 {% include note.html content="The `copy` task executes more quickly than `convert`, copying files bytewise rather than loading as images. If the [-of command-line option](/user_guide_examples_converting_manipulating_images.htmlspecifying-an-alternative-image-format) is selected to request a different output format, then `copy` behaves instead like `convert`." %}
@@ -92,13 +92,13 @@ file extension - overriding the default behavior which only looks for images.
 e.g. to search for text files *non-recursively* and copy:
 
 ```bash
-anchor -i "c:\foo\source\*.txt" -ip -t copy -o c:\bar\destination\ -oo
+anchor -i "c:\foo\source\*.txt" -ip -t copy -oo c:\bar\destination\
 ```
 
 But to search *recursively* and copy:
 
 ```bash
-anchor -i "c:\foo\source\**.txt" -ip -t copy -o c:\bar\destination\ -oo
+anchor -i "c:\foo\source\**.txt" -ip -t copy -oo c:\bar\destination\
 ```
 
 
