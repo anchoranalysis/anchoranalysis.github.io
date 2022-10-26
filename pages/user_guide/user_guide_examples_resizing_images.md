@@ -76,4 +76,25 @@ anchor -i c:\foo\source\ -ip -ic -t resize -ps 250x350 -oo c:\bar\destination\
 
 {% include tip.html content="See [command line](http://localhost:4000/user_guide_command_line.html) for a summary of each command-line option, and [more detailed explanation](http://localhost:4000/user_guide_examples_changing_output_options.html)." %}
 
+
+## Resizing with a common-size across all images
+
+The `center` task will resize, in a similar way to above accepting an identical `-ps` argument, but ensure all outputted images have identical size.
+
+Where necessary, it will achieve this by adding padding (with black color i.e. intensity value 0) around the resized image, centering it in the larger image.
+
+```bash
+# Resizes every image to 400 pixels width, while preserving aspect ratio, and centering vertically.
+anchor -t center -ps 400x
+
+# Resizes every image to 300 pixels height, while preserving aspect ratio, and centering horizontally.
+anchor -t center -ps x300
+
+# Preserves aspect ratio, and makes sure an image is never greater than 1000x900, centering horizontally and vertically.
+anchor -t center -ps 1000x900+
+
+# Resizes every image to half its existing size, taking the maximum size in each dimension as a common size in which any smaller images are centered horizontally and vertically.
+anchor -t center -ps 0.5
+```
+
 {% include links.html %}
