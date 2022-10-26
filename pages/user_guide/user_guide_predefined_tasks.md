@@ -43,6 +43,7 @@ See some [Quick Start - Example Commands](/index.html) and the following tables 
 |-----------|------------|--------------|
 | [histogram](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/histogram.xml) | images | [extracts histograms](/user_guide_examples_histogram.html) of the intensity values an image. |
 | [resize](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/resize.xml) | images | [scales each image](/user_guide_examples_resizing_images.html) to fit inside fixed dimensions, preserving aspect ratio. Optionally accepts [-ps](/user_guide_command_line.html#task-options). |
+| [center](https://github.com/anchoranalysis/anchor-assembly/blob/master/anchor/src/main/resources/config/tasks/center.xml) | images | like `resize` but uses a common output size for all images, and centers within it. Optionally accepts [-ps](/user_guide_command_line.html#task-options). |
 
 ## Image segmentation
 

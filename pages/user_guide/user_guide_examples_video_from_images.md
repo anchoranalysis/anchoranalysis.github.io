@@ -54,7 +54,7 @@ anchor -i path_to_input_directory/ -is -t copy -oo path_to_specific_output_direc
 With images of varying sizes, use the `resize` [predefined task](/user_guide_predefined_tasks.html) instead of `copy`, [setting the desired size with the -ps option](/user_guide_examples_converting_manipulating_images.html#resizing-images).
 
 ```bash
-anchor -i path_to_input_directory/ -t resize -ps 800x600 -oo path_to_specific_output_directory/ -on
+anchor -i path_to_input_directory/ -t center -ps 800x600 -oo path_to_specific_output_directory/ -on
 ```
 
 ## Creating the video with ffmpeg
