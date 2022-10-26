@@ -77,11 +77,11 @@ By default, it will search recursively for all images in this directory (with [s
 | `anchor -t resize -ps 1024x768`| [resizes](/user_guide_examples_resizing_images.html) each image to have `1024x768` size in pixels. |
 | `anchor -t resize -ps 1024x768 -on`| [resizes](/user_guide_examples_resizing_images.html) like above, but outputs as an incrementing sequence (useful for creating [videos](/user_guide_examples_video_from_images.html)!) |
 | `anchor -t resize -ps 1024x`| [resizes](/user_guide_examples_resizing_images.html) each image to have `1024` pixels width, otherwise preserving aspect-ratio. |
-| `anchor -t center -ps 1024x`| like above, but each outputted image will have an identical common size, centering the resized image within it. |
+| `anchor -t center -ps 1024x`| like above, but each output image has a identical common size, centering within it. |
 | `anchor -t resize -ps x768`| [resizes](/user_guide_examples_resizing_images.html) each image to have `768` pixels height, otherwise preserving aspect-ratio. |
-| `anchor -t center -ps x768+`| like above, but each outputted image will have an identical common size, centering the resized image within it. |
+| `anchor -t center -ps x768+`| like above, but each output image has a identical common size, centering within it. |
 | `anchor -t resize -ps 1024x768+`| [resizes](/user_guide_examples_resizing_images.html) each image to maximally fit inside `1024x768` size, preserving aspect-ratio. |
-| `anchor -t center -ps 1024x768+`| like above, but each outputted image will have an identical common size, centering the resized image within it. |
+| `anchor -t center -ps 1024x768+`| like above, but each output image has a identical common size, centering within it. |
 |||
 | `anchor -t histogram` | [creates a histogram CSV file](/user_guide_examples_histogram.html) of the pixel values of each image, and all images summed. |
 |||
