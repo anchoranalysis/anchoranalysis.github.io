@@ -15,7 +15,7 @@ company_name: Owen Feehan
 github_editme_path: anchoranalysis/anchoranalysis.github.io/blob/master/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-google_analytics: UA-158543399-1
+google_analytics: G-18QK5209W2
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
 
 host: 127.0.0.1
