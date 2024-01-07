@@ -34,8 +34,6 @@ It quickly searches subdirectories of images on the file-system and processes!
 
 Anchor's source-code can be found on [GitHub](https://github.com/anchoranalysis). Please report any bug / feature request as an [issue](https://github.com/anchoranalysis/anchor/issues).
 
-Effort is ongoing to document and address technical debt for the first formal public release (over 120,000 lines of code!). Only a pre-release can be [downloaded](/download.html) until then.
-
 
 ## Quick Start - Example Commands
 
