@@ -13,11 +13,13 @@ Anchor is a command-line application, designed to be used with `PowerShell` / `C
 
 ## Quick Instructions
 
-[Download](download.html), unzip, and add the `bin/` directory to `$PATH` environmental variable.
+[Download](download.html), run the installer, and add the directory containing `anchor` to the `$PATH` environmental variable.
 
-{% include important.html content="Ensure you have a [JRE](https://www.java.com/download) >= 1.8 and `$JAVA_HOME` properly configured." %}
+Default installation locations are `C:\Users\SOMEUSER\AppData\Local\Anchor\` for Windows, and `/opt/anchor/` for Linux.
 
-[Detailed installation instructions](installation_detailed.html) are also available.
+{% include important.html content="The installers provide a suitable runtime environment. A separate [JRE](https://www.java.com/download) (>= v21) is needed only with the `.zip` distribution" %}
+
+{% include warning.html content="The Linux installer for .deb (e.g. `sudo dpkg -i anchor._1.0.0_amd64.deb`), may warn about *missing dependencies*. Fix with `sudo apt-get --fix-broken install`" %}
 
 ### Testing if successful
 

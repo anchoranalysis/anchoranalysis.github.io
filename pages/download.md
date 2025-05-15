@@ -13,13 +13,12 @@ Anchor can be downloaded as a distribution (*zip* or *tar.gz*). This must be unp
 
 Please download the latest version (`anchor-0.12-prerelease`) from GitHub, as matches your operating system:
 
-- [Windows](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.12-prerelease/anchor-0.12-prerelease-windows.zip)
-- [MacOS](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.12-prerelease/anchor-0.12-prerelease-macos.tar.gz)
-- [Linux](https://github.com/anchoranalysis/anchor-assembly/releases/download/0.12-prerelease/anchor-0.12-prerelease-linux.tar.gz)
+- [Windows EXE installer](https://github.com/anchoranalysis/anchor-assembly/releases/download/1.0.0/Anchor-1.0.0.exe)
+- [Linux DEB package](https://github.com/anchoranalysis/anchor-assembly/releases/download/1.0.0/anchor_1.0.0_amd64.deb) - type `sudo dpkg -i anchor._1.0.0_amd64.deb` and then `sudo apt-get --fix-broken install`
+- [MacOS](https://github.com/anchoranalysis/anchor-assembly/releases/download/1.0.0/anchor-1.0.0.pkg)
+- [OS Neutral](https://github.com/anchoranalysis/anchor-assembly/releases/download/1.0.0/anchor-1.0.0.zip) - requires installation of a system [JRE](https://www.java.com/en/download/) (>= v21).
 
 {% include tip.html content="After downloading, please follow the [Installation Guide](installation.html)." %}
-
-{% include warning.html content="Anchor is currently only available pre-alpha, due to ongoing [project status](/index.html#projectStatus)." %}
 
 ## Licensing {#licensing}
 
