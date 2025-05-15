@@ -25,7 +25,7 @@ It quickly searches subdirectories of images on the file-system and processes!
 - Smartly names outputs by finding patterns in filenames. Preserves directory structure.
 - Reproducible pipelines defined via XML.
 - Feature-extraction libraries (sets of voxels, geometric shapes) etc.
-- Extensible via Java to call operations in [ImageJ](https://imagej.net/Welcome), [Icy](http://icy.bioimageanalysis.org/), [OpenCV](https://opencv.org/) etc.
+- Extensible via Java to call operations in [ImageJ](https://imagej.net/Welcome), [OpenCV](https://opencv.org/) etc.
 - Cross-platform - Windows, Linux, Mac.
 - Deep Learning inference with the [ONNX Runtime](https://onnxruntime.ai/).
 
