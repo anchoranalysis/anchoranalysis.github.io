@@ -105,7 +105,6 @@ By default, it will search recursively for all images in this directory (with [s
 | `anchor -t copy -ir 20` | [randomly samples](/user_guide_examples_anonymizing_sampling.html#a-random-subset) 20 inputs. |
 | `anchor -t copy -ir 0.3` | [randomly samples](/user_guide_examples_anonymizing_sampling.html#a-random-subset) 30% of all inputs. |
 | `anchor -t copy -ir 0.3 -on` | [randomly samples](/user_guide_examples_anonymizing_sampling.html#a-random-subset) and [anonymizes](/user_guide_examples_anonymizing_sampling.html#anonymizing) 30% of all inputs. |
-| `anchor -t anonymize` | [anonymizes](/user_guide_examples_anonymizing_sampling.html#anonymizing) all inputs. |
 
 Note the `-i` and `-o` command line options are [can be applied to any task](/user_guide_examples.html) to select inputs and an output path. `outputs = task(inputs)`
 
