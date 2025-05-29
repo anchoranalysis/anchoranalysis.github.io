@@ -14,7 +14,7 @@ Anchor can be downloaded as a distribution (*zip* or *tar.gz*). This must be unp
 Please download the latest version (`anchor-1.0.1`) from GitHub, as matches your operating system:
 
 - [Windows EXE installer](https://github.com/anchoranalysis/anchor-assembly/releases/download/1.0.1/Anchor-1.0.1.exe)
-- [Linux DEB package](https://github.com/anchoranalysis/anchor-assembly/releases/download/1.0.1/anchor_1.0.1_amd64.deb) - type `sudo dpkg -i anchor_1.0.0_amd64.deb` and then `sudo apt-get --fix-broken install`
+- [Linux DEB package](https://github.com/anchoranalysis/anchor-assembly/releases/download/1.0.1/anchor_1.0.1_amd64.deb) - type `sudo dpkg -i anchor_1.0.1_amd64.deb` and then `sudo apt-get --fix-broken install`
 - [MacOS](https://github.com/anchoranalysis/anchor-assembly/releases/download/1.0.1/anchor-1.0.1.pkg)
 - [OS Neutral](https://github.com/anchoranalysis/anchor-assembly/releases/download/1.0.1/anchor-1.0.1.zip) - requires installation of a system [JRE](https://www.java.com/en/download/) (>= v21).
 
