@@ -90,6 +90,10 @@ entries:
       url: /developer_guide_repositories_anchor_plugins_gpl.html
       output: web, pdf
 
+    - title: anchor-launcher
+      url: /developer_guide_repositories_anchor_launcher.html
+      output: web, pdf
+      
     - title: anchor-assembly
       url: /developer_guide_repositories_anchor_assembly.html
       output: web, pdf

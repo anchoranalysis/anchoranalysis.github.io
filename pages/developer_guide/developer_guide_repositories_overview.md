@@ -13,11 +13,7 @@ Anchor's source-code is distributed across several source-code repositories on [
 
 ## Java repositories {#java}
 
-<img src="/images/dependencies_java_repositories.png" width="1050px" height="594px" alt="Dependencies among java repositories" usemap="#javadependencies">
-
-<map name="javadependencies">
-  <area shape="rect" coords="1004,14,716,99" alt="anchor-pom" href="/developer_guide_repositories_anchor_pom.html">
-</map>
+<img src="/images/dependencies_java_repositories.png" width="735px" height="647px" alt="Dependencies among java repositories" usemap="#javadependencies">
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://raw.githubusercontent.com/davidjbradshaw/imagemap-resizer/master/js/imageMapResizer.min.js"></script>
@@ -27,12 +23,13 @@ $('map').imageMapResize();
 
 | Repository | Java Package Root &amp; Description | Modules | Functions | Classes | Lines&#x2011;of&#x2011;Code |
 |------------|-------------|-----------:|-----------:|---------------:|---------------:|
-| [anchor](/developer_guide_repositories_anchor.html) | `org.anchoranalysis`<br>Main libraries for Anchor platform | 28 | 8.7k | 1.6k | 66k |
-| [anchor-plugins](/developer_guide_repositories_anchor_plugins.html) | `org.anchoranalysis.plugin`<br>Main set of plugins - MIT-licensed | 19 | 6.9k | 1.2k | 62k |
-| [anchor-plugins-gpl](/developer_guide_repositories_anchor_plugins_gpl.html) | `org.anchoranalysis.plugin.gpl`<br>Additional GPL-licensed plugins | 3 | 0.2k | 0.03k | 3k |
-| [anchor-assembly](/developer_guide_repositories_anchor_assembly.html)  | `org.anchoranalysis`<br>Launcher, creates a [distribution](/developer_guide_anchor_distribution.html) | 3 | 0.1k | 0.03k | 2k |
+| [anchor](/developer_guide_repositories_anchor.html) | `org.anchoranalysis`<br>Main libraries for Anchor platform | 31 | 7k | 1.6k | 63k |
+| [anchor-plugins](/developer_guide_repositories_anchor_plugins.html) | `org.anchoranalysis.plugin`<br>Main set of plugins - MIT-licensed | 13 | 2.8k | 0.9k | 40k |
+| [anchor-plugins-gpl](/developer_guide_repositories_anchor_plugins_gpl.html) | `org.anchoranalysis.plugin.gpl`<br>Additional GPL-licensed plugins | 2 | 0.05k | 0.02k | 1.1k |
+| [anchor-launcher](/developer_guide_repositories_anchor_launcher.html) | `org.anchoranalysis.launcher`<br>Additional GPL-licensed plugins | 1 | 0.2k | 0.02k | 3k |
+| [anchor-assembly](/developer_guide_repositories_anchor_assembly.html)  | `org.anchoranalysis`<br>Launcher, creates a [distribution](/developer_guide_anchor_distribution.html) | 1 | - | - | - |
 
-Number of classes/code is as per *SonarQube, Feb 14th, 2020*. Lines-of-code excludes whitespace and comments.
+Number of classes/code is as per *SonarQube, October 19th, 2025*. Lines-of-code excludes whitespace and comments.
 
 ## Non-Java repositories
 
